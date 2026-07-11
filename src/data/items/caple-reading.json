@@ -1,0 +1,714 @@
+[
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Aviso na paragem",
+    "prompt": "Leia o aviso e escolha a opção correta.",
+    "payload": {
+      "passage": "AVISO\nO autocarro número 12 não circula ao domingo. Aos sábados, o primeiro autocarro sai às 8h00 e o último às 21h30.",
+      "question": "Quando é que o autocarro número 12 NÃO circula?",
+      "options": ["Ao sábado", "Ao domingo", "À segunda-feira", "Todos os dias"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Mensagem da Ana",
+    "prompt": "Leia a mensagem e escolha a opção correta.",
+    "payload": {
+      "passage": "Olá, João! Não te esqueças de comprar pão e leite. Chego a casa às sete horas. Beijinhos, Ana.",
+      "question": "O que é que a Ana pede ao João?",
+      "options": ["Para lavar a loiça", "Para comprar pão e leite", "Para telefonar à mãe", "Para arrumar a casa"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Horário do café",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Café Central. Aberto de segunda a sábado, das 7h00 às 20h00. Servimos pequeno-almoço e almoço. Encerrado ao domingo.",
+      "question": "O café serve o pequeno-almoço.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Bilhete do médico",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "A sua consulta está marcada para o dia 15 de março, às 10h30, no consultório 4. Por favor, chegue dez minutos antes.",
+      "question": "A consulta é às três da tarde.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "FOUNDATION",
+    "title": "Sinais na loja",
+    "prompt": "Faça corresponder cada sinal ao seu significado.",
+    "payload": {
+      "passage": "Numa loja há vários sinais nas portas e nas paredes.",
+      "instructions": "Ligue cada sinal (à esquerda) ao seu significado (à direita). Há um significado a mais.",
+      "left": ["EMPURRE", "SALDOS", "CAIXA"],
+      "right": ["Lugar para pagar", "Preços mais baixos", "Fazer força na porta para dentro", "Proibido fumar"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 1], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "FOUNDATION",
+    "title": "Um dia normal",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "De manhã, eu tomo o {{1}} com café e pão. Depois, apanho o {{2}} para ir para o trabalho. À noite, {{3}} televisão em casa.",
+      "gaps": [
+        { "id": 1, "options": ["pequeno-almoço", "jantar", "lanche"] },
+        { "id": 2, "options": ["comboio", "autocarro", "avião"] },
+        { "id": 3, "options": ["vejo", "como", "durmo"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Ementa do dia",
+    "prompt": "Leia a ementa e escolha a opção correta.",
+    "payload": {
+      "passage": "Ementa do dia — 5 euros\nSopa de legumes\nFrango com arroz\nFruta da época\nInclui água ou café.",
+      "question": "O que está incluído no preço de 5 euros?",
+      "options": ["Vinho e sobremesa", "Água ou café", "Uma cerveja", "Pão e manteiga"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Postal de férias",
+    "prompt": "Leia o postal e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Querida avó, estou no Algarve com os meus amigos. Faz muito sol e a praia é perto do hotel. Amanhã vamos passear de barco. Um beijo, Rita.",
+      "question": "A Rita está sozinha nas férias.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Anúncio de emprego",
+    "prompt": "Leia o anúncio e escolha a opção correta.",
+    "payload": {
+      "passage": "Restaurante O Mar procura empregado de mesa. É necessário ter experiência e falar português. Horário à noite, de quarta a domingo. Enviar mensagem para o número indicado.",
+      "question": "O que é preciso para este trabalho?",
+      "options": ["Ter carta de condução", "Ter experiência e falar português", "Trabalhar de manhã", "Ter mais de 40 anos"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "E-mail à colega",
+    "prompt": "Leia o e-mail e escolha a opção correta.",
+    "payload": {
+      "passage": "Olá, Marta, escrevo para te avisar que a reunião de amanhã foi adiada para sexta-feira, à mesma hora. O chefe pediu para levares o relatório das vendas. Se tiveres alguma dúvida, telefona-me. Cumprimentos, Sofia.",
+      "question": "Porque é que a Sofia escreveu este e-mail?",
+      "options": ["Para marcar um almoço", "Para avisar que a reunião mudou de dia", "Para pedir férias", "Para convidar a Marta para uma festa"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Regras da biblioteca",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Biblioteca Municipal. Os leitores podem levar até três livros de cada vez, durante quinze dias. Não é permitido comer nem beber nas salas de leitura. O uso do telemóvel deve ser silencioso.",
+      "question": "É proibido comer nas salas de leitura.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Aviso do condomínio",
+    "prompt": "Leia o aviso e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Aviso aos moradores: na próxima terça-feira, das 9h às 13h, haverá corte de água para obras nos canos. Pedimos desculpa pelo incómodo. A administração.",
+      "question": "A água vai faltar durante toda a noite.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Secções do supermercado",
+    "prompt": "Faça corresponder cada produto à secção onde o pode encontrar.",
+    "payload": {
+      "passage": "Num supermercado, os produtos estão organizados por secções.",
+      "instructions": "Ligue cada produto (à esquerda) à secção correta (à direita). Há uma secção a mais.",
+      "left": ["Maçãs e bananas", "Pão fresco", "Detergente para a roupa"],
+      "right": ["Padaria", "Frutas e legumes", "Produtos de limpeza", "Talho"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 0], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Convite de aniversário",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "Olá! No próximo sábado {{1}} anos e gostava de te convidar para a minha festa. Vai ser em minha casa, {{2}} das oito da noite. Traz só a tua boa disposição! Espero {{3}} veres lá.",
+      "gaps": [
+        { "id": 1, "options": ["faço", "fazes", "fazem"] },
+        { "id": 2, "options": ["a partir", "por causa", "em vez"] },
+        { "id": 3, "options": ["que", "de", "com"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Notícia local",
+    "prompt": "Leia a notícia e escolha a opção correta.",
+    "payload": {
+      "passage": "A câmara municipal vai abrir um novo parque no centro da cidade. O espaço terá zonas verdes, um lago e um lugar para as crianças brincarem. As obras começam em setembro e devem terminar no verão do próximo ano.",
+      "question": "Quando é que as obras vão começar?",
+      "options": ["No verão", "Em setembro", "No próximo ano", "No inverno"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "O regresso às aulas",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Quando as férias grandes terminam, muitas famílias sentem o peso das despesas do regresso às aulas. Os livros, o material escolar e a roupa nova custam cada vez mais. Por isso, algumas escolas criaram bancos de livros usados, onde os alunos podem trocar os manuais do ano anterior por outros de que precisam.",
+      "question": "Qual é o objetivo dos bancos de livros usados?",
+      "options": ["Vender livros novos mais baratos", "Ajudar as famílias a poupar através da troca de manuais", "Obrigar os alunos a comprar mais livros", "Oferecer material escolar gratuito a todos"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Trabalho a partir de casa",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Desde que passou a trabalhar a partir de casa, o Miguel reconhece que ganhou tempo, porque já não perde horas no trânsito. No entanto, confessa que sente falta do convívio com os colegas e que, por vezes, tem dificuldade em separar o horário de trabalho da sua vida pessoal. Para resolver isso, decidiu criar uma rotina fixa e reservar uma divisão da casa só para trabalhar.",
+      "question": "Que desvantagem refere o Miguel sobre o trabalho em casa?",
+      "options": ["Perde muito tempo no trânsito", "Tem dificuldade em separar o trabalho da vida pessoal", "Não tem computador adequado", "Gasta mais dinheiro em transportes"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Feira do livro",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "A Feira do Livro da cidade decorre este ano no jardim municipal, entre os dias 3 e 18 de maio. Além da venda de livros com desconto, haverá sessões de leitura para crianças e encontros com escritores. A entrada é gratuita, mas alguns ateliês exigem inscrição prévia.",
+      "question": "Todas as atividades da feira precisam de inscrição.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Alimentação saudável",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Comer bem não significa gastar muito dinheiro. Os produtos da época são normalmente mais baratos e mais saborosos. Cozinhar em casa também permite controlar melhor o sal e o açúcar. Especialistas recomendam beber bastante água ao longo do dia e reduzir o consumo de refrigerantes.",
+      "question": "O texto aconselha a reduzir o consumo de refrigerantes.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Anúncios de casas",
+    "prompt": "Leia os pequenos anúncios e faça corresponder cada pessoa ao anúncio mais adequado.",
+    "payload": {
+      "passage": "Anúncio A: Apartamento T1 no centro, perto de transportes, ideal para uma pessoa. Anúncio B: Moradia com jardim nos arredores, três quartos, garagem. Anúncio C: Quarto para estudante, cozinha partilhada, junto à universidade. Anúncio D: Loja comercial no rés-do-chão, boa montra.",
+      "instructions": "Ligue cada pessoa (à esquerda) ao anúncio mais adequado (à direita). Há um anúncio a mais.",
+      "left": ["Uma família com dois filhos e um carro", "Um estudante que quer viver perto da faculdade", "Um jovem que trabalha no centro e vive sozinho"],
+      "right": ["Anúncio A", "Anúncio B", "Anúncio C", "Anúncio D"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Uma viagem de comboio",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "No sábado passado, decidimos ir a Coimbra de comboio. Comprámos os bilhetes {{1}} internet, o que foi bastante prático. A viagem durou cerca de duas horas e, {{2}} chegámos, fomos logo visitar a universidade. Foi um dia muito bem passado, {{3}} o tempo esteve sempre bom.",
+      "gaps": [
+        { "id": 1, "options": ["pela", "por", "de"] },
+        { "id": 2, "options": ["quando", "enquanto", "desde"] },
+        { "id": 3, "options": ["porque", "embora", "para"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "O voluntariado",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "A Teresa começou a fazer voluntariado numa associação de apoio a idosos há dois anos. Ao início, pensava que apenas iria ajudar os outros, mas depressa percebeu que também recebia muito em troca. As conversas com as pessoas mais velhas ensinaram-lhe a valorizar coisas simples e deram-lhe uma nova visão sobre a vida.",
+      "question": "O que aprendeu a Teresa com esta experiência?",
+      "options": ["Que o voluntariado dá muito trabalho", "Que ajudar os outros também a enriqueceu a ela", "Que os idosos precisam sobretudo de dinheiro", "Que não vale a pena ser voluntário"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "As cidades e o ruído",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "O ruído tornou-se um dos problemas mais silenciosos das cidades modernas. Embora não deixe marcas visíveis, a exposição contínua ao barulho do trânsito e das obras afeta o sono, aumenta o stress e pode, a longo prazo, prejudicar a audição. Vários municípios começaram a criar zonas de silêncio e a limitar o horário de certas atividades, numa tentativa de devolver alguma tranquilidade aos habitantes.",
+      "question": "Segundo o texto, porque é o ruído considerado um problema 'silencioso'?",
+      "options": ["Porque ninguém fala sobre ele", "Porque os seus efeitos não são imediatamente visíveis", "Porque só existe à noite", "Porque afeta apenas as pessoas idosas"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "O regresso ao interior",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Depois de anos a viver na capital, alguns jovens têm optado por regressar às aldeias de onde saíram os seus avós. Movidos pelo custo de vida mais baixo e pela procura de uma existência mais calma, encontram no interior a possibilidade de trabalhar à distância sem abdicar do conforto do campo. Este movimento, ainda que discreto, tem contribuído para travar o abandono de algumas povoações.",
+      "question": "Que efeito tem tido o regresso destes jovens ao interior?",
+      "options": ["Aumentou o custo de vida nas aldeias", "Ajudou a reduzir o abandono de algumas povoações", "Levou ao encerramento de empresas na capital", "Obrigou-os a deixar de trabalhar"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "O comércio tradicional",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "As pequenas lojas de bairro enfrentam a concorrência das grandes superfícies e do comércio online. Contudo, muitas conseguem sobreviver graças ao atendimento personalizado e à relação de confiança que estabelecem com os clientes. Há quem prefira pagar um pouco mais para ser atendido por alguém que conhece pelo nome.",
+      "question": "Segundo o texto, algumas lojas de bairro sobrevivem pela relação próxima com os clientes.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "As redes sociais e a leitura",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Ao contrário do que muitos temiam, as redes sociais não afastaram totalmente os jovens dos livros. Surgiram comunidades onde milhares de leitores partilham opiniões, recomendam títulos e organizam clubes de leitura. Alguns autores viram as suas obras ganhar nova vida depois de se tornarem populares nestas plataformas, provando que a tecnologia e a leitura nem sempre estão em conflito.",
+      "question": "O texto afirma que as redes sociais fizeram desaparecer o hábito da leitura entre os jovens.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Parágrafos e ideias",
+    "prompt": "Faça corresponder cada parágrafo à ideia principal que exprime.",
+    "payload": {
+      "passage": "P1: Muitas pessoas começam o ano com a intenção de fazer mais exercício, mas abandonam os ginásios ao fim de poucas semanas. P2: Os especialistas defendem que, em vez de metas ambiciosas, é preferível estabelecer pequenos objetivos possíveis de cumprir. P3: Caminhar todos os dias, ainda que apenas vinte minutos, traz benefícios reais para a saúde e é mais fácil de manter ao longo do tempo.",
+      "instructions": "Ligue cada parágrafo (à esquerda) à ideia principal correspondente (à direita). Há uma ideia a mais.",
+      "left": ["P1", "P2", "P3"],
+      "right": ["A dificuldade em manter os hábitos de exercício", "A vantagem de definir metas pequenas e realistas", "O valor de uma atividade simples e regular", "A importância de contratar um treinador pessoal"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "O poder dos hábitos",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "Mudar de vida raramente acontece de um dia para o outro. {{1}} a maioria das pessoas acredita, não é a força de vontade que faz a diferença, mas sim a repetição de pequenos gestos. Um hábito, {{2}} se torna automático, deixa de exigir esforço consciente. É por isso que os especialistas aconselham a começar {{3}} mudanças mínimas, que se vão acumulando ao longo do tempo.",
+      "gaps": [
+        { "id": 1, "options": ["Ao contrário do que", "Por causa de que", "Apesar disso"] },
+        { "id": 2, "options": ["logo que", "por isso", "ainda que"] },
+        { "id": 3, "options": ["por", "de", "em"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "O turismo e as cidades",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "O crescimento do turismo trouxe evidentes benefícios económicos a muitas cidades, mas também gerou tensões que não podem ser ignoradas. Nos centros históricos, o aumento do alojamento local fez subir as rendas e afastou os moradores de longa data. O desafio das autarquias é, hoje, encontrar um equilíbrio que permita acolher os visitantes sem sacrificar a vida de quem ali habita.",
+      "question": "Qual é o principal desafio referido no texto?",
+      "options": ["Atrair mais turistas para os centros históricos", "Conciliar o turismo com a permanência dos moradores locais", "Construir novos hotéis nos arredores", "Aumentar o preço das rendas"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "A memória coletiva",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "A forma como uma sociedade escolhe recordar o seu passado revela tanto sobre o presente como sobre a história que pretende preservar. Monumentos, nomes de ruas e datas comemorativas não são neutros: resultam de decisões que privilegiam determinadas memórias em detrimento de outras. Questionar estas escolhas não significa apagar a história, mas antes reconhecer que a memória coletiva é sempre construída e, por isso, passível de revisão.",
+      "question": "Qual é a ideia central defendida pelo autor?",
+      "options": ["Os monumentos devem permanecer sempre inalterados", "A memória coletiva é uma construção que pode ser questionada", "A história não deve ser ensinada nas escolas", "As datas comemorativas são todas irrelevantes"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "A ilusão da escolha",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Vivemos convencidos de que quanto mais opções tivermos, mais livres seremos. No entanto, estudos no campo da psicologia sugerem o contrário: perante um excesso de alternativas, muitos indivíduos sentem-se paralisados e acabam por adiar a decisão ou por ficar insatisfeitos com aquela que tomaram. A liberdade de escolher, longe de ser ilimitadamente benéfica, revela-se mais valiosa quando é acompanhada de critérios claros que ajudem a filtrar o supérfluo.",
+      "question": "Que conclusão se pode retirar do texto?",
+      "options": ["Ter mais opções torna as pessoas sempre mais felizes", "O excesso de alternativas pode dificultar a decisão e reduzir a satisfação", "As decisões devem ser tomadas sempre por outras pessoas", "A psicologia não estuda o processo de escolha"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Progresso e desigualdade",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "O avanço tecnológico das últimas décadas melhorou incontáveis aspetos da vida quotidiana, desde a saúde até à comunicação. Seria, porém, ingénuo assumir que os seus benefícios se distribuem de forma equitativa. Frequentemente, são os grupos já privilegiados os primeiros a aceder às inovações, o que tende a aprofundar, em vez de esbater, as desigualdades preexistentes.",
+      "question": "Segundo o texto, o progresso tecnológico beneficia igualmente todos os grupos sociais.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "O silêncio na arte",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Numa composição musical, aquilo que não se ouve é tão determinante como aquilo que soa. As pausas conferem ritmo, criam expectativa e dão sentido às notas que as rodeiam. De modo semelhante, na pintura e na escrita, os espaços vazios e os silêncios permitem que a obra respire e que o observador ou o leitor participem na construção do significado.",
+      "question": "O autor considera que as pausas e os espaços vazios têm um papel significativo na obra artística.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Funções dos parágrafos",
+    "prompt": "Faça corresponder cada parágrafo à função que desempenha na argumentação.",
+    "payload": {
+      "passage": "P1: É comum ouvir dizer que os jovens de hoje leem menos do que as gerações anteriores. P2: Os dados, contudo, mostram que o tempo dedicado à leitura de textos, ainda que em ecrãs, aumentou consideravelmente. P3: Importa, portanto, distinguir a leitura de livros da leitura em sentido lato, sob pena de tirarmos conclusões precipitadas.",
+      "instructions": "Ligue cada parágrafo (à esquerda) à sua função argumentativa (à direita). Há uma função a mais.",
+      "left": ["P1", "P2", "P3"],
+      "right": ["Apresenta uma ideia comum a contestar", "Introduz dados que contrariam essa ideia", "Propõe uma distinção que matiza a discussão", "Fornece exemplos históricos detalhados"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "A linguagem e o pensamento",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "A relação entre a linguagem e o pensamento tem ocupado filósofos há séculos. Alguns defendem que as palavras de que dispomos {{1}} os limites daquilo que somos capazes de conceber. Outros argumentam, {{2}}, que o pensamento precede a linguagem e que esta apenas o veste de forma comunicável. Seja qual for a posição, {{3}} inegável que a maneira como nomeamos o mundo condiciona, ao menos em parte, a forma como o interpretamos.",
+      "gaps": [
+        { "id": 1, "options": ["determinam", "determinariam", "determinassem"] },
+        { "id": 2, "options": ["em contrapartida", "por conseguinte", "de facto"] },
+        { "id": 3, "options": ["afigura-se", "afigurava-se", "afigurar-se-ia"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "O tempo do ócio",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Numa época que exalta a produtividade como valor supremo, o ócio passou a ser encarado com uma certa suspeita, como se qualquer momento não aproveitado representasse uma perda. Esquecemo-nos, porém, de que muitas das ideias mais fecundas surgem precisamente nos intervalos, quando a mente, liberta da urgência de produzir, se permite divagar. Reabilitar o ócio talvez seja, hoje, um ato de resistência.",
+      "question": "Qual é a atitude do autor perante o ócio?",
+      "options": ["Condena-o como uma perda de tempo", "Valoriza-o como espaço fértil para a criatividade", "Considera-o incompatível com o trabalho", "Defende que deve ser eliminado da vida moderna"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "A tirania da transparência",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "Poucos princípios reúnem hoje tanto consenso como o da transparência, erigido em virtude quase inquestionável da vida pública e privada. Convém, todavia, resistir à tentação de o tomar por um bem absoluto. A exigência de que tudo seja exposto, escrutinado e disponibilizado sem reservas pode converter-se numa forma subtil de coação, na qual a opacidade legítima — o direito ao segredo, à hesitação, ao pensamento ainda não formulado — é confundida com dissimulação. Uma sociedade que não tolera zonas de sombra arrisca-se a asfixiar aquilo que só floresce ao abrigo do olhar alheio.",
+      "question": "Qual é a tese defendida pelo autor?",
+      "options": ["A transparência deve ser aplicada sem exceções em todos os domínios", "A exigência absoluta de transparência pode tornar-se uma forma de coação", "O segredo é sempre sinónimo de dissimulação", "A vida pública não requer qualquer transparência"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "A nostalgia como sintoma",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "A nostalgia, longe de ser um mero sentimentalismo dirigido ao passado, funciona amiúde como um sintoma do desconforto perante o presente. Quando uma época se declara incapaz de imaginar o futuro, tende a refugiar-se numa idade dourada que, examinada de perto, nunca existiu nos termos idealizados em que é evocada. O passado que recordamos com ternura é, em larga medida, uma ficção reconfortante, moldada tanto pelo esquecimento seletivo quanto pelas ansiedades que hoje nos assolam.",
+      "question": "Segundo o autor, o que revela sobretudo a nostalgia?",
+      "options": ["Um conhecimento rigoroso do passado", "Um desconforto face ao presente e uma dificuldade em imaginar o futuro", "Uma memória fiel dos acontecimentos históricos", "Uma preferência puramente estética por épocas antigas"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "O elogio da lentidão",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Seria simplista opor a lentidão à velocidade como se de uma batalha entre o bem e o mal se tratasse. O que os defensores de um ritmo mais pausado reivindicam não é a recusa da eficiência, mas a recuperação da capacidade de escolher quando acelerar e quando abrandar. A lentidão, entendida deste modo, não é preguiça nem atraso: é um exercício de discernimento, uma forma de devolver ao sujeito o domínio sobre a cadência da sua própria existência.",
+      "question": "O autor defende que a lentidão consiste em recusar por completo a eficiência.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Fronteiras da tradução",
+    "prompt": "Leia o texto e indique se a afirmação é Verdadeira, Falsa ou Não referida.",
+    "payload": {
+      "passage": "Todo o ato de traduzir comporta uma perda e, paradoxalmente, um acréscimo. Aquilo que a passagem de uma língua para outra dissipa — a sonoridade, os ecos culturais, as ambiguidades irrepetíveis — é em parte compensado pelas ressonâncias novas que o texto adquire ao instalar-se noutro idioma. O tradutor não é um traidor, como reza o velho adágio, mas antes um mediador que negoceia incessantemente entre a fidelidade impossível e a traição inevitável.",
+      "question": "O texto sugere que a tradução implica simultaneamente perdas e ganhos.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Estratégias retóricas",
+    "prompt": "Faça corresponder cada excerto à estratégia retórica que ilustra.",
+    "payload": {
+      "passage": "Excerto A: 'Não estaremos, ao venerar de tal modo o novo, a repetir cegamente o erro que julgamos ter superado?' Excerto B: 'Como escreveu certa vez um pensador, a dúvida é o princípio de toda a sabedoria.' Excerto C: 'Primeiro, ignoram-nos; depois, ridicularizam-nos; por fim, dão-nos razão.'",
+      "instructions": "Ligue cada excerto (à esquerda) à estratégia retórica correspondente (à direita). Há uma estratégia a mais.",
+      "left": ["Excerto A", "Excerto B", "Excerto C"],
+      "right": ["Interrogação retórica que problematiza a tese", "Apelo à autoridade de uma citação", "Gradação em três tempos para reforçar o argumento", "Descrição minuciosa de um cenário concreto"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "STRETCH",
+    "title": "O ceticismo necessário",
+    "prompt": "Complete o texto com a opção correta para cada espaço.",
+    "payload": {
+      "passage": "Num tempo em que a informação circula a uma velocidade sem precedentes, o ceticismo deixou de ser um luxo intelectual para se tornar uma necessidade cívica. Não se trata de descrer de tudo indiscriminadamente — atitude que, {{1}}, conduziria à paralisia —, mas de cultivar a exigência de que as afirmações sejam sustentadas por provas. Aquele que suspende o juízo até dispor de razões suficientes não é um indeciso; é, {{2}}, alguém que recusa ser manipulado. Que esta postura se generalize {{3}} talvez a melhor defesa contra os embustes da nossa época.",
+      "gaps": [
+        { "id": 1, "options": ["levada ao extremo", "por conseguinte", "em boa verdade"] },
+        { "id": 2, "options": ["pelo contrário", "por isso mesmo", "de resto"] },
+        { "id": 3, "options": ["seja", "é", "fosse"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "A ética do anonimato",
+    "prompt": "Leia o texto e escolha a opção correta.",
+    "payload": {
+      "passage": "O anonimato digital é frequentemente arrolado no banco dos réus, acusado de fomentar a agressividade e a irresponsabilidade nas interações em rede. Tal diagnóstico, contudo, peca por parcial. Se é verdade que o rosto oculto pode encorajar os piores instintos, não é menos certo que ele protege o dissidente, o denunciante e todos quantos, em contextos de opressão, só à sombra do anonimato ousam falar. Condená-lo em bloco equivaleria a sacrificar uma salvaguarda essencial em nome do combate aos seus abusos.",
+      "question": "Qual é a posição do autor relativamente ao anonimato digital?",
+      "options": ["Deve ser abolido por incentivar a agressividade", "Apesar dos abusos, cumpre uma função protetora que importa preservar", "Não tem qualquer utilidade nas sociedades atuais", "Beneficia exclusivamente quem age de má-fé"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

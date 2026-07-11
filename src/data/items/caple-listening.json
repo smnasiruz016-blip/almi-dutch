@@ -1,0 +1,584 @@
+[
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Anúncio na estação",
+    "prompt": "Ouça o anúncio e escolha a opção correta.",
+    "payload": {
+      "transcript": "Senhores passageiros, o comboio para Coimbra parte da linha três às nove e meia. Por favor, dirijam-se à plataforma. Obrigada.",
+      "question": "De que linha parte o comboio?",
+      "options": ["Linha um", "Linha dois", "Linha três", "Linha quatro"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "No café",
+    "prompt": "Ouça o diálogo e escolha a resposta certa.",
+    "payload": {
+      "transcript": "A: Bom dia. Queria um café e uma torrada, por favor. B: Com certeza. Deseja mais alguma coisa? A: Não, obrigado. Só isso.",
+      "question": "O que é que o cliente pediu?",
+      "options": ["Um chá e um bolo", "Um café e uma torrada", "Um sumo e uma sandes", "Só um café"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "As horas da loja",
+    "prompt": "Ouça e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "A nossa loja está aberta de segunda a sexta, das nove da manhã às sete da tarde. Ao sábado, fechamos ao meio-dia.",
+      "question": "A loja está aberta ao domingo.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "O tempo hoje",
+    "prompt": "Ouça a previsão e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Hoje, em Lisboa, o céu está limpo e faz sol. A temperatura é de vinte e cinco graus. Não vai chover.",
+      "question": "Hoje vai chover em Lisboa.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Recado no telemóvel",
+    "prompt": "Ouça o recado e escolha a opção correta.",
+    "payload": {
+      "transcript": "Olá, Ana. Fala a Marta. Amanhã não posso ir ao cinema porque tenho de trabalhar. Podemos ir na quinta-feira? Liga-me. Beijinhos.",
+      "question": "Porque é que a Marta não pode ir ao cinema?",
+      "options": ["Está doente", "Tem de trabalhar", "Não gosta do filme", "Não tem dinheiro"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "ACESSO",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Três pessoas apresentam-se",
+    "prompt": "Ouça as três pessoas e associe cada falante à sua profissão.",
+    "payload": {
+      "transcript": "Falante 1: Olá, sou o Rui. Trabalho num hospital e ajudo os médicos a tratar os doentes. Falante 2: Chamo-me Sofia. Todos os dias dou aulas de matemática a crianças na escola. Falante 3: O meu nome é Pedro. Faço pão e bolos numa padaria, de manhã cedo.",
+      "instructions": "Associe cada falante à profissão correta.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["Padeiro", "Enfermeiro", "Professora", "Motorista"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Marcar uma consulta",
+    "prompt": "Ouça o diálogo e escolha a resposta correta.",
+    "payload": {
+      "transcript": "A: Centro de Saúde do Areeiro, bom dia. B: Bom dia. Queria marcar uma consulta com a doutora Nunes. A: Ela só tem vaga na próxima terça-feira, às onze. Serve? B: Terça às onze está ótimo, obrigada.",
+      "question": "Para quando ficou marcada a consulta?",
+      "options": ["Segunda às onze", "Terça às onze", "Terça às dez", "Quarta às onze"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Anúncio no supermercado",
+    "prompt": "Ouça o anúncio e escolha a opção correta.",
+    "payload": {
+      "transcript": "Cara clientela, aproveite a promoção de hoje: todas as frutas e legumes têm um desconto de vinte por cento. A promoção termina às oito da noite, hora do fecho. Boas compras!",
+      "question": "O que está em promoção?",
+      "options": ["Carne e peixe", "Frutas e legumes", "Pão e leite", "Produtos de limpeza"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Planos de fim de semana",
+    "prompt": "Ouça a conversa e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "A: O que vais fazer no fim de semana? B: No sábado vou à praia com uns amigos. No domingo fico em casa a descansar. E tu? A: Eu vou visitar os meus pais no Porto.",
+      "question": "No domingo, a segunda pessoa vai ficar em casa.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Aviso do autocarro",
+    "prompt": "Ouça o aviso e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Informamos os passageiros de que, devido a obras na Avenida da República, a carreira 736 vai seguir por um percurso alternativo. A paragem do Saldanha não será servida durante esta semana.",
+      "question": "A paragem do Saldanha está a funcionar normalmente.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Na receção do hotel",
+    "prompt": "Ouça o diálogo e escolha a opção correta.",
+    "payload": {
+      "transcript": "A: Boa tarde. Tenho uma reserva em nome de Almeida. B: Deixe ver... Sim, um quarto duplo por três noites. O pequeno-almoço é servido das sete às dez, no primeiro andar. B: Aqui está a chave, quarto duzentos e cinco.",
+      "question": "Onde é servido o pequeno-almoço?",
+      "options": ["No rés do chão", "No primeiro andar", "No quarto", "No segundo andar"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "CIPLE",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "O que vão fazer nas férias",
+    "prompt": "Ouça os três falantes e associe cada um ao seu plano de férias.",
+    "payload": {
+      "transcript": "Falante 1: Este ano vou de comboio até ao Algarve para passar duas semanas na praia. Falante 2: Eu prefiro a montanha. Vou fazer caminhadas na Serra da Estrela. Falante 3: Nós vamos ficar na cidade e visitar museus e exposições.",
+      "instructions": "Associe cada falante ao tipo de férias que descreve.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["Férias culturais na cidade", "Férias de praia", "Férias na montanha", "Férias no estrangeiro"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Entrevista sobre reciclagem",
+    "prompt": "Ouça o excerto da entrevista e escolha a opção correta.",
+    "payload": {
+      "transcript": "Jornalista: A câmara municipal lançou uma nova campanha. Em que consiste? Responsável: Queremos que as pessoas separem melhor os resíduos. Notámos que muita gente ainda deita o vidro no lixo comum. Por isso, vamos colocar mais ecopontos junto aos prédios e distribuir folhetos explicativos a cada família.",
+      "question": "Qual é o principal objetivo da campanha?",
+      "options": ["Reduzir o preço do lixo", "Melhorar a separação dos resíduos", "Fechar os ecopontos antigos", "Contratar mais trabalhadores"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Mudança de emprego",
+    "prompt": "Ouça a conversa e escolha a resposta correta.",
+    "payload": {
+      "transcript": "A: Soube que mudaste de emprego. Correu bem? B: Correu. Agora trabalho mais perto de casa e já não perco duas horas por dia nos transportes. O salário é parecido, mas ganho tempo e isso, para mim, vale muito mais. A: Fizeste bem.",
+      "question": "Qual foi a principal vantagem da mudança para o falante B?",
+      "options": ["Um salário muito maior", "Poupar tempo nas deslocações", "Trabalhar a partir de casa", "Ter mais dias de férias"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Aviso da biblioteca",
+    "prompt": "Ouça o aviso e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Informa-se que, a partir do próximo mês, a biblioteca municipal vai alargar o horário de funcionamento e passará a estar aberta também ao sábado de manhã. O empréstimo de livros continua limitado a três volumes por leitor.",
+      "question": "A partir do próximo mês, a biblioteca abre ao sábado de manhã.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Receita de família",
+    "prompt": "Ouça o excerto e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "A minha avó fazia o arroz de marisco todos os domingos. Dizia sempre que o segredo estava em usar peixe muito fresco, comprado nessa mesma manhã. Nunca me deu a receita por escrito; aprendi tudo a vê-la cozinhar.",
+      "question": "A avó passou a receita por escrito ao neto.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Reclamação numa loja",
+    "prompt": "Ouça o diálogo e escolha a opção correta.",
+    "payload": {
+      "transcript": "A: Boa tarde. Comprei estes sapatos há uma semana e a sola já se descolou. B: Lamento imenso. Trouxe o talão? A: Trouxe, aqui está. B: Neste caso, pode escolher outro par igual ou, se preferir, devolvemos o dinheiro. A: Prefiro trocar por outro par.",
+      "question": "O que decidiu fazer o cliente?",
+      "options": ["Receber o dinheiro de volta", "Trocar por outro par", "Mandar reparar os sapatos", "Ficar com os sapatos estragados"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DEPLE",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Opiniões sobre o teletrabalho",
+    "prompt": "Ouça os três falantes e associe cada um à sua opinião sobre o teletrabalho.",
+    "payload": {
+      "transcript": "Falante 1: Para mim, trabalhar em casa é fantástico porque consigo organizar o meu dia como quero e concentro-me melhor. Falante 2: Eu sinto muita falta do convívio com os colegas. Em casa, acabo por me distrair e trabalhar mais horas. Falante 3: No meu caso, tanto faz. O importante é cumprir os prazos, seja no escritório ou em casa.",
+      "instructions": "Associe cada falante à opinião correspondente.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["É indiferente ao local de trabalho", "Vê sobretudo vantagens", "Sente falta dos colegas", "Recusa qualquer forma de teletrabalho"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 1], [1, 2], [2, 0]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Debate sobre transportes",
+    "prompt": "Ouça o excerto e escolha a opção que melhor resume a posição do orador.",
+    "payload": {
+      "transcript": "Não defendo que se proíbam os carros no centro da cidade de um dia para o outro. Isso seria irrealista e penalizaria muita gente. O que proponho é um investimento gradual e sério nos transportes públicos: só quando o autocarro e o metro forem mais rápidos e fiáveis é que as pessoas vão, de facto, deixar o automóvel em casa.",
+      "question": "Qual é a posição defendida pelo orador?",
+      "options": ["Proibir imediatamente os carros no centro", "Melhorar primeiro os transportes públicos para reduzir o uso do carro", "Aumentar o número de lugares de estacionamento", "Manter tudo exatamente como está"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Programa de rádio sobre alimentação",
+    "prompt": "Ouça o excerto e escolha a opção correta.",
+    "payload": {
+      "transcript": "Convidada: Há uma ideia muito difundida de que comer bem é caro. Na verdade, os estudos que temos vindo a acompanhar mostram o contrário: uma alimentação baseada em legumes da época, leguminosas e alguns cereais integrais costuma ser mais barata do que uma dieta cheia de produtos processados. O problema não é o preço, é a falta de tempo e de hábito para cozinhar.",
+      "question": "Segundo a convidada, qual é o verdadeiro obstáculo a uma boa alimentação?",
+      "options": ["O preço elevado dos legumes", "A falta de tempo e de hábito para cozinhar", "A escassez de produtos frescos", "A ausência de informação nos rótulos"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Reunião de condomínio",
+    "prompt": "Ouça o excerto da reunião e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Administrador: Relativamente à pintura da fachada, recebemos três orçamentos. O mais barato não incluía a reparação das fissuras, pelo que a comissão recomenda o segundo orçamento, ligeiramente mais caro, mas que garante o trabalho completo. A decisão final será votada hoje.",
+      "question": "A comissão recomenda o orçamento mais barato.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Testemunho de um voluntário",
+    "prompt": "Ouça o testemunho e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Comecei a fazer voluntariado há cerca de cinco anos, quando me reformei. Ao início, pensei que ia dar apenas algumas horas por mês, mas a verdade é que me envolvi de tal maneira que hoje passo lá quase todas as manhãs. Ganhei amigos e uma nova rotina que me faz muito bem.",
+      "question": "O voluntário começou esta atividade depois de se reformar.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Conversa sobre uma exposição",
+    "prompt": "Ouça o diálogo e escolha a opção correta.",
+    "payload": {
+      "transcript": "A: Então, gostaste da exposição de fotografia? B: Gostei, embora esperasse mais das fotografias antigas. Para ser sincero, o que me impressionou mesmo foi a última sala, com os trabalhos dos jovens artistas. A: Curioso, a mim foi precisamente essa parte que me deixou indiferente.",
+      "question": "O que mais impressionou o falante B?",
+      "options": ["As fotografias antigas", "Os trabalhos dos jovens artistas", "A entrada da exposição", "O catálogo à venda"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DIPLE",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Reações a uma nova lei",
+    "prompt": "Ouça os quatro falantes e associe cada um à sua reação sobre a nova lei do horário das lojas.",
+    "payload": {
+      "transcript": "Falante 1: Acho ótimo. Trabalho até tarde e, assim, ainda consigo fazer compras depois do emprego. Falante 2: Sinceramente, preocupa-me. Os pequenos comerciantes vão ter de contratar mais pessoal e nem todos aguentam esse custo. Falante 3: A mim é-me igual. Faço quase todas as compras pela internet. Falante 4: Concordo em parte, mas devia haver limites para proteger o descanso de quem trabalha no comércio.",
+      "instructions": "Associe cada falante à sua reação.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["Apoia sem reservas", "Receia o impacto nos pequenos comerciantes", "Mostra-se indiferente", "Rejeita totalmente a lei"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Conferência sobre linguagem",
+    "prompt": "Ouça o excerto da conferência e escolha a opção que melhor traduz a ideia central.",
+    "payload": {
+      "transcript": "Oradora: Costuma dizer-se que uma língua que deixa de ganhar palavras novas é uma língua condenada. Não subscrevo inteiramente essa afirmação, mas reconheço nela um fundo de verdade. O empréstimo de termos estrangeiros, longe de empobrecer o português, é muitas vezes sinal de vitalidade: mostra que os falantes precisam de nomear realidades novas e não hesitam em fazê-lo. O risco não está no empréstimo em si, mas na demissão da criatividade própria, quando deixamos de forjar as nossas próprias soluções.",
+      "question": "Qual é a ideia central defendida pela oradora?",
+      "options": ["Os empréstimos estrangeiros empobrecem sempre a língua", "O empréstimo é sinal de vitalidade; o perigo está em perder a criatividade própria", "Uma língua deve recusar todas as palavras novas", "O português já não cria palavras suas"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Entrevista a um economista",
+    "prompt": "Ouça o excerto e escolha a opção correta.",
+    "payload": {
+      "transcript": "Entrevistador: Muitos jovens dizem que nunca vão conseguir comprar casa. É exagero? Economista: Não diria exagero, mas convém distinguir a perceção do dado. É verdade que os preços subiram bem acima dos salários nas grandes cidades. Contudo, quando olhamos para o interior do país, o cenário inverte-se: há habitação disponível e a preços comportáveis. O verdadeiro problema não é apenas o preço da casa, é a concentração do emprego em meia dúzia de zonas.",
+      "question": "Segundo o economista, qual é o problema de fundo?",
+      "options": ["Os salários subiram demasiado depressa", "A concentração do emprego em poucas zonas do país", "A falta total de casas em todo o país", "O desinteresse dos jovens pela compra de casa"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Crónica sobre o tempo livre",
+    "prompt": "Ouça a crónica e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Cronista: Habituámo-nos a tratar o descanso como um prémio que só se merece depois de muito trabalho. Ora, essa lógica é, a meu ver, profundamente equivocada. O ócio não é o contrário da produtividade; é frequentemente a sua condição. As melhores ideias raramente me surgem à secretária, mas antes num passeio sem destino ou numa tarde aparentemente perdida.",
+      "question": "O cronista considera que o ócio prejudica sempre a produtividade.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Depoimento de uma investigadora",
+    "prompt": "Ouça o depoimento e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Investigadora: Quando publicámos os primeiros resultados, houve quem os recebesse com ceticismo, e com razão: a amostra ainda era pequena. Foi só depois de repetirmos o estudo em três países diferentes, com milhares de participantes, que a comunidade científica começou a levar as nossas conclusões a sério.",
+      "question": "As conclusões foram aceites logo com a primeira publicação.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Discussão sobre turismo",
+    "prompt": "Ouça o debate e escolha a opção que melhor descreve a posição do segundo interveniente.",
+    "payload": {
+      "transcript": "A: O turismo trouxe dinheiro e emprego às nossas cidades. Não percebo tanta queixa. B: Ninguém nega os benefícios, mas há que ser honesto: quando um bairro inteiro se transforma em alojamento para visitantes, os moradores de sempre são empurrados para fora, as mercearias dão lugar a lojas de recordações e perde-se aquilo que atraía os turistas em primeiro lugar. O problema não é o turismo, é a ausência de regras.",
+      "question": "Qual é a posição do segundo interveniente?",
+      "options": ["O turismo deve ser proibido nas cidades", "Reconhece os benefícios, mas defende a necessidade de regras", "O turismo não traz qualquer benefício", "Os moradores exageram nas queixas"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DAPLE",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Perspetivas sobre a leitura",
+    "prompt": "Ouça os quatro falantes num programa cultural e associe cada um à sua perspetiva sobre a leitura.",
+    "payload": {
+      "transcript": "Falante 1: Para mim, ler é acima de tudo uma fuga. Abro um romance e desligo-me completamente do mundo lá fora. Falante 2: Eu leio sobretudo para compreender melhor a realidade; procuro ensaios, reportagens, aquilo que me obriga a pensar. Falante 3: Confesso que hoje leio quase tudo em formato digital. O papel tem o seu encanto, mas a comodidade do ecrã venceu-me. Falante 4: A mim, o que me move é a partilha. Só desfruto verdadeiramente de um livro quando o posso discutir com alguém depois.",
+      "instructions": "Associe cada falante à sua perspetiva sobre a leitura.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["Lê para se evadir", "Lê para compreender o mundo", "Privilegia o formato digital", "Valoriza a partilha e a discussão"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Palestra sobre memória coletiva",
+    "prompt": "Ouça o excerto da palestra e escolha a opção que melhor sintetiza o argumento.",
+    "payload": {
+      "transcript": "Orador: Insistimos em falar da memória como se fosse um arquivo fiel, um repositório onde o passado repousa intacto à espera de ser consultado. Nada mais enganador. A memória, sobretudo a coletiva, não conserva: reconstrói permanentemente, à luz das inquietações do presente. Cada geração relê a sua história não para a repetir, mas para nela encontrar respostas às perguntas que hoje a assombram. Daí que os mesmos acontecimentos suscitem, de década para década, comemorações tão dispares. Não é o passado que muda, evidentemente; é o olhar que sobre ele lançamos, e esse olhar é sempre, irremediavelmente, o de quem vive agora.",
+      "question": "Qual é o argumento central do orador?",
+      "options": ["A memória coletiva preserva o passado de forma fiel e imutável", "A memória coletiva reconstrói o passado à luz das preocupações do presente", "Cada geração deve esquecer a história anterior", "As comemorações deveriam ser sempre idênticas ao longo do tempo"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Mesa-redonda sobre inteligência artificial",
+    "prompt": "Ouça o excerto e escolha a opção que melhor traduz a posição da oradora.",
+    "payload": {
+      "transcript": "Oradora: Peço que não me coloquem no campo dos alarmistas nem no dos entusiastas ingénuos, porque não pertenço a nenhum. O que me parece dispensável é o próprio debate nesses termos maniqueístas. A tecnologia não é, em si, nem salvadora nem destruidora; é um amplificador. Amplia tanto as nossas melhores intenções como as nossas piores negligências. Perguntar se será boa ou má é, francamente, a pergunta errada. A pergunta pertinente é: que instituições, que regras, que responsabilidades estamos dispostos a construir em torno dela? Porque é aí, e não no engenho em si, que se decide o desfecho.",
+      "question": "Qual é a posição defendida pela oradora?",
+      "options": ["A tecnologia é intrinsecamente destruidora", "A tecnologia é intrinsecamente benéfica", "O essencial são as regras e responsabilidades que a enquadram, não a tecnologia em si", "O debate sobre tecnologia é urgente nos termos de bom contra mau"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Ensaio radiofónico sobre o silêncio",
+    "prompt": "Ouça o excerto e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Autora: Reduzimos frequentemente o silêncio a uma mera ausência, ao vazio deixado pelo som que cessa. Ora, quem alguma vez habitou o silêncio sabe que ele é, pelo contrário, densamente povoado. É no silêncio que os pensamentos que evitávamos vêm à superfície, que reparamos naquilo que o ruído quotidiano abafava. Talvez seja essa a razão por que dele fugimos com tanto empenho: não por ser vazio, mas por ser demasiado cheio.",
+      "question": "Segundo a autora, fugimos do silêncio porque ele nos confronta com aquilo que evitávamos.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Comentário sobre política de línguas",
+    "prompt": "Ouça o comentário e indique se a frase é verdadeira, falsa ou não referida.",
+    "payload": {
+      "transcript": "Comentador: Defende-se muitas vezes o ensino precoce de várias línguas estrangeiras como garantia de sucesso futuro. Não contesto o valor do multilinguismo, muito pelo contrário. Chamo, no entanto, a atenção para um equívoco recorrente: de nada serve empilhar línguas sobre uma base frágil. Uma criança que não domina com solidez a sua língua materna dificilmente edificará sobre ela um edifício plurilingue estável. Primeiro os alicerces, depois os andares.",
+      "question": "O comentador é contra o ensino de línguas estrangeiras às crianças.",
+      "options": ["Verdadeiro", "Falso", "Não referido"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Debate sobre o futuro das cidades",
+    "prompt": "Ouça o excerto e escolha a opção que melhor descreve a crítica do orador.",
+    "payload": {
+      "transcript": "Orador: O que me preocupa nos planos urbanísticos que hoje se apresentam com tanta pompa não é a falta de ambição, é o excesso de certeza. Desenham-se cidades para dentro de trinta anos como se soubéssemos, com precisão, como viveremos, trabalharemos e nos deslocaremos nessa altura. A história recente devia ter-nos ensinado alguma humildade: quase nada do que hoje é evidente foi antecipado há três décadas. Uma cidade sábia não é a que adivinha o futuro, é a que se deixa espaço para o corrigir.",
+      "question": "Qual é a principal crítica do orador aos planos urbanísticos atuais?",
+      "options": ["São pouco ambiciosos", "Assentam num excesso de certeza sobre o futuro", "Ignoram completamente os transportes", "Custam demasiado dinheiro"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "variant": "EUROPEAN",
+    "exam": "DUPLE",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Posições num colóquio sobre o trabalho",
+    "prompt": "Ouça os quatro intervenientes de um colóquio e associe cada um à tese que defende.",
+    "payload": {
+      "transcript": "Falante 1: A obsessão contemporânea com a produtividade transformou o repouso numa espécie de culpa. Precisamos de reabilitar o direito a não fazer nada. Falante 2: Discordo do pessimismo dominante. A automatização não vai suprimir o trabalho; vai libertar-nos das tarefas mais penosas para nos dedicarmos ao que exige verdadeiro engenho humano. Falante 3: O que me parece decisivo já não é quanto trabalhamos, mas onde e com quem. A geografia do trabalho, essa sim, está a ser radicalmente reescrita. Falante 4: Continuo convencido de que nenhuma reforma será justa enquanto o valor gerado por quem trabalha não for repartido de forma mais equitativa. O problema é, antes de tudo, distributivo.",
+      "instructions": "Associe cada interveniente à tese que defende.",
+      "left": ["Falante 1", "Falante 2", "Falante 3"],
+      "right": ["Defende o direito ao descanso e ao ócio", "Vê na automatização uma oportunidade, não uma ameaça", "Destaca a transformação do lugar do trabalho", "Centra o problema na repartição do valor gerado"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  }
+]

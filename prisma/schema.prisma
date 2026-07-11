@@ -1,0 +1,314 @@
+// AlmiGoethe data model. The shared engine foundation (auth, billing, AI cost
+// ledger) is forked from AlmiCELPIP. The practice layer is an ITEM-BANK: a single
+// GoetheItem ↔ GoetheAttempt pair carries every task type via a typed `payload`
+// Json, instead of one model per skill. Scoring is hybrid — deterministic for
+// objective modules (Lesen + Hören), AI trait-feedback for productive modules
+// (Schreiben + Sprechen) — and is reported as an honest practice POINTS estimate
+// per module (max points + 60% pass threshold), never a fabricated total.
+//
+// The big structural fact vs CELPIP: CELPIP's GENERAL/LS version axis is replaced
+// by SIX CEFR LEVELS (A1–C2), and — unlike CELPIP where the version lived only on
+// the session — a Goethe item belongs to exactly ONE level (A1 Lesen content is
+// not B2 Lesen content), so `level` lives ON THE ITEM and is the primary filter.
+// All content is original German, never copied from the Goethe-Institut; results
+// are practice estimates — candidates confirm the real requirement with the
+// Goethe-Institut / their university / the relevant German authority.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+enum Locale {
+  EN
+  UR
+  AR
+  HI
+}
+
+enum SubscriptionTier {
+  FREE
+  PREMIUM
+}
+
+model User {
+  id           String  @id @default(cuid())
+  email        String  @unique
+  name         String?
+  passwordHash String
+  locale       Locale  @default(EN)
+  countryCode  String?
+  referralCode String  @unique @default(cuid())
+
+  // Email verification — required before paid feature access.
+  emailVerified               DateTime?
+  emailVerificationTokenHash  String?   @unique
+  emailVerificationExpiresAt  DateTime?
+  emailVerificationLastSentAt DateTime?
+
+  // Stripe subscription state — webhook keeps this in lockstep with Stripe.
+  stripeCustomerId              String?          @unique
+  stripeSubscriptionId          String?          @unique
+  subscriptionStatus            String?
+  subscriptionPlan              String?
+  subscriptionCurrentPeriodEnd  DateTime?
+  subscriptionCancelAtPeriodEnd Boolean          @default(false)
+  trialEndsAt                   DateTime?
+  subscriptionTier              SubscriptionTier @default(FREE)
+
+  // Comp Pro access — admin-granted, no Stripe. isProActive()/hasPaidAccess()
+  // short-circuit true while compProUntil is in the future, bypassing BOTH the
+  // subscription check AND email verification. AlmiGoethe full Pro = AI feedback
+  // on Schreiben + Sprechen + the full per-level mock.
+  compProUntil  DateTime?
+  compGrantedAt DateTime?
+  compGrantedBy String?
+  compReason    String?
+
+  // Which Portuguese exam the user is preparing for (CAPLE level or Celpe-Bras).
+  // Drives the default mock and which practice content is surfaced. Null = not chosen.
+  targetExam PortugueseExam?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sessions            Session[]
+  passwordResetTokens PasswordResetToken[]
+  ptAttempts          PortugueseAttempt[]
+  ptSessions          PortugueseSession[]
+  reviews             Review[]
+
+  @@index([email])
+  @@index([referralCode])
+  @@index([stripeCustomerId])
+  @@index([stripeSubscriptionId])
+  @@index([compProUntil])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model ProcessedWebhook {
+  id          String   @id
+  eventType   String
+  processedAt DateTime @default(now())
+
+  @@index([processedAt])
+}
+
+model EarlyAccess {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rating    Int
+  text      String   @db.Text
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([approved, createdAt])
+}
+
+model AICostLedger {
+  id               String   @id @default(cuid())
+  timestamp        DateTime @default(now())
+  userId           String?
+  feature          String
+  model            String
+  inputTokens      Int
+  outputTokens     Int
+  cacheReadTokens  Int      @default(0)
+  cacheWriteTokens Int      @default(0)
+  costCents        Int
+  success          Boolean  @default(true)
+  errorMessage     String?
+
+  @@index([timestamp(sort: Desc)])
+  @@index([userId, timestamp])
+  @@index([feature, timestamp])
+}
+
+
+// ===================== Portuguese practice item-bank =====================
+// AlmiPortuguese covers TWO official tracks via ONE item-bank:
+//   • European (Portugal) — CAPLE suite: ACESSO(A1) CIPLE(A2) DEPLE(B1)
+//     DIPLE(B2) DAPLE(C1) DUPLE(C2). Each level tests Reading, Writing,
+//     Listening, Speaking (B2+ add structural competence). Scored per skill
+//     as an honest readiness estimate vs the level's real pass criteria.
+//   • Brazilian — Celpe-Bras: ONE integrated exam (Parte Escrita = 4 integrated
+//     tasks, Parte Oral = interview). Holistic single tier estimate
+//     (Intermediário → Avançado Superior; below 2 → no certificate). No per-skill
+//     score — an estimate, never the official Inep result.
+// One PortugueseItem/PortugueseAttempt pair serves every task type via a typed
+// `payload` Json. All content is original Portuguese (PT-PT vs PT-BR correct);
+// results are practice estimates — confirm the real requirement with CAPLE /
+// Inep / the relevant authority.
+
+enum PortugueseVariant {
+  EUROPEAN // Portugal — CAPLE
+  BRAZILIAN // Brazil — Celpe-Bras
+}
+
+// Exam axis. The six CAPLE levels map 1:1 to CEFR A1–C2; CELPE_BRAS is the single
+// Brazilian integrated exam.
+enum PortugueseExam {
+  ACESSO // A1
+  CIPLE // A2 — Portugal citizenship/residency (lead)
+  DEPLE // B1
+  DIPLE // B2 (+ structural competence)
+  DAPLE // C1 (+ structural competence)
+  DUPLE // C2 (+ structural competence)
+  CELPE_BRAS // Brazil — integrated
+}
+
+enum PortugueseSkill {
+  READING // CAPLE Compreensão da leitura (objective)
+  LISTENING // CAPLE Compreensão do oral (objective)
+  WRITING // CAPLE Produção escrita (AI-graded)
+  SPEAKING // CAPLE Produção/interação oral (AI-graded)
+  ESCRITA // Celpe-Bras Parte Escrita — integrated (AI-graded)
+  ORAL // Celpe-Bras Parte Oral — interview (AI-graded)
+}
+
+enum PortugueseTaskType {
+  MCQ_SINGLE // objective single-answer multiple choice
+  MATCHING // objective matching
+  CLOZE // objective gap-fill (option-per-gap)
+  ORDERING // objective sequence
+  TRUE_FALSE // objective true/false/not-stated
+  WRITING_PROMPT // CAPLE productive writing (criteria + char band)
+  SPEAKING_PROMPT // CAPLE productive speaking (criteria)
+  ESCRITA_TASK // Celpe-Bras integrated written task (stimulus → production)
+  ORAL_INTERVIEW // Celpe-Bras oral interview simulation (elemento provocador)
+}
+
+enum PortugueseDifficulty {
+  FOUNDATION
+  CORE
+  STRETCH
+}
+
+enum PortugueseAttemptStatus {
+  PENDING
+  SCORED // objective auto-graded
+  EVALUATED // productive AI-graded
+  FAILED
+}
+
+enum PortugueseSessionMode {
+  PRACTICE
+  MOCK
+}
+
+enum PortugueseSessionStatus {
+  IN_PROGRESS
+  COMPLETED
+  ABANDONED
+}
+
+model PortugueseItem {
+  id         String               @id @default(cuid())
+  variant    PortugueseVariant
+  exam       PortugueseExam
+  skill      PortugueseSkill
+  taskType   PortugueseTaskType
+  difficulty PortugueseDifficulty  @default(CORE)
+  title      String
+  // Instruction / stem shown to the candidate (PT).
+  prompt     String
+  // Task-specific structure: objective → { options, passage, transcript, answerKey };
+  // productive → { criteria[], charBand, stimulus }. Validated in src/lib/pt/tasks.
+  payload    Json
+  // Objective answer key (null for productive/AI tasks).
+  answer     Json?
+  // Objective max points for this item (0 for productive; readiness is qualitative).
+  maxPoints  Int                   @default(0)
+  active     Boolean               @default(true)
+  createdAt  DateTime              @default(now())
+  updatedAt  DateTime              @updatedAt
+  attempts   PortugueseAttempt[]
+
+  @@index([variant, exam, skill, active])
+  @@index([exam, skill])
+}
+
+model PortugueseAttempt {
+  id        String                  @id @default(cuid())
+  userId    String
+  itemId    String
+  sessionId String?
+  status    PortugueseAttemptStatus @default(PENDING)
+  // User response: objective → selected answer(s); productive → { text } or { audioKey }.
+  response  Json?
+  // Objective scoring.
+  points    Int?
+  maxPoints Int?
+  // Productive AI trait feedback: { traits[], summary, estimate }.
+  aiFeedback Json?
+  // Honest readout: CAPLE → "CLEAR"|"BORDERLINE"|"BELOW"; Celpe-Bras → tier label.
+  readiness String?
+  createdAt   DateTime  @default(now())
+  submittedAt DateTime?
+
+  user    User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item    PortugueseItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  session PortugueseSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  @@index([userId, createdAt])
+  @@index([itemId])
+  @@index([sessionId])
+}
+
+model PortugueseSession {
+  id        String                  @id @default(cuid())
+  userId    String
+  variant   PortugueseVariant
+  exam      PortugueseExam
+  mode      PortugueseSessionMode   @default(PRACTICE)
+  status    PortugueseSessionStatus @default(IN_PROGRESS)
+  // Aggregate readout: CAPLE → { perSkill: {skill: {points,max,readiness}}, overall };
+  // Celpe-Bras → { estimatedTier, band, taskFeedback }.
+  aggregate Json?
+  createdAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  user     User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attempts PortugueseAttempt[]
+
+  @@index([userId, createdAt])
+}

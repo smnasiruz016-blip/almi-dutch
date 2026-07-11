@@ -1,0 +1,186 @@
+[
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Mutirão de limpeza no bairro",
+    "prompt": "Assista ao vídeo de divulgação de um mutirão comunitário e escreva um recado no grupo de moradores.",
+    "payload": {
+      "stimulusKind": "video",
+      "stimulusText": "TRANSCRIÇÃO DO VÍDEO (Associação de Moradores do Jardim das Acácias): 'Oi, pessoal, tudo bem? Aqui é a dona Regina, da associação. Estou gravando esse vidinho rapidinho pra convidar você e a sua família pro nosso mutirão de limpeza da Praça do Coreto, neste sábado, às oito da manhã. A praça anda cheia de mato, tem entulho jogado no canto e o parquinho das crianças está precisando de uma boa lavada. A prefeitura vai emprestar as ferramentas e a gente já conseguiu doação de tinta pros bancos. Traga luva, boné e uma garrafinha de água, porque o sol costuma esquentar. Vai ter café da manhã coletivo: cada um leva uma coisinha pra dividir, sabe como é. No fim, a molecada faz uma partida de futebol enquanto os adultos batem papo na sombra. É a nossa praça, é o nosso cantinho de encontro. Conto com você lá! Qualquer dúvida, me chama no zap. Um abraço e até sábado!'",
+      "enunciado": "Você participa do grupo de mensagens dos moradores do Jardim das Acácias e ficou animado com o convite. Escreva um recado no grupo dirigido aos seus vizinhos, incentivando-os a comparecer ao mutirão de sábado. No seu texto, retome pelo menos duas informações do vídeo (o que será feito na praça e o que cada pessoa deve levar) e diga por que valorizar a praça é importante para a vizinhança.",
+      "criteria": [
+        "Adequação ao gênero recado de grupo: tom informal, próximo e mobilizador, dirigido aos vizinhos.",
+        "Uso do estímulo: retoma ao menos duas informações do vídeo (tarefas na praça e itens a levar).",
+        "Cumprimento do propósito: incentiva a participação e justifica a importância da praça.",
+        "Competência linguística: clareza, coesão e registro coloquial adequado ao PT-BR."
+      ],
+      "charBand": { "min": 500, "max": 1100 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Novo horário dos ônibus",
+    "prompt": "Leia o aviso afixado no ponto de ônibus e escreva um e-mail à empresa de transporte.",
+    "payload": {
+      "stimulusKind": "notice",
+      "stimulusText": "AVISO AOS PASSAGEIROS — Empresa Viação Cidade Alta. A partir do dia 15 deste mês, a linha 214 (Terminal Central / Bairro São Judas) passará a operar com novo quadro de horários. Nos dias úteis, o primeiro ônibus sairá do terminal às 5h10 e o último às 23h40, com intervalos de 20 minutos nos horários de pico e de 40 minutos no restante do dia. Aos sábados, os intervalos serão de 45 minutos, e aos domingos e feriados, de 1 hora. A empresa informa que dois pontos foram desativados na Rua das Palmeiras por causa de obras e que os passageiros deverão utilizar o ponto em frente à padaria São José. Pedimos a compreensão de todos e lembramos que reclamações e sugestões podem ser enviadas pela Ouvidoria, pelo e-mail ouvidoria@viacaocidadealta.com.br. Agradecemos a preferência.",
+      "enunciado": "Você usa a linha 214 todos os dias para ir ao trabalho e o novo intervalo de 40 minutos fora do horário de pico tem atrapalhado a sua rotina. Escreva um e-mail à Ouvidoria da Viação Cidade Alta apresentando-se como passageiro frequente, explicando o problema que o novo quadro de horários causa no seu dia a dia e propondo uma sugestão concreta de melhoria. Retome informações do aviso para fundamentar o seu pedido.",
+      "criteria": [
+        "Adequação ao gênero e-mail formal à Ouvidoria: saudação, corpo e despedida apropriados.",
+        "Uso do estímulo: menciona dados do aviso (intervalos, ponto desativado ou horários) para sustentar o argumento.",
+        "Cumprimento do propósito: expõe o problema e propõe sugestão concreta.",
+        "Competência linguística: registro formal cortês, coesão e correção em PT-BR."
+      ],
+      "charBand": { "min": 600, "max": 1200 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "CORE",
+    "title": "Podcast sobre desperdício de alimentos",
+    "prompt": "Ouça o trecho de um podcast e escreva uma resposta a um comentário nas redes sociais.",
+    "payload": {
+      "stimulusKind": "audio",
+      "stimulusText": "TRANSCRIÇÃO DO ÁUDIO (podcast 'Prato Cheio', episódio sobre desperdício): 'Gente, um dado que me deixou de queixo caído: o Brasil joga fora, por ano, o equivalente a milhões de toneladas de comida que ainda estava boa pra consumo. E olha que curioso: boa parte desse desperdício acontece dentro de casa, não só nos supermercados ou nas feiras. A gente compra demais, esquece a verdura no fundo da geladeira, cozinha mais arroz do que precisa e, no fim, vai tudo pro lixo. A nutricionista que entrevistei semana passada deu umas dicas bem pé no chão: fazer a lista antes de ir ao mercado, aproveitar talos e cascas em refogados e caldos, congelar o que sobrou e planejar as refeições da semana. Ela lembrou também que reaproveitar comida não é coisa de gente sovina, não. É respeito com quem plantou, com quem colheu e com quem, infelizmente, ainda passa fome no nosso país. No próximo bloco, a gente ensina uma receita de bolinho feito com casca de banana. Fica ligado!'",
+      "enunciado": "Nas redes sociais do podcast, um ouvinte comentou: 'Sinceramente, acho exagero essa preocupação com casca e talo. Comida é barata, cada um faz o que quer com a sua.' Escreva uma resposta pública a esse comentário. Posicione-se de forma respeitosa, use argumentos e informações apresentados no áudio para rebater ou complementar a opinião do ouvinte e mantenha um tom que convide ao diálogo, sem ofender.",
+      "criteria": [
+        "Adequação ao gênero resposta a comentário: dirige-se ao interlocutor, tom respeitoso e dialógico.",
+        "Uso do estímulo: mobiliza dados e argumentos do áudio (desperdício doméstico, dicas, dimensão social).",
+        "Cumprimento do propósito: posiciona-se e busca convencer sem agredir.",
+        "Competência linguística: articulação argumentativa, coesão e adequação de registro em PT-BR."
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "CORE",
+    "title": "Ciclovia na avenida principal",
+    "prompt": "Leia a reportagem de jornal e escreva uma carta do leitor.",
+    "payload": {
+      "stimulusKind": "press",
+      "stimulusText": "REPORTAGEM (Jornal da Cidade): 'Projeto de ciclovia na Avenida Brasil divide moradores. A prefeitura anunciou nesta semana a construção de uma ciclovia de sete quilômetros ao longo da Avenida Brasil, principal via da região central. Segundo a secretaria de mobilidade, a obra vai reduzir uma faixa de carros em cada sentido para dar lugar ao espaço exclusivo de bicicletas. O objetivo, diz o órgão, é incentivar o transporte não poluente e diminuir o número de acidentes com ciclistas, que cresceu nos últimos três anos. Comerciantes da avenida, porém, temem que a redução de faixas piore os congestionamentos e afaste clientes que chegam de carro. Já associações de ciclistas comemoram e afirmam que muita gente deixaria o carro em casa se houvesse segurança para pedalar. Uma audiência pública será realizada no próximo mês para ouvir a população. A obra, orçada em oito milhões de reais, deve começar no segundo semestre, caso seja aprovada.'",
+      "enunciado": "Você é morador da região da Avenida Brasil e leu essa reportagem. Escreva uma carta do leitor ao Jornal da Cidade manifestando a sua posição a favor ou contra a construção da ciclovia. Utilize argumentos apresentados na reportagem (tanto os dos comerciantes quanto os dos ciclistas) para construir e sustentar o seu ponto de vista, e finalize com uma proposta ou pedido dirigido à prefeitura.",
+      "criteria": [
+        "Adequação ao gênero carta do leitor: interlocução com o jornal, posicionamento claro e tom público.",
+        "Uso do estímulo: retoma e contrapõe argumentos da reportagem, não apenas cita o tema.",
+        "Cumprimento do propósito: defende uma posição e apresenta proposta à prefeitura.",
+        "Competência linguística: progressão argumentativa, coesão, precisão vocabular em PT-BR."
+      ],
+      "charBand": { "min": 700, "max": 1400 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "CORE",
+    "title": "Documentário sobre trabalho remoto",
+    "prompt": "Assista ao trecho de um minidocumentário e escreva um relato para o mural da empresa.",
+    "payload": {
+      "stimulusKind": "video",
+      "stimulusText": "TRANSCRIÇÃO DO VÍDEO (minidocumentário 'Escritório em Casa'): 'Narradora: Desde a pandemia, milhões de brasileiros passaram a trabalhar de casa, e muita coisa mudou. Marcos, analista de sistemas em São Paulo, conta que ganhou quase duas horas por dia ao deixar de encarar o trânsito e o ônibus lotado. \"Hoje eu tomo café com a minha filha antes de começar a trabalhar, isso não tem preço\", diz ele. Mas nem tudo é vantagem. Fernanda, que trabalha com atendimento no Recife, diz que sente falta da conversa no corredor e que às vezes trabalha até mais tarde do que deveria, porque o computador está sempre ali, do lado. \"A linha entre a casa e o trabalho ficou embaçada\", desabafa. Especialistas apontam que o modelo híbrido, alguns dias em casa e outros no escritório, tem sido o preferido das empresas. O desafio, dizem, é criar combinados claros: horários definidos, pausas de verdade e respeito ao tempo de descanso. No fim das contas, a tecnologia aproxima, mas o cuidado com as pessoas continua sendo o que faz a diferença.'",
+      "enunciado": "A empresa em que você trabalha está debatendo a adoção do modelo híbrido e criou um mural virtual para reunir experiências dos funcionários. Escreva um relato para esse mural, dirigido aos seus colegas e à gestão, contando (de forma pessoal, real ou verossímil) como o trabalho em casa ou híbrido afeta a sua rotina. Relacione a sua experiência aos pontos positivos e negativos mostrados no vídeo e conclua com uma sugestão de 'combinado' que ajude a equipe.",
+      "criteria": [
+        "Adequação ao gênero relato: voz pessoal, dirigido a colegas e gestão, tom adequado ao ambiente de trabalho.",
+        "Uso do estímulo: dialoga com vantagens e desvantagens apresentadas no vídeo.",
+        "Cumprimento do propósito: relata a experiência e propõe um combinado para a equipe.",
+        "Competência linguística: coerência entre relato e reflexão, coesão e correção em PT-BR."
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Reportagem sobre a seca no interior",
+    "prompt": "Leia a reportagem e escreva um artigo de opinião para um portal de notícias.",
+    "payload": {
+      "stimulusKind": "press",
+      "stimulusText": "REPORTAGEM (Portal Interior em Foco): 'Municípios do sertão enfrentam pior seca da década. Cidades do semiárido nordestino registram o período mais seco dos últimos dez anos, segundo dados de institutos de pesquisa climática. Em algumas localidades, açudes que abasteciam milhares de famílias secaram por completo, e carros-pipa voltaram a circular diariamente. Agricultores relatam a perda de plantações inteiras e a venda de gado a preços baixos para evitar prejuízo maior. Enquanto isso, projetos de convivência com o semiárido, como cisternas para captação de água da chuva e sistemas de irrigação por gotejamento, têm mostrado resultados em comunidades que os adotaram: mesmo na estiagem, algumas famílias conseguiram manter hortas e garantir água potável. Especialistas defendem que a solução não passa apenas por obras de grande porte, mas também pelo apoio a tecnologias sociais simples e pela valorização do conhecimento das próprias populações locais. Sem políticas de longo prazo, alertam, o ciclo de emergências vai se repetir a cada nova seca.'",
+      "enunciado": "Um portal de notícias abriu espaço para textos de leitores sobre problemas do país. Escreva um artigo de opinião, dirigido ao público geral do portal, defendendo uma tese sobre como enfrentar as secas recorrentes no semiárido brasileiro. Utilize dados e exemplos da reportagem para sustentar o seu argumento, contraponha soluções de curto e de longo prazo e assuma uma posição clara sobre qual caminho deveria ser priorizado pelo poder público.",
+      "criteria": [
+        "Adequação ao gênero artigo de opinião: tese explícita, público amplo, tom argumentativo consistente.",
+        "Uso do estímulo: emprega dados e exemplos da reportagem (cisternas, carros-pipa, tecnologias sociais).",
+        "Cumprimento do propósito: contrapõe soluções e defende uma prioridade de forma fundamentada.",
+        "Competência linguística: estrutura argumentativa encadeada, coesão, riqueza e precisão vocabular em PT-BR."
+      ],
+      "charBand": { "min": 900, "max": 1600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Mesa-redonda sobre uso de celular na escola",
+    "prompt": "Ouça o trecho de uma mesa-redonda e escreva um resumo comentado para a coordenação escolar.",
+    "payload": {
+      "stimulusKind": "audio",
+      "stimulusText": "TRANSCRIÇÃO DO ÁUDIO (mesa-redonda em rádio educativa sobre celular na escola): 'Mediador: O tema esquenta as discussões: celular na sala de aula, proibir ou ensinar a usar? Professora Cláudia: Olha, na minha experiência, o aparelho tira a concentração. O aluno está no meio da explicação e, de repente, some pra dentro da tela. Eu defendo guardar o celular durante as aulas. Pesquisador Tiago: Entendo a preocupação, professora, mas proibir por proibir não educa. O celular é uma ferramenta poderosa: dá pra pesquisar, gravar experiências, criar projetos. O problema não é o aparelho, é a falta de mediação. Mãe de aluno, dona Sônia: Como mãe, eu queria poder falar com meu filho em caso de emergência, mas também vejo ele viciado, mexendo no telefone até na hora da refeição. Mediador: Então talvez o caminho não seja o oito ou oitenta. Pesquisador Tiago: Exato. Há escolas que combinaram regras claras com os alunos: momentos de uso pedagógico e momentos de guardar. E funcionou, porque os próprios estudantes ajudaram a construir o acordo. Professora Cláudia: Nisso eu concordo. Se a regra vem imposta de cima, ninguém respeita.'",
+      "enunciado": "Você faz parte de uma comissão que assessora a coordenação da sua escola. Escreva um resumo comentado do debate, dirigido à coordenação, que (1) sintetize com fidelidade as principais posições defendidas por cada participante e (2) acrescente, ao final, um comentário seu recomendando qual encaminhamento a escola deveria adotar. Deixe claro no texto o que é síntese do debate e o que é a sua recomendação.",
+      "criteria": [
+        "Adequação ao gênero resumo comentado dirigido à coordenação: registro semiformal e objetivo.",
+        "Uso do estímulo: sintetiza com fidelidade as posições dos quatro participantes sem distorcê-las.",
+        "Cumprimento do propósito: distingue síntese de opinião e apresenta recomendação fundamentada.",
+        "Competência linguística: paráfrase adequada, coesão, precisão e correção em PT-BR."
+      ],
+      "charBand": { "min": 900, "max": 1500 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "variant": "BRAZILIAN",
+    "exam": "CELPE_BRAS",
+    "skill": "ESCRITA",
+    "taskType": "ESCRITA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Edital de apoio à cultura local",
+    "prompt": "Leia o edital afixado no centro cultural e escreva uma carta de apresentação de proposta.",
+    "payload": {
+      "stimulusKind": "notice",
+      "stimulusText": "EDITAL DE FOMENTO À CULTURA — Secretaria Municipal de Cultura. A Secretaria torna público o edital 'Cultura no Bairro', que selecionará projetos culturais a serem realizados em praças e espaços comunitários da cidade. Poderão se inscrever grupos, coletivos e artistas independentes residentes no município há pelo menos dois anos. Serão apoiados projetos de música, teatro, dança, literatura, artes visuais e cultura popular, com valor de até quinze mil reais por proposta. Cada projeto deverá prever ao menos três apresentações ou oficinas gratuitas e abertas ao público, com atenção à acessibilidade e à participação de moradores da própria região. Serão critérios de avaliação: a relevância cultural para a comunidade, a clareza do plano de trabalho, o envolvimento de artistas locais e a viabilidade do orçamento. As propostas devem ser entregues acompanhadas de uma carta de apresentação assinada pelo responsável. As inscrições vão do dia 1º ao dia 30 do próximo mês, exclusivamente na sede da Secretaria.",
+      "enunciado": "Você é responsável por um coletivo cultural do seu bairro e pretende se inscrever no edital 'Cultura no Bairro'. Escreva a carta de apresentação da proposta, dirigida à comissão de seleção da Secretaria Municipal de Cultura. Descreva de forma convincente o projeto que o coletivo pretende realizar, mostre como ele atende aos critérios e às exigências do edital (apresentações gratuitas, artistas locais, relevância para a comunidade) e justifique por que a proposta merece ser selecionada.",
+      "criteria": [
+        "Adequação ao gênero carta de apresentação de proposta: registro formal, interlocução com a comissão.",
+        "Uso do estímulo: atende explicitamente exigências e critérios do edital (gratuidade, artistas locais, relevância).",
+        "Cumprimento do propósito: descreve o projeto e argumenta de forma persuasiva pela seleção.",
+        "Competência linguística: organização clara, coesão, adequação de registro formal em PT-BR."
+      ],
+      "charBand": { "min": 900, "max": 1600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]
