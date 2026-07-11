@@ -1,0 +1,86 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Bericht aan een verkoper",
+    "prompt": "Schrijf een kort, beleefd bericht aan de verkoper over de kapotte rem.",
+    "payload": {
+      "stimulus": "U hebt een fiets gekocht via een tweedehandswebsite, maar bij het ophalen blijkt de rem kapot. U wilt de verkoper hierover een bericht sturen.",
+      "criteria": [
+        "U legt beleefd uit wat het probleem is",
+        "U beschrijft wat u van de verkoper verwacht (reparatie, korting of teruggave)",
+        "U gebruikt een gepaste aanhef en afsluiting",
+        "De tekst is begrijpelijk en ongeveer 60 tot 90 woorden"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Ingezonden brief: park of parkeerterrein",
+    "prompt": "Schrijf een ingezonden brief waarin u uw mening geeft over het plan.",
+    "payload": {
+      "stimulus": "In uw gemeente is een plan om een park te vervangen door een parkeerterrein. Een lokale krant vraagt lezers om hun mening in te sturen.",
+      "criteria": [
+        "U geeft duidelijk uw standpunt",
+        "U onderbouwt uw mening met minstens twee argumenten",
+        "U reageert op een mogelijk tegenargument",
+        "De tekst heeft een heldere opbouw en is ongeveer 150 tot 200 woorden"
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Een afspraak maken bij de huisarts",
+    "prompt": "Neem hardop op wat u zou zeggen tijdens dit telefoongesprek.",
+    "payload": {
+      "stimulus": "U belt naar de huisartsenpraktijk om een afspraak te maken omdat u al een week hoofdpijn hebt.",
+      "criteria": [
+        "U legt kort uit waarom u belt",
+        "U vraagt om een afspraak en noemt wanneer u kunt",
+        "U reageert op vragen van de assistent",
+        "U spreekt verstaanbaar en beleefd"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Je mening geven over thuiswerken",
+    "prompt": "Neem een korte bijdrage op waarin u uw mening onderbouwt.",
+    "payload": {
+      "stimulus": "Tijdens een teamoverleg wordt u gevraagd om uw mening te geven over thuiswerken. Sommige collega's willen volledig thuiswerken, anderen willen juist terug naar kantoor.",
+      "criteria": [
+        "U geeft een genuanceerd standpunt",
+        "U noemt voor- en nadelen",
+        "U doet een concreet voorstel of compromis",
+        "U spreekt vloeiend en samenhangend"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]

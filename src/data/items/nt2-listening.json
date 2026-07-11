@@ -1,0 +1,83 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Voicemail tandartspraktijk",
+    "prompt": "Luister naar het bericht en beantwoord de vraag.",
+    "payload": {
+      "transcript": "Goedemorgen. U luistert naar de voicemail van tandartspraktijk Bloemhof. Wij zijn gesloten van vijftien tot tweeëntwintig juli in verband met de vakantie. Voor spoedgevallen kunt u bellen met de waarnemend tandarts. Na de vakantie zijn wij weer bereikbaar op werkdagen tussen acht en vijf uur.",
+      "question": "Wat moet u doen bij een spoedgeval tijdens de vakantie?",
+      "options": ["Wachten tot na 22 juli", "De waarnemend tandarts bellen", "Een e-mail sturen", "Langsgaan bij de praktijk"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Omroepbericht in de trein",
+    "prompt": "Luister naar de omroep en beantwoord de vraag.",
+    "payload": {
+      "transcript": "De volgende halte is Amsterdam Centraal. Reizigers naar Schiphol stappen hier over op de trein die vertrekt vanaf spoor twee. Let op: door werkzaamheden rijdt er vandaag geen trein tussen Amsterdam Centraal en Sloterdijk. Reizigers naar Sloterdijk nemen bus eenentwintig voor het station.",
+      "question": "Waarom moeten reizigers naar Sloterdijk de bus nemen?",
+      "options": ["De trein is te vol", "Er zijn werkzaamheden op het spoor", "De bus is goedkoper", "Het station is gesloten"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Vier mensen over hun werk",
+    "prompt": "Luister en verbind elke persoon met wat hij of zij het fijnst vindt.",
+    "payload": {
+      "transcript": "U hoort vier mensen over hun werk. Anne werkt in de zorg en vindt het contact met patiënten het mooist. Bram is docent en houdt vooral van de vakanties. Chloé werkt in een restaurant en geniet van de drukte. Daan is programmeur en waardeert dat hij thuis kan werken.",
+      "instructions": "Kies bij elke naam het juiste antwoord.",
+      "left": ["Anne", "Bram", "Chloé", "Daan"],
+      "right": ["Het contact met patiënten", "De vakanties", "De drukte", "Thuiswerken"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "maxPoints": 4
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Podcast over het woningtekort",
+    "prompt": "Luister naar het fragment en beantwoord de vraag.",
+    "payload": {
+      "transcript": "In deze aflevering bespreken we het woningtekort. Onze gast, een econoom, legt uit dat het probleem niet alleen komt door te weinig nieuwbouw, maar ook doordat mensen langer alleen blijven wonen. Daardoor zijn er meer woningen nodig voor hetzelfde aantal inwoners. Volgens haar is een deel van de oplossing het splitsen van grote huizen in kleinere appartementen.",
+      "question": "Welke oorzaak van het woningtekort noemt de gast náást te weinig nieuwbouw?",
+      "options": ["Mensen wonen langer alleen", "Er worden te veel huizen gesloopt", "Er komen te veel toeristen", "De huizen zijn te duur"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Mededeling op het werk",
+    "prompt": "Luister naar de mededeling. Is de stelling waar of niet waar?",
+    "payload": {
+      "transcript": "Beste collega's, een korte mededeling. De vergadering van vrijdag wordt verplaatst naar maandag, omdat een aantal mensen vrijdag niet aanwezig kan zijn. De locatie blijft hetzelfde: vergaderzaal drie op de tweede verdieping. Neem alstublieft uw eigen laptop mee.",
+      "question": "Stelling: de vergadering vindt plaats in een andere zaal dan gewoonlijk.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

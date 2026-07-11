@@ -4,9 +4,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
-import { examBySlug, SKILL_LABELS } from "@/lib/pt/registry";
-import { isFreeSkill } from "@/lib/pt/types";
-import type { PortugueseSkill } from "@/lib/pt/types";
+import { examBySlug, SKILL_LABELS } from "@/lib/nl/registry";
+import { isFreeSkill } from "@/lib/nl/types";
+import type { DutchSkill } from "@/lib/nl/types";
 
 export default async function ExamPage({
   params,
@@ -25,7 +25,7 @@ export default async function ExamPage({
           <Link href="/practice" className="hover:underline">
             Choose a test
           </Link>{" "}
-          · {exam.variant === "EUROPEAN" ? "CAPLE" : "Celpe-Bras"}
+          · {exam.track === "NT2" ? "Staatsexamen NT2" : "Inburgeren"}
         </p>
         <div className="mt-1 flex flex-wrap items-baseline gap-3">
           <h1 className="text-3xl font-semibold text-almi-ink">{exam.name}</h1>
@@ -39,7 +39,7 @@ export default async function ExamPage({
       <section>
         <h2 className="text-lg font-semibold text-almi-ink">Practise by skill</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {exam.skills.map((skill: PortugueseSkill) => {
+          {exam.skills.map((skill: DutchSkill) => {
             const free = isFreeSkill(skill);
             const label = SKILL_LABELS[skill];
             return (
@@ -60,7 +60,7 @@ export default async function ExamPage({
                     </span>
                   )}
                 </div>
-                <p className="mt-1 text-sm text-almi-text-muted">{label.pt}</p>
+                <p className="mt-1 text-sm text-almi-text-muted">{label.nl}</p>
                 <p className="mt-3 text-sm font-semibold text-almi-coral">Practise →</p>
               </Link>
             );
@@ -83,7 +83,7 @@ export default async function ExamPage({
             </div>
             <p className="mt-2 max-w-xl text-sm text-almi-text">
               All parts in exam order (~{exam.mockMinutes} min), then an honest overall estimate —
-              never the official CAPLE/Inep result.
+              never the official CvTE/DUO result.
             </p>
           </div>
           <span className="text-sm font-semibold text-almi-coral">Start full mock →</span>

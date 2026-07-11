@@ -3,7 +3,7 @@ import {
   STUDY_TOTAL, JOBS_TOTAL,
   studyComboAtIndex, jobsComboAtIndex, studyPath, jobsPath,
 } from "@/lib/seo/axes";
-import { CAPLE_EXAMS } from "@/lib/pt/registry";
+import { ALL_EXAMS } from "@/lib/nl/registry";
 
 const SITE = "https://almidutch.almiworld.com";
 const PER = 50_000; // Google's max URLs per sitemap
@@ -28,11 +28,11 @@ function entry(path: string, priority = 0.5): MetadataRoute.Sitemap[number] {
 // makes every comparison fail and each shard emits an empty <urlset> (110 bytes).
 export default async function sitemap({ id }: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
   const shard = Number(await id);
-  // Shard 0 — core marketing + auth + CAPLE hub/levels.
+  // Shard 0 — core marketing + auth + Dutch-exam hub/levels.
   if (shard === 0) {
-    const core = ["", "/pricing", "/signup", "/login", "/exams/caple", "/study-in-portugal", "/work-in-portugal"]
+    const core = ["", "/pricing", "/signup", "/login", "/exams", "/study-in-netherlands", "/work-in-netherlands"]
       .map((p) => entry(p, p === "" ? 1 : 0.7));
-    const levels = CAPLE_EXAMS.map((e) => entry(`/exams/caple/${e.slug}`, 0.8));
+    const levels = ALL_EXAMS.map((e) => entry(`/exams/${e.slug}`, 0.8));
     return [...core, ...levels];
   }
 

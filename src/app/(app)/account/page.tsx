@@ -1,11 +1,11 @@
-// Account page — plan + email status + target Portuguese exam.
+// Account page — plan + email status + target Dutch exam.
 
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import type { PortugueseExam } from "@prisma/client";
+import type { DutchExam } from "@prisma/client";
 import { requireUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
-import { ALL_EXAMS } from "@/lib/pt/registry";
+import { ALL_EXAMS } from "@/lib/nl/registry";
 import {
   getUserPlan,
   PLAN_DISPLAY_NAME,
@@ -25,7 +25,7 @@ async function setExam(formData: FormData) {
   const valid = EXAM_VALUES.includes(value);
   await prisma.user.update({
     where: { id: user.id },
-    data: { targetExam: valid ? (value as PortugueseExam) : null },
+    data: { targetExam: valid ? (value as DutchExam) : null },
   });
   redirect("/account?saved=1");
 }
@@ -142,8 +142,8 @@ export default async function AccountPage({
       <section className="rounded-2xl border border-almi-bg-peach bg-almi-paper p-6 shadow-sm">
         <h2 className="text-lg font-semibold text-almi-ink">Which exam are you preparing for?</h2>
         <p className="mt-1 text-sm text-almi-text-muted">
-          Pick your European CAPLE level (ACESSO A1 → DUPLE C2) or Brazilian Celpe-Bras. This sets the
-          default for your practice and full mock. You can change it any time.
+          Pick your NT2 programme (I=B1, II=B2) or Inburgering level (A2 / B1). This sets the default
+          for your practice and full mock. You can change it any time.
         </p>
         <form action={setExam} className="mt-4 flex flex-wrap items-center gap-3">
           <select
@@ -152,18 +152,17 @@ export default async function AccountPage({
             className="min-h-[40px] rounded-md border border-almi-bg-peach bg-almi-bg px-3 py-2 text-sm text-almi-ink"
           >
             <option value="">Not set</option>
-            <optgroup label="European — CAPLE (Portugal)">
-              {ALL_EXAMS.filter((e) => e.variant === "EUROPEAN").map((e) => (
+            <optgroup label="Staatsexamen NT2">
+              {ALL_EXAMS.filter((e) => e.track === "NT2").map((e) => (
                 <option key={e.exam} value={e.exam}>
                   {e.name} · {e.cefr}
-                  {e.lead ? " (Citizenship)" : ""}
                 </option>
               ))}
             </optgroup>
-            <optgroup label="Brazilian">
-              {ALL_EXAMS.filter((e) => e.variant === "BRAZILIAN").map((e) => (
+            <optgroup label="Inburgeren">
+              {ALL_EXAMS.filter((e) => e.track === "INBURGERING").map((e) => (
                 <option key={e.exam} value={e.exam}>
-                  {e.name}
+                  {e.name} · {e.cefr}
                 </option>
               ))}
             </optgroup>
@@ -176,15 +175,15 @@ export default async function AccountPage({
           </button>
         </form>
         <p className="mt-2 text-xs text-almi-text-muted">
-          Not sure which exam you need? Confirm with CAPLE (Camões / University of Lisbon), Inep, or the
-          relevant authority.
+          Not sure which exam you need? Confirm with DUO, the CvTE (Staatsexamen NT2), or the IND for
+          citizenship requirements.
         </p>
       </section>
 
       <ReviewCard initial={myReview} />
 
       <section className="rounded-2xl border border-almi-bg-peach bg-almi-bg p-6 text-center">
-        <p className="text-sm text-almi-text">Ready to practise Portuguese?</p>
+        <p className="text-sm text-almi-text">Ready to practise Dutch?</p>
         <Link
           href="/practice"
           className="mt-3 inline-flex min-h-[44px] items-center justify-center rounded-full bg-almi-coral px-6 py-3 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep"

@@ -6,12 +6,12 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
-import { examBySlug, SKILL_LABELS } from "@/lib/pt/registry";
-import { isFreeSkill } from "@/lib/pt/types";
-import type { PortugueseSkill } from "@/lib/pt/types";
-import { pickPractice } from "@/lib/pt/items";
-import { PracticeRunner } from "@/components/pt/PracticeRunner";
-import { ProductiveComposer } from "@/components/pt/ProductiveComposer";
+import { examBySlug, SKILL_LABELS } from "@/lib/nl/registry";
+import { isFreeSkill } from "@/lib/nl/types";
+import type { DutchSkill } from "@/lib/nl/types";
+import { pickPractice } from "@/lib/nl/items";
+import { PracticeRunner } from "@/components/nl/PracticeRunner";
+import { ProductiveComposer } from "@/components/nl/ProductiveComposer";
 
 export default async function SkillRunnerPage({
   params,
@@ -26,11 +26,11 @@ export default async function SkillRunnerPage({
 
   const skill = exam.skills.find(
     (s) => s.toLowerCase() === skillParam.toLowerCase(),
-  ) as PortugueseSkill | undefined;
+  ) as DutchSkill | undefined;
   if (!skill) notFound();
 
-  // SKILL-SPLIT GUARD: objective skills (Reading/Listening) are free to taste;
-  // productive skills (Writing/Speaking/Escrita/Oral) require paid access.
+  // SKILL-SPLIT GUARD: objective skills (Reading/Listening/KNM) are free to taste;
+  // productive skills (Writing/Speaking/ONA) require paid access.
   if (!isFreeSkill(skill) && !hasPaidAccess(user)) {
     redirect("/account");
   }
@@ -52,7 +52,7 @@ export default async function SkillRunnerPage({
           </Link>
         </p>
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">{label.en}</h1>
-        <p className="mt-1 text-sm text-almi-text-muted">{label.pt}</p>
+        <p className="mt-1 text-sm text-almi-text-muted">{label.nl}</p>
       </header>
 
       {items.length === 0 ? (
@@ -63,7 +63,6 @@ export default async function SkillRunnerPage({
       ) : objective ? (
         <PracticeRunner
           examName={exam.name}
-          variant={exam.variant}
           skill={skill}
           items={items.map((it) => ({
             title: it.title,
@@ -79,7 +78,6 @@ export default async function SkillRunnerPage({
       ) : (
         <ProductiveComposer
           examName={exam.name}
-          variant={exam.variant}
           skill={skill}
           items={items.map((it) => ({
             title: it.title,
@@ -93,8 +91,8 @@ export default async function SkillRunnerPage({
       )}
 
       <p className="text-xs text-almi-text-muted">
-        Original to AlmiDutch. Every readout is a practice estimate, not an official CAPLE or
-        Inep result.
+        Original to AlmiDutch. Every readout is a practice estimate, not an official CvTE or
+        DUO result.
       </p>
     </div>
   );

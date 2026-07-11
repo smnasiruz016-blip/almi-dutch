@@ -1,11 +1,12 @@
-// Practice hub — "Choose a Test". Two families: European Portuguese (CAPLE, six
-// CEFR levels) and Brazilian Portuguese (Celpe-Bras, one integrated exam). Each
-// card routes to /practice/<slug>. Reading + Listening are free to taste;
-// Writing/Speaking/Escrita/Oral and the timed mock are Pro.
+// Practice hub — "Choose a Test". Two tracks: NT2 Staatsexamen (Programma I=B1,
+// II=B2) and Inburgering (A2 / B1, language + KNM + ONA). Each card routes to
+// /practice/<slug>. Reading + Listening (+ KNM) are free to taste; Writing,
+// Speaking, ONA and the timed mock are Pro. Every readout is a practice
+// estimate — never an official CvTE/DUO result.
 
 import Link from "next/link";
 import { requireUser } from "@/lib/auth";
-import { CAPLE_EXAMS, CELPE_BRAS, type ExamMeta } from "@/lib/pt/registry";
+import { NT2_EXAMS, INBURGERING_EXAMS, type ExamMeta } from "@/lib/nl/registry";
 
 function ExamCard({ exam }: { exam: ExamMeta }) {
   return (
@@ -21,7 +22,7 @@ function ExamCard({ exam }: { exam: ExamMeta }) {
       </div>
       {exam.lead && (
         <span className="mt-2 inline-flex w-fit rounded-full bg-almi-coral/15 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-almi-coral-deep">
-          Cidadania / A2
+          Inburgering
         </span>
       )}
       <p className="mt-2 text-sm text-almi-text">{exam.blurb}</p>
@@ -42,36 +43,41 @@ export default async function PracticePage() {
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">Choose a test</h1>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">
           Reading and Listening are auto-marked and free to practise. Writing, Speaking and the
-          Celpe-Bras integrated parts are graded with honest AI-style feedback against the official
-          criteria. Every readout is a practice estimate — never an official CAPLE or Inep result.
+          Inburgering reflection tasks are graded with honest AI-style feedback against the level&apos;s
+          criteria. Every readout is a practice estimate — never an official CvTE or DUO result.
         </p>
       </header>
 
       <section>
-        <h2 className="text-lg font-semibold text-almi-ink">European (Portugal) — CAPLE</h2>
+        <h2 className="text-lg font-semibold text-almi-ink">Staatsexamen NT2</h2>
         <p className="mt-1 text-sm text-almi-text-muted">
-          Six CEFR levels from A1 to C2. CIPLE (A2) is the exam accepted for Portuguese citizenship.
+          Two programmes: Programma I (B1) for work or vocational training, Programma II (B2) for
+          higher education or professional work. The Diploma NT2 requires passing all four parts.
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {CAPLE_EXAMS.map((exam) => (
+          {NT2_EXAMS.map((exam) => (
             <ExamCard key={exam.slug} exam={exam} />
           ))}
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-almi-ink">Brazilian — Celpe-Bras</h2>
+        <h2 className="text-lg font-semibold text-almi-ink">Inburgeren</h2>
         <p className="mt-1 text-sm text-almi-text-muted">
-          Brazil&apos;s only official Portuguese certificate — one integrated exam, a holistic tier.
+          Civic integration at A2 or B1 (set by when your obligation started), plus Knowledge of Dutch
+          Society (KNM) and Labour-market orientation (ONA). Passing is commonly used as language proof
+          for naturalisatie — confirm the current rule with DUO / IND.
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <ExamCard exam={CELPE_BRAS} />
+          {INBURGERING_EXAMS.map((exam) => (
+            <ExamCard key={exam.slug} exam={exam} />
+          ))}
         </div>
       </section>
 
       <p className="text-xs text-almi-text-muted">
-        Every task here is written from scratch by AlmiDutch. We never copy or reproduce CAPLE
-        or Inep test material. Estimates are for practice only — confirm the exam you need with the
+        Every task here is written from scratch by AlmiDutch. We never copy or reproduce official
+        CvTE or DUO test material. Estimates are for practice only — confirm the exam you need with the
         official body.
       </p>
     </div>

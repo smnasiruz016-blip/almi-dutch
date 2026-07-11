@@ -1,0 +1,98 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Uw kwaliteiten op de arbeidsmarkt",
+    "prompt": "Denk na over uw eigen werkervaring en vaardigheden en beantwoord de reflectievragen. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Voor ONA denkt u na over wie u bent op de Nederlandse arbeidsmarkt: wat u kunt, wat u wilt en welke stappen u kunt zetten om werk te vinden.",
+      "prompts": [
+        "Welke werkervaring en opleiding hebt u tot nu toe?",
+        "Wat zijn drie sterke punten die u aan een werkgever kunt laten zien?",
+        "Wat voor werk zou u in Nederland graag willen doen, en waarom?"
+      ],
+      "criteria": [
+        "U beschrijft uw ervaring en vaardigheden concreet",
+        "U verbindt uw kwaliteiten aan het werk dat u zoekt",
+        "U noemt een realistische vervolgstap"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Solliciteren in Nederland",
+    "prompt": "Bereid uw sollicitatie voor door de vragen te beantwoorden. Dit is oefenmateriaal; het vervangt geen officiële ONA-toets bij DUO.",
+    "payload": {
+      "scenario": "U hebt een vacature gevonden voor een baan die bij u past. In Nederland stuurt u meestal een CV en een korte motivatiebrief.",
+      "prompts": [
+        "Welke informatie zet u bovenaan uw CV?",
+        "Hoe legt u in uw motivatiebrief uit waarom u geschikt bent?",
+        "Welke vragen verwacht u tijdens een sollicitatiegesprek?"
+      ],
+      "criteria": [
+        "U beschrijft een duidelijke, geordende CV-structuur",
+        "U koppelt uw motivatie aan de eisen van de vacature",
+        "U bereidt zich voor op veelvoorkomende gespreksvragen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Werkcultuur en samenwerken",
+    "prompt": "Denk na over de Nederlandse werkcultuur en beantwoord de vragen. Dit is een reflectieoefening voor uw eigen voorbereiding.",
+    "payload": {
+      "scenario": "Op een Nederlandse werkvloer zijn overleg, directe communicatie en afspraken nakomen belangrijk. Collega's spreken elkaar vaak aan met de voornaam en geven open hun mening.",
+      "prompts": [
+        "Hoe zou u reageren als u het niet eens bent met uw leidinggevende?",
+        "Wat doet u als u een afspraak op het werk niet op tijd kunt nakomen?",
+        "Hoe past uw eigen manier van werken bij de Nederlandse werkcultuur?"
+      ],
+      "criteria": [
+        "U toont begrip van directe maar respectvolle communicatie",
+        "U beschrijft hoe u verantwoordelijkheid neemt bij problemen",
+        "U reflecteert op verschillen en overeenkomsten met uw eigen ervaring"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Werk zoeken en netwerken",
+    "prompt": "Maak een plan om werk te zoeken en beantwoord de reflectievragen. Oefenmateriaal — geen officieel resultaat.",
+    "payload": {
+      "scenario": "Veel banen in Nederland worden gevonden via vacaturesites, uitzendbureaus en het eigen netwerk. Ook het UWV kan helpen bij het vinden van werk.",
+      "prompts": [
+        "Welke drie manieren gaat u gebruiken om vacatures te vinden?",
+        "Wie in uw omgeving kan u helpen bij het zoeken naar werk?",
+        "Welke concrete stap zet u deze week om dichter bij een baan te komen?"
+      ],
+      "criteria": [
+        "U noemt meerdere realistische zoekkanalen",
+        "U benut uw eigen netwerk actief",
+        "U formuleert een concrete, haalbare actie"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]

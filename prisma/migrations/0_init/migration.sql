@@ -8,28 +8,28 @@ CREATE TYPE "Locale" AS ENUM ('EN', 'UR', 'AR', 'HI');
 CREATE TYPE "SubscriptionTier" AS ENUM ('FREE', 'PREMIUM');
 
 -- CreateEnum
-CREATE TYPE "PortugueseVariant" AS ENUM ('EUROPEAN', 'BRAZILIAN');
+CREATE TYPE "DutchTrack" AS ENUM ('NT2', 'INBURGERING');
 
 -- CreateEnum
-CREATE TYPE "PortugueseExam" AS ENUM ('ACESSO', 'CIPLE', 'DEPLE', 'DIPLE', 'DAPLE', 'DUPLE', 'CELPE_BRAS');
+CREATE TYPE "DutchExam" AS ENUM ('PROGRAMMA_I', 'PROGRAMMA_II', 'INBURGERING_A2', 'INBURGERING_B1');
 
 -- CreateEnum
-CREATE TYPE "PortugueseSkill" AS ENUM ('READING', 'LISTENING', 'WRITING', 'SPEAKING', 'ESCRITA', 'ORAL');
+CREATE TYPE "DutchSkill" AS ENUM ('READING', 'LISTENING', 'WRITING', 'SPEAKING', 'KNM', 'ONA');
 
 -- CreateEnum
-CREATE TYPE "PortugueseTaskType" AS ENUM ('MCQ_SINGLE', 'MATCHING', 'CLOZE', 'ORDERING', 'TRUE_FALSE', 'WRITING_PROMPT', 'SPEAKING_PROMPT', 'ESCRITA_TASK', 'ORAL_INTERVIEW');
+CREATE TYPE "DutchTaskType" AS ENUM ('MCQ_SINGLE', 'MATCHING', 'CLOZE', 'ORDERING', 'TRUE_FALSE', 'WRITING_PROMPT', 'SPEAKING_PROMPT', 'ONA_TASK');
 
 -- CreateEnum
-CREATE TYPE "PortugueseDifficulty" AS ENUM ('FOUNDATION', 'CORE', 'STRETCH');
+CREATE TYPE "DutchDifficulty" AS ENUM ('FOUNDATION', 'CORE', 'STRETCH');
 
 -- CreateEnum
-CREATE TYPE "PortugueseAttemptStatus" AS ENUM ('PENDING', 'SCORED', 'EVALUATED', 'FAILED');
+CREATE TYPE "DutchAttemptStatus" AS ENUM ('PENDING', 'SCORED', 'EVALUATED', 'FAILED');
 
 -- CreateEnum
-CREATE TYPE "PortugueseSessionMode" AS ENUM ('PRACTICE', 'MOCK');
+CREATE TYPE "DutchSessionMode" AS ENUM ('PRACTICE', 'MOCK');
 
 -- CreateEnum
-CREATE TYPE "PortugueseSessionStatus" AS ENUM ('IN_PROGRESS', 'COMPLETED', 'ABANDONED');
+CREATE TYPE "DutchSessionStatus" AS ENUM ('IN_PROGRESS', 'COMPLETED', 'ABANDONED');
 
 -- CreateTable
 CREATE TABLE "User" (
@@ -56,7 +56,7 @@ CREATE TABLE "User" (
     "compGrantedAt" TIMESTAMP(3),
     "compGrantedBy" TEXT,
     "compReason" TEXT,
-    "targetExam" "PortugueseExam",
+    "targetExam" "DutchExam",
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
@@ -136,13 +136,13 @@ CREATE TABLE "AICostLedger" (
 );
 
 -- CreateTable
-CREATE TABLE "PortugueseItem" (
+CREATE TABLE "DutchItem" (
     "id" TEXT NOT NULL,
-    "variant" "PortugueseVariant" NOT NULL,
-    "exam" "PortugueseExam" NOT NULL,
-    "skill" "PortugueseSkill" NOT NULL,
-    "taskType" "PortugueseTaskType" NOT NULL,
-    "difficulty" "PortugueseDifficulty" NOT NULL DEFAULT 'CORE',
+    "track" "DutchTrack" NOT NULL,
+    "exam" "DutchExam" NOT NULL,
+    "skill" "DutchSkill" NOT NULL,
+    "taskType" "DutchTaskType" NOT NULL,
+    "difficulty" "DutchDifficulty" NOT NULL DEFAULT 'CORE',
     "title" TEXT NOT NULL,
     "prompt" TEXT NOT NULL,
     "payload" JSONB NOT NULL,
@@ -152,16 +152,16 @@ CREATE TABLE "PortugueseItem" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "PortugueseItem_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "DutchItem_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
-CREATE TABLE "PortugueseAttempt" (
+CREATE TABLE "DutchAttempt" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "itemId" TEXT NOT NULL,
     "sessionId" TEXT,
-    "status" "PortugueseAttemptStatus" NOT NULL DEFAULT 'PENDING',
+    "status" "DutchAttemptStatus" NOT NULL DEFAULT 'PENDING',
     "response" JSONB,
     "points" INTEGER,
     "maxPoints" INTEGER,
@@ -170,22 +170,22 @@ CREATE TABLE "PortugueseAttempt" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "submittedAt" TIMESTAMP(3),
 
-    CONSTRAINT "PortugueseAttempt_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "DutchAttempt_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
-CREATE TABLE "PortugueseSession" (
+CREATE TABLE "DutchSession" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
-    "variant" "PortugueseVariant" NOT NULL,
-    "exam" "PortugueseExam" NOT NULL,
-    "mode" "PortugueseSessionMode" NOT NULL DEFAULT 'PRACTICE',
-    "status" "PortugueseSessionStatus" NOT NULL DEFAULT 'IN_PROGRESS',
+    "track" "DutchTrack" NOT NULL,
+    "exam" "DutchExam" NOT NULL,
+    "mode" "DutchSessionMode" NOT NULL DEFAULT 'PRACTICE',
+    "status" "DutchSessionStatus" NOT NULL DEFAULT 'IN_PROGRESS',
     "aggregate" JSONB,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "completedAt" TIMESTAMP(3),
 
-    CONSTRAINT "PortugueseSession_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "DutchSession_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
@@ -258,22 +258,22 @@ CREATE INDEX "AICostLedger_userId_timestamp_idx" ON "AICostLedger"("userId", "ti
 CREATE INDEX "AICostLedger_feature_timestamp_idx" ON "AICostLedger"("feature", "timestamp");
 
 -- CreateIndex
-CREATE INDEX "PortugueseItem_variant_exam_skill_active_idx" ON "PortugueseItem"("variant", "exam", "skill", "active");
+CREATE INDEX "DutchItem_track_exam_skill_active_idx" ON "DutchItem"("track", "exam", "skill", "active");
 
 -- CreateIndex
-CREATE INDEX "PortugueseItem_exam_skill_idx" ON "PortugueseItem"("exam", "skill");
+CREATE INDEX "DutchItem_exam_skill_idx" ON "DutchItem"("exam", "skill");
 
 -- CreateIndex
-CREATE INDEX "PortugueseAttempt_userId_createdAt_idx" ON "PortugueseAttempt"("userId", "createdAt");
+CREATE INDEX "DutchAttempt_userId_createdAt_idx" ON "DutchAttempt"("userId", "createdAt");
 
 -- CreateIndex
-CREATE INDEX "PortugueseAttempt_itemId_idx" ON "PortugueseAttempt"("itemId");
+CREATE INDEX "DutchAttempt_itemId_idx" ON "DutchAttempt"("itemId");
 
 -- CreateIndex
-CREATE INDEX "PortugueseAttempt_sessionId_idx" ON "PortugueseAttempt"("sessionId");
+CREATE INDEX "DutchAttempt_sessionId_idx" ON "DutchAttempt"("sessionId");
 
 -- CreateIndex
-CREATE INDEX "PortugueseSession_userId_createdAt_idx" ON "PortugueseSession"("userId", "createdAt");
+CREATE INDEX "DutchSession_userId_createdAt_idx" ON "DutchSession"("userId", "createdAt");
 
 -- AddForeignKey
 ALTER TABLE "Session" ADD CONSTRAINT "Session_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
@@ -285,14 +285,14 @@ ALTER TABLE "PasswordResetToken" ADD CONSTRAINT "PasswordResetToken_userId_fkey"
 ALTER TABLE "Review" ADD CONSTRAINT "Review_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "PortugueseAttempt" ADD CONSTRAINT "PortugueseAttempt_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "DutchAttempt" ADD CONSTRAINT "DutchAttempt_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "PortugueseAttempt" ADD CONSTRAINT "PortugueseAttempt_itemId_fkey" FOREIGN KEY ("itemId") REFERENCES "PortugueseItem"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "DutchAttempt" ADD CONSTRAINT "DutchAttempt_itemId_fkey" FOREIGN KEY ("itemId") REFERENCES "DutchItem"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "PortugueseAttempt" ADD CONSTRAINT "PortugueseAttempt_sessionId_fkey" FOREIGN KEY ("sessionId") REFERENCES "PortugueseSession"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "DutchAttempt" ADD CONSTRAINT "DutchAttempt_sessionId_fkey" FOREIGN KEY ("sessionId") REFERENCES "DutchSession"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "PortugueseSession" ADD CONSTRAINT "PortugueseSession_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "DutchSession" ADD CONSTRAINT "DutchSession_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 

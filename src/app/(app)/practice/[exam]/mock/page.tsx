@@ -6,10 +6,10 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
-import { examBySlug } from "@/lib/pt/registry";
-import { isFreeSkill } from "@/lib/pt/types";
-import { pickPractice } from "@/lib/pt/items";
-import { MockRunner, type MockSection } from "@/components/pt/MockRunner";
+import { examBySlug } from "@/lib/nl/registry";
+import { isFreeSkill } from "@/lib/nl/types";
+import { pickPractice } from "@/lib/nl/items";
+import { MockRunner, type MockSection } from "@/components/nl/MockRunner";
 
 export default async function MockPage({
   params,
@@ -60,14 +60,13 @@ export default async function MockPage({
         </h1>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">
           All parts in exam order (~{exam.mockMinutes} min). Nothing is marked until the end, then
-          you get an overall estimate — not the official CAPLE/Inep result.
+          you get an overall estimate — not the official CvTE/DUO result.
         </p>
       </header>
 
       <MockRunner
         examName={exam.name}
         exam={exam.exam}
-        variant={exam.variant}
         mockMinutes={exam.mockMinutes}
         sections={sections}
       />

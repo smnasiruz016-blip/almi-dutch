@@ -10,8 +10,8 @@ type FooterColumn = { title: string; links: FooterLink[] };
 
 const FOOTER_COLUMNS: FooterColumn[] = [
   {
-    // This site's own pages — internal nav. Honest CAPLE (Portugal) & Celpe-Bras
-    // (Brazil) practice; 25% of proceeds support the Shamool Foundation.
+    // This site's own pages — internal nav. Honest NT2 Staatsexamen & Inburgering
+    // practice; 25% of proceeds support the Shamool Foundation.
     title: "AlmiDutch",
     links: [
       { label: "Practice", href: "/practice" },

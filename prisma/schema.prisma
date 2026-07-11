@@ -70,17 +70,17 @@ model User {
   compGrantedBy String?
   compReason    String?
 
-  // Which Portuguese exam the user is preparing for (CAPLE level or Celpe-Bras).
+  // Which Dutch exam the user is preparing for (NT2 Programma I/II or Inburgering).
   // Drives the default mock and which practice content is surfaced. Null = not chosen.
-  targetExam PortugueseExam?
+  targetExam DutchExam?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   sessions            Session[]
   passwordResetTokens PasswordResetToken[]
-  ptAttempts          PortugueseAttempt[]
-  ptSessions          PortugueseSession[]
+  nlAttempts          DutchAttempt[]
+  nlSessions          DutchSession[]
   reviews             Review[]
 
   @@index([email])
@@ -164,115 +164,113 @@ model AICostLedger {
 }
 
 
-// ===================== Portuguese practice item-bank =====================
-// AlmiPortuguese covers TWO official tracks via ONE item-bank:
-//   • European (Portugal) — CAPLE suite: ACESSO(A1) CIPLE(A2) DEPLE(B1)
-//     DIPLE(B2) DAPLE(C1) DUPLE(C2). Each level tests Reading, Writing,
-//     Listening, Speaking (B2+ add structural competence). Scored per skill
-//     as an honest readiness estimate vs the level's real pass criteria.
-//   • Brazilian — Celpe-Bras: ONE integrated exam (Parte Escrita = 4 integrated
-//     tasks, Parte Oral = interview). Holistic single tier estimate
-//     (Intermediário → Avançado Superior; below 2 → no certificate). No per-skill
-//     score — an estimate, never the official Inep result.
-// One PortugueseItem/PortugueseAttempt pair serves every task type via a typed
-// `payload` Json. All content is original Portuguese (PT-PT vs PT-BR correct);
-// results are practice estimates — confirm the real requirement with CAPLE /
-// Inep / the relevant authority.
+// ===================== Dutch practice item-bank =====================
+// AlmiDutch covers TWO official tracks via ONE item-bank:
+//   • NT2 Staatsexamen (CvTE; administered by DUO, delivered by Cito + Bureau
+//     ICE) — two programmes: Programma I (B1, work/vocational) and Programma II
+//     (B2, higher education/professional). Each tests Reading, Listening,
+//     Writing, Speaking; the Diploma NT2 requires passing all four parts.
+//     Scored per skill as an honest readiness estimate vs the level's real
+//     criteria — never an official CvTE/DUO result.
+//   • Inburgering (civic integration, DUO) — four language skills PLUS KNM
+//     (Kennis van de Nederlandse Maatschappij) and ONA (Oriëntatie op de
+//     Nederlandse Arbeidsmarkt). Level B1 if the integration obligation started
+//     on/after 1 Jan 2022 (Wet inburgering 2021), else A2. KNM/ONA are honest
+//     practice, clearly labelled "practice, not the official exam result".
+// One DutchItem/DutchAttempt pair serves every task type via a typed `payload`
+// Json. All content is original; results are practice estimates — confirm the
+// real requirement with DUO / IND / the relevant Dutch authority.
 
-enum PortugueseVariant {
-  EUROPEAN // Portugal — CAPLE
-  BRAZILIAN // Brazil — Celpe-Bras
+enum DutchTrack {
+  NT2 // Staatsexamen NT2
+  INBURGERING // Civic integration exam
 }
 
-// Exam axis. The six CAPLE levels map 1:1 to CEFR A1–C2; CELPE_BRAS is the single
-// Brazilian integrated exam.
-enum PortugueseExam {
-  ACESSO // A1
-  CIPLE // A2 — Portugal citizenship/residency (lead)
-  DEPLE // B1
-  DIPLE // B2 (+ structural competence)
-  DAPLE // C1 (+ structural competence)
-  DUPLE // C2 (+ structural competence)
-  CELPE_BRAS // Brazil — integrated
+// Exam axis. NT2 = two programmes (B1 / B2); Inburgering = A2 or B1 by the date
+// the integration obligation started (Wet inburgering 2021).
+enum DutchExam {
+  PROGRAMMA_I // NT2 — B1 (work / vocational training)
+  PROGRAMMA_II // NT2 — B2 (higher education / professional)
+  INBURGERING_A2 // Inburgering — A2 (obligation started before 1 Jan 2022)
+  INBURGERING_B1 // Inburgering — B1 (obligation on/after 1 Jan 2022)
 }
 
-enum PortugueseSkill {
-  READING // CAPLE Compreensão da leitura (objective)
-  LISTENING // CAPLE Compreensão do oral (objective)
-  WRITING // CAPLE Produção escrita (AI-graded)
-  SPEAKING // CAPLE Produção/interação oral (AI-graded)
-  ESCRITA // Celpe-Bras Parte Escrita — integrated (AI-graded)
-  ORAL // Celpe-Bras Parte Oral — interview (AI-graded)
+enum DutchSkill {
+  READING // Lezen (objective)
+  LISTENING // Luisteren (objective)
+  WRITING // Schrijven (AI-graded)
+  SPEAKING // Spreken (AI-graded)
+  KNM // Kennis van de Nederlandse Maatschappij (Inburgering, objective)
+  ONA // Oriëntatie op de Nederlandse Arbeidsmarkt (Inburgering, practice)
 }
 
-enum PortugueseTaskType {
-  MCQ_SINGLE // objective single-answer multiple choice
+enum DutchTaskType {
+  MCQ_SINGLE // objective single-answer multiple choice (Reading/Listening/KNM)
   MATCHING // objective matching
   CLOZE // objective gap-fill (option-per-gap)
   ORDERING // objective sequence
   TRUE_FALSE // objective true/false/not-stated
-  WRITING_PROMPT // CAPLE productive writing (criteria + char band)
-  SPEAKING_PROMPT // CAPLE productive speaking (criteria)
-  ESCRITA_TASK // Celpe-Bras integrated written task (stimulus → production)
-  ORAL_INTERVIEW // Celpe-Bras oral interview simulation (elemento provocador)
+  WRITING_PROMPT // productive writing (criteria + char band)
+  SPEAKING_PROMPT // productive speaking (criteria)
+  ONA_TASK // Inburgering labour-market orientation reflection (practice)
 }
 
-enum PortugueseDifficulty {
+enum DutchDifficulty {
   FOUNDATION
   CORE
   STRETCH
 }
 
-enum PortugueseAttemptStatus {
+enum DutchAttemptStatus {
   PENDING
   SCORED // objective auto-graded
   EVALUATED // productive AI-graded
   FAILED
 }
 
-enum PortugueseSessionMode {
+enum DutchSessionMode {
   PRACTICE
   MOCK
 }
 
-enum PortugueseSessionStatus {
+enum DutchSessionStatus {
   IN_PROGRESS
   COMPLETED
   ABANDONED
 }
 
-model PortugueseItem {
-  id         String               @id @default(cuid())
-  variant    PortugueseVariant
-  exam       PortugueseExam
-  skill      PortugueseSkill
-  taskType   PortugueseTaskType
-  difficulty PortugueseDifficulty  @default(CORE)
+model DutchItem {
+  id         String          @id @default(cuid())
+  track      DutchTrack
+  exam       DutchExam
+  skill      DutchSkill
+  taskType   DutchTaskType
+  difficulty DutchDifficulty @default(CORE)
   title      String
-  // Instruction / stem shown to the candidate (PT).
+  // Instruction / stem shown to the candidate (NL).
   prompt     String
   // Task-specific structure: objective → { options, passage, transcript, answerKey };
-  // productive → { criteria[], charBand, stimulus }. Validated in src/lib/pt/tasks.
+  // productive → { criteria[], charBand, stimulus }. Validated in src/lib/nl/types.
   payload    Json
   // Objective answer key (null for productive/AI tasks).
   answer     Json?
   // Objective max points for this item (0 for productive; readiness is qualitative).
-  maxPoints  Int                   @default(0)
-  active     Boolean               @default(true)
-  createdAt  DateTime              @default(now())
-  updatedAt  DateTime              @updatedAt
-  attempts   PortugueseAttempt[]
+  maxPoints  Int             @default(0)
+  active     Boolean         @default(true)
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  attempts   DutchAttempt[]
 
-  @@index([variant, exam, skill, active])
+  @@index([track, exam, skill, active])
   @@index([exam, skill])
 }
 
-model PortugueseAttempt {
-  id        String                  @id @default(cuid())
+model DutchAttempt {
+  id        String             @id @default(cuid())
   userId    String
   itemId    String
   sessionId String?
-  status    PortugueseAttemptStatus @default(PENDING)
+  status    DutchAttemptStatus @default(PENDING)
   // User response: objective → selected answer(s); productive → { text } or { audioKey }.
   response  Json?
   // Objective scoring.
@@ -280,35 +278,34 @@ model PortugueseAttempt {
   maxPoints Int?
   // Productive AI trait feedback: { traits[], summary, estimate }.
   aiFeedback Json?
-  // Honest readout: CAPLE → "CLEAR"|"BORDERLINE"|"BELOW"; Celpe-Bras → tier label.
+  // Honest readout: per-skill "CLEAR"|"BORDERLINE"|"BELOW" — never an official result.
   readiness String?
   createdAt   DateTime  @default(now())
   submittedAt DateTime?
 
-  user    User               @relation(fields: [userId], references: [id], onDelete: Cascade)
-  item    PortugueseItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
-  session PortugueseSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item    DutchItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  session DutchSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
 
   @@index([userId, createdAt])
   @@index([itemId])
   @@index([sessionId])
 }
 
-model PortugueseSession {
-  id        String                  @id @default(cuid())
+model DutchSession {
+  id        String             @id @default(cuid())
   userId    String
-  variant   PortugueseVariant
-  exam      PortugueseExam
-  mode      PortugueseSessionMode   @default(PRACTICE)
-  status    PortugueseSessionStatus @default(IN_PROGRESS)
-  // Aggregate readout: CAPLE → { perSkill: {skill: {points,max,readiness}}, overall };
-  // Celpe-Bras → { estimatedTier, band, taskFeedback }.
+  track     DutchTrack
+  exam      DutchExam
+  mode      DutchSessionMode   @default(PRACTICE)
+  status    DutchSessionStatus @default(IN_PROGRESS)
+  // Aggregate readout: { perSkill: {skill: {points,max,readiness}}, overall }.
   aggregate Json?
   createdAt   DateTime  @default(now())
   completedAt DateTime?
 
-  user     User                @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attempts PortugueseAttempt[]
+  user     User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attempts DutchAttempt[]
 
   @@index([userId, createdAt])
 }

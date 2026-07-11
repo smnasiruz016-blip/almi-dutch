@@ -1,4 +1,4 @@
-// Lightweight ops/health endpoint: reports active PortugueseItem counts per
+// Lightweight ops/health endpoint: reports active DutchItem counts per
 // exam/skill (no PII, counts only). DB-optional — never 500s, so a deploy can be
 // verified before Neon is wired (dbError is surfaced honestly instead).
 
@@ -16,12 +16,12 @@ export async function GET(): Promise<NextResponse> {
 
   try {
     const [byExamSkill, total, reviews] = await Promise.all([
-      prisma.portugueseItem.groupBy({
+      prisma.dutchItem.groupBy({
         by: ["exam", "skill"],
         where: { active: true },
         _count: true,
       }),
-      prisma.portugueseItem.count({ where: { active: true } }),
+      prisma.dutchItem.count({ where: { active: true } }),
       prisma.review.count({ where: { approved: true } }),
     ]);
     for (const r of byExamSkill) items[`${r.exam}.${r.skill}`] = r._count;

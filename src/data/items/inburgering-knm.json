@@ -1,0 +1,93 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Inburgeren regelen",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord (oefenmateriaal, geen officiële toets).",
+    "payload": {
+      "question": "Bij welke organisatie kunt u terecht voor de administratie van uw inburgering en voor een lening voor een cursus?",
+      "options": ["DUO", "de ANWB", "de Belastingdienst", "het UWV"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Medische hulp zoeken",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Wat is in Nederland meestal de eerste stap als u ziek bent en medische hulp nodig hebt?",
+      "options": ["Naar de huisarts gaan", "Direct naar het ziekenhuis gaan", "De politie bellen", "Zonder afspraak naar de apotheek gaan"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Leerplicht",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "In Nederland gaan kinderen verplicht naar school. Vanaf welke leeftijd geldt de leerplicht?",
+      "options": ["Vanaf 5 jaar", "Vanaf 3 jaar", "Vanaf 8 jaar", "Vanaf 12 jaar"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Werken en loonbelasting",
+    "prompt": "Lees de tekst en beantwoord de KNM-oefenvraag.",
+    "payload": {
+      "passage": "Als u in Nederland gaat werken, krijgt u een arbeidscontract. Daarin staan afspraken over uw salaris, werktijden en vakantiedagen. Uw werkgever houdt loonbelasting in op uw salaris en betaalt die aan de Belastingdienst.",
+      "question": "Wie betaalt de loonbelasting aan de Belastingdienst?",
+      "options": ["De werkgever", "De werknemer zelf elke maand", "De gemeente", "De bank"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "De Tweede Kamer",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Nederland is een democratie. Wie kiezen de leden van de Tweede Kamer?",
+      "options": ["De kiesgerechtigde inwoners", "De koning", "De burgemeesters", "De rechters"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Scheiding van kerk en staat",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Wat betekent het dat Nederland een scheiding van kerk en staat kent?",
+      "options": ["De overheid en religie staan los van elkaar", "Iedereen moet lid zijn van een kerk", "De koning bepaalt de religie", "Kerken hoeven nooit ergens belasting over te betalen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]

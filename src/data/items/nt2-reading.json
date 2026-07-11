@@ -1,0 +1,105 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Openingstijden bibliotheek",
+    "prompt": "Lees het bericht en beantwoord de vraag.",
+    "payload": {
+      "passage": "De bibliotheek in Zwolle is vanaf maandag 3 maart open met nieuwe openingstijden. Op werkdagen kunt u terecht van 10.00 tot 20.00 uur. In het weekend is de bibliotheek alleen op zaterdagochtend geopend, van 9.00 tot 13.00 uur. Op zondag is de bibliotheek gesloten.",
+      "question": "Wanneer is de bibliotheek in het weekend open?",
+      "options": ["Alleen op zaterdagochtend", "Het hele weekend", "Alleen op zondag", "Op zaterdag en zondag"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Vrijwilligers gezocht",
+    "prompt": "Lees de oproep. Is de stelling waar of niet waar?",
+    "payload": {
+      "passage": "Buurthuis De Brug zoekt vrijwilligers voor de huiswerkbegeleiding. U hoeft geen diploma te hebben, maar u moet wel goed Nederlands spreken. De begeleiding is op dinsdag- en donderdagmiddag.",
+      "question": "Stelling: voor dit vrijwilligerswerk is een diploma verplicht.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Brief van de gemeente",
+    "prompt": "Kies voor elk gat het woord dat het beste past.",
+    "payload": {
+      "passage": "Beste meneer De Vries,\n\nHartelijk dank voor uw {{1}}. Wij hebben uw aanvraag ontvangen en zullen deze binnen twee weken {{2}}. U krijgt daarna bericht per e-mail.\n\nMet vriendelijke {{3}},\nGemeente Utrecht",
+      "gaps": [
+        { "id": 1, "options": ["brief", "fiets", "tuin"] },
+        { "id": 2, "options": ["behandelen", "koken", "fietsen"] },
+        { "id": 3, "options": ["groeten", "honden", "kleuren"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Autovrije binnenstad",
+    "prompt": "Lees de tekst en beantwoord de vraag.",
+    "payload": {
+      "passage": "Steeds meer gemeenten kiezen ervoor om de binnenstad autovrij te maken. Voorstanders wijzen op schonere lucht en meer ruimte voor voetgangers en terrassen. Critici vrezen echter dat winkeliers klanten verliezen die met de auto komen. Uit recent onderzoek blijkt dat de omzet van winkels na een overgangsperiode juist licht stijgt, doordat mensen langer in het gebied blijven.",
+      "question": "Wat blijkt uit het recente onderzoek?",
+      "options": ["De omzet daalt sterk", "De omzet stijgt na verloop van tijd licht", "Winkeliers sluiten hun zaak", "Er komen minder voetgangers"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "STRETCH",
+    "title": "Een sollicitatiebrief ordenen",
+    "prompt": "Zet de zinnen in de juiste volgorde zodat een logische brief ontstaat.",
+    "payload": {
+      "instructions": "Sleep of nummer de zinnen tot ze een lopende brief vormen.",
+      "items": [
+        "Ten slotte hoop ik snel van u te horen.",
+        "Geachte heer of mevrouw,",
+        "Ik schrijf u naar aanleiding van uw vacature voor projectmedewerker.",
+        "In mijn huidige baan werk ik al drie jaar met soortgelijke projecten."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [1, 2, 3, 0] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "De basisverzekering",
+    "prompt": "Lees de tekst. Is de stelling waar of niet waar?",
+    "payload": {
+      "passage": "Het Nederlandse zorgstelsel verplicht iedereen vanaf achttien jaar om een basisverzekering af te sluiten. De basisverzekering dekt onder andere bezoeken aan de huisarts en ziekenhuiszorg. Tandartskosten voor volwassenen vallen hier meestal niet onder.",
+      "question": "Stelling: tandartskosten voor volwassenen zitten meestal in de basisverzekering.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

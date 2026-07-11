@@ -8,14 +8,14 @@ import { PricingCheckoutButton } from "./PricingCheckoutButton";
 export const metadata: Metadata = {
   title: "Pricing — 7-day free trial",
   description:
-    "AlmiDutch Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates for European CAPLE and Brazilian Celpe-Bras.",
+    "AlmiDutch Pro — $12/month, cancel anytime. 7-day free trial. Honest AI feedback on writing and speaking, full-length practice, and honest readiness estimates for the NT2 Staatsexamen and the Inburgering exam.",
 };
 
 const FEATURES = [
   "Honest AI feedback on writing and speaking",
   "Full-length timed mock across all skills, in exam order",
-  "Honest readiness — a per-skill band for CAPLE, a holistic tier for Celpe-Bras (never a fabricated official result)",
-  "Both variants — European Portuguese (CAPLE) and Brazilian (Celpe-Bras)",
+  "Honest readiness — a per-skill band against the real criteria (never a fabricated official result)",
+  "Both tracks — NT2 Staatsexamen (Programma I/II) and the Inburgering exam, including KNM and ONA",
   "100% original material — never copied from official exam papers",
   "Cancel anytime from your account",
 ];
