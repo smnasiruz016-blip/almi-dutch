@@ -35,6 +35,9 @@ const BUNDLE_FILES = [
   "nt2-reading.json",
   "nt2-listening.json",
   "nt2-productive.json",
+  "inburgering-reading.json",
+  "inburgering-listening.json",
+  "inburgering-productive.json",
   "inburgering-knm.json",
   "inburgering-ona.json",
 ];

@@ -1,0 +1,317 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Inschrijfformulier bibliotheek",
+    "prompt": "Fill in the short library sign-up form in Dutch.",
+    "payload": {
+      "stimulus": "U wilt lid worden van de bibliotheek. Op het formulier moet u schrijven: uw naam, uw adres, uw geboortedatum en waarom u lid wilt worden (bijvoorbeeld: boeken lenen of studeren).",
+      "criteria": [
+        "Gives name, address and date of birth clearly",
+        "Writes one short reason for joining the library",
+        "Uses correct simple word order in short sentences",
+        "Text is understandable at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Briefje aan de docent",
+    "prompt": "Write a short note to your teacher about missing your homework.",
+    "payload": {
+      "stimulus": "U bent uw huiswerk vergeten mee te nemen naar de les. Schrijf een kort briefje aan uw docent om dit uit te leggen.",
+      "criteria": [
+        "Explains politely that the homework is missing",
+        "Gives one simple reason",
+        "Uses a greeting and a closing",
+        "Sentences are short and correct at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Afspraak afzeggen",
+    "prompt": "Write a short message to cancel your appointment.",
+    "payload": {
+      "stimulus": "U hebt morgen een afspraak bij de tandarts, maar u moet werken. Stuur een kort bericht om de afspraak af te zeggen en een nieuwe datum te vragen.",
+      "criteria": [
+        "Says clearly which appointment you cancel",
+        "Gives one short reason",
+        "Asks for a new day or time",
+        "Uses a polite tone with greeting and closing"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Ansichtkaart uit vakantie",
+    "prompt": "Write a short postcard to a friend during your holiday.",
+    "payload": {
+      "stimulus": "U bent op vakantie in een andere stad. Schrijf een korte ansichtkaart aan een vriend of vriendin. Vertel waar u bent en wat u doet.",
+      "criteria": [
+        "Says where you are on holiday",
+        "Describes one or two things you do there",
+        "Uses simple present or past tense correctly",
+        "Uses a friendly opening and closing"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "E-mail aan de gemeente",
+    "prompt": "Write a short email to the municipality to ask a question.",
+    "payload": {
+      "stimulus": "U wilt uw oude papieren en glas apart weggooien, maar u weet niet waar de containers in uw buurt staan. Schrijf een e-mail aan de gemeente om dit te vragen.",
+      "criteria": [
+        "Explains clearly what information you need",
+        "Gives relevant context such as your street or neighbourhood",
+        "Asks a concrete question",
+        "Uses a polite formal register (u-vorm) with correct greeting and closing"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Antwoord aan de buurman",
+    "prompt": "Write a short reply to a note from your neighbour.",
+    "payload": {
+      "stimulus": "Uw buurman heeft een briefje gestuurd: hij geeft zaterdag een feestje en vraagt of u het erg vindt als het wat later wordt. Schrijf een antwoord terug.",
+      "criteria": [
+        "Reacts clearly to the neighbour's question",
+        "Explains your opinion or asks one practical question",
+        "Uses a friendly but polite tone",
+        "Links ideas with connectors such as omdat, maar or daarom"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Klacht bij de winkel",
+    "prompt": "Write a short complaint email to a shop.",
+    "payload": {
+      "stimulus": "U hebt schoenen gekocht in een winkel. Na een week gaat de zool al los. Schrijf een e-mail aan de winkel met uw klacht.",
+      "criteria": [
+        "Describes clearly what is wrong with the product",
+        "Mentions a relevant detail such as the purchase date or receipt",
+        "States what you want the shop to do (repair, refund or replacement)",
+        "Keeps a polite but firm tone with correct greeting and closing"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "E-mail aan de school",
+    "prompt": "Write a short email to your child's school.",
+    "payload": {
+      "stimulus": "Uw kind is ziek en kan deze week niet naar school. Schrijf een e-mail aan de juf of meester om dit te melden en te vragen wat uw kind kan inhalen.",
+      "criteria": [
+        "Explains clearly why your child is absent",
+        "Gives the expected period of absence",
+        "Asks a concrete question about missed work",
+        "Uses a polite register with a correct greeting and closing"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Uzelf voorstellen",
+    "prompt": "Record yourself introducing who you are in Dutch.",
+    "payload": {
+      "stimulus": "U stelt uzelf voor aan een nieuwe groep in de taalles. Vertel uw naam, waar u vandaan komt, waar u nu woont en één ding over uzelf.",
+      "criteria": [
+        "Gives name, country of origin and where you live now",
+        "Adds one detail about work, family or a hobby",
+        "Uses simple correct sentences in the present tense",
+        "Speaks clearly enough to be understood"
+      ],
+      "minSeconds": 30
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Vragen over uw familie",
+    "prompt": "Record short answers to simple questions about your family.",
+    "payload": {
+      "stimulus": "Iemand vraagt u over uw familie: Hebt u broers of zussen? Waar wonen zij? Wat doen zij? Beantwoord deze vragen hardop.",
+      "criteria": [
+        "Answers each question with a short clear sentence",
+        "Names family members and where they live",
+        "Says one thing about what a family member does",
+        "Speaks understandably at A2 level"
+      ],
+      "minSeconds": 35
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "De weg vragen",
+    "prompt": "Record yourself asking a passer-by for directions.",
+    "payload": {
+      "stimulus": "U bent in een nieuwe stad en u zoekt het treinstation. U vraagt een voorbijganger de weg. Wat zegt u?",
+      "criteria": [
+        "Uses a polite opening to get attention",
+        "Asks clearly for the way to the station",
+        "Asks one follow-up question such as distance or walking time",
+        "Speaks politely and understandably"
+      ],
+      "minSeconds": 35
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Over uw werk vertellen",
+    "prompt": "Record yourself answering simple questions about your work or study.",
+    "payload": {
+      "stimulus": "Iemand vraagt over uw werk of studie: Wat doet u? Vindt u het leuk? Waarom wel of niet? Beantwoord de vragen hardop.",
+      "criteria": [
+        "Says clearly what you do for work or study",
+        "Gives your opinion about it",
+        "Adds one simple reason with omdat",
+        "Speaks clearly and understandably at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Uw dagelijkse routine",
+    "prompt": "Record yourself describing your daily routine.",
+    "payload": {
+      "stimulus": "Vertel hardop over een gewone werkdag of schooldag: wat doet u 's ochtends, 's middags en 's avonds? Geef ook aan wat u het liefst doet.",
+      "criteria": [
+        "Describes the day in a logical order using time words",
+        "Mentions several activities across morning, afternoon and evening",
+        "Says which part of the day you like most and why",
+        "Speaks fluently and coherently at B1 level"
+      ],
+      "minSeconds": 50
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Uw mening over gezond eten",
+    "prompt": "Record a short spoken opinion on an everyday topic.",
+    "payload": {
+      "stimulus": "Geef uw mening over gezond eten. Vindt u het belangrijk? Wat doet u zelf om gezond te eten? Is het moeilijk of makkelijk?",
+      "criteria": [
+        "Gives a clear opinion on the topic",
+        "Supports it with at least one concrete example from your own life",
+        "Mentions an advantage or a difficulty",
+        "Speaks fluently and clearly at B1 level"
+      ],
+      "minSeconds": 50
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Een probleem uitleggen aan de verhuurder",
+    "prompt": "Record what you would say to your landlord about a problem.",
+    "payload": {
+      "stimulus": "Er is een lekkage in de badkamer van uw huurwoning en de muur wordt nat. U spreekt uw verhuurder erover. Leg het probleem uit en vraag om een oplossing.",
+      "criteria": [
+        "Explains the problem and its impact clearly and calmly",
+        "Says how long it has been going on",
+        "Asks for a concrete solution and a timeframe",
+        "Keeps a firm but polite tone and speaks fluently"
+      ],
+      "minSeconds": 55
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]

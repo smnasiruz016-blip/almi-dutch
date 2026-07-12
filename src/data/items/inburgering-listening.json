@@ -1,0 +1,245 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Voicemail huisartsenpraktijk",
+    "prompt": "Listen to the message and answer the question.",
+    "payload": {
+      "transcript": "Goedemorgen, u belt met huisartsenpraktijk De Linde. Wij zijn nu gesloten. De praktijk is open van maandag tot en met vrijdag, van acht uur 's ochtends tot vijf uur 's middags. Wilt u een afspraak maken? Belt u dan tussen acht en tien uur. Heeft u met spoed een dokter nodig? Bel dan de huisartsenpost op nummer nul, negen, zeven, acht.",
+      "question": "Wanneer kunt u het beste bellen voor een afspraak?",
+      "options": ["Tussen acht en tien uur 's ochtends", "In het weekend", "Na vijf uur 's middags", "Op zondag"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Herinnering van school",
+    "prompt": "Listen to the message. Is the statement true or false?",
+    "payload": {
+      "transcript": "Hallo, dit is een bericht van de juf van groep drie. Morgen halen we de kinderen om twee uur op, niet om drie uur. De kinderen zijn dus een uur eerder klaar. Wilt u uw kind om twee uur bij de deur ophalen? Bedankt en tot morgen.",
+      "question": "Stelling: de kinderen zijn morgen eerder klaar dan normaal.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Omroep in de bus",
+    "prompt": "Listen to the announcement and answer the question.",
+    "payload": {
+      "transcript": "De volgende halte is Station Centraal. Reizigers die naar het ziekenhuis moeten, stappen hier uit en nemen daarna lijn twaalf. Let op: door de markt rijdt deze bus vandaag niet langs de Kerkstraat. Wilt u naar de Kerkstraat? Stap dan uit bij het Marktplein.",
+      "question": "Wat moet u doen als u naar het ziekenhuis wilt?",
+      "options": ["Bij het Marktplein uitstappen", "In de bus blijven zitten", "Bij Station Centraal uitstappen en lijn twaalf nemen", "Lopen vanaf de Kerkstraat"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Drie mensen en hun afspraak",
+    "prompt": "Listen and match each person with their appointment.",
+    "payload": {
+      "transcript": "U hoort drie mensen vertellen wat ze deze week doen. Fatima zegt dat ze woensdag naar de tandarts gaat, want haar kies doet pijn. Peter vertelt dat hij donderdag een afspraak heeft bij de gemeente om zijn paspoort op te halen. Yara gaat vrijdag naar de kapper, want haar haar is te lang geworden.",
+      "instructions": "Kies bij elke naam de juiste afspraak.",
+      "left": ["Fatima", "Peter", "Yara"],
+      "right": ["Naar de tandarts", "Naar de gemeente", "Naar de kapper", "Naar de dokter"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Voicemail van een buurvrouw",
+    "prompt": "Listen to the message and answer the question.",
+    "payload": {
+      "transcript": "Hoi, met je buurvrouw Anja van nummer twaalf. Ik ga dit weekend weg en mijn planten hebben water nodig. Zou jij zaterdag even water kunnen geven? De sleutel ligt onder de mat. Bel me even terug of het lukt. Alvast bedankt, doei!",
+      "question": "Wat vraagt Anja aan de buurman of buurvrouw?",
+      "options": ["Op de kinderen passen", "De planten water geven", "De post ophalen", "De hond uitlaten"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Mededeling in de bibliotheek",
+    "prompt": "Listen to the announcement. Is the statement true or false?",
+    "payload": {
+      "transcript": "Beste bezoekers, een korte mededeling. De bibliotheek sluit vandaag om vier uur, een uur eerder dan normaal, omdat wij een personeelsvergadering hebben. Wilt u nog boeken lenen? Doet u dat dan voor vier uur bij de balie. Vanaf morgen zijn wij weer op de gewone tijden open.",
+      "question": "Stelling: de bibliotheek is vandaag langer open dan normaal.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Herinnering van de tandarts",
+    "prompt": "Listen to the message and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, dit is een bericht van tandartspraktijk Groenewoud. U heeft morgen om half elf een afspraak voor controle. Wilt u vijf minuten eerder komen om in te vullen of er iets veranderd is aan uw gezondheid? Kunt u niet komen? Bel ons dan vandaag nog, anders moeten wij kosten in rekening brengen.",
+      "question": "Wat moet u doen als u morgen niet kunt komen?",
+      "options": ["Niets doen", "Vandaag nog bellen", "Morgen langsgaan", "Een e-mail sturen na de afspraak"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Drie kinderen en hun sport",
+    "prompt": "Listen and match each child with their sport.",
+    "payload": {
+      "transcript": "Drie ouders vertellen wat hun kind doet na school. De moeder van Sam zegt dat hij elke dinsdag naar zwemles gaat in het zwembad. De vader van Noor vertelt dat zij op woensdag voetbalt bij de club in het park. En de moeder van Lars zegt dat hij op donderdag naar de gymzaal gaat om te turnen.",
+      "instructions": "Kies bij elk kind de juiste sport.",
+      "left": ["Sam", "Noor", "Lars"],
+      "right": ["Zwemmen", "Voetballen", "Turnen", "Tennissen"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Telefoongesprek met de gemeente",
+    "prompt": "Listen to the phone call and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, u spreekt met de gemeente Middelburg, afdeling Burgerzaken. Ik zie dat u belt over uw rijbewijs. Uw nieuwe rijbewijs is klaar en ligt hier voor u klaar. U kunt het ophalen zonder afspraak, maar alleen op dinsdag- en donderdagochtend tussen negen en twaalf uur. Neemt u een geldig identiteitsbewijs mee, anders kunnen wij het rijbewijs niet aan u meegeven.",
+      "question": "Wat moet de beller absoluut meenemen bij het ophalen?",
+      "options": ["Een pasfoto", "Een geldig identiteitsbewijs", "Het oude rijbewijs en geld", "Een afspraakbevestiging"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Instructie op het werk",
+    "prompt": "Listen to the instruction. Is the statement true or false?",
+    "payload": {
+      "transcript": "Beste collega's, voordat jullie beginnen nog even dit. Vanaf deze week gebruiken we een nieuw systeem om de uren in te vullen. Jullie loggen 's ochtends in op de computer bij de ingang, en aan het einde van de dag loggen jullie weer uit. Vergeten jullie dat? Dan worden de uren niet goed geteld en dat is lastig voor het salaris. Vraag het gerust als iets niet duidelijk is.",
+      "question": "Stelling: de medewerkers moeten hun uren nog steeds op papier invullen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Bericht over de ouderavond",
+    "prompt": "Listen to the message and answer the question.",
+    "payload": {
+      "transcript": "Beste ouders, volgende week dinsdag houden wij op school de ouderavond. Tijdens deze avond vertelt de leerkracht hoe het met uw kind gaat op school. Elk gesprek duurt tien minuten. U kunt zelf een tijd kiezen via de app van de school. Let op: er zijn maar een beperkt aantal plekken per avond, dus wacht niet te lang met kiezen. Lukt het niet online? Dan kunt u de leerkracht bellen.",
+      "question": "Hoe kiezen ouders het beste een tijd voor het gesprek?",
+      "options": ["Door langs te gaan op school", "Via de app van de school", "Door de gemeente te bellen", "Door een brief te sturen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Vier mensen over een cursus",
+    "prompt": "Listen to four people and match each one with the course they follow.",
+    "payload": {
+      "transcript": "Vier mensen vertellen welke cursus zij deze winter volgen bij het buurthuis. Ahmed zegt dat hij een cursus fietsen volgt, want hij wil veilig naar zijn werk kunnen fietsen. Sanne doet mee aan een computercursus om beter met de laptop te leren werken. Joris volgt een cursus koken, omdat hij graag gezonde maaltijden voor zijn gezin wil maken. En Priya heeft zich ingeschreven voor een cursus fotografie, want ze wil mooie foto's leren maken.",
+      "instructions": "Kies bij elke naam de juiste cursus.",
+      "left": ["Ahmed", "Sanne", "Joris", "Priya"],
+      "right": ["Fietsen", "Computer", "Koken", "Fotografie"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "maxPoints": 4
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Telefoontje van de woningcorporatie",
+    "prompt": "Listen to the phone call and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, u spreekt met woningcorporatie Thuiswonen. Ik bel over de verwarming in uw woning. U heeft een storing gemeld en daar willen wij graag een monteur voor langs sturen. Dat kan aanstaande maandag tussen acht en twaalf uur, of dinsdag in de middag. Belangrijk is dat er iemand thuis is om de monteur binnen te laten. Als het op beide dagen niet uitkomt, mag u ook een buurman of familielid vragen om open te doen.",
+      "question": "Wat is belangrijk als de monteur langskomt?",
+      "options": ["Dat u de verwarming zelf al heeft gemaakt", "Dat er iemand thuis is om open te doen", "Dat u contant kunt betalen", "Dat u de storing per e-mail bevestigt"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Mededeling in het buurthuis",
+    "prompt": "Listen to the announcement. Is the statement true or false?",
+    "payload": {
+      "transcript": "Beste bezoekers van het buurthuis, een mededeling over de taalcafé-middagen. Vanaf volgende maand is het taalcafé niet meer op maandag, maar op woensdagmiddag van twee tot vier uur. Iedereen die Nederlands wil oefenen, is welkom, en het is gratis. U hoeft zich niet aan te melden, u kunt gewoon binnenlopen. Neem gerust een buurvrouw of vriend mee.",
+      "question": "Stelling: je moet je van tevoren aanmelden voor het taalcafé.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Bericht van de apotheek",
+    "prompt": "Listen to the message and answer the question.",
+    "payload": {
+      "transcript": "Goedemorgen, dit is een bericht van apotheek Het Anker. Uw medicijnen liggen voor u klaar en kunnen worden opgehaald. Wij hebben dit keer een ander merk van hetzelfde medicijn gekregen, met een andere verpakking, maar het werkt precies hetzelfde. Twijfelt u toch of leest u de bijsluiter niet goed? Kom dan even bij de balie langs, dan leggen wij het rustig uit. U kunt de medicijnen ophalen tot zaterdag.",
+      "question": "Waarom belt de apotheek over de verpakking?",
+      "options": ["Het medicijn is duurder geworden", "Het is een ander merk maar werkt hetzelfde", "De medicijnen zijn niet meer op voorraad", "De klant moet een nieuw recept halen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]
