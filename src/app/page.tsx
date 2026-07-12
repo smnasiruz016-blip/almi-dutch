@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { NT2_EXAMS, INBURGERING_EXAMS } from "@/lib/nl/registry";
+import { NT2_EXAMS } from "@/lib/nl/registry";
 import { TestimonialsSection } from "@/components/reviews/TestimonialsSection";
 
 // Re-render hourly so newly approved testimonials appear without a redeploy.
@@ -8,10 +8,10 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dutch NT2 & Inburgering Practice — honest readiness | AlmiDutch",
+    absolute: "AlmiDutch | Practise Dutch Exams with Honest Readiness",
   },
   description:
-    "Practise Dutch for the NT2 Staatsexamen (Programma I B1 · Programma II B2) and the Inburgering exam (language, KNM, ONA) with honest per-skill readiness estimates, never a fake official score. Original material, never copied. $12/month, 7-day free trial.",
+    "Stop guessing your Dutch level for DUO or IND. Practise real NT2 Staatsexamen (B1/B2) and Inburgering (A2/B1) formats with honest AI readiness bands, KNM and ONA practice.",
   openGraph: {
     title: "AlmiDutch — honest NT2 & Inburgering practice",
     description:
@@ -43,12 +43,11 @@ const PROMISES = [
 ] as const;
 
 const PRICING_LINES = [
-  "Free, auto-marked Reading, Listening and KNM practice",
-  "AI feedback on Writing & Speaking against the real criteria",
-  "Full timed mock for NT2 Programma I/II and Inburgering",
-  "KNM and ONA practice, clearly labelled — never an official result",
-  "100% original practice material — never copied from a real exam",
-  "$12/month with a 7-day free trial, cancel anytime",
+  "Full access to Writing & Speaking AI-evaluation modules for NT2 and Inburgering",
+  "Free, unlimited auto-marked Reading, Listening and KNM practice",
+  "AI analysis modelled on the published NT2 / inburgering task formats and criteria — always an estimate, never an official CvTE/DUO score",
+  "ONA practice covering the labour-market-orientation topics (CV, job search, work culture) with progress tracking",
+  "Flat $12/month with one-click cancellation inside your account",
 ] as const;
 
 const FAQ = [
@@ -241,18 +240,12 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-widest text-almi-teal">Inburgering</p>
               <h3 className="mt-2 text-xl font-semibold text-almi-ink">Language + KNM + ONA</h3>
               <ul className="mt-4 space-y-2 text-sm text-almi-text">
-                {INBURGERING_EXAMS.map((e) => (
-                  <li key={e.exam} className="flex flex-wrap items-center gap-2">
-                    <span className="inline-flex h-6 min-w-[2.5rem] items-center justify-center rounded-md bg-almi-bg-peach px-1.5 text-xs font-bold text-almi-ink">
-                      {e.cefr}
-                    </span>
-                    <span className="font-semibold text-almi-ink">{e.name}</span>
-                    <span className="rounded-full bg-almi-coral/15 px-2 py-0.5 text-[11px] font-semibold text-almi-coral-deep">Residency</span>
-                  </li>
-                ))}
-                <li>• <strong className="text-almi-ink">KNM</strong> — Knowledge of Dutch Society.</li>
-                <li>• <strong className="text-almi-ink">ONA</strong> — orientation on the Dutch labour market.</li>
-                <li className="text-almi-text-muted">Level A2 or B1 by your integration-obligation date.</li>
+                <li className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex h-6 min-w-[2.5rem] items-center justify-center rounded-md bg-almi-bg-peach px-1.5 text-xs font-bold text-almi-ink">A2 / B1</span>
+                  <span><strong className="text-almi-ink">Inburgering language</strong> — level set by your integration-obligation date (B1 for obligations from 1 Jan 2022; A2 otherwise), the residency/integration route.</span>
+                </li>
+                <li>• <strong className="text-almi-ink">KNM</strong> — Knowledge of Dutch Society (Kennis van de Nederlandse Maatschappij).</li>
+                <li>• <strong className="text-almi-ink">ONA</strong> — Orientation on the Dutch labour market (Oriëntatie op de Nederlandse Arbeidsmarkt).</li>
               </ul>
             </div>
           </div>
