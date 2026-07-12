@@ -94,5 +94,269 @@
     },
     "answer": null,
     "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Uw eerste Nederlandse CV",
+    "prompt": "Practise structuring a simple Dutch CV by answering the reflection questions. This is practice material, not an official DUO portfolio.",
+    "payload": {
+      "scenario": "U wilt in Nederland gaan werken en maakt uw eerste Nederlandse CV. Een Nederlands CV is meestal kort: één of twee pagina's met uw gegevens, opleiding, werkervaring en talen.",
+      "prompts": [
+        "Welke persoonlijke gegevens zet u bovenaan uw CV?",
+        "Welke opleidingen en cursussen wilt u op uw CV zetten?",
+        "Welke talen spreekt u, en hoe geeft u uw niveau aan?"
+      ],
+      "criteria": [
+        "Lists the standard sections of a Dutch CV in a logical order",
+        "Gives concrete personal details, education and languages",
+        "Keeps the CV short and relevant to the job"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Vacatures vergelijken",
+    "prompt": "Practise reading and comparing job adverts by answering the questions. Reflection exercise only — not an official result.",
+    "payload": {
+      "scenario": "Op een vacaturesite ziet u twee vacatures: een baan als magazijnmedewerker dichtbij huis voor 32 uur, en een baan als schoonmaker verder weg voor 20 uur met een hoger uurloon.",
+      "prompts": [
+        "Op welke punten let u als u twee vacatures vergelijkt?",
+        "Welke van de twee banen past het beste bij uw situatie, en waarom?",
+        "Welke informatie mist u nog voordat u kunt solliciteren?"
+      ],
+      "criteria": [
+        "Names concrete factors such as hours, travel, pay and tasks",
+        "Makes a reasoned choice that fits their own situation",
+        "Identifies missing information needed before applying"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Inschrijven bij een uitzendbureau",
+    "prompt": "Prepare to register with an employment agency by answering the questions. Practice material; it does not replace the official ONA assessment.",
+    "payload": {
+      "scenario": "Een vriend vertelt u dat veel mensen werk vinden via een uitzendbureau. U wilt zich inschrijven en hebt een gesprek met een uitzendconsulent.",
+      "prompts": [
+        "Welke documenten en gegevens neemt u mee naar het uitzendbureau?",
+        "Wat vertelt u de consulent over het werk dat u zoekt?",
+        "Welke vragen wilt u zelf aan de consulent stellen?"
+      ],
+      "criteria": [
+        "Names the practical documents and details needed to register",
+        "Clearly states the kind of work and hours they are looking for",
+        "Prepares sensible questions to ask the agency"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Voorbereiden op het sollicitatiegesprek",
+    "prompt": "Practise preparing for a job interview by answering the reflection questions. This is a practice task, not an official DUO test.",
+    "payload": {
+      "scenario": "U bent uitgenodigd voor een sollicitatiegesprek bij een supermarkt. Het gesprek is over twee dagen en u wilt goed voorbereid zijn.",
+      "prompts": [
+        "Hoe zorgt u dat u op tijd en goed voorbereid op het gesprek komt?",
+        "Hoe vertelt u in het kort iets over uzelf en uw ervaring?",
+        "Wat kunt u zeggen als u een vraag niet meteen begrijpt?"
+      ],
+      "criteria": [
+        "Describes concrete preparation such as route, time and dress",
+        "Gives a short, clear self-introduction with relevant experience",
+        "Has a polite strategy for handling questions they do not understand"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Uw diploma in Nederland",
+    "prompt": "Reflect on how your foreign diploma is used in the Netherlands by answering the questions. Practice material — not an official evaluation.",
+    "payload": {
+      "scenario": "U hebt in uw eigen land een diploma gehaald. In Nederland weten werkgevers niet altijd wat uw diploma waard is. U kunt uw diploma laten waarderen, bijvoorbeeld via IDW.",
+      "prompts": [
+        "Welk diploma of welke opleiding hebt u in uw eigen land afgerond?",
+        "Hoe kunt u aan een Nederlandse werkgever uitleggen wat u geleerd hebt?",
+        "Bij wie kunt u hulp vragen om uw diploma te laten waarderen?"
+      ],
+      "criteria": [
+        "Describes their qualification and its level clearly",
+        "Explains their skills in a way a Dutch employer understands",
+        "Knows where to get help with diploma recognition"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Werk zoeken met werk.nl",
+    "prompt": "Practise using online job-search tools by answering the questions. Reflection exercise only — not an official DUO result.",
+    "payload": {
+      "scenario": "Via de website werk.nl van het UWV kunt u vacatures zoeken en uw CV plaatsen. U maakt een account aan en gaat op zoek naar werk in uw buurt.",
+      "prompts": [
+        "Welke zoekwoorden gebruikt u om vacatures in uw buurt te vinden?",
+        "Welke informatie zet u in uw online profiel zodat werkgevers u vinden?",
+        "Hoe houdt u bij op welke vacatures u hebt gereageerd?"
+      ],
+      "criteria": [
+        "Chooses relevant search terms for their field and area",
+        "Fills an online profile with useful, accurate information",
+        "Has a simple system to track applications"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Een overtuigende motivatiebrief",
+    "prompt": "Reflect on how to write a convincing Dutch cover letter by answering the questions. This is practice material, not an official portfolio task.",
+    "payload": {
+      "scenario": "U solliciteert op een baan als medewerker klantenservice. In uw motivatiebrief wilt u laten zien waarom u geschikt bent en waarom u juist bij dit bedrijf wilt werken.",
+      "prompts": [
+        "Hoe koppelt u uw ervaring aan de eisen die in de vacature staan?",
+        "Hoe laat u zien dat u iets van het bedrijf weet en er graag wilt werken?",
+        "Hoe zorgt u dat uw brief kort, netjes en foutloos is?"
+      ],
+      "criteria": [
+        "Links personal experience explicitly to the vacancy requirements",
+        "Shows genuine interest in and knowledge of the employer",
+        "Reflects on tone, structure and correct language"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Uw netwerk uitbreiden",
+    "prompt": "Reflect on how to grow and use a professional network by answering the questions. Practice reflection — not an official DUO result.",
+    "payload": {
+      "scenario": "Veel banen in Nederland worden gevonden via contacten. U kent nog niet veel mensen in uw vakgebied, maar u wilt uw netwerk opbouwen via bijvoorbeeld cursussen, vrijwilligerswerk en LinkedIn.",
+      "prompts": [
+        "Welke plekken of activiteiten kunnen u helpen om nieuwe contacten op te doen?",
+        "Hoe vertelt u kort en duidelijk aan anderen welk werk u zoekt?",
+        "Hoe onderhoudt u een contact zonder opdringerig te zijn?"
+      ],
+      "criteria": [
+        "Names realistic ways to meet relevant contacts",
+        "Can give a clear, brief 'pitch' of what work they seek",
+        "Shows awareness of maintaining relationships respectfully"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Feedback geven en ontvangen op het werk",
+    "prompt": "Reflect on giving and receiving feedback in a Dutch workplace by answering the questions. This is a reflection exercise for your own preparation.",
+    "payload": {
+      "scenario": "In veel Nederlandse teams is er regelmatig overleg en geven collega's elkaar direct feedback. Uw leidinggevende vraagt tijdens een gesprek hoe u het werk vindt gaan en geeft u ook tips.",
+      "prompts": [
+        "Hoe reageert u als een collega u directe feedback geeft?",
+        "Hoe geeft u zelf op een respectvolle manier uw mening in een overleg?",
+        "Wat doet u met feedback om beter te worden in uw werk?"
+      ],
+      "criteria": [
+        "Shows an open, non-defensive attitude to direct feedback",
+        "Can express an opinion clearly yet respectfully in a meeting",
+        "Turns feedback into concrete steps for improvement"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Uw competenties in kaart brengen",
+    "prompt": "Reflect in depth on your own competencies by answering the questions. Practice material — it does not replace the official ONA assessment.",
+    "payload": {
+      "scenario": "Voor uw loopbaan is het belangrijk te weten wat u goed kunt. Naast vakkennis gaat het ook om vaardigheden zoals samenwerken, plannen en omgaan met klanten.",
+      "prompts": [
+        "Welke drie competenties beheerst u het beste, met een voorbeeld uit uw ervaring?",
+        "Welke vaardigheid wilt u nog verder ontwikkelen, en hoe?",
+        "Hoe kunt u deze competenties gebruiken in het werk dat u zoekt?"
+      ],
+      "criteria": [
+        "Names 2–3 concrete competencies with supporting examples",
+        "Identifies a realistic area for growth with a plan",
+        "Connects competencies to the target job"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Een sector kiezen die bij u past",
+    "prompt": "Reflect on choosing a sector and planning your career by answering the questions. Practice reflection, not an official DUO result.",
+    "payload": {
+      "scenario": "U twijfelt tussen werken in de zorg, in de techniek of in de logistiek. In sommige sectoren is veel werk en zijn er opleidingen die u kunt volgen terwijl u werkt.",
+      "prompts": [
+        "Welke sector past het beste bij uw interesses en vaardigheden?",
+        "Wat zijn de voordelen en nadelen van deze sector voor uw situatie?",
+        "Welke opleiding of eerste stap hebt u nodig om in deze sector te beginnen?"
+      ],
+      "criteria": [
+        "Makes a reasoned sector choice based on interests and skills",
+        "Weighs concrete pros and cons for their own situation",
+        "Names a realistic first step or training route"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
   }
 ]

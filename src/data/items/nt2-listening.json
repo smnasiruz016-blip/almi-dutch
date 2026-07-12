@@ -79,5 +79,167 @@
     },
     "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
     "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Omroep in de supermarkt",
+    "prompt": "Luister naar de omroep. Is de stelling waar of niet waar?",
+    "payload": {
+      "transcript": "Beste klanten, een kleine mededeling. Vandaag hebben wij verse aardbeien in de aanbieding: twee bakjes voor drie euro. U vindt ze bij de ingang, naast het brood. De aanbieding geldt alleen vandaag. Wij wensen u nog een prettige dag.",
+      "question": "Stelling: de aanbieding voor aardbeien geldt de hele week.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Voicemail van een vriendin",
+    "prompt": "Luister naar het bericht en beantwoord de vraag.",
+    "payload": {
+      "transcript": "Hoi Sara, met Lisa. Ik bel even over zaterdag. Het lukt me niet om om zes uur bij het restaurant te zijn, want ik moet langer werken. Kunnen we het een uurtje later maken, dus om zeven uur? Bel me even terug om te zeggen of dat goed is. Doei!",
+      "question": "Wat wil Lisa veranderen?",
+      "options": ["De dag van de afspraak", "Het tijdstip van de afspraak", "Het restaurant", "Het aantal mensen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Weerbericht op de radio",
+    "prompt": "Luister naar het weerbericht en beantwoord de vraag.",
+    "payload": {
+      "transcript": "En dan nu het weer. Vanochtend begint de dag grijs en regenachtig, vooral in het noorden van het land. In de middag trekken de wolken weg en komt de zon erdoor. Het wordt met vijftien graden vrij fris voor de tijd van het jaar. Neem vanochtend dus nog een paraplu mee, maar vanmiddag kunt u die thuis laten.",
+      "question": "Hoe wordt het weer in de middag?",
+      "options": ["De hele dag regen", "Droog met zon", "Zwaar onweer", "Sneeuw en kou"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "title": "Drie mensen over hun hobby",
+    "prompt": "Luister en verbind elke persoon met zijn of haar hobby.",
+    "payload": {
+      "transcript": "U hoort drie mensen vertellen wat ze in hun vrije tijd doen. Karim zegt dat hij elke zondag met zijn voetbalteam op het veld staat. Femke vertelt dat ze het liefst in de keuken staat om nieuwe gerechten te maken. Tom brengt zijn weekenden door in de bergen, want wandelen vindt hij heerlijk.",
+      "instructions": "Kies bij elke naam de juiste hobby.",
+      "left": ["Karim", "Femke", "Tom"],
+      "right": ["Voetballen", "Koken", "Wandelen", "Zwemmen"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 3
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "title": "Bericht van de school",
+    "prompt": "Luister naar het bericht. Is de stelling waar of niet waar?",
+    "payload": {
+      "transcript": "Beste ouders, dit is een bericht van basisschool De Regenboog. Aanstaande woensdag gaan de kinderen van groep vijf op excursie naar het museum. De bus vertrekt om half negen, dus wij vragen u om uw kind uiterlijk kwart over acht op school te brengen. Vergeet niet een lunchpakketje mee te geven.",
+      "question": "Stelling: de kinderen moeten zelf eten meenemen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Interview met een ondernemer",
+    "prompt": "Luister naar het fragment en beantwoord de vraag.",
+    "payload": {
+      "transcript": "In ons programma spreken we vandaag met de oprichter van een klein koffiebedrijf. Hij vertelt dat hij vijf jaar geleden begon vanuit zijn garage, met slechts één machine. Het moeilijkste, zegt hij, was niet het maken van goede koffie, maar het vinden van klanten die bereid waren iets meer te betalen voor eerlijk geproduceerde bonen. Inmiddels levert hij aan meer dan veertig cafés.",
+      "question": "Wat was volgens de ondernemer het lastigst in het begin?",
+      "options": ["Goede koffie leren maken", "Klanten vinden die meer wilden betalen", "Een machine kopen", "Personeel aannemen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "title": "Vier sprekers over duurzaam wonen",
+    "prompt": "Luister naar vier sprekers en verbind elke spreker met zijn of haar belangrijkste maatregel.",
+    "payload": {
+      "transcript": "Vier mensen vertellen hoe zij hun huis duurzamer hebben gemaakt. Meneer Visser legt uit dat hij zonnepanelen op het dak heeft laten leggen en nu bijna geen stroom meer inkoopt. Mevrouw De Wit koos ervoor haar hele huis extra te isoleren, waardoor de verwarming veel minder aan hoeft. De heer Bakker heeft de oude cv-ketel vervangen door een warmtepomp. En mevrouw Jansen vangt regenwater op om haar tuin mee te besproeien.",
+      "instructions": "Kies bij elke spreker de juiste maatregel.",
+      "left": ["Meneer Visser", "Mevrouw De Wit", "De heer Bakker", "Mevrouw Jansen"],
+      "right": ["Zonnepanelen", "Isolatie", "Een warmtepomp", "Regenwater opvangen"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "maxPoints": 4
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "title": "Radiofragment over thuiswerken",
+    "prompt": "Luister naar het fragment. Is de stelling waar of niet waar?",
+    "payload": {
+      "transcript": "Uit een nieuw onderzoek blijkt dat werknemers die deels thuiswerken over het algemeen tevredener zijn dan collega's die elke dag naar kantoor komen. Toch waarschuwen de onderzoekers voor een keerzijde: wie volledig thuiswerkt, voelt zich vaker eenzaam en mist het contact met collega's. De ideale situatie, zo concluderen zij, is een combinatie van enkele dagen thuis en enkele dagen op kantoor.",
+      "question": "Stelling: volgens het onderzoek is volledig thuiswerken de beste oplossing.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Lezing over de geschiedenis van de fiets",
+    "prompt": "Luister naar het fragment en beantwoord de vraag.",
+    "payload": {
+      "transcript": "In deze korte lezing sta ik stil bij de opkomst van de fiets in Nederland. Veel mensen denken dat Nederland altijd al een echt fietsland is geweest, maar dat klopt niet helemaal. In de jaren zestig groeide het autoverkeer zo hard dat de fiets bijna verdween uit de steden. Pas na een reeks verkeersongelukken en protesten in de jaren zeventig besloten gemeenten opnieuw te investeren in veilige fietspaden. Die keuze van toen verklaart waarom fietsen nu zo vanzelfsprekend is.",
+      "question": "Waarom gingen gemeenten in de jaren zeventig weer investeren in fietspaden?",
+      "options": ["Omdat auto's te duur werden", "Door ongelukken en protesten", "Omdat de trein verdween", "Vanwege een nieuwe wet uit het buitenland"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Telefonische klantenservice",
+    "prompt": "Luister naar het gesprek en beantwoord de vraag.",
+    "payload": {
+      "transcript": "Goedemiddag, u spreekt met de klantenservice van energieleverancier Stroomnet. Ik begrijp dat uw laatste rekening hoger was dan verwacht. Dat komt doordat wij uw voorschotbedrag hebben aangepast op basis van uw verbruik van vorig jaar. Als u vindt dat het bedrag te hoog is, kan ik het voor u verlagen, maar houd er rekening mee dat u dan aan het eind van het jaar mogelijk moet bijbetalen.",
+      "question": "Wat is de reden dat de rekening hoger uitviel?",
+      "options": ["Een fout in het systeem", "Het aangepaste voorschotbedrag", "Een prijsverhoging van de overheid", "Een vergeten korting"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
   }
 ]

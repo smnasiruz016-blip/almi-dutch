@@ -101,5 +101,163 @@
     },
     "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
     "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Te huur: appartement",
+    "prompt": "Lees de advertentie en beantwoord de vraag.",
+    "payload": {
+      "passage": "Te huur: ruim tweekamerappartement in het centrum van Leiden. Het appartement ligt op de tweede verdieping en heeft een klein balkon. De huur is 950 euro per maand, inclusief gas en water, maar exclusief elektriciteit. Huisdieren zijn niet toegestaan. Interesse? Bel na 18.00 uur naar de verhuurder.",
+      "question": "Wat is niet inbegrepen in de huurprijs?",
+      "options": ["Elektriciteit", "Gas", "Water", "Het balkon"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "title": "Bericht van de school",
+    "prompt": "Lees het bericht. Is de stelling waar of niet waar?",
+    "payload": {
+      "passage": "Beste ouders, op vrijdag 14 juni is de school gesloten vanwege een studiedag voor de leraren. De kinderen zijn die dag dus vrij. De gewone lessen beginnen weer op maandag 17 juni. Wilt u zelf voor opvang zorgen?",
+      "question": "Stelling: op vrijdag 14 juni hebben de kinderen gewoon les.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "E-mail van een collega",
+    "prompt": "Lees de e-mail en beantwoord de vraag.",
+    "payload": {
+      "passage": "Hoi Sanne,\n\nIk ben morgen helaas ziek en kan niet naar de vergadering komen. Kun jij mijn presentatie over het nieuwe rooster geven? De sheets staan in de gedeelde map. Als er vragen zijn, kunnen collega's mij later per e-mail bereiken.\n\nAlvast bedankt,\nOmar",
+      "question": "Wat vraagt Omar aan Sanne?",
+      "options": ["Of zij zijn presentatie wil geven", "Of zij de sheets wil maken", "Of zij hem naar de dokter brengt", "Of zij de vergadering wil verzetten"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "FOUNDATION",
+    "title": "Boodschappenlijstje",
+    "prompt": "Kies voor elk gat het woord dat het beste past.",
+    "payload": {
+      "passage": "Vanmiddag ga ik naar de {{1}} om boodschappen te doen. Ik heb brood, melk en groente nodig. Ik betaal aan de {{2}} met mijn pinpas. Daarna fiets ik weer naar {{3}}.",
+      "gaps": [
+        { "id": 1, "options": ["supermarkt", "bioscoop", "zwembad"] },
+        { "id": 2, "options": ["kassa", "trap", "deur"] },
+        { "id": 3, "options": ["huis", "gisteren", "snel"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "CORE",
+    "title": "Koffiezetten",
+    "prompt": "Zet de stappen in de juiste volgorde.",
+    "payload": {
+      "instructions": "Sleep of nummer de stappen zodat het een logische instructie wordt.",
+      "items": [
+        "Doe water in het reservoir van het koffiezetapparaat.",
+        "Plaats een filter en schep de gemalen koffie erin.",
+        "Zet het apparaat aan en wacht tot de kan vol is.",
+        "Schenk de koffie in een kopje en geniet ervan."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Thuiswerken",
+    "prompt": "Lees de tekst en beantwoord de vraag.",
+    "payload": {
+      "passage": "Sinds de coronapandemie is thuiswerken voor veel werknemers de normaalste zaak van de wereld geworden. Werkgevers zien voordelen, zoals lagere kantoorkosten en tevreden medewerkers. Toch waarschuwen deskundigen dat het contact tussen collega's kan verwateren wanneer men elkaar zelden op kantoor ziet. Veel bedrijven kiezen daarom voor een hybride model, waarbij werknemers een deel van de week thuis en een deel op kantoor werken.",
+      "question": "Waarom kiezen veel bedrijven voor een hybride model?",
+      "options": ["Om het contact tussen collega's niet te verliezen", "Om de kantoorkosten te verhogen", "Omdat thuiswerken verboden is", "Omdat niemand meer naar kantoor wil"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "title": "Nieuwsbericht over energie",
+    "prompt": "Kies voor elk gat het woord dat het beste past.",
+    "payload": {
+      "passage": "De gemeente investeert de komende jaren fors in {{1}} energie. Op tientallen daken van openbare gebouwen worden zonnepanelen {{2}}. Volgens de wethouder levert dit niet alleen milieuwinst op, maar op termijn ook een aanzienlijke {{3}} op de energierekening.",
+      "gaps": [
+        { "id": 1, "options": ["duurzame", "gevaarlijke", "dure"] },
+        { "id": 2, "options": ["geïnstalleerd", "gegeten", "verkocht"] },
+        { "id": 3, "options": ["besparing", "vertraging", "verhoging"] }
+      ]
+    },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "maxPoints": 3
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "STRETCH",
+    "title": "Een klacht formuleren",
+    "prompt": "Zet de zinnen in de juiste volgorde zodat een logische klachtenbrief ontstaat.",
+    "payload": {
+      "instructions": "Sleep of nummer de zinnen tot ze een lopende klachtenbrief vormen.",
+      "items": [
+        "Geachte heer of mevrouw,",
+        "Op 3 mei heb ik bij uw webwinkel een wasmachine besteld.",
+        "Tot mijn verbazing werd echter een beschadigd apparaat geleverd.",
+        "Ik verzoek u daarom vriendelijk om een kosteloze vervanging."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Vrijwilligerswerk en integratie",
+    "prompt": "Lees de tekst en beantwoord de vraag.",
+    "payload": {
+      "passage": "Onderzoekers benadrukken dat vrijwilligerswerk een belangrijke rol speelt bij de integratie van nieuwkomers. Wie zich inzet voor een vereniging of buurtinitiatief, oefent niet alleen de taal in de praktijk, maar bouwt ook een sociaal netwerk op. Juist dat netwerk blijkt vaak doorslaggevend bij het vinden van betaald werk, meer nog dan een reeks sollicitaties op vacatures die men zelf online vindt.",
+      "question": "Wat blijkt volgens de tekst vaak doorslaggevend bij het vinden van betaald werk?",
+      "options": ["Het sociale netwerk dat men opbouwt", "Het aantal online sollicitaties", "Het bezit van een diploma", "De hoogte van het salaris"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
   }
 ]

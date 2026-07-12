@@ -82,5 +82,236 @@
     },
     "answer": null,
     "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Briefje voor de buurvrouw",
+    "prompt": "Write a short friendly note to your neighbour in reply to her request.",
+    "payload": {
+      "stimulus": "Uw buurvrouw heeft een briefje in de bus gedaan: ze gaat een week op vakantie en vraagt of u haar planten water wilt geven. Schrijf een kort briefje terug.",
+      "criteria": [
+        "States clearly whether you can help or not",
+        "Asks or mentions one practical detail (key, how often to water)",
+        "Uses an informal but polite tone with an opening and closing",
+        "Message is understandable and roughly 80 to 130 characters"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Afmelden voor de cursus",
+    "prompt": "Write a short email to cancel your attendance at tonight's class.",
+    "payload": {
+      "stimulus": "U volgt een avondcursus koken. Vanavond kunt u niet komen omdat uw kind ziek is. Stuur een kort e-mailbericht aan de docent.",
+      "criteria": [
+        "Explains politely why you cannot attend",
+        "Asks whether you can catch up or get the material",
+        "Uses an appropriate greeting and sign-off for a teacher",
+        "Links ideas with connectors like omdat or daarom"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Klacht over een pakket",
+    "prompt": "Write a short complaint message about a package that arrived damaged.",
+    "payload": {
+      "stimulus": "U hebt online een lamp besteld. Het pakket is beschadigd aangekomen en de lamp is kapot. Schrijf een bericht aan de webshop.",
+      "criteria": [
+        "Describes clearly what is wrong with the order",
+        "States what you want the shop to do (refund or replacement)",
+        "Mentions a relevant detail such as the order number",
+        "Keeps a polite but firm tone throughout"
+      ],
+      "charBand": { "min": 80, "max": 180 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "title": "E-mail aan de gemeente",
+    "prompt": "Write a formal email to the municipality about a problem in your street.",
+    "payload": {
+      "stimulus": "Al maanden staat er een kapotte straatlantaarn in uw straat, waardoor het 's avonds gevaarlijk donker is. Schrijf een formele e-mail aan de gemeente.",
+      "criteria": [
+        "Describes the problem clearly and gives relevant context",
+        "Explains the consequences and why action is needed",
+        "Makes a concrete request with a reasonable timeframe",
+        "Uses a consistent formal register (u-vorm) with correct greeting and closing"
+      ],
+      "charBand": { "min": 150, "max": 300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Reactie op een stelling: gratis openbaar vervoer",
+    "prompt": "Write an argumentative reaction to the statement below.",
+    "payload": {
+      "stimulus": "Stelling: 'Het openbaar vervoer zou voor iedereen gratis moeten zijn.' Schrijf een reactie voor een online discussieforum waarin u uw mening onderbouwt.",
+      "criteria": [
+        "Takes a clear position on the statement",
+        "Supports it with at least two well-developed arguments",
+        "Acknowledges and responds to a counterargument",
+        "Shows a clear structure and varied connectors (bovendien, hoewel, daarentegen)"
+      ],
+      "charBand": { "min": 150, "max": 300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Sollicitatie: motivatie in het kort",
+    "prompt": "Write a short motivation paragraph for a job application.",
+    "payload": {
+      "stimulus": "U solliciteert naar een baan als medewerker klantenservice. In het online formulier is er ruimte voor een korte motivatie. Schrijf deze motivatie.",
+      "criteria": [
+        "Explains clearly why you are interested in this specific job",
+        "Highlights two relevant skills or experiences with examples",
+        "Connects your qualities to what the role requires",
+        "Uses a professional, confident register without exaggeration"
+      ],
+      "charBand": { "min": 150, "max": 300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "title": "Een foto beschrijven: het station",
+    "prompt": "Record yourself describing what you see and imagine in the scene.",
+    "payload": {
+      "stimulus": "Beschrijf hardop een druk treinstation: wie ziet u, wat doen de mensen en hoe is de sfeer? Verzin gerust details.",
+      "criteria": [
+        "Describes several things you see in the scene",
+        "Uses present tense verbs and location words (naast, achter, in het midden)",
+        "Adds one guess about how someone feels or what they are doing",
+        "Speaks clearly enough to be understood"
+      ],
+      "minSeconds": 45
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Een voicemail inspreken",
+    "prompt": "Record the voicemail you would leave for the garage.",
+    "payload": {
+      "stimulus": "U belt de garage om uw auto voor een onderhoudsbeurt te brengen, maar er wordt niet opgenomen. Spreek een voicemail in.",
+      "criteria": [
+        "Says who you are and why you are calling",
+        "Gives a concrete request and a possible day or time",
+        "Asks the garage to call you back and leaves a way to reach you",
+        "Speaks in a clear, polite and structured way"
+      ],
+      "minSeconds": 50
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "De weg uitleggen",
+    "prompt": "Record yourself explaining the route to a lost tourist.",
+    "payload": {
+      "stimulus": "Een toerist vraagt u op straat de weg naar het museum. Leg uit hoe hij er lopend kan komen vanaf waar u staat.",
+      "criteria": [
+        "Gives the directions step by step in a logical order",
+        "Uses direction words like rechtsaf, linksaf, rechtdoor and landmarks",
+        "Estimates the distance or walking time",
+        "Speaks clearly and checks that the listener understood"
+      ],
+      "minSeconds": 50
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "title": "Een probleem oplossen met de verhuurder",
+    "prompt": "Record what you would say to your landlord about the recurring problem.",
+    "payload": {
+      "stimulus": "De verwarming in uw huurwoning valt al weken regelmatig uit en de verhuurder reageert traag. U spreekt hem persoonlijk aan. Wat zegt u?",
+      "criteria": [
+        "Explains the problem and its impact clearly and calmly",
+        "Refers to earlier contact and the lack of a solution",
+        "Proposes a concrete next step and a deadline",
+        "Keeps a firm but constructive tone and speaks fluently"
+      ],
+      "minSeconds": 75
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "title": "Mening geven: sociale media en jongeren",
+    "prompt": "Record a short spoken opinion on the statement below.",
+    "payload": {
+      "stimulus": "Stelling: 'Kinderen onder de zestien zouden geen sociale media mogen gebruiken.' Geef in een korte gesproken bijdrage uw genuanceerde mening.",
+      "criteria": [
+        "Gives a nuanced position rather than a simple yes or no",
+        "Supports the view with concrete arguments and an example",
+        "Weighs advantages against disadvantages",
+        "Speaks fluently and coherently with clear signposting"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
   }
 ]

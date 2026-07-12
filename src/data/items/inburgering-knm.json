@@ -89,5 +89,143 @@
     },
     "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Verplichte zorgverzekering",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord (oefenmateriaal, geen officiële toets).",
+    "payload": {
+      "question": "Wat geldt in Nederland voor volwassenen als het gaat om een basiszorgverzekering?",
+      "options": ["Iedereen is verplicht een zorgverzekering af te sluiten", "Een zorgverzekering is helemaal gratis voor iedereen", "Alleen mensen met werk mogen een verzekering nemen", "Een zorgverzekering is nooit nodig in Nederland"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Inschrijven bij de gemeente",
+    "prompt": "Lees de tekst en beantwoord de KNM-oefenvraag.",
+    "payload": {
+      "passage": "Als u in een Nederlandse stad of dorp komt wonen, moet u zich inschrijven. Daarna krijgt u een burgerservicenummer (BSN). Dit nummer hebt u nodig voor werk, de dokter en de Belastingdienst.",
+      "question": "Waar schrijft u zich in om een BSN te krijgen?",
+      "options": ["Bij de gemeente", "Bij de supermarkt", "Bij de huisarts", "Bij de werkgever"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Noodnummer 112",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Welk telefoonnummer belt u in Nederland bij een noodgeval, bijvoorbeeld bij brand of een ernstig ongeluk?",
+      "options": ["112", "0800", "118", "911"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Reizen met het openbaar vervoer",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Waarmee betaalt u meestal een rit met de trein, bus, tram of metro in Nederland?",
+      "options": ["Met een OV-chipkaart of bankpas/telefoon inchecken", "Met een paspoort", "Met een zorgpas", "Met een rijbewijs"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "De huurcommissie",
+    "prompt": "Lees de tekst en beantwoord de KNM-oefenvraag.",
+    "payload": {
+      "passage": "Anna huurt een kamer. Zij vindt dat haar verhuurder een te hoge huur vraagt en dat het achterstallig onderhoud niet wordt opgelost. Zij en de verhuurder komen er samen niet uit.",
+      "question": "Bij welke instantie kan Anna terecht voor een uitspraak over een geschil over de huurprijs of onderhoud van sociale huur?",
+      "options": ["De Huurcommissie", "De ANWB", "De Kamer van Koophandel", "Het UWV"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Eigen risico in de zorg",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Wat betekent het 'eigen risico' van de basiszorgverzekering?",
+      "options": ["Een bedrag aan zorgkosten dat u eerst zelf betaalt voordat de verzekering vergoedt", "Het maandbedrag dat u aan de verzekeraar betaalt", "Een boete als u te laat bij de dokter komt", "Geld dat de verzekering u elk jaar teruggeeft"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Inloggen met DigiD",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Waarvoor gebruikt u in Nederland uw DigiD?",
+      "options": ["Om veilig in te loggen bij de overheid en andere officiële organisaties", "Om te betalen in de supermarkt", "Om een trein te reserveren", "Om reclame op internet te blokkeren"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "De proeftijd in een arbeidscontract",
+    "prompt": "Lees de tekst en beantwoord de KNM-oefenvraag.",
+    "payload": {
+      "passage": "Karim begint aan een nieuwe baan. In zijn arbeidscontract staat dat de eerste periode een proeftijd is.",
+      "question": "Wat is meestal het doel van een proeftijd aan het begin van een baan?",
+      "options": ["Werkgever en werknemer kunnen kijken of het werk bij hen past", "De werknemer krijgt in die periode geen salaris", "De werknemer mag in die tijd niet ziek worden", "De werkgever hoeft geen belasting te betalen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Gelijke behandeling",
+    "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
+    "payload": {
+      "question": "Een belangrijke waarde in de Nederlandse samenleving is gelijkheid. Wat past hierbij?",
+      "options": ["Mannen en vrouwen hebben dezelfde rechten", "Alleen mannen mogen stemmen", "Een werkgever mag iemand weigeren vanwege geloof of afkomst", "Vrouwen mogen niet zelfstandig werken"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
   }
 ]
