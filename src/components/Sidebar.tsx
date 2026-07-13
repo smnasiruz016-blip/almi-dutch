@@ -20,7 +20,7 @@ function buildItems(isAdmin: boolean): Item[] {
   const items: Item[] = [
     { key: "home", href: "/", icon: "🏠", label: "Home", match: "/" },
     { key: "practice", href: "/practice", icon: "✏️", label: "Choose a Test", match: "/practice" },
-    { key: "exams", href: "/exams", icon: "🎓", label: "Choose a Test", match: "/exams" },
+    { key: "exams", href: "/exams", icon: "🎓", label: "Exam Guide", match: "/exams" },
     { key: "progress", href: "/account", icon: "📊", label: "My Progress", match: "/account" },
     { key: "account", href: "/account", icon: "👤", label: "Account", match: "/account" },
   ];

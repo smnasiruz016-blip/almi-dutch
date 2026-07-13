@@ -4,7 +4,7 @@ import Link from "next/link";
 // Honest requirements explainer: which inburgering language level applies (A2
 // vs B1) by integration-obligation date, and how to PREPARE for it. Framed as
 // honest preparation — never as beating or getting around DUO/IND. ISR.
-export const revalidate = 2592000;
+export const revalidate = false;
 
 const SITE = "https://almidutch.almiworld.com";
 const PATH = "/requirements/netherlands/b1-inburgering-timeline";
