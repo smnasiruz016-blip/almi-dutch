@@ -103,7 +103,10 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
   // TAUGHT-GATE (rule #3): index only where the uni teaches the subject; else
   // noindex + canonical-up to the subject×origin hub.
   const taught = uniTeaches(uni, subject.slug);
-  const canonicalPath = taught ? path : `/study-in-netherlands/${subject.slug}/from/${country.slug}`;
+  // Taught leaves are self-canonical and indexed (the origin×subject search
+  // intent). A thin, untaught cell canonicals UP to the subject hub, which is a
+  // real indexed route — never to a subject×origin URL that has no page (404).
+  const canonicalPath = taught ? path : `/study-in-netherlands/${subject.slug}`;
 
   const recognitionSection = {
     heading: `Using a Dutch degree back in ${country.name}`,
@@ -170,7 +173,7 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
     breadcrumbs: [
       { name: "Study in the Netherlands", path: "/study-in-netherlands" },
       { name: subject.name, path: `/study-in-netherlands/${subject.slug}` },
-      { name: country.name, path: canonicalPath },
+      { name: country.name, path },
     ],
     jsonLd: faqJsonLd([
       { q: `Do I need Dutch to study ${subject.name} in the Netherlands?`, a: `For Dutch-taught programmes, usually around B1–B2; many English-taught master's waive it for admission. Confirm with the university.` },
