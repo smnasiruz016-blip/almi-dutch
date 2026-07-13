@@ -6,7 +6,7 @@ import { resolveOriginBlock } from "@/lib/seo/origin-localization";
 import { FunnelPage } from "@/components/seo/FunnelPage";
 
 export const dynamicParams = true;
-export const revalidate = 2592000;
+export const revalidate = false;
 export function generateStaticParams() { return []; }
 
 type Params = Promise<{ role: string; country: string; hub: string }>;

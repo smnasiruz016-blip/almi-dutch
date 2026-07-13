@@ -8,7 +8,7 @@ import { FunnelPage } from "@/components/seo/FunnelPage";
 // ISR on-demand: nothing pre-rendered at build; each URL renders + caches on
 // first request, revalidating every 30 days.
 export const dynamicParams = true;
-export const revalidate = 2592000;
+export const revalidate = false;
 export function generateStaticParams() { return []; }
 
 type Params = Promise<{ subject: string; country: string; university: string }>;
