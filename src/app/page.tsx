@@ -8,10 +8,10 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "AlmiDutch | Practise Dutch Exams with Honest Readiness",
+    absolute: "Dutch Exam Practice (NT2 & Inburgering) — Honest | AlmiDutch",
   },
   description:
-    "Stop guessing your Dutch level for DUO or IND. Practise real NT2 Staatsexamen (B1/B2) and Inburgering (A2/B1) formats with honest AI readiness bands, KNM and ONA practice.",
+    "Stop guessing your Dutch level for DUO or IND — practise real NT2 Staatsexamen (B1/B2) and Inburgering (A2/B1) with honest AI readiness bands, KNM and ONA.",
   openGraph: {
     title: "AlmiDutch — honest NT2 & Inburgering practice",
     description:
