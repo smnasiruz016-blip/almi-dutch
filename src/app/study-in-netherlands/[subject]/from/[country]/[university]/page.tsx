@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SUBJECT_BY_SLUG, COUNTRY_BY_SLUG, UNI_BY_SLUG } from "@/lib/seo/axes";
 import { buildStudyPage } from "@/lib/seo/content";
+import { resolveOriginBlock } from "@/lib/seo/origin-localization";
 import { FunnelPage } from "@/components/seo/FunnelPage";
 
 // ISR on-demand: nothing pre-rendered at build; each URL renders + caches on
@@ -24,11 +25,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { subject, country, university } = await params;
   const r = resolve(subject, country, university);
   if (!r) return { title: "Not found" };
-  const p = buildStudyPage(r.s, r.c, r.u);
+  const p = buildStudyPage(r.s, r.c, r.u, resolveOriginBlock(r.c));
   return {
     title: { absolute: p.metaTitle },
     description: p.metaDescription,
     alternates: { canonical: p.canonicalPath },
+    robots: p.indexable ? undefined : { index: false, follow: true },
     openGraph: { title: p.h1, description: p.metaDescription },
   };
 }
@@ -37,5 +39,5 @@ export default async function Page({ params }: { params: Params }) {
   const { subject, country, university } = await params;
   const r = resolve(subject, country, university);
   if (!r) notFound();
-  return <FunnelPage page={buildStudyPage(r.s, r.c, r.u)} />;
+  return <FunnelPage page={buildStudyPage(r.s, r.c, r.u, resolveOriginBlock(r.c))} />;
 }

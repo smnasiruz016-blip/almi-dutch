@@ -1,5 +1,6 @@
 import { buildStudyPage, buildJobsPage, buildLevelPage } from "@/lib/seo/content";
 import { SUBJECT_BY_SLUG, COUNTRY_BY_SLUG, UNI_BY_SLUG, ROLE_BY_SLUG, HUB_BY_SLUG } from "@/lib/seo/axes";
+import { resolveOriginBlock } from "@/lib/seo/origin-localization";
 import { NT2_EXAMS } from "@/lib/nl/registry";
 
 function show(title: string, p: ReturnType<typeof buildStudyPage>) {
@@ -27,6 +28,7 @@ show("STUDY SAMPLE", buildStudyPage(
   SUBJECT_BY_SLUG.get("computer-science-it")!,
   COUNTRY_BY_SLUG.get("nigeria")!,
   uni,
+  resolveOriginBlock(COUNTRY_BY_SLUG.get("nigeria")!),
 ));
 
 // Sample 2 — JOBS: Registered Nurse, from India, Amsterdam
@@ -34,6 +36,7 @@ show("JOBS SAMPLE", buildJobsPage(
   ROLE_BY_SLUG.get("registered-nurse")!,
   COUNTRY_BY_SLUG.get("india")!,
   HUB_BY_SLUG.get("amsterdam")!,
+  resolveOriginBlock(COUNTRY_BY_SLUG.get("india")!),
 ));
 
 // Sample 3 — LEVEL: NT2 Programma I (B1)

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ROLE_BY_SLUG, COUNTRY_BY_SLUG, HUB_BY_SLUG } from "@/lib/seo/axes";
 import { buildJobsPage } from "@/lib/seo/content";
+import { resolveOriginBlock } from "@/lib/seo/origin-localization";
 import { FunnelPage } from "@/components/seo/FunnelPage";
 
 export const dynamicParams = true;
@@ -22,11 +23,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { role, country, hub } = await params;
   const x = resolve(role, country, hub);
   if (!x) return { title: "Not found" };
-  const p = buildJobsPage(x.r, x.c, x.h);
+  const p = buildJobsPage(x.r, x.c, x.h, resolveOriginBlock(x.c));
   return {
     title: { absolute: p.metaTitle },
     description: p.metaDescription,
     alternates: { canonical: p.canonicalPath },
+    robots: p.indexable ? undefined : { index: false, follow: true },
     openGraph: { title: p.h1, description: p.metaDescription },
   };
 }
@@ -35,5 +37,5 @@ export default async function Page({ params }: { params: Params }) {
   const { role, country, hub } = await params;
   const x = resolve(role, country, hub);
   if (!x) notFound();
-  return <FunnelPage page={buildJobsPage(x.r, x.c, x.h)} />;
+  return <FunnelPage page={buildJobsPage(x.r, x.c, x.h, resolveOriginBlock(x.c))} />;
 }
