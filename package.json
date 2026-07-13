@@ -5,13 +5,14 @@
   "description": "AlmiPortuguese — AI-powered Portuguese exam practice in the AlmiWorld family. European CAPLE (Portugal) and Brazilian Celpe-Bras readiness with honest per-skill estimates and AI feedback, no fabricated composite. Separate product (almidutch.almiworld.com). Original content — never copied from official exam material. Practice estimates only; confirm the level you need with the official exam body.",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "node scripts/seo/uniqueness-gate.mjs && prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "postinstall": "prisma generate"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.91.1",
     "@prisma/client": "^6.19.3",
+    "@smnasiruz016-blip/almi-data": "^0.4.0",
     "bcryptjs": "^3.0.3",
     "next": "16.2.6",
     "prisma": "^6.19.3",

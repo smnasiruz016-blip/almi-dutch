@@ -11,6 +11,8 @@ import {
   UNIVERSITIES, COUNTRIES, HUBS,
   type SeoUniversity, type SeoRole, type SeoCountry, type SeoSubject, type SeoHub,
 } from "@/lib/seo/axes";
+import { uniTeaches } from "@/lib/seo/subject-mapper";
+import { type OriginBlock } from "@/lib/seo/origin-localization";
 
 const SITE = "https://almidutch.almiworld.com";
 
@@ -20,6 +22,9 @@ export interface SeoPage {
   metaTitle: string;
   metaDescription: string;
   canonicalPath: string;
+  /** Taught-gate: false = untaught cell → route emits robots:{index:false} +
+      canonical-up to the subject×origin hub (Localization Standard rule #3). */
+  indexable: boolean;
   intro: string[];
   sections: { heading: string; body: string[] }[];
   faq: { q: string; a: string }[];
@@ -82,28 +87,50 @@ function relatedStudy(subject: SeoSubject, country: SeoCountry, seed: number): {
   return picks.map((c) => ({ href: studyPath(subject.slug, c.slug, uniPick.slug), label: `${subject.name} in the Netherlands from ${c.name}` }));
 }
 
+// Strip trailing sentence punctuation so an origin's commonConcern reads cleanly inline.
+const cleanConcern = (s: string): string => s.replace(/\s*[.?;]+\s*$/, "").trim();
+
 // ---- STUDY PAGE -------------------------------------------------------------
-export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: SeoUniversity): SeoPage {
+// `origin` REQUIRED (Standard rule #2): a per-origin recognition block is always
+// woven, so a bare name-swap template is structurally impossible.
+export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: SeoUniversity, origin: OriginBlock): SeoPage {
   const path = studyPath(subject.slug, country.slug, uni.slug);
   const seed = hash(path);
   const sm = SUBJECT_META[subject.slug] ?? { field: subject.name.toLowerCase(), regulated: false };
   const level = levelForSubject(subject.slug);
   const uniPlace = [uni.city, uni.countryName].filter(Boolean).join(", ");
 
+  // TAUGHT-GATE (rule #3): index only where the uni teaches the subject; else
+  // noindex + canonical-up to the subject×origin hub.
+  const taught = uniTeaches(uni, subject.slug);
+  const canonicalPath = taught ? path : `/study-in-netherlands/${subject.slug}/from/${country.slug}`;
+
+  const recognitionSection = {
+    heading: `Using a Dutch degree back in ${country.name}`,
+    body: [
+      origin.localized
+        ? `In ${country.name}, recognition of a foreign degree goes through ${origin.recognitionBody}${origin.recognitionUrl ? ` (${origin.recognitionUrl})` : ""}. ${origin.equivalenceNote}`
+        : origin.equivalenceNote,
+      `A common concern for students from ${country.name} — "${cleanConcern(origin.commonConcern)}" — is worth planning early, alongside the language requirement.${origin.sourceNote ? ` (${origin.sourceNote})` : ""}${origin.searchTerms.length ? ` Students from ${country.name} commonly search for: ${origin.searchTerms.join(", ")}.` : ""}`,
+    ],
+  };
+
   const introVariants = [
     `Planning to study ${sm.field} in the Netherlands from ${country.name}? Dutch universities and universities of applied sciences (hogescholen) offer strong programmes across ${subject.name.toLowerCase()}. Many are taught in English — but for a Dutch-taught programme, and for daily life, the step students most often underestimate is the Dutch-language requirement.`,
     `${subject.name} is a popular reason students from ${country.name} look to the Netherlands. Whichever university and city you aim for, one thing shapes how smoothly you settle in and study a Dutch-taught programme: your Dutch.`,
     `If you're coming from ${country.name} to study ${sm.field} in the Netherlands, the academic side is only half the picture — where a programme is taught in Dutch, the language pathway (NT2) is what turns an offer into a place you can fully live and learn in.`,
   ];
-  const uniLine =
-    `${uni.name} — based in ${uniPlace} — is one of the institutions in our directory${uni.subjects.length ? `, associated with fields such as ${uni.subjects.slice(0, 3).join(", ")}` : ""}. If you studied at ${uni.name} or a comparable institution, your degree background matters for admission, but Dutch proficiency is assessed separately.`;
+  const uniLine = taught
+    ? `${uni.name} — based in ${uniPlace} — lists programmes associated with ${subject.name.toLowerCase()}${uni.subjects.length ? ` (fields such as ${uni.subjects.slice(0, 3).join(", ")})` : ""}. Your degree background matters for admission, but Dutch proficiency is assessed separately.`
+    : `${uni.name} — based in ${uniPlace} — is in our directory, but its public listing doesn't specifically show ${subject.name.toLowerCase()}. For a verified overview see the ${subject.name} in the Netherlands from ${country.name} guide; here we focus on the Dutch-language pathway, which applies wherever you study.`;
 
   return {
     h1: `Study ${subject.name} in the Netherlands from ${country.name}`,
     subtitle: `Reference institution: ${uni.name} (${uniPlace})`,
     metaTitle: `Study ${subject.name} in the Netherlands from ${country.name} — Dutch language pathway | AlmiDutch`,
-    metaDescription: `The Dutch-language route for ${country.name} students studying ${sm.field} in the Netherlands — typical NT2 level (${level.name} ${level.cefr}), honest readiness practice, and how to prepare. Not an official result.`,
-    canonicalPath: path,
+    metaDescription: `The Dutch-language route for ${country.name} students studying ${sm.field} in the Netherlands — typical NT2 level (${level.name} ${level.cefr}), degree recognition via ${origin.recognitionBody}, and honest readiness practice. Not an official result.`,
+    canonicalPath,
+    indexable: taught,
     intro: [pick(introVariants, seed), uniLine],
     sections: [
       {
@@ -115,6 +142,7 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
             : `For ${sm.field}, a solid B1–B2 lets you follow a Dutch-taught programme, write assignments and integrate — aim a level above the minimum if you can.`,
         ],
       },
+      recognitionSection,
       {
         heading: `Practise for ${level.name} (${level.cefr}) — honestly`,
         body: [
@@ -129,8 +157,10 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
     ],
     faq: [
       { q: `Do I need Dutch to study ${subject.name} in the Netherlands?`, a: `For Dutch-taught programmes, usually around B1–B2. Many English-taught master's waive it for admission, but you'll still need Dutch day-to-day. Confirm with the university.` },
+      { q: `Will a Dutch degree be recognised in ${country.name}?`, a: origin.localized
+        ? `Recognition of a foreign degree in ${country.name} goes through ${origin.recognitionBody}. ${origin.equivalenceNote} Confirm the current process on the official site${origin.recognitionUrl ? ` (${origin.recognitionUrl})` : ""}.`
+        : origin.equivalenceNote },
       { q: `Which NT2 level should I aim for?`, a: `Most higher-education programmes in Dutch sit around ${PROG_I.name} (B1) to ${PROG_II.name} (B2). Regulated fields and professional practice may need more. AlmiDutch shows an honest per-skill readiness band, not an official score.` },
-      { q: `Is the readiness estimate my real NT2 result?`, a: `No. It's a practice estimate against the real criteria to guide your prep. Only the official NT2 Staatsexamen (CvTE, administered by DUO) issues real results.` },
     ],
     related: [
       { href: `/exams/${level.slug}`, label: `${level.name} (${level.cefr}) exam guide` },
@@ -140,7 +170,7 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
     breadcrumbs: [
       { name: "Study in the Netherlands", path: "/study-in-netherlands" },
       { name: subject.name, path: `/study-in-netherlands/${subject.slug}` },
-      { name: country.name, path: path },
+      { name: country.name, path: canonicalPath },
     ],
     jsonLd: faqJsonLd([
       { q: `Do I need Dutch to study ${subject.name} in the Netherlands?`, a: `For Dutch-taught programmes, usually around B1–B2; many English-taught master's waive it for admission. Confirm with the university.` },
@@ -149,7 +179,7 @@ export function buildStudyPage(subject: SeoSubject, country: SeoCountry, uni: Se
 }
 
 // ---- JOBS PAGE --------------------------------------------------------------
-export function buildJobsPage(role: SeoRole, country: SeoCountry, hub: SeoHub): SeoPage {
+export function buildJobsPage(role: SeoRole, country: SeoCountry, hub: SeoHub, origin: OriginBlock): SeoPage {
   const path = jobsPath(role.slug, country.slug, hub.slug);
   const seed = hash(path);
   const clientFacing = role.collar === "pink" || role.collar === "white";
@@ -164,8 +194,9 @@ export function buildJobsPage(role: SeoRole, country: SeoCountry, hub: SeoHub): 
     h1: `Work in the Netherlands as a ${role.name} from ${country.name}`,
     subtitle: `${hub.name} · ${hub.region}`,
     metaTitle: `Work in the Netherlands as a ${role.name} from ${country.name} (${hub.name}) — Dutch you'll need | AlmiDutch`,
-    metaDescription: `The Dutch-language side of working as a ${role.name} in ${hub.name}, the Netherlands, coming from ${country.name} — how much you'll need, which NT2 level, and honest readiness practice. Confirm specifics with employers and regulators.`,
+    metaDescription: `The Dutch-language side of working as a ${role.name} in ${hub.name}, the Netherlands, coming from ${country.name} — how much you'll need, which NT2 level, home-qualification recognition via ${origin.recognitionBody}, and honest readiness practice. Confirm specifics with employers and regulators.`,
     canonicalPath: path,
+    indexable: true,
     intro: [pick(introVariants, seed)],
     sections: [
       {
@@ -174,12 +205,12 @@ export function buildJobsPage(role: SeoRole, country: SeoCountry, hub: SeoHub): 
           clientFacing
             ? `As a ${role.name}, you'll likely deal with colleagues, clients or patients directly, so employers often expect conversational-to-professional Dutch — think B1–B2 and up. Even in international teams, Dutch widens your options in ${hub.name}.`
             : `A ${role.name} in a technical or international team in ${hub.name} may work largely in English — common in Dutch tech, engineering and startups. But Dutch still helps with admin, teammates and everyday life — and it's important if you plan to stay long-term.`,
-          `Some professions are regulated and need formal recognition plus a set Dutch level — confirm the exact requirement with the employer and the relevant Dutch regulator.`,
+          `Some professions are regulated and need formal recognition plus a set Dutch level — confirm the exact requirement with the employer and the relevant Dutch regulator. ${origin.localized ? `If you trained in ${country.name}, your qualification's home recognition runs through ${origin.recognitionBody}${origin.recognitionUrl ? ` (${origin.recognitionUrl})` : ""}; ${origin.equivalenceNote}` : origin.equivalenceNote} A common concern coming from ${country.name}: "${cleanConcern(origin.commonConcern)}".`,
         ],
       },
       {
         heading: "Residency, and later citizenship",
-        body: [`If working in ${hub.name} is a step toward settling in the Netherlands, the language matters beyond the job. ${CITIZENSHIP_HEDGE}`],
+        body: [`If working in ${hub.name} is a step toward settling in the Netherlands, the language matters beyond the job. ${CITIZENSHIP_HEDGE} ${origin.citizenshipNote}`],
       },
       {
         heading: "Practise the Dutch you'll actually use — honestly",
@@ -223,6 +254,7 @@ export function buildLevelPage(exam: ExamMeta): SeoPage {
       : `${exam.name} (${exam.cefr}) — NT2 Staatsexamen format & honest practice | AlmiDutch`,
     metaDescription: `${examLabel(exam)}: what it tests, how it's structured, and honest readiness practice. ${isInburgering ? "Commonly relevant to residency and naturalisatie — confirm the current rule with DUO / IND." : "Practice estimate, not an official CvTE/DUO result."}`,
     canonicalPath: path,
+    indexable: true,
     intro: [
       `${exam.name} sits at CEFR ${exam.cefr}.${isInburgering ? inbLine : nt2Line} It assesses ${isInburgering ? "Reading, Listening, Writing and Speaking, plus KNM and ONA" : "four skills — Reading (Lezen), Listening (Luisteren), Writing (Schrijven) and Speaking (Spreken); the Diploma NT2 requires passing all four parts"}.`,
     ],
