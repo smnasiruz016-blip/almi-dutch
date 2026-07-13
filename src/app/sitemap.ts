@@ -1,15 +1,18 @@
 import type { MetadataRoute } from "next";
 import {
-  STUDY_TOTAL, JOBS_TOTAL,
-  studyComboAtIndex, jobsComboAtIndex, studyPath, jobsPath,
+  JOBS_TOTAL,
+  jobsComboAtIndex, studyPath, jobsPath,
 } from "@/lib/seo/axes";
+import { TAUGHT_STUDY_TOTAL, taughtStudyComboAtIndex } from "@/lib/seo/taught-index";
 import { ALL_EXAMS } from "@/lib/nl/registry";
 
 const SITE = "https://almidutch.almiworld.com";
 const PER = 50_000; // Google's max URLs per sitemap
 const LASTMOD = "2026-07-10";
 
-const STUDY_SHARDS = Math.ceil(STUDY_TOTAL / PER); // ~151
+// Only the TAUGHT study leaves are indexable, so only those go in the sitemap —
+// the untaught majority render noindex and must not burn crawl budget / ISR writes.
+const STUDY_SHARDS = Math.ceil(TAUGHT_STUDY_TOTAL / PER); // ~56
 const JOBS_SHARDS = Math.ceil(JOBS_TOTAL / PER); //   ~7
 // Shard 0 = core + level pages; 1..STUDY_SHARDS = study; then jobs.
 const TOTAL_SHARDS = 1 + STUDY_SHARDS + JOBS_SHARDS;
@@ -39,10 +42,10 @@ export default async function sitemap({ id }: { id: Promise<string> }): Promise<
   // Study shards: 1 .. STUDY_SHARDS
   if (shard >= 1 && shard <= STUDY_SHARDS) {
     const start = (shard - 1) * PER;
-    const end = Math.min(start + PER, STUDY_TOTAL);
+    const end = Math.min(start + PER, TAUGHT_STUDY_TOTAL);
     const out: MetadataRoute.Sitemap = [];
     for (let i = start; i < end; i++) {
-      const c = studyComboAtIndex(i);
+      const c = taughtStudyComboAtIndex(i);
       if (c) out.push(entry(studyPath(c.subject.slug, c.country.slug, c.university.slug)));
     }
     return out;
