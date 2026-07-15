@@ -22,7 +22,14 @@ export interface SeoHub { slug: string; name: string; region: string; profile: s
 
 export const UNIVERSITIES = universitiesJson as SeoUniversity[];
 export const ROLES = rolesJson as SeoRole[];
-export const COUNTRIES = countriesJson as SeoCountry[]; // origins only (Portugal excluded)
+// Origins only: 196 = the 197-country axis minus the Netherlands itself. Until
+// 2026-07-15 this comment read "origins only (Portugal excluded)" — almi-portuguese's
+// line, copied verbatim and never localized. It was the fossil that proved where this
+// file came from, and it documented the bug: PT really was excluded (correct there,
+// wrong here — Portugal is a valid origin for a Dutch product), while the Netherlands,
+// which IS the destination, was listed as an origin of itself.
+// See scripts/seo/countries-axis-gate.mjs, which now fails the build on both.
+export const COUNTRIES = countriesJson as SeoCountry[];
 export const SUBJECTS = subjectsJson as SeoSubject[];
 export const HUBS = hubsJson as SeoHub[];
 
