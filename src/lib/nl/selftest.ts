@@ -1,7 +1,7 @@
 // Engine selftests — run with `npm run selftest:engine` (tsx).
 // Proves the per-skill readiness bands and objective grading are correct.
 
-import { gradeObjective, readinessFromPct, skillReadout, aggregateReadout } from "./grading";
+import { gradeObjective, readinessFromPct, skillReadout, aggregateReadout, goalReadout } from "./grading";
 
 let pass = 0;
 let fail = 0;
@@ -58,6 +58,45 @@ eq(skillReadout("READING", 8, 10).readiness, "CLEAR", "reading 80% clear");
     skillReadout("LISTENING", 8, 10),
   ]);
   eq(agg.allClear, true, "agg all clear");
+}
+
+// ---- goal-readiness bands from AT-GOAL tasks only (e.g. Inburgering B1 goal = B1) ----
+{
+  // A poor B1 (at-goal) result next to a perfect A2 (foundational) win.
+  // Blended, this is 13/20 = 65% (BORDERLINE) — inflated by the below-goal win.
+  // Goal-readiness must band the B1 tasks ONLY: 3/10 = 30% (BELOW).
+  const r = goalReadout(
+    [
+      { cefr: "B1", points: 3, maxPoints: 10 }, // at-goal, poor
+      { cefr: "A2", points: 10, maxPoints: 10 }, // foundational, perfect
+    ],
+    "B1",
+  );
+  eq(r.atGoalPct, 30, "goal atGoal only (not blended to 65)");
+  eq(r.readiness, "BELOW", "goal band BELOW from at-goal");
+  eq(r.foundationalCount, 1, "goal foundational counted separately");
+  eq(r.atGoalCount, 1, "goal at-goal count");
+}
+{
+  // Above-goal miss must NOT deflate the goal band (Inburgering A2 goal, a B1 task).
+  const r = goalReadout(
+    [
+      { cefr: "A2", points: 9, maxPoints: 10 }, // at-goal, strong
+      { cefr: "B1", points: 0, maxPoints: 10 }, // above-goal, missed
+    ],
+    "A2",
+  );
+  eq(r.atGoalPct, 90, "goal above-goal miss excluded (not 45)");
+  eq(r.readiness, "CLEAR", "goal band CLEAR from at-goal only");
+  eq(r.aboveCount, 1, "goal above-goal counted separately");
+}
+{
+  // No at-goal tasks → no honest estimate (null), NEVER 0%. Untagged = UNDECLARED.
+  const r = goalReadout([{ cefr: "A2", points: 2, maxPoints: 10 }, { points: 5, maxPoints: 10 }], "B1");
+  eq(r.atGoalPct, null, "goal no-at-goal → null pct");
+  eq(r.readiness, null, "goal no-at-goal → null readiness");
+  eq(r.foundationalCount, 1, "goal foundational (A2 vs B1) counted");
+  eq(r.undeclaredCount, 1, "goal undeclared (untagged) counted");
 }
 
 console.log(`\nAlmiDutch engine selftest: ${pass} passed, ${fail} failed`);

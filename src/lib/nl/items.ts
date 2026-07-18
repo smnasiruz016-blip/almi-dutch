@@ -14,6 +14,7 @@ import type {
   DutchSkill,
   DutchTaskType,
   DutchDifficulty,
+  CefrLevel,
   ObjectiveAnswer,
 } from "./types";
 
@@ -24,6 +25,9 @@ export interface DutchItemSeed {
   skill: DutchSkill;
   taskType: DutchTaskType;
   difficulty: DutchDifficulty;
+  /** The CEFR level this task is pitched at (optional). Feeds the goal-readiness band
+   *  and the level-aware AI grader. Absent = UNDECLARED (never counted as at-goal). */
+  cefr?: CefrLevel;
   title: string;
   prompt: string;
   payload: unknown;

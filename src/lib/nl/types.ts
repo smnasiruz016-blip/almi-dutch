@@ -26,6 +26,13 @@ export type DutchTaskType =
 
 export type DutchDifficulty = "FOUNDATION" | "CORE" | "STRETCH";
 
+// The CEFR level a single task is PITCHED at — distinct from `difficulty`, a
+// FOUNDATION/CORE/STRETCH ladder INSIDE an exam that crosses levels freely. Level is
+// what the goal-readiness band keys on (almi-data splitByLevel); difficulty only
+// orders/varies. Optional: untagged = UNDECLARED, never silently counted at-goal.
+// Re-exported from the canonical rule package.
+export type { CefrLevel } from "@smnasiruz016-blip/almi-data";
+
 export const OBJECTIVE_TASK_TYPES: DutchTaskType[] = [
   "MCQ_SINGLE",
   "MATCHING",

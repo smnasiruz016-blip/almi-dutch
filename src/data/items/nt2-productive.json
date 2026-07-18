@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Bericht aan een verkoper",
     "prompt": "Schrijf een kort, beleefd bericht aan de verkoper over de kapotte rem.",
     "payload": {
@@ -15,7 +16,10 @@
         "U gebruikt een gepaste aanhef en afsluiting",
         "De tekst is begrijpelijk en ongeveer 60 tot 90 woorden"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -26,6 +30,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Ingezonden brief: park of parkeerterrein",
     "prompt": "Schrijf een ingezonden brief waarin u uw mening geeft over het plan.",
     "payload": {
@@ -36,7 +41,10 @@
         "U reageert op een mogelijk tegenargument",
         "De tekst heeft een heldere opbouw en is ongeveer 150 tot 200 woorden"
       ],
-      "charBand": { "min": 700, "max": 1300 }
+      "charBand": {
+        "min": 700,
+        "max": 1300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -47,6 +55,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Een afspraak maken bij de huisarts",
     "prompt": "Neem hardop op wat u zou zeggen tijdens dit telefoongesprek.",
     "payload": {
@@ -68,6 +77,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Je mening geven over thuiswerken",
     "prompt": "Neem een korte bijdrage op waarin u uw mening onderbouwt.",
     "payload": {
@@ -89,6 +99,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Briefje voor de buurvrouw",
     "prompt": "Write a short friendly note to your neighbour in reply to her request.",
     "payload": {
@@ -99,7 +110,10 @@
         "Uses an informal but polite tone with an opening and closing",
         "Message is understandable and roughly 80 to 130 characters"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -110,6 +124,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Afmelden voor de cursus",
     "prompt": "Write a short email to cancel your attendance at tonight's class.",
     "payload": {
@@ -120,7 +135,10 @@
         "Uses an appropriate greeting and sign-off for a teacher",
         "Links ideas with connectors like omdat or daarom"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -131,6 +149,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Klacht over een pakket",
     "prompt": "Write a short complaint message about a package that arrived damaged.",
     "payload": {
@@ -141,7 +160,10 @@
         "Mentions a relevant detail such as the order number",
         "Keeps a polite but firm tone throughout"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -152,6 +174,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "E-mail aan de gemeente",
     "prompt": "Write a formal email to the municipality about a problem in your street.",
     "payload": {
@@ -162,7 +185,10 @@
         "Makes a concrete request with a reasonable timeframe",
         "Uses a consistent formal register (u-vorm) with correct greeting and closing"
       ],
-      "charBand": { "min": 150, "max": 300 }
+      "charBand": {
+        "min": 150,
+        "max": 300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -173,6 +199,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Reactie op een stelling: gratis openbaar vervoer",
     "prompt": "Write an argumentative reaction to the statement below.",
     "payload": {
@@ -183,7 +210,10 @@
         "Acknowledges and responds to a counterargument",
         "Shows a clear structure and varied connectors (bovendien, hoewel, daarentegen)"
       ],
-      "charBand": { "min": 150, "max": 300 }
+      "charBand": {
+        "min": 150,
+        "max": 300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -194,6 +224,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Sollicitatie: motivatie in het kort",
     "prompt": "Write a short motivation paragraph for a job application.",
     "payload": {
@@ -204,7 +235,10 @@
         "Connects your qualities to what the role requires",
         "Uses a professional, confident register without exaggeration"
       ],
-      "charBand": { "min": 150, "max": 300 }
+      "charBand": {
+        "min": 150,
+        "max": 300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -215,6 +249,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "B1",
     "title": "Een foto beschrijven: het station",
     "prompt": "Record yourself describing what you see and imagine in the scene.",
     "payload": {
@@ -236,6 +271,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Een voicemail inspreken",
     "prompt": "Record the voicemail you would leave for the garage.",
     "payload": {
@@ -257,6 +293,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "De weg uitleggen",
     "prompt": "Record yourself explaining the route to a lost tourist.",
     "payload": {
@@ -278,6 +315,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Een probleem oplossen met de verhuurder",
     "prompt": "Record what you would say to your landlord about the recurring problem.",
     "payload": {
@@ -299,6 +337,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Mening geven: sociale media en jongeren",
     "prompt": "Record a short spoken opinion on the statement below.",
     "payload": {

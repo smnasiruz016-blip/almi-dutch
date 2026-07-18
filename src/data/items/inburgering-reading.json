@@ -5,14 +5,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Brief van de gemeente",
     "prompt": "Read the letter and answer the question.",
     "payload": {
       "passage": "Beste bewoner,\n\nOp woensdag 8 april komt de gemeente uw straat schoonmaken. Wilt u die dag uw auto ergens anders parkeren? De werkzaamheden zijn van 8.00 tot 12.00 uur. Na 12.00 uur mag u weer gewoon in de straat parkeren.\n\nMet vriendelijke groet,\nGemeente Almere",
       "question": "Wat moeten bewoners op 8 april doen?",
-      "options": ["Hun auto ergens anders parkeren", "De hele dag thuisblijven", "De straat zelf schoonmaken", "De gemeente bellen"]
+      "options": [
+        "Hun auto ergens anders parkeren",
+        "De hele dag thuisblijven",
+        "De straat zelf schoonmaken",
+        "De gemeente bellen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -21,14 +30,21 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Aanbieding supermarkt",
     "prompt": "Read the flyer. Is the statement true or false?",
     "payload": {
       "passage": "Deze week bij supermarkt De Hoek: alle groente en fruit met 25% korting! De aanbieding geldt van maandag tot en met zaterdag. Op zondag is de winkel gesloten.",
       "question": "Stelling: de aanbieding geldt ook op zondag.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -37,14 +53,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Nieuwsbrief van de school",
     "prompt": "Read the school newsletter and answer the question.",
     "payload": {
       "passage": "Beste ouders,\n\nVolgende week vrijdag gaan de kinderen van groep 5 naar het museum. Wilt u uw kind een lunchpakketje en drinken meegeven? De kinderen zijn om 15.00 uur weer terug op school.\n\nGroeten,\nJuf Karin",
       "question": "Wat moeten ouders meegeven?",
-      "options": ["Een lunchpakketje en drinken", "Geld voor een kaartje", "Een jas en laarzen", "Een boek"]
+      "options": [
+        "Een lunchpakketje en drinken",
+        "Geld voor een kaartje",
+        "Een jas en laarzen",
+        "Een boek"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -53,17 +78,55 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Instructie bij medicijnen",
     "prompt": "Choose the word that fits best in each gap.",
     "payload": {
       "passage": "Neem drie keer per dag één {{1}} in. Neem het medicijn tijdens de {{2}} met een glas water. Bewaar de doosjes op een droge en koele {{3}}, buiten het bereik van kinderen.",
       "gaps": [
-        { "id": 1, "options": ["tablet", "fiets", "brief"] },
-        { "id": 2, "options": ["maaltijd", "vakantie", "vergadering"] },
-        { "id": 3, "options": ["plaats", "kleur", "tijd"] }
+        {
+          "id": 1,
+          "options": [
+            "tablet",
+            "fiets",
+            "brief"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "maaltijd",
+            "vakantie",
+            "vergadering"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "plaats",
+            "kleur",
+            "tijd"
+          ]
+        }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        {
+          "id": 1,
+          "index": 0
+        },
+        {
+          "id": 2,
+          "index": 0
+        },
+        {
+          "id": 3,
+          "index": 0
+        }
+      ]
+    },
     "maxPoints": 3
   },
   {
@@ -72,6 +135,7 @@
     "skill": "READING",
     "taskType": "ORDERING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Geld pinnen bij de automaat",
     "prompt": "Put the steps in the correct order.",
     "payload": {
@@ -83,7 +147,15 @@
         "Pak uw pas en het geld uit de automaat."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -92,14 +164,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Bericht van de verhuurder",
     "prompt": "Read the notice and answer the question.",
     "payload": {
       "passage": "Beste huurder,\n\nOp dinsdag 12 mei komt de loodgieter de cv-ketel controleren. Hij komt tussen 9.00 en 11.00 uur. Zorgt u ervoor dat er iemand thuis is? Als u niet thuis kunt zijn, bel dan de beheerder om een nieuwe afspraak te maken.",
       "question": "Wat moet u doen als u niet thuis kunt zijn?",
-      "options": ["De beheerder bellen voor een nieuwe afspraak", "De ketel zelf controleren", "Een e-mail naar de loodgieter sturen", "De deur openlaten"]
+      "options": [
+        "De beheerder bellen voor een nieuwe afspraak",
+        "De ketel zelf controleren",
+        "Een e-mail naar de loodgieter sturen",
+        "De deur openlaten"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -108,14 +189,21 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Bord bij het zwembad",
     "prompt": "Read the sign. Is the statement true or false?",
     "payload": {
       "passage": "Let op! Kinderen jonger dan zeven jaar mogen alleen onder begeleiding van een volwassene het water in. Rennen langs het bad is niet toegestaan.",
       "question": "Stelling: kinderen van zes jaar mogen zonder volwassene zwemmen.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -124,17 +212,55 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Afspraak bij de huisarts",
     "prompt": "Choose the word that fits best in each gap.",
     "payload": {
       "passage": "Ik voel me al een paar dagen niet goed. Daarom bel ik de {{1}} om een afspraak te maken. De assistente vraagt naar mijn {{2}}. Morgenochtend om negen uur mag ik langskomen bij de {{3}}.",
       "gaps": [
-        { "id": 1, "options": ["huisartsenpraktijk", "bakkerij", "school"] },
-        { "id": 2, "options": ["klachten", "vakantie", "hobby's"] },
-        { "id": 3, "options": ["dokter", "kapper", "buurman"] }
+        {
+          "id": 1,
+          "options": [
+            "huisartsenpraktijk",
+            "bakkerij",
+            "school"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "klachten",
+            "vakantie",
+            "hobby's"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "dokter",
+            "kapper",
+            "buurman"
+          ]
+        }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        {
+          "id": 1,
+          "index": 0
+        },
+        {
+          "id": 2,
+          "index": 0
+        },
+        {
+          "id": 3,
+          "index": 0
+        }
+      ]
+    },
     "maxPoints": 3
   },
   {
@@ -143,14 +269,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "E-mail van de leidinggevende",
     "prompt": "Read the work email and answer the question.",
     "payload": {
       "passage": "Beste team,\n\nVanaf volgende maand gaan we werken met een nieuw rooster. Iedereen krijgt voortaan één vaste thuiswerkdag per week. Wil je zelf aangeven welke dag jouw voorkeur heeft? Stuur je voorkeur uiterlijk vrijdag naar mij, dan probeer ik daar zo veel mogelijk rekening mee te houden.\n\nGroet,\nSandra",
       "question": "Wat wil Sandra dat de medewerkers doen?",
-      "options": ["Hun voorkeur voor een thuiswerkdag doorgeven", "Elke dag naar kantoor komen", "Een nieuw rooster maken", "Vrijdag vrij nemen"]
+      "options": [
+        "Hun voorkeur voor een thuiswerkdag doorgeven",
+        "Elke dag naar kantoor komen",
+        "Een nieuw rooster maken",
+        "Vrijdag vrij nemen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -159,14 +294,21 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Regel in het huurcontract",
     "prompt": "Read the tenancy clause. Is the statement true or false?",
     "payload": {
       "passage": "In dit appartement is roken niet toegestaan. Ook mag de huurder zonder schriftelijke toestemming van de verhuurder geen spijkers of schroeven in de muren aanbrengen. Kleine veranderingen die eenvoudig ongedaan te maken zijn, zoals het ophangen van gordijnen, zijn wel toegestaan.",
       "question": "Stelling: de huurder mag zonder toestemming grote gaten in de muur boren.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -175,14 +317,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Nieuws over de buurt",
     "prompt": "Read the news item and answer the question.",
     "payload": {
       "passage": "De gemeente opent volgende maand een nieuw buurtcentrum aan de Parkstraat. Bewoners kunnen er terecht voor taalcursussen, hulp bij formulieren en gezellige activiteiten. Het centrum is vooral bedoeld om mensen uit de buurt met elkaar in contact te brengen. In de eerste maand zijn alle activiteiten gratis.",
       "question": "Wat is het belangrijkste doel van het nieuwe buurtcentrum?",
-      "options": ["Buurtbewoners met elkaar in contact brengen", "Geld verdienen met cursussen", "Toeristen naar de buurt trekken", "Een nieuwe supermarkt openen"]
+      "options": [
+        "Buurtbewoners met elkaar in contact brengen",
+        "Geld verdienen met cursussen",
+        "Toeristen naar de buurt trekken",
+        "Een nieuwe supermarkt openen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -191,17 +342,55 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Reactie op een sollicitatie",
     "prompt": "Choose the word that fits best in each gap.",
     "payload": {
       "passage": "Geachte heer Yilmaz,\n\nHartelijk dank voor uw {{1}} naar de functie van magazijnmedewerker. Wij nodigen u graag uit voor een {{2}} op maandag 20 juni om 14.00 uur. Wilt u een geldig {{3}} meenemen? Kunt u niet op deze datum, laat het ons dan tijdig weten.",
       "gaps": [
-        { "id": 1, "options": ["sollicitatie", "vakantie", "verhuizing"] },
-        { "id": 2, "options": ["gesprek", "feestje", "reis"] },
-        { "id": 3, "options": ["identiteitsbewijs", "recept", "menu"] }
+        {
+          "id": 1,
+          "options": [
+            "sollicitatie",
+            "vakantie",
+            "verhuizing"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "gesprek",
+            "feestje",
+            "reis"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "identiteitsbewijs",
+            "recept",
+            "menu"
+          ]
+        }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }, { "id": 3, "index": 0 }] },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        {
+          "id": 1,
+          "index": 0
+        },
+        {
+          "id": 2,
+          "index": 0
+        },
+        {
+          "id": 3,
+          "index": 0
+        }
+      ]
+    },
     "maxPoints": 3
   },
   {
@@ -210,6 +399,7 @@
     "skill": "READING",
     "taskType": "ORDERING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Je inschrijven bij de gemeente",
     "prompt": "Put the steps in the correct order.",
     "payload": {
@@ -221,7 +411,15 @@
         "Ontvang na de inschrijving een bevestiging op je nieuwe adres."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -230,14 +428,23 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Bericht over afval scheiden",
     "prompt": "Read the text and answer the question.",
     "payload": {
       "passage": "Vanaf 1 juli verandert er iets aan het ophalen van afval in onze wijk. Restafval wordt niet meer wekelijks opgehaald, maar één keer per twee weken. Groente-, fruit- en tuinafval en papier worden juist vaker opgehaald. De gemeente hoopt zo dat inwoners hun afval beter gaan scheiden, want goed gescheiden afval kan opnieuw worden gebruikt.",
       "question": "Waarom voert de gemeente deze verandering door?",
-      "options": ["Om inwoners hun afval beter te laten scheiden", "Om geld te besparen op vuilniswagens", "Omdat er te weinig afval is", "Om de wijk stiller te maken"]
+      "options": [
+        "Om inwoners hun afval beter te laten scheiden",
+        "Om geld te besparen op vuilniswagens",
+        "Omdat er te weinig afval is",
+        "Om de wijk stiller te maken"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -246,14 +453,21 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Informatie over de zorgtoeslag",
     "prompt": "Read the text. Is the statement true or false?",
     "payload": {
       "passage": "Als u een laag inkomen heeft, kunt u van de overheid een bijdrage krijgen voor uw zorgverzekering. Dit heet zorgtoeslag. U moet de zorgtoeslag zelf aanvragen bij de Belastingdienst; u krijgt hem niet automatisch. Verandert uw inkomen tijdens het jaar, dan is het belangrijk om dit meteen door te geven.",
       "question": "Stelling: u krijgt de zorgtoeslag automatisch en hoeft niets aan te vragen.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   }
 ]

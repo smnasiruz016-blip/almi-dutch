@@ -5,14 +5,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Voicemail tandartspraktijk",
     "prompt": "Luister naar het bericht en beantwoord de vraag.",
     "payload": {
       "transcript": "Goedemorgen. U luistert naar de voicemail van tandartspraktijk Bloemhof. Wij zijn gesloten van vijftien tot tweeëntwintig juli in verband met de vakantie. Voor spoedgevallen kunt u bellen met de waarnemend tandarts. Na de vakantie zijn wij weer bereikbaar op werkdagen tussen acht en vijf uur.",
       "question": "Wat moet u doen bij een spoedgeval tijdens de vakantie?",
-      "options": ["Wachten tot na 22 juli", "De waarnemend tandarts bellen", "Een e-mail sturen", "Langsgaan bij de praktijk"]
+      "options": [
+        "Wachten tot na 22 juli",
+        "De waarnemend tandarts bellen",
+        "Een e-mail sturen",
+        "Langsgaan bij de praktijk"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -21,14 +30,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Omroepbericht in de trein",
     "prompt": "Luister naar de omroep en beantwoord de vraag.",
     "payload": {
       "transcript": "De volgende halte is Amsterdam Centraal. Reizigers naar Schiphol stappen hier over op de trein die vertrekt vanaf spoor twee. Let op: door werkzaamheden rijdt er vandaag geen trein tussen Amsterdam Centraal en Sloterdijk. Reizigers naar Sloterdijk nemen bus eenentwintig voor het station.",
       "question": "Waarom moeten reizigers naar Sloterdijk de bus nemen?",
-      "options": ["De trein is te vol", "Er zijn werkzaamheden op het spoor", "De bus is goedkoper", "Het station is gesloten"]
+      "options": [
+        "De trein is te vol",
+        "Er zijn werkzaamheden op het spoor",
+        "De bus is goedkoper",
+        "Het station is gesloten"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -37,15 +55,46 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Vier mensen over hun werk",
     "prompt": "Luister en verbind elke persoon met wat hij of zij het fijnst vindt.",
     "payload": {
       "transcript": "U hoort vier mensen over hun werk. Anne werkt in de zorg en vindt het contact met patiënten het mooist. Bram is docent en houdt vooral van de vakanties. Chloé werkt in een restaurant en geniet van de drukte. Daan is programmeur en waardeert dat hij thuis kan werken.",
       "instructions": "Kies bij elke naam het juiste antwoord.",
-      "left": ["Anne", "Bram", "Chloé", "Daan"],
-      "right": ["Het contact met patiënten", "De vakanties", "De drukte", "Thuiswerken"]
+      "left": [
+        "Anne",
+        "Bram",
+        "Chloé",
+        "Daan"
+      ],
+      "right": [
+        "Het contact met patiënten",
+        "De vakanties",
+        "De drukte",
+        "Thuiswerken"
+      ]
     },
-    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "answer": {
+      "type": "MATCHING",
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
     "maxPoints": 4
   },
   {
@@ -54,14 +103,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Podcast over het woningtekort",
     "prompt": "Luister naar het fragment en beantwoord de vraag.",
     "payload": {
       "transcript": "In deze aflevering bespreken we het woningtekort. Onze gast, een econoom, legt uit dat het probleem niet alleen komt door te weinig nieuwbouw, maar ook doordat mensen langer alleen blijven wonen. Daardoor zijn er meer woningen nodig voor hetzelfde aantal inwoners. Volgens haar is een deel van de oplossing het splitsen van grote huizen in kleinere appartementen.",
       "question": "Welke oorzaak van het woningtekort noemt de gast náást te weinig nieuwbouw?",
-      "options": ["Mensen wonen langer alleen", "Er worden te veel huizen gesloopt", "Er komen te veel toeristen", "De huizen zijn te duur"]
+      "options": [
+        "Mensen wonen langer alleen",
+        "Er worden te veel huizen gesloopt",
+        "Er komen te veel toeristen",
+        "De huizen zijn te duur"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -70,14 +128,21 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Mededeling op het werk",
     "prompt": "Luister naar de mededeling. Is de stelling waar of niet waar?",
     "payload": {
       "transcript": "Beste collega's, een korte mededeling. De vergadering van vrijdag wordt verplaatst naar maandag, omdat een aantal mensen vrijdag niet aanwezig kan zijn. De locatie blijft hetzelfde: vergaderzaal drie op de tweede verdieping. Neem alstublieft uw eigen laptop mee.",
       "question": "Stelling: de vergadering vindt plaats in een andere zaal dan gewoonlijk.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -86,14 +151,21 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Omroep in de supermarkt",
     "prompt": "Luister naar de omroep. Is de stelling waar of niet waar?",
     "payload": {
       "transcript": "Beste klanten, een kleine mededeling. Vandaag hebben wij verse aardbeien in de aanbieding: twee bakjes voor drie euro. U vindt ze bij de ingang, naast het brood. De aanbieding geldt alleen vandaag. Wij wensen u nog een prettige dag.",
       "question": "Stelling: de aanbieding voor aardbeien geldt de hele week.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -102,14 +174,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Voicemail van een vriendin",
     "prompt": "Luister naar het bericht en beantwoord de vraag.",
     "payload": {
       "transcript": "Hoi Sara, met Lisa. Ik bel even over zaterdag. Het lukt me niet om om zes uur bij het restaurant te zijn, want ik moet langer werken. Kunnen we het een uurtje later maken, dus om zeven uur? Bel me even terug om te zeggen of dat goed is. Doei!",
       "question": "Wat wil Lisa veranderen?",
-      "options": ["De dag van de afspraak", "Het tijdstip van de afspraak", "Het restaurant", "Het aantal mensen"]
+      "options": [
+        "De dag van de afspraak",
+        "Het tijdstip van de afspraak",
+        "Het restaurant",
+        "Het aantal mensen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -118,14 +199,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Weerbericht op de radio",
     "prompt": "Luister naar het weerbericht en beantwoord de vraag.",
     "payload": {
       "transcript": "En dan nu het weer. Vanochtend begint de dag grijs en regenachtig, vooral in het noorden van het land. In de middag trekken de wolken weg en komt de zon erdoor. Het wordt met vijftien graden vrij fris voor de tijd van het jaar. Neem vanochtend dus nog een paraplu mee, maar vanmiddag kunt u die thuis laten.",
       "question": "Hoe wordt het weer in de middag?",
-      "options": ["De hele dag regen", "Droog met zon", "Zwaar onweer", "Sneeuw en kou"]
+      "options": [
+        "De hele dag regen",
+        "Droog met zon",
+        "Zwaar onweer",
+        "Sneeuw en kou"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -134,15 +224,41 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Drie mensen over hun hobby",
     "prompt": "Luister en verbind elke persoon met zijn of haar hobby.",
     "payload": {
       "transcript": "U hoort drie mensen vertellen wat ze in hun vrije tijd doen. Karim zegt dat hij elke zondag met zijn voetbalteam op het veld staat. Femke vertelt dat ze het liefst in de keuken staat om nieuwe gerechten te maken. Tom brengt zijn weekenden door in de bergen, want wandelen vindt hij heerlijk.",
       "instructions": "Kies bij elke naam de juiste hobby.",
-      "left": ["Karim", "Femke", "Tom"],
-      "right": ["Voetballen", "Koken", "Wandelen", "Zwemmen"]
+      "left": [
+        "Karim",
+        "Femke",
+        "Tom"
+      ],
+      "right": [
+        "Voetballen",
+        "Koken",
+        "Wandelen",
+        "Zwemmen"
+      ]
     },
-    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "answer": {
+      "type": "MATCHING",
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
     "maxPoints": 3
   },
   {
@@ -151,14 +267,21 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Bericht van de school",
     "prompt": "Luister naar het bericht. Is de stelling waar of niet waar?",
     "payload": {
       "transcript": "Beste ouders, dit is een bericht van basisschool De Regenboog. Aanstaande woensdag gaan de kinderen van groep vijf op excursie naar het museum. De bus vertrekt om half negen, dus wij vragen u om uw kind uiterlijk kwart over acht op school te brengen. Vergeet niet een lunchpakketje mee te geven.",
       "question": "Stelling: de kinderen moeten zelf eten meenemen.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -167,14 +290,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Interview met een ondernemer",
     "prompt": "Luister naar het fragment en beantwoord de vraag.",
     "payload": {
       "transcript": "In ons programma spreken we vandaag met de oprichter van een klein koffiebedrijf. Hij vertelt dat hij vijf jaar geleden begon vanuit zijn garage, met slechts één machine. Het moeilijkste, zegt hij, was niet het maken van goede koffie, maar het vinden van klanten die bereid waren iets meer te betalen voor eerlijk geproduceerde bonen. Inmiddels levert hij aan meer dan veertig cafés.",
       "question": "Wat was volgens de ondernemer het lastigst in het begin?",
-      "options": ["Goede koffie leren maken", "Klanten vinden die meer wilden betalen", "Een machine kopen", "Personeel aannemen"]
+      "options": [
+        "Goede koffie leren maken",
+        "Klanten vinden die meer wilden betalen",
+        "Een machine kopen",
+        "Personeel aannemen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -183,15 +315,46 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Vier sprekers over duurzaam wonen",
     "prompt": "Luister naar vier sprekers en verbind elke spreker met zijn of haar belangrijkste maatregel.",
     "payload": {
       "transcript": "Vier mensen vertellen hoe zij hun huis duurzamer hebben gemaakt. Meneer Visser legt uit dat hij zonnepanelen op het dak heeft laten leggen en nu bijna geen stroom meer inkoopt. Mevrouw De Wit koos ervoor haar hele huis extra te isoleren, waardoor de verwarming veel minder aan hoeft. De heer Bakker heeft de oude cv-ketel vervangen door een warmtepomp. En mevrouw Jansen vangt regenwater op om haar tuin mee te besproeien.",
       "instructions": "Kies bij elke spreker de juiste maatregel.",
-      "left": ["Meneer Visser", "Mevrouw De Wit", "De heer Bakker", "Mevrouw Jansen"],
-      "right": ["Zonnepanelen", "Isolatie", "Een warmtepomp", "Regenwater opvangen"]
+      "left": [
+        "Meneer Visser",
+        "Mevrouw De Wit",
+        "De heer Bakker",
+        "Mevrouw Jansen"
+      ],
+      "right": [
+        "Zonnepanelen",
+        "Isolatie",
+        "Een warmtepomp",
+        "Regenwater opvangen"
+      ]
     },
-    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "answer": {
+      "type": "MATCHING",
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
     "maxPoints": 4
   },
   {
@@ -200,14 +363,21 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Radiofragment over thuiswerken",
     "prompt": "Luister naar het fragment. Is de stelling waar of niet waar?",
     "payload": {
       "transcript": "Uit een nieuw onderzoek blijkt dat werknemers die deels thuiswerken over het algemeen tevredener zijn dan collega's die elke dag naar kantoor komen. Toch waarschuwen de onderzoekers voor een keerzijde: wie volledig thuiswerkt, voelt zich vaker eenzaam en mist het contact met collega's. De ideale situatie, zo concluderen zij, is een combinatie van enkele dagen thuis en enkele dagen op kantoor.",
       "question": "Stelling: volgens het onderzoek is volledig thuiswerken de beste oplossing.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -216,14 +386,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Lezing over de geschiedenis van de fiets",
     "prompt": "Luister naar het fragment en beantwoord de vraag.",
     "payload": {
       "transcript": "In deze korte lezing sta ik stil bij de opkomst van de fiets in Nederland. Veel mensen denken dat Nederland altijd al een echt fietsland is geweest, maar dat klopt niet helemaal. In de jaren zestig groeide het autoverkeer zo hard dat de fiets bijna verdween uit de steden. Pas na een reeks verkeersongelukken en protesten in de jaren zeventig besloten gemeenten opnieuw te investeren in veilige fietspaden. Die keuze van toen verklaart waarom fietsen nu zo vanzelfsprekend is.",
       "question": "Waarom gingen gemeenten in de jaren zeventig weer investeren in fietspaden?",
-      "options": ["Omdat auto's te duur werden", "Door ongelukken en protesten", "Omdat de trein verdween", "Vanwege een nieuwe wet uit het buitenland"]
+      "options": [
+        "Omdat auto's te duur werden",
+        "Door ongelukken en protesten",
+        "Omdat de trein verdween",
+        "Vanwege een nieuwe wet uit het buitenland"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -232,14 +411,23 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Telefonische klantenservice",
     "prompt": "Luister naar het gesprek en beantwoord de vraag.",
     "payload": {
       "transcript": "Goedemiddag, u spreekt met de klantenservice van energieleverancier Stroomnet. Ik begrijp dat uw laatste rekening hoger was dan verwacht. Dat komt doordat wij uw voorschotbedrag hebben aangepast op basis van uw verbruik van vorig jaar. Als u vindt dat het bedrag te hoog is, kan ik het voor u verlagen, maar houd er rekening mee dat u dan aan het eind van het jaar mogelijk moet bijbetalen.",
       "question": "Wat is de reden dat de rekening hoger uitviel?",
-      "options": ["Een fout in het systeem", "Het aangepaste voorschotbedrag", "Een prijsverhoging van de overheid", "Een vergeten korting"]
+      "options": [
+        "Een fout in het systeem",
+        "Het aangepaste voorschotbedrag",
+        "Een prijsverhoging van de overheid",
+        "Een vergeten korting"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   }
 ]
