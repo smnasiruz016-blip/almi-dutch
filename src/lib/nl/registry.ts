@@ -10,6 +10,7 @@ import type {
   InburgeringExam,
   DutchSkill,
   LanguageSkill,
+  CefrLevel,
 } from "./types";
 
 export interface ExamMeta {
@@ -18,6 +19,11 @@ export interface ExamMeta {
   slug: string; // URL slug
   name: string; // display name
   cefr: string; // CEFR level label
+  // The single CEFR level a learner's readiness for THIS exam is banded against —
+  // its verified goal. All four Dutch exams are single-level, so this equals `cefr`
+  // as a real level. Feeds almi-data's splitByLevel: only at-goal tasks count toward
+  // the band. (KNM/ONA are knowledge/orientation, carry no CEFR and no goalCefr.)
+  goalCefr?: CefrLevel;
   blurb: string; // one-line description
   skills: DutchSkill[];
   lead?: boolean; // citizenship/naturalisatie-relevant (Inburgering)
@@ -44,12 +50,12 @@ export const SKILL_LABELS: Record<DutchSkill, { nl: string; en: string }> = {
 // NT2 Staatsexamen — two programmes. Diploma NT2 requires passing all four parts.
 export const NT2_EXAMS: ExamMeta[] = [
   {
-    exam: "PROGRAMMA_I", track: "NT2", slug: "programma-i", name: "NT2 Programma I", cefr: "B1",
+    exam: "PROGRAMMA_I", track: "NT2", slug: "programma-i", name: "NT2 Programma I", cefr: "B1", goalCefr: "B1",
     blurb: "Dutch at B1 — for work or vocational training in a Dutch-speaking environment.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 200,
   },
   {
-    exam: "PROGRAMMA_II", track: "NT2", slug: "programma-ii", name: "NT2 Programma II", cefr: "B2",
+    exam: "PROGRAMMA_II", track: "NT2", slug: "programma-ii", name: "NT2 Programma II", cefr: "B2", goalCefr: "B2",
     blurb: "Dutch at B2 — for higher education (college/university) or professional work.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], mockMinutes: 230,
   },
@@ -61,12 +67,12 @@ export const NT2_EXAMS: ExamMeta[] = [
 // naturalisatie — but confirm the current rule with DUO / IND.
 export const INBURGERING_EXAMS: ExamMeta[] = [
   {
-    exam: "INBURGERING_A2", track: "INBURGERING", slug: "inburgering-a2", name: "Inburgering (A2)", cefr: "A2",
+    exam: "INBURGERING_A2", track: "INBURGERING", slug: "inburgering-a2", name: "Inburgering (A2)", cefr: "A2", goalCefr: "A2",
     blurb: "Civic integration at A2 — for obligations that started before 1 Jan 2022.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING", "KNM", "ONA"], lead: true, mockMinutes: 210,
   },
   {
-    exam: "INBURGERING_B1", track: "INBURGERING", slug: "inburgering-b1", name: "Inburgering (B1)", cefr: "B1",
+    exam: "INBURGERING_B1", track: "INBURGERING", slug: "inburgering-b1", name: "Inburgering (B1)", cefr: "B1", goalCefr: "B1",
     blurb: "Civic integration at B1 — Wet inburgering 2021 (obligation on/after 1 Jan 2022).",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING", "KNM", "ONA"], lead: true, mockMinutes: 220,
   },

@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Inschrijfformulier bibliotheek",
     "prompt": "Fill in the short library sign-up form in Dutch.",
     "payload": {
@@ -15,7 +16,10 @@
         "Uses correct simple word order in short sentences",
         "Text is understandable at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -26,6 +30,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Briefje aan de docent",
     "prompt": "Write a short note to your teacher about missing your homework.",
     "payload": {
@@ -36,7 +41,10 @@
         "Uses a greeting and a closing",
         "Sentences are short and correct at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -47,6 +55,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Afspraak afzeggen",
     "prompt": "Write a short message to cancel your appointment.",
     "payload": {
@@ -57,7 +66,10 @@
         "Asks for a new day or time",
         "Uses a polite tone with greeting and closing"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -68,6 +80,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Ansichtkaart uit vakantie",
     "prompt": "Write a short postcard to a friend during your holiday.",
     "payload": {
@@ -78,7 +91,10 @@
         "Uses simple present or past tense correctly",
         "Uses a friendly opening and closing"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -89,6 +105,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "E-mail aan de gemeente",
     "prompt": "Write a short email to the municipality to ask a question.",
     "payload": {
@@ -99,7 +116,10 @@
         "Asks a concrete question",
         "Uses a polite formal register (u-vorm) with correct greeting and closing"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -110,6 +130,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Antwoord aan de buurman",
     "prompt": "Write a short reply to a note from your neighbour.",
     "payload": {
@@ -120,7 +141,10 @@
         "Uses a friendly but polite tone",
         "Links ideas with connectors such as omdat, maar or daarom"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -131,6 +155,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Klacht bij de winkel",
     "prompt": "Write a short complaint email to a shop.",
     "payload": {
@@ -141,7 +166,10 @@
         "States what you want the shop to do (repair, refund or replacement)",
         "Keeps a polite but firm tone with correct greeting and closing"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -152,6 +180,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "E-mail aan de school",
     "prompt": "Write a short email to your child's school.",
     "payload": {
@@ -162,7 +191,10 @@
         "Asks a concrete question about missed work",
         "Uses a polite register with a correct greeting and closing"
       ],
-      "charBand": { "min": 80, "max": 180 }
+      "charBand": {
+        "min": 80,
+        "max": 180
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -173,6 +205,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Uzelf voorstellen",
     "prompt": "Record yourself introducing who you are in Dutch.",
     "payload": {
@@ -194,6 +227,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Vragen over uw familie",
     "prompt": "Record short answers to simple questions about your family.",
     "payload": {
@@ -215,6 +249,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "De weg vragen",
     "prompt": "Record yourself asking a passer-by for directions.",
     "payload": {
@@ -236,6 +271,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Over uw werk vertellen",
     "prompt": "Record yourself answering simple questions about your work or study.",
     "payload": {
@@ -257,6 +293,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Uw dagelijkse routine",
     "prompt": "Record yourself describing your daily routine.",
     "payload": {
@@ -278,6 +315,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Uw mening over gezond eten",
     "prompt": "Record a short spoken opinion on an everyday topic.",
     "payload": {
@@ -299,6 +337,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Een probleem uitleggen aan de verhuurder",
     "prompt": "Record what you would say to your landlord about a problem.",
     "payload": {
