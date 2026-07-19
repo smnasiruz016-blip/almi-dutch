@@ -44,6 +44,8 @@ const BUNDLE_FILES = [
   "inburgering-productive.json",
   "inburgering-speaking-2.json",
   "inburgering-writing-2.json",
+  "inburgering-reading-2.json",
+  "inburgering-listening-2.json",
   "inburgering-knm.json",
   "inburgering-ona.json",
 ];

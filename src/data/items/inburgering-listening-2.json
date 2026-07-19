@@ -1,0 +1,304 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Mededeling in de supermarkt",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Beste klanten, over vijftien minuten sluit de winkel. Wilt u uw laatste boodschappen naar de kassa brengen? Kassa drie en kassa vier zijn nu open. Wij zijn morgen weer open vanaf acht uur. Dank u wel en een fijne avond.",
+      "question": "Wat moeten de klanten nu doen?",
+      "options": [
+        "Naar de kassa gaan met hun boodschappen",
+        "Morgen terugkomen om acht uur",
+        "Bij de ingang wachten",
+        "Hun boodschappen terugleggen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Bericht van de sportclub",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Hallo, dit is een bericht van de sportclub. De training van vanavond gaat niet door. De volgende training is woensdag om zeven uur. Tot woensdag!",
+      "question": "Stelling: de training van vanavond gaat door.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Voicemail van het afhaalpunt",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, u spreekt met het afhaalpunt op de hoek. Er ligt een pakketje voor u klaar. U kunt het ophalen tijdens onze openingstijden. Neemt u uw legitimatie mee en de code die u per bericht heeft gekregen. Let op: wij bewaren het pakketje zeven dagen. Daarna gaat het terug naar de afzender.",
+      "question": "Wat gebeurt er na zeven dagen?",
+      "options": [
+        "Het pakketje gaat terug naar de afzender",
+        "U krijgt een boete",
+        "Het pakketje wordt thuisbezorgd",
+        "Het pakketje blijft liggen tot u komt"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Drie mensen en hun vervoer",
+    "prompt": "Listen and match each person to how they travel.",
+    "payload": {
+      "transcript": "U hoort drie mensen vertellen hoe zij naar hun werk gaan. Samira zegt: ik pak altijd de fiets, want ik woon maar tien minuten van kantoor. Daan vertelt: ik ga met de trein, want ik werk in een andere stad. En Els zegt: ik loop, want mijn werk is om de hoek.",
+      "instructions": "Kies bij elke naam het juiste vervoer.",
+      "left": ["Samira", "Daan", "Els"],
+      "right": ["Met de fiets", "Met de trein", "Lopend", "Met de auto"]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Omroep op het station",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Attentie, attentie. De trein van tien over drie vertrekt vandaag niet van spoor twee, maar van spoor vijf. Wij herhalen: spoor vijf. Reizigers wordt verzocht rustig over te lopen. De trein vertrekt ongeveer vijf minuten later dan gepland.",
+      "question": "Van welk spoor vertrekt de trein?",
+      "options": ["Spoor vijf", "Spoor twee", "Spoor drie", "Spoor tien"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Mededeling bij de kinderopvang",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Beste ouders, een korte mededeling. Volgende week vrijdag sluiten wij een uur eerder, om vier uur, omdat het team een cursus volgt. Wilt u uw kind die dag vóór vier uur ophalen? Lukt dat niet, laat het ons dan deze week even weten, dan zoeken we samen een oplossing.",
+      "question": "Stelling: op die vrijdag moeten de kinderen vóór vier uur opgehaald worden.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Bericht van de taalschool",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Hallo, met de administratie van de taalschool. Ik bel over de les van morgen. De les gaat gewoon door, maar we zitten in een ander lokaal: lokaal twaalf op de tweede verdieping, in plaats van lokaal drie. De tijd blijft hetzelfde. Tot morgen!",
+      "question": "Wat is er morgen anders?",
+      "options": [
+        "De les is in een ander lokaal",
+        "De les begint later",
+        "De les gaat niet door",
+        "De les duurt korter"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Werkoverleg over de nieuwe planning",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Even over de nieuwe planning. Ik weet dat een aantal van jullie liever bij het oude rooster was gebleven, en dat begrijp ik goed. Toch houden we het zo, en ik zal uitleggen waarom: in de oude opzet stonden er op maandag drie mensen op dezelfde taak, terwijl er donderdag niemand beschikbaar was. Dat kostte ons elke week tijd. Als dit na een maand niet blijkt te werken, passen we het aan. Ik vraag jullie dus niet om het meteen leuk te vinden, maar wel om het een maand eerlijk te proberen.",
+      "question": "Wat vraagt de leidinggevende van het team?",
+      "options": [
+        "De nieuwe planning een maand eerlijk uitproberen",
+        "Meteen tevreden zijn met de verandering",
+        "Zelf een nieuw rooster maken",
+        "Op donderdag extra te werken"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uitleg bij de sportschool",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Even over uw abonnement: u kunt het elke maand opzeggen, maar de opzegtermijn is een volle maand. Zegt u halverwege de maand op, dan loopt het abonnement dus nog tot het einde van de volgende maand door. Pauzeren kan alleen bij een blessure, en dan hebben wij een verklaring van een arts nodig. Een vakantie geldt niet als reden om te pauzeren.",
+      "question": "Stelling: u kunt het abonnement pauzeren als u op vakantie gaat.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Vier mensen over vrijwilligerswerk",
+    "prompt": "Listen and match each person to their reason.",
+    "payload": {
+      "transcript": "U hoort vier mensen vertellen waarom zij vrijwilligerswerk doen. Nadia zegt: ik was net verhuisd en kende hier niemand; zo leerde ik mensen kennen. Tom vertelt: ik zit de hele week op kantoor, dus ik wilde iets doen waarbij ik buiten ben. Joyce zegt: ik wil later in de zorg werken, en zo krijg ik alvast ervaring. En Bram vertelt: mijn kinderen zitten op die club, dus het voelde logisch om ook zelf mee te helpen.",
+      "instructions": "Kies bij elke naam de juiste reden.",
+      "left": ["Nadia", "Tom", "Joyce", "Bram"],
+      "right": [
+        "Wilde nieuwe mensen leren kennen",
+        "Wilde werk doen in de buitenlucht",
+        "Wil ervaring opdoen voor later werk",
+        "Helpt mee bij de club van de kinderen"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Telefoontje over een sollicitatie",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, ik bel over uw sollicitatie. Wij willen u graag uitnodigen voor een gesprek, aanstaande dinsdag om half elf. Het gesprek duurt ongeveer drie kwartier. U hoeft niets voor te bereiden, maar wilt u wel een geldig identiteitsbewijs meenemen? Als dinsdag niet lukt, hoor ik dat graag vandaag nog, want daarna is de agenda vol.",
+      "question": "Wat moet de sollicitant meenemen?",
+      "options": [
+        "Een geldig identiteitsbewijs",
+        "Een voorbereide presentatie",
+        "Een schriftelijke motivatie",
+        "Referenties van oude werkgevers"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Omroep in de bus",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Volgende halte: Stationsplein. Reizigers die verder willen met de trein, kunnen hier uitstappen. Deze bus rijdt daarna door naar het ziekenhuis.",
+      "question": "Stelling: deze bus rijdt na het Stationsplein naar het ziekenhuis.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Gesprek met de leerkracht",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Ik wil vooropstellen dat het goed gaat met uw zoon; hij is vrolijk en heeft vrienden in de klas. Waar ik het met u over wil hebben, is het lezen. Hij kán het wel, maar hij vermijdt het zodra hij denkt dat anderen meekijken. Ik denk dus niet dat hij extra oefening nodig heeft, maar vooral het gevoel dat fouten maken mag. Thuis samen lezen zou daarbij helpen, meer dan extra huiswerk.",
+      "question": "Wat is volgens de leerkracht het probleem?",
+      "options": [
+        "Hij durft niet te lezen als anderen meekijken",
+        "Hij kan nog niet lezen",
+        "Hij heeft geen vrienden in de klas",
+        "Hij maakt zijn huiswerk niet"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Weer en verkeer op de radio",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Dan het weer en het verkeer. Vanochtend is het op veel plaatsen glad door de vorst van vannacht. Op de wegen buiten de stad is gestrooid, maar op fietspaden en kleinere straten nog niet overal. Het advies is dan ook: neem wat meer tijd, ook als het maar een klein stukje is. Vanmiddag wordt het zachter en verdwijnt de gladheid vanzelf.",
+      "question": "Wat is het advies voor vanochtend?",
+      "options": [
+        "Meer tijd nemen voor de reis",
+        "Thuisblijven tot de middag",
+        "Alleen de grote wegen gebruiken",
+        "De fiets laten staan en lopen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Een collega over het nieuwe systeem",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Het nieuwe systeem werkt op zich prima, sneller dan het oude, dat moet ik toegeven. Waar ik wel mee zit, is dat je nu niet meer ziet wie iets heeft aangepast. Vroeger kon je gewoon vragen: joh, waarom staat dit zo? Nu verandert er iets en weet niemand door wie. Ik wil het oude systeem echt niet terug, hoor. Ik vind alleen dat we moeten afspreken hoe we dat oplossen.",
+      "question": "Wat is het punt van de spreker?",
+      "options": [
+        "Er moet een afspraak komen over wie wijzigingen bijhoudt",
+        "Het oude systeem moet terugkomen",
+        "Het nieuwe systeem is te langzaam",
+        "Collega's maken te veel fouten"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]
