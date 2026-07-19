@@ -454,11 +454,11 @@
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
     "cefr": "B1",
-    "title": "Informatie over de zorgtoeslag",
+    "title": "Waar u informatie krijgt over zorgkosten",
     "prompt": "Read the text. Is the statement true or false?",
     "payload": {
-      "passage": "Als u een laag inkomen heeft, kunt u van de overheid een bijdrage krijgen voor uw zorgverzekering. Dit heet zorgtoeslag. U moet de zorgtoeslag zelf aanvragen bij de Belastingdienst; u krijgt hem niet automatisch. Verandert uw inkomen tijdens het jaar, dan is het belangrijk om dit meteen door te geven.",
-      "question": "Stelling: u krijgt de zorgtoeslag automatisch en hoeft niets aan te vragen.",
+      "passage": "Er bestaan regelingen die kunnen helpen met de kosten van uw zorgverzekering, zoals de zorgtoeslag. Of u er recht op heeft en wat u ervoor moet doen, hangt af van uw eigen situatie en kan veranderen. Ga er niet van uit dat het vanzelf geregeld wordt: informeer bij de Belastingdienst wat voor u geldt. Verandert er iets in uw inkomen of uw situatie, vraag dan opnieuw na.",
+      "question": "Stelling: volgens dit bericht wordt zo'n regeling vanzelf geregeld en hoeft u zelf niets te doen.",
       "options": [
         "Waar",
         "Niet waar"
