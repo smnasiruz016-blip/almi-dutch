@@ -1,0 +1,486 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "E-mail over een roosterwijziging",
+    "prompt": "Write a short email about a timetable clash.",
+    "payload": {
+      "stimulus": "Uw opleiding heeft het rooster gewijzigd: de les op donderdag begint nu twee uur eerder. Daardoor botst de les met uw werk. Schrijf een e-mail aan de opleiding. Leg de situatie uit en vraag of er een oplossing mogelijk is.",
+      "criteria": [
+        "U legt uit wat er is veranderd en waarom dat een probleem geeft",
+        "U vraagt concreet naar een mogelijke oplossing",
+        "U geeft aan wat voor u wél zou werken",
+        "U gebruikt een gepaste aanhef en afsluiting"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Reactie op een uitnodiging",
+    "prompt": "Write a reply to an invitation for an information day.",
+    "payload": {
+      "stimulus": "U bent uitgenodigd voor een informatiedag over een vervolgopleiding. U wilt graag komen, maar u kunt pas na twaalf uur. Schrijf een antwoord. Zeg dat u komt, leg uit vanaf hoe laat, en vraag of u het ochtenddeel kunt inhalen.",
+      "criteria": [
+        "U neemt de uitnodiging duidelijk aan",
+        "U geeft aan vanaf welk moment u aanwezig kunt zijn",
+        "U stelt een concrete vraag over het gemiste deel",
+        "De toon is beleefd en de tekst is goed te volgen"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Bericht aan uw stagebegeleider",
+    "prompt": "Write a message to your placement supervisor about a problem.",
+    "payload": {
+      "stimulus": "Op uw stage krijgt u vooral opruimtaken en weinig werk dat bij uw opleiding past. Schrijf een bericht aan uw stagebegeleider. Beschrijf wat u nu doet, leg uit wat u graag zou willen leren, en stel voor om er samen naar te kijken.",
+      "criteria": [
+        "U beschrijft de situatie feitelijk, zonder te klagen",
+        "U benoemt concreet wat u wilt leren en waarom",
+        "U doet een voorstel voor een vervolg",
+        "De toon blijft samenwerkend en beleefd"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Informatie vragen over een cursus",
+    "prompt": "Write an email asking for information about a course.",
+    "payload": {
+      "stimulus": "U ziet een cursus die u wilt volgen, maar de informatie is onvolledig. Schrijf een e-mail. Vraag naar de dagen en tijden, wat de cursus kost, en of er een diploma of certificaat bij hoort. Vertel kort waarom u de cursus wilt doen.",
+      "criteria": [
+        "U stelt minstens drie duidelijke vragen",
+        "U legt kort uit waarom u de cursus wilt volgen",
+        "De vragen zijn zo geformuleerd dat ze te beantwoorden zijn",
+        "U gebruikt een gepaste aanhef en afsluiting"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Abonnement tijdelijk stopzetten",
+    "prompt": "Write an email asking to pause a subscription.",
+    "payload": {
+      "stimulus": "U heeft een abonnement bij een sportschool, maar u kunt door een blessure een tijd niet sporten. Schrijf een e-mail. Vraag of u het abonnement tijdelijk kunt pauzeren, leg uit hoe lang ongeveer, en vraag wat u daarvoor moet aanleveren.",
+      "criteria": [
+        "U vraagt duidelijk om pauzeren, niet om opzeggen",
+        "U geeft een inschatting van de periode",
+        "U vraagt wat er van u wordt verwacht om dit te regelen",
+        "De tekst is beleefd, zakelijk en goed geordend"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een dienst ruilen met een collega",
+    "prompt": "Write a message asking a colleague to swap shifts.",
+    "payload": {
+      "stimulus": "U bent zaterdag ingeroosterd, maar u moet die dag naar een familiefeest. Schrijf een bericht aan een collega. Vraag of hij of zij wil ruilen, bied een andere dienst aan in ruil, en zeg wat u doet als het niet lukt.",
+      "criteria": [
+        "U vraagt duidelijk om een ruil en noemt de datum",
+        "U biedt zelf iets aan in ruil",
+        "U zegt wat u doet als de collega niet kan",
+        "De toon is vriendelijk en niet dwingend"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Korte reactie op een vacature",
+    "prompt": "Write a short reply to a job advert.",
+    "payload": {
+      "stimulus": "U ziet een vacature voor werk in de avonduren. Schrijf een korte reactie. Zeg op welke functie u reageert, vertel in het kort welke ervaring u heeft, en geef aan wanneer u kunt werken.",
+      "criteria": [
+        "U benoemt duidelijk om welke functie het gaat",
+        "U noemt ervaring die past bij het werk",
+        "U geeft uw beschikbaarheid concreet aan",
+        "De tekst is kort, zakelijk en foutloos genoeg om serieus genomen te worden"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Vervoer regelen voor een wedstrijd",
+    "prompt": "Write a message organising transport.",
+    "payload": {
+      "stimulus": "Het team van uw kind speelt zaterdag uit en er moeten auto's geregeld worden. Schrijf een bericht aan de andere ouders. Leg uit wat er nodig is, zeg wat u zelf kunt doen, en vraag wie er mee kan rijden.",
+      "criteria": [
+        "U legt de situatie en het praktische probleem duidelijk uit",
+        "U biedt zelf iets concreets aan",
+        "U stelt een vraag waarop mensen makkelijk kunnen reageren",
+        "De tekst is vriendelijk en overzichtelijk"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een bestelling wijzigen",
+    "prompt": "Write an email changing an order.",
+    "payload": {
+      "stimulus": "U heeft iets besteld, maar u wilt de bestelling wijzigen: een andere maat en een ander bezorgadres. De bestelling is nog niet verstuurd. Schrijf een e-mail met uw verzoek.",
+      "criteria": [
+        "U benoemt duidelijk welke bestelling het betreft",
+        "U geeft beide wijzigingen precies door",
+        "U vraagt om een bevestiging",
+        "De e-mail is zakelijk en zonder overbodige informatie"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Oproep op het prikbord",
+    "prompt": "Write a short notice looking for a study partner.",
+    "payload": {
+      "stimulus": "U wilt samen met iemand oefenen voor uw opleiding. Schrijf een kort bericht voor het prikbord. Vertel wat u zoekt, wanneer u wilt oefenen, en hoe mensen u kunnen bereiken.",
+      "criteria": [
+        "Het is meteen duidelijk wat u zoekt",
+        "U noemt concrete momenten of dagen",
+        "U geeft aan hoe iemand kan reageren",
+        "De tekst is kort en trekt de aandacht zonder te overdrijven"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Een voorstel aan uw werkgever",
+    "prompt": "Write an email proposing a small change at work.",
+    "payload": {
+      "stimulus": "Op uw werk gaat er elke ochtend tijd verloren doordat niemand weet wie wat doet. U heeft een idee: een korte start van vijf minuten aan het begin van de dienst. Schrijf een e-mail aan uw leidinggevende met dit voorstel.",
+      "criteria": [
+        "U beschrijft het probleem concreet, met een voorbeeld",
+        "U legt uit wat uw voorstel oplevert",
+        "U benoemt zelf wat het kost of wat een bezwaar kan zijn",
+        "De toon is constructief en de opbouw is logisch"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Een foto beschrijven: de markt",
+    "prompt": "Describe the situation out loud.",
+    "payload": {
+      "stimulus": "U ziet een foto van een drukke markt: kramen met groente en bloemen, mensen die wachten om te betalen, en een verkoper die iets aanwijst. Beschrijf wat u ziet en wat er volgens u gebeurt. Vertel daarna of u zelf graag op de markt komt en waarom.",
+      "criteria": [
+        "U beschrijft wat er te zien is in een logische volgorde",
+        "U vertelt wat er waarschijnlijk gebeurt, niet alleen wat er staat",
+        "U geeft uw eigen ervaring of mening met een reden",
+        "U spreekt vloeiend genoeg om te volgen"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Voicemail voor uw stagebegeleider",
+    "prompt": "Leave a voicemail message.",
+    "payload": {
+      "stimulus": "U komt vandaag later op uw stage doordat uw trein is uitgevallen. Spreek een voicemail in voor uw stagebegeleider. Zeg wie u bent, wat er aan de hand is, hoe laat u ongeveer komt, en wat er met uw eerste taak moet gebeuren.",
+      "criteria": [
+        "U noemt uw naam en de reden van het bericht",
+        "U geeft een concrete verwachte aankomsttijd",
+        "U zegt wat er met het werk moet gebeuren",
+        "Het bericht is kort, duidelijk en verstaanbaar"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een collega vraagt of u kunt invallen",
+    "prompt": "Respond to a colleague's request.",
+    "payload": {
+      "stimulus": "Een collega vraagt of u morgen kunt invallen. U kunt wel, maar niet de hele dienst. Reageer hardop: zeg wat u wél kunt, vraag wat er dan met de rest gebeurt, en spreek af hoe jullie het doorgeven aan de planning.",
+      "criteria": [
+        "U geeft een duidelijk antwoord in plaats van 'misschien'",
+        "U benoemt precies welk deel u kunt overnemen",
+        "U stelt een vraag over het resterende deel",
+        "U maakt een concrete afspraak over het vervolg"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uitleggen hoe een taak werkt",
+    "prompt": "Explain a task to a new colleague.",
+    "payload": {
+      "stimulus": "Er begint een nieuwe collega en u legt uit hoe een taak op uw werk gaat, bijvoorbeeld het klaarzetten van bestellingen of het openen van de zaak. Leg de stappen uit in volgorde en zeg waar mensen meestal een fout maken.",
+      "criteria": [
+        "U legt de stappen in een logische volgorde uit",
+        "U gebruikt woorden als eerst, daarna en ten slotte",
+        "U waarschuwt voor een veelgemaakte fout",
+        "U controleert of de ander het begrepen heeft"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uw mening over werken en leren",
+    "prompt": "Give your opinion out loud.",
+    "payload": {
+      "stimulus": "Sommige mensen vinden dat je beter eerst een opleiding kunt afmaken; anderen vinden dat je het snelst leert door meteen te gaan werken. Wat vindt u? Geef uw mening, noem twee redenen, en noem ook een nadeel van uw eigen keuze.",
+      "criteria": [
+        "U geeft vanaf het begin een duidelijke mening",
+        "U onderbouwt die met twee redenen",
+        "U noemt een nadeel van uw eigen standpunt",
+        "U spreekt samenhangend, met verbindingswoorden"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Iets terugbrengen naar de winkel",
+    "prompt": "Explain a problem in a shop.",
+    "payload": {
+      "stimulus": "U heeft een apparaat gekocht dat na een week niet meer goed werkt. U gaat terug naar de winkel. Leg uit wat er aan de hand is, wanneer u het heeft gekocht, en wat u wilt: reparatie, ruilen of geld terug. Reageer ook als de medewerker eerst iets anders voorstelt.",
+      "criteria": [
+        "U beschrijft het probleem duidelijk en feitelijk",
+        "U noemt relevante details zoals de datum van aankoop",
+        "U zegt concreet wat u wilt",
+        "U blijft beleefd maar houdt uw verzoek vast"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Vertellen over uw opleiding",
+    "prompt": "Talk about your training or study.",
+    "payload": {
+      "stimulus": "Vertel over de opleiding of cursus die u volgt of wilt volgen. Wat houdt die in, waarom heeft u die gekozen, wat vindt u het moeilijkst, en wat wilt u ermee gaan doen?",
+      "criteria": [
+        "U beschrijft de opleiding concreet",
+        "U geeft een echte reden voor uw keuze",
+        "U benoemt eerlijk een moeilijk onderdeel",
+        "U koppelt de opleiding aan wat u later wilt doen"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een uitnodiging afslaan",
+    "prompt": "Decline an invitation politely.",
+    "payload": {
+      "stimulus": "Een collega nodigt u uit voor een etentje met het team op een avond dat u echt niet kunt. Reageer hardop: bedank voor de uitnodiging, leg kort uit waarom het niet lukt, en laat merken dat u een volgende keer wel wilt.",
+      "criteria": [
+        "U bedankt voor de uitnodiging",
+        "U geeft een korte reden zonder te veel uitleg",
+        "U laat duidelijk merken dat u een andere keer wel wilt",
+        "De toon blijft warm, niet afhoudend"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Iemand overhalen om mee te doen",
+    "prompt": "Persuade someone to join an activity.",
+    "payload": {
+      "stimulus": "Er wordt op uw werk of opleiding een activiteit georganiseerd en u wilt dat een collega of klasgenoot meedoet. Diegene twijfelt omdat het tijd kost. Overtuig hem of haar: noem wat het oplevert, neem het bezwaar serieus, en doe een voorstel dat het makkelijker maakt.",
+      "criteria": [
+        "U noemt concrete voordelen van meedoen",
+        "U erkent het bezwaar in plaats van het weg te wuiven",
+        "U doet een voorstel dat het bezwaar kleiner maakt",
+        "U blijft uitnodigend en zet geen druk"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Vertellen wat er misging",
+    "prompt": "Describe something that went wrong at work.",
+    "payload": {
+      "stimulus": "Vertel over een keer dat er op uw werk of stage iets misging. Wat gebeurde er, wat deed u op dat moment, en wat zou u nu anders doen? Blijf bij de feiten en geef niet alleen anderen de schuld.",
+      "criteria": [
+        "U vertelt het voorval in een duidelijke volgorde in de verleden tijd",
+        "U beschrijft uw eigen rol eerlijk",
+        "U benoemt wat u nu anders zou doen",
+        "U blijft feitelijk in plaats van beschuldigend"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Zeggen hoe laat u komt",
+    "prompt": "Say when you will arrive.",
+    "payload": {
+      "stimulus": "U heeft afgesproken met een vriend, maar u bent later klaar met werken. Bel op en zeg hoe laat u ongeveer komt en waarom. Vraag of dat goed is.",
+      "criteria": [
+        "U zegt duidelijk hoe laat u komt",
+        "U geeft een korte reden",
+        "U vraagt of het zo goed is",
+        "U spreekt in korte, begrijpelijke zinnen"
+      ],
+      "minSeconds": 45
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]
