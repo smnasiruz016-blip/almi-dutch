@@ -1,0 +1,362 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Wanneer kunt u werken?",
+    "prompt": "Denk na over uw beschikbaarheid en beantwoord de reflectievragen. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Werkgevers vragen bijna altijd wanneer u kunt werken. Om daar antwoord op te geven, moet u eerst zelf weten welke dagen en uren u vrij kunt maken.",
+      "prompts": [
+        "Op welke dagen en dagdelen kunt u nu werken?",
+        "Waar houdt u rekening mee, bijvoorbeeld taalles, kinderopvang of reistijd?",
+        "Wat zou er moeten veranderen om meer uren te kunnen werken?"
+      ],
+      "criteria": [
+        "U noemt concrete dagen en tijden in plaats van 'altijd'",
+        "U benoemt wat uw beschikbaarheid beperkt",
+        "U noemt één stap die uw beschikbaarheid zou vergroten"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Wat u nodig heeft om te beginnen",
+    "prompt": "Denk na over wat u moet regelen voordat u kunt starten met werken. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Voordat u aan een baan begint, vraagt een werkgever meestal een aantal gegevens van u, en moeten een paar praktische dingen geregeld zijn.",
+      "prompts": [
+        "Welke gegevens en documenten heeft u al, en welke nog niet?",
+        "Wat moet u nog regelen voordat u kunt starten?",
+        "Aan wie kunt u hulp vragen als u er niet uitkomt?"
+      ],
+      "criteria": [
+        "U maakt onderscheid tussen wat al klaar is en wat nog moet",
+        "U noemt een concrete volgende stap",
+        "U noemt een persoon of instantie die kan helpen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "FOUNDATION",
+    "title": "Reizen naar uw werk",
+    "prompt": "Denk na over hoe u naar uw werk zou reizen. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Hoe ver u wilt en kunt reizen, bepaalt mee naar welke vacatures u solliciteert.",
+      "prompts": [
+        "Hoe zou u naar uw werk reizen: lopend, met de fiets, met het ov of met de auto?",
+        "Hoeveel reistijd per dag vindt u acceptabel, en waarom?",
+        "Welke plaatsen liggen daarmee binnen uw bereik?"
+      ],
+      "criteria": [
+        "U kiest een concreet vervoermiddel en beargumenteert dat",
+        "U noemt een realistische maximale reistijd",
+        "U vertaalt dat naar plaatsen waar u kunt solliciteren"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Veilig werken",
+    "prompt": "Denk na over veiligheid op de werkvloer. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Op veel werkplekken krijgt u instructies over veilig werken, bijvoorbeeld over machines, tillen of beschermingsmiddelen.",
+      "prompts": [
+        "Wat doet u als u een veiligheidsinstructie niet goed begrijpt?",
+        "Wat doet u als u iets onveiligs ziet op uw werkplek?",
+        "Waarom is het belangrijk om dat te melden, ook als het niet uw eigen taak is?"
+      ],
+      "criteria": [
+        "U kiest ervoor om te vragen in plaats van te gokken",
+        "U noemt een concrete manier om iets onveiligs te melden",
+        "U legt uit waarom melden belangrijk is voor iedereen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Vragen stellen op het werk",
+    "prompt": "Denk na over hoe u om hulp vraagt op uw werk. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "In het begin begrijpt u niet alles meteen. Hoe u daarmee omgaat, bepaalt vaak hoe collega's u zien.",
+      "prompts": [
+        "Wat doet u als u een opdracht niet helemaal begrijpt?",
+        "Hoe vraagt u iets op een manier die uw collega niet te veel tijd kost?",
+        "Wat doet u als u dezelfde uitleg een tweede keer nodig heeft?"
+      ],
+      "criteria": [
+        "U vraagt liever meteen dan achteraf fouten te herstellen",
+        "U formuleert een concrete, gerichte vraag",
+        "U benoemt een manier om uitleg zelf vast te leggen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Een vacaturetekst lezen",
+    "prompt": "Denk na over hoe u een vacature leest. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "In vacatures staan vaak dezelfde onderdelen: wat u gaat doen, wat er van u gevraagd wordt, en wat de werkgever biedt.",
+      "prompts": [
+        "Welke onderdelen zoekt u als eerste op in een vacature?",
+        "Hoe ziet u het verschil tussen een eis en een wens van de werkgever?",
+        "Wat doet u als u aan de meeste, maar niet aan alle punten voldoet?"
+      ],
+      "criteria": [
+        "U benoemt de vaste onderdelen van een vacature",
+        "U maakt onderscheid tussen eisen en wensen",
+        "U neemt een realistisch besluit over wel of niet solliciteren"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Uw Nederlands en uw werk",
+    "prompt": "Denk na over de rol van uw Nederlands bij het vinden van werk. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Voor sommige banen heeft u veel Nederlands nodig, voor andere minder. Het helpt om te weten waar u nu staat.",
+      "prompts": [
+        "Welk werk zou u nu al kunnen doen met uw huidige Nederlands?",
+        "Voor welk werk heeft u meer Nederlands nodig, en hoeveel ongeveer?",
+        "Hoe blijft u Nederlands oefenen terwijl u werkt of solliciteert?"
+      ],
+      "criteria": [
+        "U beoordeelt uw eigen niveau eerlijk en concreet",
+        "U koppelt taalniveau aan een soort werk",
+        "U noemt een haalbare manier om te blijven oefenen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Ervaring uit het buitenland vertalen",
+    "prompt": "Denk na over hoe u uw eerdere ervaring hier laat zien. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Werkgevers kennen uw vorige werkgever waarschijnlijk niet. Wat u deed, moet daarom in Nederlandse termen duidelijk worden.",
+      "prompts": [
+        "Hoe beschrijft u uw vorige functie zonder dat iemand het bedrijf hoeft te kennen?",
+        "Welke taken en verantwoordelijkheden zijn hier het meest herkenbaar?",
+        "Wat doet u als uw beroep hier andere eisen of een andere naam heeft?"
+      ],
+      "criteria": [
+        "U beschrijft taken en resultaten in plaats van alleen een functietitel",
+        "U kiest de onderdelen die voor een Nederlandse werkgever relevant zijn",
+        "U benoemt een concrete stap als de eisen hier verschillen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Omgaan met een afwijzing",
+    "prompt": "Denk na over wat u doet na een afwijzing. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "U heeft gesolliciteerd en krijgt te horen dat een ander is gekozen. Solliciteren betekent bijna altijd meerdere keren nee horen.",
+      "prompts": [
+        "Wat zou u willen vragen aan de werkgever na een afwijzing?",
+        "Hoe bepaalt u of u iets aan uw aanpak moet veranderen of gewoon moet doorgaan?",
+        "Wat helpt u om te blijven solliciteren als het langer duurt dan verwacht?"
+      ],
+      "criteria": [
+        "U vraagt om bruikbare feedback in plaats van alleen om een reden",
+        "U onderscheidt aanpasbare oorzaken van toeval",
+        "U benoemt een concrete manier om vol te houden"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Werk en gezin combineren",
+    "prompt": "Denk na over de combinatie van werk en zorgtaken. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Veel mensen combineren werk met zorg voor kinderen of familie. Dat vraagt om afspraken, thuis en op het werk.",
+      "prompts": [
+        "Welke zorgtaken heeft u, en op welke momenten van de week?",
+        "Welke afspraken zou u met een werkgever willen maken over uw uren?",
+        "Wat is uw plan als een van de zorgtaken plotseling verandert?"
+      ],
+      "criteria": [
+        "U brengt zorgtaken concreet in kaart",
+        "U formuleert een redelijk voorstel voor een werkgever",
+        "U denkt vooruit over wat er kan misgaan"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Praten over salaris en voorwaarden",
+    "prompt": "Denk na over het gesprek over arbeidsvoorwaarden. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Op een bepaald moment gaat een sollicitatiegesprek over uren, salaris en andere voorwaarden. Veel mensen vinden dat lastig.",
+      "prompts": [
+        "Hoe zoekt u uit wat gebruikelijk is voor dit soort werk?",
+        "Welke voorwaarden zijn voor u het belangrijkst, naast het salaris?",
+        "Hoe stelt u een vraag over voorwaarden zonder dat het onbeleefd klinkt?"
+      ],
+      "criteria": [
+        "U bereidt zich voor met informatie in plaats van te gokken",
+        "U benoemt prioriteiten naast het bedrag",
+        "U formuleert een nette, concrete vraag"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "In loondienst of voor uzelf",
+    "prompt": "Denk na over twee manieren om te werken. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "U kunt in Nederland in loondienst werken of als zelfstandige. Beide hebben voordelen en risico's.",
+      "prompts": [
+        "Wat spreekt u aan in werken in loondienst?",
+        "Wat spreekt u aan in voor uzelf beginnen, en welke risico's ziet u?",
+        "Wat past op dit moment het beste bij uw situatie, en waarom?"
+      ],
+      "criteria": [
+        "U weegt beide opties af in plaats van er één te noemen",
+        "U benoemt ten minste één concreet risico",
+        "U komt tot een keuze die past bij uw huidige situatie"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Leren naast uw werk",
+    "prompt": "Denk na over scholing naast werk. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Soms is een cursus of een leerwerktraject de snelste weg naar het werk dat u wilt doen.",
+      "prompts": [
+        "Welke opleiding of cursus zou u dichter bij uw doel brengen?",
+        "Hoeveel tijd per week kunt u daar realistisch aan besteden?",
+        "Hoe zoekt u uit of een cursus door werkgevers wordt gewaardeerd?"
+      ],
+      "criteria": [
+        "U koppelt de scholing aan een concreet werkdoel",
+        "U maakt een realistische inschatting van tijd",
+        "U noemt een manier om de waarde van een cursus te controleren"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "CORE",
+    "title": "Uw profiel voor werkgevers",
+    "prompt": "Denk na over hoe werkgevers u online vinden. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "Veel werkgevers kijken naar een online profiel voordat zij iemand uitnodigen.",
+      "prompts": [
+        "Wat zou een werkgever over u moeten kunnen zien?",
+        "Welke woorden uit vacatures zou u in uw profiel willen gebruiken?",
+        "Wat wilt u juist niet delen, en waarom?"
+      ],
+      "criteria": [
+        "U kiest bewust wat u laat zien",
+        "U verbindt uw profiel aan het werk dat u zoekt",
+        "U denkt na over privacy en grenzen"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "ONA",
+    "taskType": "ONA_TASK",
+    "difficulty": "STRETCH",
+    "title": "Een gesprek over doorgroeien",
+    "prompt": "Denk na over een gesprek met uw leidinggevende over uw ontwikkeling. Dit is een oefening, geen officieel DUO-portfolio.",
+    "payload": {
+      "scenario": "U werkt een tijdje op dezelfde plek en wilt meer verantwoordelijkheid of ander werk binnen het bedrijf.",
+      "prompts": [
+        "Wat wilt u precies vragen, en wat is daarvoor uw argument?",
+        "Wat heeft u tot nu toe laten zien dat uw vraag ondersteunt?",
+        "Wat doet u als het antwoord voorlopig nee is?"
+      ],
+      "criteria": [
+        "U formuleert een concrete vraag in plaats van een algemene wens",
+        "U onderbouwt die met wat u heeft gedaan",
+        "U bedenkt vooraf een vervolgstap bij een afwijzing"
+      ]
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]
