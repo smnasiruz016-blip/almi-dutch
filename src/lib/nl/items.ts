@@ -51,6 +51,8 @@ const BUNDLE_FILES = [
   "nt2-i-reading-2.json",
   "nt2-i-listening-2.json",
   "nt2-i-productive-2.json",
+  "nt2-ii-reading-2.json",
+  "nt2-ii-listening-2.json",
   "inburgering-knm.json",
   "inburgering-ona.json",
 ];
