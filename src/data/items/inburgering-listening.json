@@ -9,7 +9,7 @@
     "title": "Voicemail huisartsenpraktijk",
     "prompt": "Listen to the message and answer the question.",
     "payload": {
-      "transcript": "Goedemorgen, u belt met huisartsenpraktijk De Linde. Wij zijn nu gesloten. De praktijk is open van maandag tot en met vrijdag, van acht uur 's ochtends tot vijf uur 's middags. Wilt u een afspraak maken? Belt u dan tussen acht en tien uur. Heeft u met spoed een dokter nodig? Bel dan de huisartsenpost op nummer nul, negen, zeven, acht.",
+      "transcript": "Goedemorgen, u belt met de huisartsenpraktijk. Wij zijn nu gesloten. De praktijk is open van maandag tot en met vrijdag, van acht uur 's ochtends tot vijf uur 's middags. Wilt u een afspraak maken? Belt u dan tussen acht en tien uur. Heeft u met spoed een dokter nodig? Bel dan de huisartsenpost op nummer nul, negen, zeven, acht.",
       "question": "Wanneer kunt u het beste bellen voor een afspraak?",
       "options": [
         "Tussen acht en tien uur 's ochtends",
@@ -173,7 +173,7 @@
     "title": "Herinnering van de tandarts",
     "prompt": "Listen to the message and answer the question.",
     "payload": {
-      "transcript": "Goedemiddag, dit is een bericht van tandartspraktijk Groenewoud. U heeft morgen om half elf een afspraak voor controle. Wilt u vijf minuten eerder komen om in te vullen of er iets veranderd is aan uw gezondheid? Kunt u niet komen? Bel ons dan vandaag nog, anders moeten wij kosten in rekening brengen.",
+      "transcript": "Goedemiddag, dit is een bericht van de tandartspraktijk. U heeft morgen om half elf een afspraak voor controle. Wilt u vijf minuten eerder komen om in te vullen of er iets veranderd is aan uw gezondheid? Kunt u niet komen? Bel ons dan vandaag nog, anders moeten wij kosten in rekening brengen.",
       "question": "Wat moet u doen als u morgen niet kunt komen?",
       "options": [
         "Niets doen",
@@ -241,7 +241,7 @@
     "title": "Telefoongesprek met de gemeente",
     "prompt": "Listen to the phone call and answer the question.",
     "payload": {
-      "transcript": "Goedemiddag, u spreekt met de gemeente Middelburg, afdeling Burgerzaken. Ik zie dat u belt over uw rijbewijs. Uw nieuwe rijbewijs is klaar en ligt hier voor u klaar. U kunt het ophalen zonder afspraak, maar alleen op dinsdag- en donderdagochtend tussen negen en twaalf uur. Neemt u een geldig identiteitsbewijs mee, anders kunnen wij het rijbewijs niet aan u meegeven.",
+      "transcript": "Goedemiddag, u spreekt met de gemeente, afdeling Burgerzaken. Ik zie dat u belt over uw rijbewijs. Uw nieuwe rijbewijs is klaar en ligt hier voor u klaar. U kunt het ophalen zonder afspraak, maar alleen op dinsdag- en donderdagochtend tussen negen en twaalf uur. Neemt u een geldig identiteitsbewijs mee, anders kunnen wij het rijbewijs niet aan u meegeven.",
       "question": "Wat moet de beller absoluut meenemen bij het ophalen?",
       "options": [
         "Een pasfoto",
@@ -362,7 +362,7 @@
     "title": "Telefoontje van de woningcorporatie",
     "prompt": "Listen to the phone call and answer the question.",
     "payload": {
-      "transcript": "Goedemiddag, u spreekt met woningcorporatie Thuiswonen. Ik bel over de verwarming in uw woning. U heeft een storing gemeld en daar willen wij graag een monteur voor langs sturen. Dat kan aanstaande maandag tussen acht en twaalf uur, of dinsdag in de middag. Belangrijk is dat er iemand thuis is om de monteur binnen te laten. Als het op beide dagen niet uitkomt, mag u ook een buurman of familielid vragen om open te doen.",
+      "transcript": "Goedemiddag, u spreekt met de woningcorporatie. Ik bel over de verwarming in uw woning. U heeft een storing gemeld en daar willen wij graag een monteur voor langs sturen. Dat kan aanstaande maandag tussen acht en twaalf uur, of dinsdag in de middag. Belangrijk is dat er iemand thuis is om de monteur binnen te laten. Als het op beide dagen niet uitkomt, mag u ook een buurman of familielid vragen om open te doen.",
       "question": "Wat is belangrijk als de monteur langskomt?",
       "options": [
         "Dat u de verwarming zelf al heeft gemaakt",
@@ -410,7 +410,7 @@
     "title": "Bericht van de apotheek",
     "prompt": "Listen to the message and answer the question.",
     "payload": {
-      "transcript": "Goedemorgen, dit is een bericht van apotheek Het Anker. Uw medicijnen liggen voor u klaar en kunnen worden opgehaald. Wij hebben dit keer een ander merk van hetzelfde medicijn gekregen, met een andere verpakking, maar het werkt precies hetzelfde. Twijfelt u toch of leest u de bijsluiter niet goed? Kom dan even bij de balie langs, dan leggen wij het rustig uit. U kunt de medicijnen ophalen tot zaterdag.",
+      "transcript": "Goedemorgen, dit is een bericht van de apotheek. Uw medicijnen liggen voor u klaar en kunnen worden opgehaald. Wij hebben dit keer een ander merk van hetzelfde medicijn gekregen, met een andere verpakking, maar het werkt precies hetzelfde. Twijfelt u toch of leest u de bijsluiter niet goed? Kom dan even bij de balie langs, dan leggen wij het rustig uit. U kunt de medicijnen ophalen tot zaterdag.",
       "question": "Waarom belt de apotheek over de verpakking?",
       "options": [
         "Het medicijn is duurder geworden",
