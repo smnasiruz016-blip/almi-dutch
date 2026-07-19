@@ -1,0 +1,169 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "College over gewoontes veranderen",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "We denken vaak dat gedrag verandert zodra iemand genoeg motivatie heeft. Onderzoek wijst een andere kant op. Motivatie schommelt, en juist op de dagen dat die laag is, valt gedrag terug. Wat wél houdbaar blijkt, is de omgeving zo inrichten dat het gewenste gedrag weinig moeite kost. Wie elke ochtend wil hardlopen, heeft meer aan schoenen naast de deur dan aan een goed voornemen. Dat klinkt banaal, en dat is het ook. Maar het verklaart waarom campagnes die alleen op wilskracht mikken zo vaak niets opleveren.",
+      "question": "Wat is het hoofdpunt van de spreker?",
+      "options": [
+        "De omgeving inrichten werkt beter dan vertrouwen op motivatie",
+        "Motivatie is de belangrijkste voorwaarde voor verandering",
+        "Campagnes over gedrag zijn altijd zinloos",
+        "Hardlopen is een goede manier om gewoontes te leren"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Discussie over nieuwe technologie op het werk",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "— U zegt dus dat die systemen banen kosten. — Nee, dat zeg ik juist niet. Wat ik zeg is dat ze taken overnemen, en dat is iets anders. In de meeste organisaties die wij volgden, verdween geen functie, maar veranderde wel wat mensen de hele dag doen. Het saaie deel werd minder, en tegelijk kwam er meer werk bij dat om beoordelen vraagt. Dat is zwaarder dan het klinkt, en daar worden mensen zelden op voorbereid.",
+      "question": "Stelling: volgens de spreker verdwijnen er door de systemen banen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Vier mensen over verhuizen naar een andere stad",
+    "prompt": "Listen and match each speaker to their reason.",
+    "payload": {
+      "transcript": "U hoort vier mensen vertellen waarom zij naar een andere stad verhuisden. Ilse zegt: ik kon hetzelfde werk doen voor hetzelfde geld, maar met de helft van de reistijd. Bram vertelt: eerlijk gezegd was het de huur; voor wat wij hier betalen, hadden we daar nooit een tuin gehad. Sanne zegt: ik ken er niemand, en dat was precies de bedoeling; ik wilde ergens opnieuw beginnen. En Ravi vertelt: mijn ouders worden ouder, en ik wilde niet elke keer twee uur onderweg zijn als er iets is.",
+      "instructions": "Kies bij elke spreker de juiste reden.",
+      "left": ["Ilse", "Bram", "Sanne", "Ravi"],
+      "right": [
+        "Minder reistijd bij hetzelfde werk",
+        "Meer woonruimte voor hetzelfde geld",
+        "Bewust ergens opnieuw beginnen",
+        "Dichter bij familie kunnen zijn"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Interview over lezen bij kinderen",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "— Uw onderzoek laat zien dat kinderen die thuis worden voorgelezen beter leren lezen. — Dat is te kort door de bocht. Wij zien inderdaad een verband, maar voorlezen komt vaker voor in gezinnen waar ook op andere manieren met taal wordt omgegaan. Wat wij hebben gemeten, is dus niet los te knippen van die bredere omgeving. Ik zeg niet dat voorlezen niet helpt; ik zeg dat ons onderzoek dat niet bewijst. Daar is een ander type studie voor nodig.",
+      "question": "Wat zegt de onderzoeker over het verband?",
+      "options": [
+        "Er is een verband, maar het onderzoek bewijst geen oorzaak",
+        "Voorlezen heeft geen aantoonbaar effect",
+        "Voorlezen is de belangrijkste oorzaak van goed leren lezen",
+        "Het onderzoek is verkeerd uitgevoerd"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Commentaar over toerisme in de stad",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Elke zomer hetzelfde gesprek: er komen te veel toeristen. En elke zomer dezelfde voorstellen: een hogere belasting, minder reclame, misschien een limiet. Wat mij opvalt is dat we het bijna nooit hebben over wat die bezoekers hier komen doen. Een stad die vooral drank en drukte te bieden heeft, trekt mensen die daarvoor komen. Zolang we dat aanbod niet veranderen, verdelen we met al die maatregelen alleen de last, en verandert er aan de oorzaak niets.",
+      "question": "Wat is het punt van de commentator?",
+      "options": [
+        "De maatregelen raken het aanbod niet, en dus niet de oorzaak",
+        "Er moeten strengere limieten voor bezoekers komen",
+        "Toerisme levert de stad te weinig geld op",
+        "De discussie over toerisme wordt te vaak gevoerd"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Presentatie over werkplekken en concentratie",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Toen wij de open werkruimte invoerden, was het idee dat mensen elkaar makkelijker zouden vinden. Dat gebeurde ook. Wat wij niet hadden voorzien, is dat het aantal korte onderbrekingen zo sterk zou stijgen dat het geconcentreerde werk eronder leed. Onze conclusie is niet dat open ruimtes slecht zijn. Onze conclusie is dat je er stille plekken bij moet bouwen, anders kiest iedereen vanzelf voor thuiswerken en verlies je precies wat je wilde bereiken.",
+      "question": "Stelling: de spreker concludeert dat open werkruimtes slecht zijn en moeten verdwijnen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Twee collega's over een nieuw beoordelingssysteem",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "— Wat vind jij van het nieuwe beoordelingssysteem? — Op papier is het eerlijker, dat geef ik toe. Iedereen wordt aan dezelfde punten gemeten. — Maar? — Maar mijn werk laat zich slecht in die punten vangen. Ik help vooral anderen verder, en dat telt nergens mee. Ik zeg niet dat het oude systeem beter was, want daarin hing alles af van of je leidinggevende je toevallig zag. Ik zeg dat we nu meten wat makkelijk te meten is.",
+      "question": "Wat is het standpunt van de tweede spreker?",
+      "options": [
+        "Het nieuwe systeem meet vooral wat makkelijk meetbaar is",
+        "Het oude systeem was duidelijk beter",
+        "Beoordelen zou helemaal moeten verdwijnen",
+        "Het nieuwe systeem is oneerlijk voor leidinggevenden"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Mededeling over het practicum",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Een korte mededeling over het practicum van volgende week. Het practicum gaat door, maar in een ander lokaal: we zitten in gebouw B in plaats van gebouw A. Neem je eigen laptop mee, want er staan daar geen computers. Wie geen laptop heeft, kan er een lenen bij de balie, maar meld dat wel voor vrijdag.",
+      "question": "Wat moeten studenten zonder laptop doen?",
+      "options": [
+        "Voor vrijdag melden dat zij er een willen lenen",
+        "Naar gebouw A gaan in plaats van gebouw B",
+        "Het practicum een week later doen",
+        "Samenwerken met een medestudent"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]

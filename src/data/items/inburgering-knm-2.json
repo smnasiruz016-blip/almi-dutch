@@ -1,0 +1,305 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Een verhuizing doorgeven",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "U gaat in Nederland naar een andere woning verhuizen. Waar geeft u uw nieuwe adres door?",
+      "options": [
+        "Bij de gemeente waar u gaat wonen",
+        "Bij de politie",
+        "Bij uw werkgever, die regelt het verder",
+        "Nergens, dat gaat vanzelf"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Naar een specialist in het ziekenhuis",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "U heeft klachten en denkt dat u een specialist in het ziekenhuis nodig heeft. Wat is in Nederland meestal de eerste stap?",
+      "options": [
+        "U gaat eerst naar de huisarts, die u zo nodig doorverwijst",
+        "U maakt zelf direct een afspraak in het ziekenhuis",
+        "U belt 112 voor een afspraak",
+        "U vraagt uw werkgever om een verwijzing"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "title": "Medicijnen op recept",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "De dokter schrijft een medicijn voor u op. Waar haalt u dat medicijn op?",
+      "options": [
+        "Bij de apotheek",
+        "Bij de supermarkt",
+        "Bij de gemeente",
+        "Bij de huisartsenpost"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Fietsen in het donker",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Wat geldt in Nederland als u in het donker fietst?",
+      "options": [
+        "U moet licht voor en achter op de fiets hebben",
+        "Licht is alleen nodig buiten de stad",
+        "Licht is nooit verplicht op een fiets",
+        "U mag in het donker niet fietsen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Het consultatiebureau",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Waarvoor gaan ouders in Nederland met een jong kind naar het consultatiebureau?",
+      "options": [
+        "Om de groei en gezondheid van het kind te laten controleren",
+        "Om het kind in te schrijven voor de basisschool",
+        "Om een paspoort voor het kind aan te vragen",
+        "Om kinderopvang te betalen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Ziek en niet kunnen werken",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "U bent ziek en kunt niet werken. Bij wie meldt u zich in de regel als eerste ziek?",
+      "options": [
+        "Bij uw werkgever, volgens de afspraken op uw werk",
+        "Bij de gemeente",
+        "Bij de apotheek",
+        "Bij de politie"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Overlast van de buren",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "passage": "Uw bovenbuurman zet 's avonds vaak harde muziek aan. U slaapt er slecht van.",
+      "question": "Wat is in Nederland meestal de eerste stap bij overlast van buren?",
+      "options": [
+        "Zelf rustig met de buurman praten over het probleem",
+        "Meteen de politie bellen",
+        "Zelf ook harde muziek aanzetten",
+        "Direct verhuizen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Koning en regering",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Nederland is een koninkrijk. Wat is de rol van de koning?",
+      "options": [
+        "De koning is staatshoofd; de regering en het parlement besturen het land",
+        "De koning bepaalt zelf de wetten",
+        "De koning kiest de burgemeesters van alle gemeenten",
+        "De koning heeft geen enkele rol in het staatsbestel"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Stemmen bij verkiezingen",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Wat geldt in Nederland voor mensen die mogen stemmen bij verkiezingen?",
+      "options": [
+        "Zij mogen stemmen, maar zijn niet verplicht om te gaan",
+        "Zij zijn verplicht te stemmen en krijgen anders een boete",
+        "Zij moeten hun keuze aan de gemeente laten weten",
+        "Zij mogen alleen stemmen als zij werk hebben"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Vrijheid van meningsuiting en godsdienst",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Vrijheid van meningsuiting en vrijheid van godsdienst staan in de Grondwet. Wat betekent dat in de praktijk?",
+      "options": [
+        "U mag uw mening en geloof uiten, binnen de grenzen van de wet",
+        "U mag alles zeggen, ook als het volgens de wet strafbaar is",
+        "Alleen Nederlanders mogen hun mening geven",
+        "Geloven mag alleen thuis en nergens anders"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Wat is een cao?",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "In veel sectoren geldt een cao. Wat is een cao?",
+      "options": [
+        "Een pakket afspraken over arbeidsvoorwaarden voor een sector of bedrijf",
+        "Een persoonlijk contract tussen u en uw huisbaas",
+        "Een belastingformulier voor werknemers",
+        "Een verzekering tegen ziekte"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Wat doet een vakbond?",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Waarvoor is een vakbond er?",
+      "options": [
+        "Om op te komen voor de belangen van werknemers",
+        "Om werkgevers te helpen belasting te betalen",
+        "Om woningen te verhuren aan leden",
+        "Om diploma's te erkennen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Bepaalde en onbepaalde tijd",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "passage": "In een vacature staat dat het gaat om een contract voor bepaalde tijd.",
+      "question": "Wat betekent een contract voor bepaalde tijd?",
+      "options": [
+        "Het contract stopt op een afgesproken moment, tenzij het wordt verlengd",
+        "U kunt nooit worden ontslagen tijdens dit contract",
+        "U werkt alleen in bepaalde maanden van het jaar",
+        "U krijgt minder loon dan collega's met vast werk"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "title": "Waarvoor is de Belastingdienst?",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Wat is de belangrijkste taak van de Belastingdienst?",
+      "options": [
+        "Belastingen innen en toeslagen uitbetalen",
+        "Woningen toewijzen aan bewoners",
+        "Diploma's uit het buitenland waarderen",
+        "Werk zoeken voor werklozen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "KNM",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "title": "Een aansprakelijkheidsverzekering",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "passage": "Veel mensen in Nederland hebben naast de zorgverzekering ook een aansprakelijkheidsverzekering (WA-verzekering). Deze is niet verplicht.",
+      "question": "Waarvoor is een aansprakelijkheidsverzekering bedoeld?",
+      "options": [
+        "Voor schade die u per ongeluk aan een ander of andermans spullen toebrengt",
+        "Voor uw eigen doktersrekeningen",
+        "Voor schade aan uw eigen telefoon",
+        "Voor het betalen van uw huur als u werkloos wordt"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]

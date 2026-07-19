@@ -1,0 +1,508 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Verslag van een vergadering",
+    "prompt": "Write a report summarising two positions.",
+    "payload": {
+      "stimulus": "In een vergadering is gesproken over het invoeren van vaste thuiswerkdagen. Een deel van de groep was voor, een deel tegen, en er is nog geen besluit genomen. Schrijf een verslag voor collega's die er niet bij waren. Geef beide standpunten eerlijk weer, noem waar de groep het wél over eens was, en beschrijf wat de volgende stap is. Geef niet uw eigen mening.",
+      "criteria": [
+        "U geeft beide standpunten weer zonder er zelf partij in te kiezen",
+        "U benoemt het punt waarop overeenstemming bestond",
+        "U beschrijft de vervolgstap concreet",
+        "De tekst is zakelijk en overzichtelijk opgebouwd"
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Advies over een terugkerend probleem",
+    "prompt": "Write an advisory note proposing a solution.",
+    "payload": {
+      "stimulus": "Bij een organisatie melden nieuwe medewerkers zich vaak binnen drie maanden weer af. U bent gevraagd om advies. Schrijf een korte adviestekst: beschrijf wat volgens u de oorzaak kan zijn, doe twee concrete voorstellen, en geef aan wat elk voorstel vraagt aan tijd of geld.",
+      "criteria": [
+        "U onderscheidt symptoom en mogelijke oorzaak",
+        "U doet twee concrete, uitvoerbare voorstellen",
+        "U benoemt de kosten of inspanning van elk voorstel",
+        "De opbouw is logisch en de toon is adviserend, niet belerend"
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Reactie op een column",
+    "prompt": "Write a response to a specific argument.",
+    "payload": {
+      "stimulus": "In een column stond dat jongeren tegenwoordig 'niet meer willen werken'. De schrijver baseert dat op het feit dat meer jongeren in deeltijd werken. Schrijf een reactie. Ga in op dat specifieke argument, geef aan wat er volgens u mis is met die redenering, en formuleer wat u zelf denkt.",
+      "criteria": [
+        "U vat het argument van de columnist correct samen voordat u erop ingaat",
+        "U legt uit waarom de redenering volgens u niet klopt",
+        "U formuleert uw eigen standpunt duidelijk",
+        "U blijft inhoudelijk in plaats van op de persoon te spelen"
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Klacht na eerder contact",
+    "prompt": "Write a formal complaint after earlier attempts failed.",
+    "payload": {
+      "stimulus": "U heeft twee keer contact gehad over een dienst die niet levert wat is afgesproken, en beide keren is toegezegd dat het geregeld zou worden. Er is nog niets gebeurd. Schrijf een formele klacht. Geef de voorgeschiedenis in volgorde, beschrijf wat u nu verwacht en op welke termijn, en zeg wat u doet als er opnieuw niets gebeurt.",
+      "criteria": [
+        "U geeft de voorgeschiedenis feitelijk en in de juiste volgorde",
+        "U formuleert een concrete eis met een termijn",
+        "U benoemt een vervolgstap zonder te dreigen",
+        "De toon blijft formeel en beheerst"
+      ],
+      "charBand": { "min": 450, "max": 900 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Voorstel met kosten en bezwaren",
+    "prompt": "Write a proposal that anticipates objections.",
+    "payload": {
+      "stimulus": "U wilt op uw werk of opleiding iets invoeren wat volgens u tijd bespaart, bijvoorbeeld een vast overdrachtsmoment of een gedeeld overzicht. Schrijf een voorstel aan de verantwoordelijke. Beschrijf het probleem, uw voorstel, wat het kost, en welk bezwaar u zelf verwacht — en hoe u dat bezwaar zou opvangen.",
+      "criteria": [
+        "U onderbouwt het probleem met een concreet voorbeeld",
+        "U beschrijft het voorstel zo dat iemand het kan uitvoeren",
+        "U benoemt zelf het sterkste bezwaar",
+        "U geeft een antwoord op dat bezwaar in plaats van het te omzeilen"
+      ],
+      "charBand": { "min": 450, "max": 900 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Een recensie schrijven",
+    "prompt": "Write a review with a clear judgement.",
+    "payload": {
+      "stimulus": "Schrijf een recensie van een boek, film, serie of cursus die u kent. Beschrijf kort waar het over gaat, geef aan wat volgens u goed werkt en wat niet, en sluit af met een oordeel: voor wie is dit wel of niet geschikt?",
+      "criteria": [
+        "U beschrijft het onderwerp beknopt zonder alles na te vertellen",
+        "U benoemt zowel een sterk als een zwak punt, met een voorbeeld",
+        "U komt tot een duidelijk oordeel voor een bepaalde lezer of kijker",
+        "De tekst heeft een eigen toon en een heldere opbouw"
+      ],
+      "charBand": { "min": 450, "max": 900 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Onderhandelen over voorwaarden",
+    "prompt": "Write an email negotiating terms.",
+    "payload": {
+      "stimulus": "U krijgt een aanbod voor werk of een opdracht. De inhoud past, maar twee voorwaarden niet: de startdatum en het aantal dagen. Schrijf een e-mail. Laat blijken dat u geïnteresseerd bent, leg uit welke twee punten aangepast zouden moeten worden en waarom, en doe een concreet tegenvoorstel.",
+      "criteria": [
+        "U bevestigt eerst uw interesse zodat het aanbod niet wordt afgewezen",
+        "U benoemt precies welke twee punten knellen en waarom",
+        "U doet een concreet en redelijk tegenvoorstel",
+        "De toon blijft samenwerkend in plaats van eisend"
+      ],
+      "charBand": { "min": 450, "max": 900 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Betoog: verplicht vrijwilligerswerk",
+    "prompt": "Write an argued piece for or against a proposal.",
+    "payload": {
+      "stimulus": "Er is een voorstel om alle studenten verplicht een aantal uren vrijwilligerswerk te laten doen. Schrijf een betoog voor of tegen. Geef minstens twee argumenten, behandel het sterkste tegenargument, en sluit af met een conclusie die uit uw argumenten volgt.",
+      "criteria": [
+        "U neemt vanaf het begin een duidelijk standpunt in",
+        "U onderbouwt met minstens twee zelfstandige argumenten",
+        "U behandelt het sterkste tegenargument serieus",
+        "De conclusie volgt uit het betoog en herhaalt niet alleen het begin"
+      ],
+      "charBand": { "min": 700, "max": 1300 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Een impopulair besluit toelichten",
+    "prompt": "Write a message explaining an unpopular decision.",
+    "payload": {
+      "stimulus": "Er is besloten dat een activiteit die veel mensen leuk vonden dit jaar niet doorgaat. U moet dat uitleggen aan de groep. Schrijf een bericht: leg uit wat er is besloten en waarom, erken wat mensen kwijtraken, en geef aan wat er wél mogelijk is.",
+      "criteria": [
+        "U brengt het besluit helder en zonder omhaal",
+        "U geeft de werkelijke reden in plaats van een vaag excuus",
+        "U erkent het verlies voor de groep",
+        "U biedt een concreet alternatief of vervolg"
+      ],
+      "charBand": { "min": 450, "max": 900 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Uitstel vragen aan een docent",
+    "prompt": "Write a short email asking for an extension.",
+    "payload": {
+      "stimulus": "U haalt de deadline van een opdracht niet door omstandigheden. Schrijf een korte e-mail aan uw docent. Vraag om uitstel, leg kort uit waarom, en stel zelf een nieuwe datum voor.",
+      "criteria": [
+        "U vraagt duidelijk om uitstel",
+        "U geeft een korte, eerlijke reden",
+        "U stelt zelf een concrete nieuwe datum voor",
+        "De e-mail is beleefd en kort"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Reactie op een advertentie voor een kamer",
+    "prompt": "Write a short reply to a room advert.",
+    "payload": {
+      "stimulus": "U reageert op een advertentie voor een kamer. Schrijf een kort bericht: stel uzelf voor, vertel wat u doet, vraag of de kamer nog vrij is en of u langs kunt komen kijken.",
+      "criteria": [
+        "U stelt uzelf kort en concreet voor",
+        "U vraagt of de kamer nog beschikbaar is",
+        "U stelt een bezichtiging voor",
+        "De toon is vriendelijk en de tekst is kort"
+      ],
+      "charBand": { "min": 250, "max": 600 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Mening: verplichte stageplekken",
+    "prompt": "Give an argued opinion out loud.",
+    "payload": {
+      "stimulus": "Er wordt voorgesteld om bedrijven te verplichten stageplekken aan te bieden. Geef uw mening. Noem minstens twee argumenten, behandel een tegenargument, en zeg onder welke voorwaarde u van gedachten zou veranderen.",
+      "criteria": [
+        "U neemt een duidelijk standpunt in",
+        "U onderbouwt met twee zelfstandige argumenten",
+        "U behandelt een tegenargument serieus",
+        "U benoemt wat u van gedachten zou doen veranderen"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Uw standpunt verdedigen",
+    "prompt": "Defend a position against objections.",
+    "payload": {
+      "stimulus": "U heeft in een overleg voorgesteld om een taak anders te verdelen. Twee collega's zijn het er niet mee eens: de één vindt het te veel werk, de ander vindt de huidige manier prima. Reageer hardop op beide bezwaren en houd daarbij vast aan wat volgens u klopt.",
+      "criteria": [
+        "U reageert op beide bezwaren afzonderlijk",
+        "U geeft toe wat terecht is in een bezwaar",
+        "U houdt vast aan uw punt zonder te herhalen",
+        "U blijft rustig en to the point onder tegenspraak"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Twee oplossingen vergelijken",
+    "prompt": "Compare two options and choose.",
+    "payload": {
+      "stimulus": "Een organisatie kan kiezen: investeren in betere apparatuur, of extra mensen aannemen. Vergelijk beide opties hardop. Noem van allebei een voordeel en een risico, en kies daarna gemotiveerd één van de twee.",
+      "criteria": [
+        "U behandelt beide opties even serieus",
+        "U noemt van elke optie een voordeel én een risico",
+        "U maakt een expliciete keuze",
+        "U motiveert die keuze met wat u eerder heeft gezegd"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Een korte presentatie geven",
+    "prompt": "Give a short structured presentation.",
+    "payload": {
+      "stimulus": "Geef een korte presentatie over een onderwerp waar u verstand van heeft, uit uw werk, opleiding of interesse. Begin met waarom het onderwerp ertoe doet, geef twee of drie hoofdpunten, en sluit af met wat u wilt dat de luisteraar onthoudt.",
+      "criteria": [
+        "U begint met een reden waarom dit onderwerp relevant is",
+        "U bouwt de presentatie op in duidelijke hoofdpunten",
+        "U legt vaktermen uit voor een luisteraar die het onderwerp niet kent",
+        "U sluit af met één duidelijke boodschap"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Slecht nieuws brengen",
+    "prompt": "Deliver bad news and explain it.",
+    "payload": {
+      "stimulus": "U moet aan iemand vertellen dat een toezegging niet kan worden nagekomen: een dienst die u zou overnemen, of hulp die u had beloofd. Breng het nieuws hardop: zeg het duidelijk, leg uit waarom, erken wat het voor de ander betekent, en bied aan wat u wél kunt doen.",
+      "criteria": [
+        "U zegt het nieuws vroeg in plaats van het uit te stellen",
+        "U geeft een eerlijke reden zonder u te verschuilen",
+        "U erkent de gevolgen voor de ander",
+        "U biedt een concreet alternatief aan"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Een discussie samenvatten",
+    "prompt": "Summarise a discussion and land a conclusion.",
+    "payload": {
+      "stimulus": "In een groepsgesprek zijn drie verschillende voorstellen genoemd en de tijd is bijna om. Vat hardop samen wat er is gezegd, benoem waar de groep het over eens is en waar niet, en stel voor hoe jullie tot een besluit komen.",
+      "criteria": [
+        "U geeft de voorstellen eerlijk weer, ook die u niet steunt",
+        "U benadrukt overeenkomsten én blijvende verschillen",
+        "U stelt een concrete manier voor om te besluiten",
+        "U blijft neutraal in de samenvatting"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Reageren op kritiek op uw werk",
+    "prompt": "Respond to criticism of your work.",
+    "payload": {
+      "stimulus": "Uw leidinggevende zegt dat uw werk goed is, maar dat u te lang doorgaat met details terwijl deadlines naderen. U herkent dat deels. Reageer hardop: laat merken dat u de kritiek hoort, geef aan wat volgens u klopt en wat niet, en zeg wat u gaat veranderen.",
+      "criteria": [
+        "U laat merken dat u de kritiek werkelijk heeft gehoord",
+        "U maakt onderscheid tussen wat u herkent en wat niet",
+        "U verdedigt uzelf zonder de kritiek weg te wuiven",
+        "U noemt een concrete verandering"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Waarom een populair idee volgens u niet werkt",
+    "prompt": "Argue against a widely held idea.",
+    "payload": {
+      "stimulus": "Noem een idee dat veel mensen vanzelfsprekend vinden, maar waar u het niet mee eens bent, bijvoorbeeld over leren, werk of gezondheid. Leg uit waarom het idee aantrekkelijk is, waarom het volgens u toch niet klopt, en wat er in plaats daarvan volgens u wél werkt.",
+      "criteria": [
+        "U geeft het populaire idee eerlijk weer, op zijn sterkst",
+        "U legt uit waarom het aantrekkelijk is",
+        "U onderbouwt waarom u het er niet mee eens bent",
+        "U biedt een alternatief in plaats van alleen kritiek"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Een gesprek leiden bij onenigheid",
+    "prompt": "Lead a conversation where people disagree.",
+    "payload": {
+      "stimulus": "Twee mensen in uw groep zijn het oneens en het gesprek loopt vast; ze herhalen alleen nog hun eigen standpunt. U leidt het gesprek. Spreek hardop: benoem wat u ziet gebeuren, haal uit beide standpunten wat bruikbaar is, en stel een volgende stap voor.",
+      "criteria": [
+        "U benoemt het vastlopen zonder iemand de schuld te geven",
+        "U vat beide standpunten herkenbaar samen",
+        "U zoekt het gemeenschappelijke belang",
+        "U stelt een concrete volgende stap voor"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Mening: geld voor cultuur",
+    "prompt": "Give an argued opinion on public funding.",
+    "payload": {
+      "stimulus": "Moet de overheid geld uitgeven aan theater, musea en muziek, of moet cultuur zichzelf bedruipen? Geef uw mening met argumenten, ga in op het sterkste bezwaar tegen uw standpunt, en geef aan waar volgens u de grens ligt.",
+      "criteria": [
+        "U neemt een duidelijk standpunt in",
+        "U onderbouwt met argumenten die verder gaan dan smaak",
+        "U behandelt het sterkste bezwaar",
+        "U geeft aan waar voor u de grens ligt"
+      ],
+      "minSeconds": 90
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Een gewoonte die u heeft veranderd",
+    "prompt": "Talk about a habit you changed.",
+    "payload": {
+      "stimulus": "Vertel over een gewoonte die u heeft veranderd, bijvoorbeeld in eten, bewegen, slapen of studeren. Wat deed u eerst, waarom wilde u het anders, en hoe ging dat?",
+      "criteria": [
+        "U beschrijft de oude en de nieuwe situatie",
+        "U geeft een reden voor de verandering",
+        "U vertelt eerlijk hoe het ging, ook als het moeilijk was",
+        "U spreekt samenhangend in de verleden en tegenwoordige tijd"
+      ],
+      "minSeconds": 75
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Uitleggen hoe u iets regelt",
+    "prompt": "Explain how you arrange something.",
+    "payload": {
+      "stimulus": "Leg uit hoe u iets praktisch regelt dat u goed kent: bijvoorbeeld een afspraak maken, iets bestellen of ergens naartoe reizen. Beschrijf de stappen en zeg waar mensen vaak iets vergeten.",
+      "criteria": [
+        "U legt de stappen in een logische volgorde uit",
+        "U gebruikt duidelijke verbindingswoorden",
+        "U waarschuwt voor een veelgemaakte fout",
+        "U spreekt vloeiend genoeg om makkelijk te volgen"
+      ],
+      "minSeconds": 75
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]

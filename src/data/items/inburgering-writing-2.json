@@ -1,0 +1,486 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Bericht aan de buurvrouw",
+    "prompt": "Write a short message asking your neighbour for a favour.",
+    "payload": {
+      "stimulus": "U bent morgen niet thuis, maar er komt een pakketje. Schrijf een kort bericht aan uw buurvrouw. Vraag of zij het pakketje wil aannemen, zeg wanneer u het ophaalt en bedank haar.",
+      "criteria": [
+        "Makes the request clearly in one or two sentences",
+        "Says when you will collect the parcel",
+        "Includes a thank-you",
+        "Uses a friendly informal tone that stays understandable at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Afmelden voor de taalles",
+    "prompt": "Write a short message to say you cannot come to class.",
+    "payload": {
+      "stimulus": "U kunt morgen niet naar de taalles komen. Schrijf een kort bericht aan uw docent. Zeg dat u niet komt, geef één reden en vraag wat u thuis kunt doen.",
+      "criteria": [
+        "States clearly that you will be absent and when",
+        "Gives one simple reason",
+        "Asks what to do at home to keep up",
+        "Uses short correct sentences at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Briefje voor de juf of meester",
+    "prompt": "Write a short note about your child's absence.",
+    "payload": {
+      "stimulus": "Uw kind moet donderdagmiddag naar de tandarts en mist daardoor een deel van de les. Schrijf een kort briefje aan de leerkracht. Zeg wie uw kind is, wanneer het weg is en hoe laat het weer op school is.",
+      "criteria": [
+        "Names the child and the class or group",
+        "Says which day and part of the day is missed",
+        "Says when the child will be back",
+        "Keeps a polite tone in short sentences at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Antwoord op een uitnodiging",
+    "prompt": "Write a reply accepting an invitation.",
+    "payload": {
+      "stimulus": "Een collega nodigt u uit voor een etentje bij haar thuis op zaterdag. Schrijf een kort antwoord. Zeg dat u komt, vraag hoe laat u wordt verwacht en vraag of u iets kunt meenemen.",
+      "criteria": [
+        "Accepts the invitation clearly",
+        "Asks about the time",
+        "Offers to bring something",
+        "Uses friendly everyday language at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Boodschappenbriefje",
+    "prompt": "Write a very short shopping note.",
+    "payload": {
+      "stimulus": "U bent ziek en blijft thuis. Schrijf een kort briefje voor uw huisgenoot met vier of vijf dingen die hij of zij moet kopen. Zet er ook bij waar de winkel is.",
+      "criteria": [
+        "Lists four or five items clearly",
+        "Adds where to buy them in one short sentence",
+        "Uses simple words and short phrases",
+        "Is easy to read and follow"
+      ],
+      "charBand": { "min": 30, "max": 100 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Kaartje voor een zieke collega",
+    "prompt": "Write a very short get-well card.",
+    "payload": {
+      "stimulus": "Een collega is ziek. Schrijf een kort kaartje. Wens hem of haar beterschap, schrijf één zin dat u aan hem of haar denkt, en zet uw naam eronder.",
+      "criteria": [
+        "Wishes the colleague well",
+        "Adds one short personal sentence",
+        "Signs off with a name",
+        "Uses simple set phrases correctly"
+      ],
+      "charBand": { "min": 25, "max": 90 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Formulier bij de tandarts",
+    "prompt": "Fill in a short form as a new patient.",
+    "payload": {
+      "stimulus": "U schrijft zich in bij een tandartspraktijk. Op het formulier moet u schrijven: uw naam, geboortedatum, adres, telefoonnummer en of u klachten heeft. Schrijf hele zinnen bij de laatste vraag.",
+      "criteria": [
+        "Gives name, date of birth, address and phone number",
+        "Answers the question about complaints in full sentences",
+        "Uses correct word order in short sentences",
+        "Information is complete and readable at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 130 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "E-mail over een boete bij de bibliotheek",
+    "prompt": "Write a short email asking about a library charge.",
+    "payload": {
+      "stimulus": "U heeft een bericht gekregen dat u een boete moet betalen voor een boek dat te laat terug was. U denkt dat u het boek op tijd heeft ingeleverd. Schrijf een korte e-mail. Leg uit wat er volgens u is gebeurd en vraag of zij het willen nakijken.",
+      "criteria": [
+        "Explains the situation in simple sentences",
+        "Says when you think the book was returned",
+        "Asks them to check",
+        "Uses a polite greeting and closing at A2 level"
+      ],
+      "charBand": { "min": 50, "max": 140 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Bericht dat u later komt",
+    "prompt": "Write a short message saying you will arrive late.",
+    "payload": {
+      "stimulus": "De trein heeft vertraging en u komt later op uw werk. Schrijf een kort bericht aan uw leidinggevende. Zeg hoe laat u ongeveer bent en wat er met uw eerste afspraak moet gebeuren.",
+      "criteria": [
+        "Says roughly what time you will arrive",
+        "Gives the reason briefly",
+        "Says what should happen with the first appointment",
+        "Keeps a polite tone appropriate to a manager"
+      ],
+      "charBand": { "min": 40, "max": 120 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Reactie op een advertentie",
+    "prompt": "Write a short reply to a second-hand advert.",
+    "payload": {
+      "stimulus": "U ziet online een advertentie voor een tweedehands fiets. Schrijf een kort bericht aan de verkoper. Vraag of de fiets er nog is, vraag naar de prijs en stel voor wanneer u kunt komen kijken.",
+      "criteria": [
+        "Asks whether the item is still available",
+        "Asks about the price",
+        "Proposes a moment to come and look",
+        "Uses clear simple questions at A2 level"
+      ],
+      "charBand": { "min": 40, "max": 130 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Een gewone dag beschrijven",
+    "prompt": "Write a short text about an ordinary day.",
+    "payload": {
+      "stimulus": "Schrijf voor uw taalportfolio een korte tekst over een gewone dag. Wat doet u 's ochtends, 's middags en 's avonds? Schrijf ook wat u het liefst doet.",
+      "criteria": [
+        "Describes activities across the whole day",
+        "Uses time expressions to order the text",
+        "Says which part you like best",
+        "Links sentences with simple connectors at A2 level"
+      ],
+      "charBand": { "min": 60, "max": 150 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "E-mail aan uw werkgever over verlof",
+    "prompt": "Write an email requesting leave.",
+    "payload": {
+      "stimulus": "U wilt twee weken verlof opnemen in een drukke periode. Schrijf een e-mail aan uw leidinggevende. Vraag het verlof aan, leg uit waarom die periode voor u belangrijk is, en stel voor hoe uw werk in die weken wordt opgevangen.",
+      "criteria": [
+        "States the request and the exact period clearly",
+        "Explains the reason without over-explaining",
+        "Proposes a workable arrangement for the work itself",
+        "Keeps a formal register (u-vorm) with correct opening and closing"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Reactie op een uitnodiging voor een werkoverleg",
+    "prompt": "Write a reply to a meeting invitation.",
+    "payload": {
+      "stimulus": "U wordt uitgenodigd voor een overleg over een nieuwe werkverdeling. Schrijf een antwoord. Bevestig dat u komt, noem één punt dat u graag besproken wilt zien en leg kort uit waarom dat punt volgens u belangrijk is.",
+      "criteria": [
+        "Confirms attendance clearly",
+        "Raises one concrete agenda point",
+        "Explains briefly why it matters",
+        "Uses a professional tone and connected sentences at B1 level"
+      ],
+      "charBand": { "min": 90, "max": 200 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Motivatie voor vrijwilligerswerk",
+    "prompt": "Write a short motivation letter for volunteer work.",
+    "payload": {
+      "stimulus": "U wilt vrijwilligerswerk gaan doen in de buurt, bijvoorbeeld bij een sportclub of een buurthuis. Schrijf een korte motivatiebrief. Vertel wat u wilt doen, wat u meebrengt aan ervaring, hoeveel tijd u heeft en waarom u dit wilt.",
+      "criteria": [
+        "Says clearly which kind of work and how much time",
+        "Names relevant experience or skills",
+        "Explains the motivation convincingly",
+        "Structured in paragraphs with a formal opening and closing"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Samenvatting van een gesprek op school",
+    "prompt": "Write a summary of a meeting for someone who was absent.",
+    "payload": {
+      "stimulus": "U bent naar een gesprek op de school van uw kind geweest; uw partner kon niet mee. Schrijf een samenvatting. Geef weer wat de leerkracht zei, wat er is afgesproken en wat er van u thuis wordt verwacht. Geef het gesprek eerlijk weer, ook als u het er niet mee eens bent.",
+      "criteria": [
+        "Reports what was said accurately rather than arguing a position",
+        "States what was agreed",
+        "Says what is expected at home",
+        "Keeps the summary ordered and readable at B1 level"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Ingezonden stuk voor het buurtblad",
+    "prompt": "Write an opinion piece for a neighbourhood newsletter.",
+    "payload": {
+      "stimulus": "In het buurtblad staat de vraag of de oude speeltuin moet blijven of plaats moet maken voor parkeerplaatsen. Schrijf een ingezonden stuk met uw mening. Geef minstens twee argumenten, noem een tegenargument en reageer daarop.",
+      "criteria": [
+        "States a clear position from the first lines",
+        "Gives at least two supported arguments",
+        "Raises a counter-argument and answers it",
+        "Uses paragraphs and connectors, holding a consistent tone at B1 level"
+      ],
+      "charBand": { "min": 120, "max": 240 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een cursus annuleren",
+    "prompt": "Write an email cancelling a course and asking for a refund.",
+    "payload": {
+      "stimulus": "U heeft zich ingeschreven voor een cursus, maar door een verandering in uw werkrooster kunt u niet meer komen. Schrijf een e-mail. Annuleer de inschrijving, leg de reden uit, verwijs naar wanneer u zich heeft ingeschreven en vraag wat er met het betaalde bedrag gebeurt.",
+      "criteria": [
+        "Cancels clearly and identifies the registration",
+        "Explains the reason without excessive detail",
+        "Asks concretely about the money already paid",
+        "Formal register with correct opening and closing"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Instructies voor de oppas",
+    "prompt": "Write short instructions for a babysitter.",
+    "payload": {
+      "stimulus": "Er komt vanavond een oppas. Schrijf korte instructies: hoe laat de kinderen eten, hoe laat ze naar bed gaan, en wat de oppas moet doen als er iets is. Zet uw telefoonnummer erbij.",
+      "criteria": [
+        "Gives the times clearly",
+        "Says what to do if something happens",
+        "Includes a phone number",
+        "Instructions are short, ordered and easy to follow"
+      ],
+      "charBand": { "min": 60, "max": 150 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Een afspraak bevestigen",
+    "prompt": "Write a short email confirming an appointment.",
+    "payload": {
+      "stimulus": "U heeft telefonisch een afspraak gemaakt. Schrijf een korte e-mail om die te bevestigen. Noem de dag en het tijdstip, en vraag of u iets moet meenemen.",
+      "criteria": [
+        "Confirms the day and time correctly",
+        "Asks whether anything needs to be brought",
+        "Keeps the email short and clear",
+        "Uses a correct greeting and closing"
+      ],
+      "charBand": { "min": 50, "max": 140 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Verslag van een voorval op het werk",
+    "prompt": "Write a factual report of something that happened at work.",
+    "payload": {
+      "stimulus": "Op uw werk is een bestelling verkeerd geleverd en daardoor is een klant niet op tijd geholpen. Uw leidinggevende vraagt om een kort verslag. Beschrijf in volgorde wat er is gebeurd, wat er is opgelost en wat volgens u de oorzaak was. Blijf feitelijk.",
+      "criteria": [
+        "Describes events in a clear chronological order",
+        "Separates what happened from what was concluded",
+        "States what was done to resolve it",
+        "Stays factual and neutral rather than blaming, at B1 level"
+      ],
+      "charBand": { "min": 110, "max": 240 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Antwoord aan een collega die het oneens is",
+    "prompt": "Write a reply to a colleague who disagrees with you.",
+    "payload": {
+      "stimulus": "Een collega schrijft dat uw voorstel voor een nieuwe werkindeling te veel tijd kost. Schrijf een antwoord. Erken wat er klopt in zijn bezwaar, leg uit waarom u toch bij uw voorstel blijft, en doe één aanpassing die het bezwaar kleiner maakt.",
+      "criteria": [
+        "Acknowledges what is reasonable in the objection",
+        "Explains why the proposal still stands",
+        "Offers one concrete adjustment",
+        "Stays collegial in tone while holding the position, at B1 level"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "WRITING",
+    "taskType": "WRITING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Voorstel in de buurtapp",
+    "prompt": "Write a message proposing a shared neighbourhood activity.",
+    "payload": {
+      "stimulus": "U wilt met de buurt een gezamenlijke opruimdag organiseren. Schrijf een bericht voor de buurtapp. Leg uit wat u voorstelt en waarom, noem een datum en een tijd, en vraag wie er meedoet en wat mensen kunnen meenemen.",
+      "criteria": [
+        "Explains the proposal and the reason for it",
+        "Gives concrete practical details (date, time, place)",
+        "Asks a clear question to get people to respond",
+        "Tone is inviting rather than demanding, connected at B1 level"
+      ],
+      "charBand": { "min": 100, "max": 220 }
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]
