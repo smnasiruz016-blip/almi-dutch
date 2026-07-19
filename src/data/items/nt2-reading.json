@@ -57,7 +57,7 @@
     "title": "Brief van de gemeente",
     "prompt": "Kies voor elk gat het woord dat het beste past.",
     "payload": {
-      "passage": "Beste meneer De Vries,\n\nHartelijk dank voor uw {{1}}. Wij hebben uw aanvraag ontvangen en zullen deze binnen twee weken {{2}}. U krijgt daarna bericht per e-mail.\n\nMet vriendelijke {{3}},\nGemeente Utrecht",
+      "passage": "Beste meneer De Vries,\n\nHartelijk dank voor uw {{1}}. Wij hebben uw aanvraag ontvangen en zullen deze binnen twee weken {{2}}. U krijgt daarna bericht per e-mail.\n\nMet vriendelijke {{3}},\nde gemeente",
       "gaps": [
         {
           "id": 1,

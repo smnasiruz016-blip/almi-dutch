@@ -9,7 +9,7 @@
     "title": "Voicemail tandartspraktijk",
     "prompt": "Luister naar het bericht en beantwoord de vraag.",
     "payload": {
-      "transcript": "Goedemorgen. U luistert naar de voicemail van tandartspraktijk Bloemhof. Wij zijn gesloten van vijftien tot tweeëntwintig juli in verband met de vakantie. Voor spoedgevallen kunt u bellen met de waarnemend tandarts. Na de vakantie zijn wij weer bereikbaar op werkdagen tussen acht en vijf uur.",
+      "transcript": "Goedemorgen. U luistert naar de voicemail van de tandartspraktijk. Wij zijn gesloten van vijftien tot tweeëntwintig juli in verband met de vakantie. Voor spoedgevallen kunt u bellen met de waarnemend tandarts. Na de vakantie zijn wij weer bereikbaar op werkdagen tussen acht en vijf uur.",
       "question": "Wat moet u doen bij een spoedgeval tijdens de vakantie?",
       "options": [
         "Wachten tot na 22 juli",
@@ -271,7 +271,7 @@
     "title": "Bericht van de school",
     "prompt": "Luister naar het bericht. Is de stelling waar of niet waar?",
     "payload": {
-      "transcript": "Beste ouders, dit is een bericht van basisschool De Regenboog. Aanstaande woensdag gaan de kinderen van groep vijf op excursie naar het museum. De bus vertrekt om half negen, dus wij vragen u om uw kind uiterlijk kwart over acht op school te brengen. Vergeet niet een lunchpakketje mee te geven.",
+      "transcript": "Beste ouders, dit is een bericht van de basisschool. Aanstaande woensdag gaan de kinderen van groep vijf op excursie naar het museum. De bus vertrekt om half negen, dus wij vragen u om uw kind uiterlijk kwart over acht op school te brengen. Vergeet niet een lunchpakketje mee te geven.",
       "question": "Stelling: de kinderen moeten zelf eten meenemen.",
       "options": [
         "Waar",

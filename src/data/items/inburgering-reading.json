@@ -9,7 +9,7 @@
     "title": "Brief van de gemeente",
     "prompt": "Read the letter and answer the question.",
     "payload": {
-      "passage": "Beste bewoner,\n\nOp woensdag 8 april komt de gemeente uw straat schoonmaken. Wilt u die dag uw auto ergens anders parkeren? De werkzaamheden zijn van 8.00 tot 12.00 uur. Na 12.00 uur mag u weer gewoon in de straat parkeren.\n\nMet vriendelijke groet,\nGemeente Almere",
+      "passage": "Beste bewoner,\n\nOp woensdag 8 april komt de gemeente uw straat schoonmaken. Wilt u die dag uw auto ergens anders parkeren? De werkzaamheden zijn van 8.00 tot 12.00 uur. Na 12.00 uur mag u weer gewoon in de straat parkeren.\n\nMet vriendelijke groet,\nde gemeente",
       "question": "Wat moeten bewoners op 8 april doen?",
       "options": [
         "Hun auto ergens anders parkeren",
@@ -34,7 +34,7 @@
     "title": "Aanbieding supermarkt",
     "prompt": "Read the flyer. Is the statement true or false?",
     "payload": {
-      "passage": "Deze week bij supermarkt De Hoek: alle groente en fruit met 25% korting! De aanbieding geldt van maandag tot en met zaterdag. Op zondag is de winkel gesloten.",
+      "passage": "Deze week bij de supermarkt: alle groente en fruit met 25% korting! De aanbieding geldt van maandag tot en met zaterdag. Op zondag is de winkel gesloten.",
       "question": "Stelling: de aanbieding geldt ook op zondag.",
       "options": [
         "Waar",
