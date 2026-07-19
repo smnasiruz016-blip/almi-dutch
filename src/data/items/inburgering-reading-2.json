@@ -1,0 +1,321 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Briefje van de huismeester",
+    "prompt": "Read the notice and answer the question.",
+    "payload": {
+      "passage": "Beste bewoners,\n\nDe lift is deze week buiten gebruik. Wij verwachten dat de reparatie donderdag klaar is. Woont u op de vierde of vijfde verdieping en heeft u hulp nodig met boodschappen? Laat het weten bij de huismeester op de begane grond.\n\nExcuses voor het ongemak.",
+      "question": "Wat kunnen bewoners van de vierde verdieping doen?",
+      "options": [
+        "Hulp vragen bij de huismeester",
+        "De lift zelf repareren",
+        "Deze week niet naar buiten gaan",
+        "De trap afsluiten"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Bord bij de speeltuin",
+    "prompt": "Read the sign and decide whether the statement is true.",
+    "payload": {
+      "passage": "SPEELTUIN\nOpen van 9.00 tot 20.00 uur.\nHonden niet toegestaan.",
+      "question": "Stelling: u mag uw hond meenemen in de speeltuin.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Bericht over de wasruimte",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "De gezamenlijke wasruimte is open van 8.00 tot 22.00 uur. U moet eerst een {{1}} reserveren op de lijst bij de deur. Haal uw was op tijd uit de {{2}}, zodat de volgende bewoner kan beginnen. Laat de ruimte netjes {{3}}.",
+      "gaps": [
+        { "id": 1, "options": ["tijd", "kamer", "sleutel"] },
+        { "id": 2, "options": ["machine", "kast", "tuin"] },
+        { "id": 3, "options": ["achter", "open", "vol"] }
+      ]
+    },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        { "id": 1, "index": 0 },
+        { "id": 2, "index": 0 },
+        { "id": 3, "index": 0 }
+      ]
+    },
+    "maxPoints": 3
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Openingstijden van het afhaalpunt",
+    "prompt": "Read the information and answer the question.",
+    "payload": {
+      "passage": "AFHAALPUNT\nMaandag tot en met vrijdag: 9.00 - 19.00 uur\nZaterdag: 10.00 - 17.00 uur\nZondag gesloten\n\nNeem uw legitimatie en de code uit het bericht mee. Pakketjes blijven zeven dagen bij ons liggen.",
+      "question": "Wat moet u meenemen als u een pakketje ophaalt?",
+      "options": [
+        "Uw legitimatie en de code",
+        "Alleen contant geld",
+        "Een handtekening van de buren",
+        "De oude verpakking"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Een ov-chipkaart opladen",
+    "prompt": "Put the steps in the right order.",
+    "payload": {
+      "instructions": "Nummer de stappen zodat het een logische instructie wordt.",
+      "items": [
+        "Leg uw kaart op de lezer van de automaat.",
+        "Kies het bedrag dat u wilt opladen.",
+        "Betaal met uw pinpas.",
+        "Wacht tot het scherm zegt dat het saldo erop staat."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Informatie over de bibliotheekpas",
+    "prompt": "Read the information and decide whether the statement is true.",
+    "payload": {
+      "passage": "Met een bibliotheekpas leent u maximaal tien boeken tegelijk. De uitleentermijn is drie weken. U kunt één keer verlengen, behalve als iemand anders het boek heeft gereserveerd.",
+      "question": "Stelling: u kunt altijd verlengen, ook als iemand het boek heeft gereserveerd.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Uitnodiging voor de inloopochtend",
+    "prompt": "Read the invitation and answer the question.",
+    "payload": {
+      "passage": "Inloopochtend in het buurthuis\n\nElke dinsdag van 10.00 tot 12.00 uur is er koffie en thee. U kunt gewoon binnenlopen; aanmelden hoeft niet. Wilt u oefenen met Nederlands praten? Er zijn altijd vrijwilligers aanwezig die met u willen praten.",
+      "question": "Wat moet u doen om te komen?",
+      "options": [
+        "Niets, u kunt zomaar binnenlopen",
+        "Zich van tevoren aanmelden",
+        "Een vrijwilliger meenemen",
+        "Betalen bij de deur"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "E-mail over een wijziging in het rooster",
+    "prompt": "Read the email and answer the question.",
+    "payload": {
+      "passage": "Beste collega's,\n\nVanaf volgende maand beginnen we op maandag een half uur later, om negen uur. De reden is dat de leveringen 's ochtends vaak te laat binnenkomen, waardoor het eerste half uur toch niet efficiënt gebruikt kan worden. Het einde van de dag blijft gelijk; de tijd halen we in tijdens de lunchpauze, die twintig minuten korter wordt. Wie hierdoor in de knel komt met opvang of vervoer, kan dat deze week bij mij melden, zodat we naar een oplossing kunnen zoeken.",
+      "question": "Waarom wordt de starttijd veranderd?",
+      "options": [
+        "Omdat het eerste half uur nu niet nuttig gebruikt kan worden",
+        "Omdat de werkdag korter moet worden",
+        "Omdat de lunchpauze langer moet worden",
+        "Omdat er te weinig collega's zijn"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Voorwaarden van het sportabonnement",
+    "prompt": "Read the conditions and decide whether the statement is true.",
+    "payload": {
+      "passage": "Het abonnement loopt per maand door en wordt automatisch verlengd. Opzeggen kan altijd, maar de opzegging gaat pas in aan het einde van de volgende maand. Zegt u dus in maart op, dan betaalt u april nog wel. Bij een blessure kunt u het abonnement tijdelijk pauzeren; daarvoor is een verklaring van een arts nodig.",
+      "question": "Stelling: als u in maart opzegt, hoeft u april niet meer te betalen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Reactie op een klacht",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "Geachte mevrouw De Wit,\n\nHartelijk dank voor uw bericht. Wij begrijpen dat het {{1}} is dat uw bestelling twee weken te laat is aangekomen. Wij hebben uitgezocht wat er is gebeurd en het blijkt dat het pakket op het verkeerde adres is {{2}}. Als {{3}} voor het ongemak sturen wij u een tegoedbon.",
+      "gaps": [
+        { "id": 1, "options": ["vervelend", "gezellig", "voordelig"] },
+        { "id": 2, "options": ["bezorgd", "besteld", "betaald"] },
+        { "id": 3, "options": ["compensatie", "voorwaarde", "herinnering"] }
+      ]
+    },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        { "id": 1, "index": 0 },
+        { "id": 2, "index": 0 },
+        { "id": 3, "index": 0 }
+      ]
+    },
+    "maxPoints": 3
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Ingezonden brief over parkeren",
+    "prompt": "Read the letter and answer the question.",
+    "payload": {
+      "passage": "Iedereen klaagt over de drukte in onze straat, maar bijna niemand wil de oorzaak noemen. Wij hebben hier steeds meer auto's per huishouden, en tegelijk willen we allemaal voor de deur parkeren. Ik ben niet tegen auto's; ik rijd er zelf een. Ik zeg alleen dat we niet kunnen blijven vragen om meer plekken en tegelijk klagen dat de straat vol staat. Kiezen we voor ruimte om te spelen, dan betekent dat een paar minuten lopen vanaf de parkeerplaats. Dat lijkt me een eerlijke ruil.",
+      "question": "Wat vindt de schrijver?",
+      "options": [
+        "Meer ruimte om te spelen is een eerlijke ruil voor iets verder lopen",
+        "Er moeten zo snel mogelijk meer parkeerplaatsen komen",
+        "Auto's zouden helemaal verboden moeten worden in de straat",
+        "De buurt klaagt terecht over de gemeente"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een klacht indienen bij een webwinkel",
+    "prompt": "Put the steps in the right order.",
+    "payload": {
+      "instructions": "Nummer de stappen zodat het een logische werkwijze wordt.",
+      "items": [
+        "Zoek uw bestelnummer en de datum van de bestelling op.",
+        "Beschrijf in een bericht wat er mis is en wat u wilt.",
+        "Stuur het bericht naar de klantenservice.",
+        "Bewaar de bevestiging die u terugkrijgt.",
+        "Neem opnieuw contact op als u binnen de genoemde termijn niets hoort."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3, 4] },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Bericht van de buurvrouw",
+    "prompt": "Read the message and answer the question.",
+    "payload": {
+      "passage": "Hoi! Ik ben dit weekend weg. Zou jij mijn planten water willen geven? De sleutel ligt bij mijn zus, op nummer 12. Zaterdag en zondag één keer water is genoeg. Bedankt alvast!",
+      "question": "Waar ligt de sleutel?",
+      "options": [
+        "Bij haar zus op nummer 12",
+        "Onder de deurmat",
+        "Bij de buurman",
+        "In de brievenbus"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Informatie over een cursus met korting",
+    "prompt": "Read the information and decide whether the statement is true.",
+    "payload": {
+      "passage": "Voor deze cursus geldt een korting voor wie zich vóór 1 september inschrijft. De korting geldt alleen bij betaling van het hele bedrag in één keer; betaalt u in termijnen, dan geldt het normale tarief. Bent u lid van het buurthuis, dan krijgt u de korting ook na 1 september, maar de twee kortingen kunnen niet worden opgeteld.",
+      "question": "Stelling: een lid van het buurthuis dat in termijnen betaalt, krijgt twee kortingen.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Nieuwsbericht over werkzaamheden in de wijk",
+    "prompt": "Read the news item and answer the question.",
+    "payload": {
+      "passage": "Vanaf maandag wordt er gewerkt aan het riool in de wijk. De werkzaamheden duren naar verwachting zes weken. De straat blijft bereikbaar voor voetgangers, maar auto's kunnen er niet door; wie met de auto komt, parkeert aan de andere kant van het park. Voor bewoners die slecht ter been zijn, rijdt er twee keer per dag een busje. De afvalinzameling gaat gewoon door, maar de containers moeten op de hoek worden gezet in plaats van voor de deur.",
+      "question": "Wat verandert er voor bewoners met een auto?",
+      "options": [
+        "Zij parkeren tijdelijk aan de andere kant van het park",
+        "Zij mogen zes weken lang niet rijden",
+        "Zij moeten het busje nemen",
+        "Zij kunnen alleen 's avonds de straat in"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]

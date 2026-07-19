@@ -1,0 +1,173 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Column: studeren met een bijbaan",
+    "prompt": "Read the column and answer the question.",
+    "payload": {
+      "passage": "Studenten met een bijbaan doen het volgens sommige docenten slechter, en er zijn cijfers die dat lijken te ondersteunen. Toch klopt de conclusie niet zonder meer. Wie twintig uur per week werkt omdat het moet, heeft minder tijd én meer zorgen; wie acht uur werkt omdat het leuk is, leert vaak juist plannen. Het probleem is dus niet 'werken naast je studie', maar de reden waarom iemand werkt en hoeveel. Zolang we die twee op één hoop gooien, meten we vooral wie het geld nodig heeft, en niet wie het werk aankan.",
+      "question": "Wat is het bezwaar van de schrijver tegen de conclusie van de docenten?",
+      "options": [
+        "Zij maken geen onderscheid tussen de reden en de omvang van het werk",
+        "Zij hebben geen cijfers om hun standpunt te onderbouwen",
+        "Zij vinden dat studenten helemaal niet moeten werken",
+        "Zij overschatten hoeveel studenten kunnen plannen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Onderzoek naar slaap en leren",
+    "prompt": "Read the report and decide whether the statement is true.",
+    "payload": {
+      "passage": "In het onderzoek werd gekeken naar de relatie tussen slaap en het onthouden van nieuwe woorden. Deelnemers die na het leren een nacht sliepen, scoorden de volgende dag hoger dan deelnemers die overdag evenveel uren wakker bleven. De onderzoekers benadrukken echter dat het verschil klein was en dat alle deelnemers jongvolwassenen waren. Of hetzelfde geldt voor oudere lerenden, is met dit onderzoek niet vast te stellen.",
+      "question": "Stelling: het onderzoek laat zien dat slaap ook bij oudere lerenden het onthouden verbetert.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "CLOZE",
+    "difficulty": "CORE",
+    "cefr": "B2",
+    "title": "Taalgebruik op de werkvloer",
+    "prompt": "Choose the word that fits each gap.",
+    "payload": {
+      "passage": "Wie een nieuwe taal leert, leert meestal eerst de correcte vormen en pas veel later de {{1}} die bepaalt of iets gepast klinkt. Een zin kan grammaticaal foutloos zijn en toch te direct overkomen in een e-mail aan een klant. Juist daarom is het {{2}} om te letten op hoe collega's dingen formuleren. Niet omdat u hen moet {{3}}, maar omdat u zo hoort welke ruimte er is.",
+      "gaps": [
+        { "id": 1, "options": ["toon", "spelling", "uitspraak"] },
+        { "id": 2, "options": ["nuttig", "verplicht", "onmogelijk"] },
+        { "id": 3, "options": ["kopiëren", "corrigeren", "vermijden"] }
+      ]
+    },
+    "answer": {
+      "type": "CLOZE",
+      "correct": [
+        { "id": 1, "index": 0 },
+        { "id": 2, "index": 0 },
+        { "id": 3, "index": 0 }
+      ]
+    },
+    "maxPoints": 3
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Bericht over een krappe arbeidsmarkt",
+    "prompt": "Read the article and answer the question.",
+    "payload": {
+      "passage": "Werkgevers in verschillende sectoren melden dat vacatures langer openstaan dan een aantal jaar geleden. De reactie is vaak: meer werven, hogere lonen bieden, sneller beslissen. Wat daarbij makkelijk uit beeld raakt, is dat een deel van het tekort niet ontstaat doordat er te weinig mensen binnenkomen, maar doordat er te veel weer vertrekken. Een organisatie die alleen aan de voorkant investeert, blijft dezelfde plek elk jaar opnieuw vullen.",
+      "question": "Wat is volgens het artikel de blinde vlek van werkgevers?",
+      "options": [
+        "Dat een deel van het tekort ontstaat door vertrekkende medewerkers",
+        "Dat de lonen te langzaam stijgen",
+        "Dat er te weinig mensen worden opgeleid",
+        "Dat sollicitatieprocedures te lang duren"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "ORDERING",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Een betoog opbouwen",
+    "prompt": "Put the parts of the argument in a logical order.",
+    "payload": {
+      "instructions": "Nummer de onderdelen zodat er een logisch opgebouwd betoog ontstaat.",
+      "items": [
+        "Beschrijf kort de situatie waarover de discussie gaat.",
+        "Formuleer uw eigen standpunt in één zin.",
+        "Onderbouw dat standpunt met uw sterkste argument.",
+        "Behandel het belangrijkste tegenargument en weerleg het.",
+        "Sluit af met een conclusie die volgt uit het voorgaande."
+      ]
+    },
+    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3, 4] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B2",
+    "title": "Recensie van een tentoonstelling",
+    "prompt": "Read the review and answer the question.",
+    "payload": {
+      "passage": "De tentoonstelling is prachtig vormgegeven; daarover zal niemand het oneens zijn. De zalen zijn rustig, de belichting klopt, en de bruiklenen zijn indrukwekkend. Toch liep ik na een uur naar buiten met het gevoel dat mij iets was ontgaan. De teksten leggen alles uit, maar stellen niets. Er wordt verteld wanneer een werk is gemaakt en waarom het belangrijk zou zijn, en nergens wordt de bezoeker gevraagd zelf iets te vinden. Wie de schilderijen al kent, ziet ze hier op hun mooist. Wie ze niet kent, leert vooral wat hij hoort te denken.",
+      "question": "Wat is het bezwaar van de recensent?",
+      "options": [
+        "De tentoonstelling legt uit wat je moet vinden in plaats van vragen op te roepen",
+        "De werken zijn slecht belicht en moeilijk te zien",
+        "Er hangen te weinig belangrijke werken",
+        "De tentoonstelling is te druk bezocht"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Informatie over de introductieweek",
+    "prompt": "Read the information and answer the question.",
+    "payload": {
+      "passage": "De introductieweek begint op maandag om tien uur in het hoofdgebouw. Deelnemen is niet verplicht, maar we raden het sterk aan: u ontmoet uw klasgenoten en u krijgt uitleg over het rooster en de opdrachten. Kunt u maandag niet, kom dan dinsdag; het programma van maandag wordt die ochtend kort herhaald.",
+      "question": "Wat kan iemand doen die maandag niet kan?",
+      "options": [
+        "Dinsdagochtend komen, want dan wordt het herhaald",
+        "De hele week overslaan",
+        "Zich afmelden bij de docent",
+        "Later in het jaar een aparte uitleg krijgen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_II",
+    "skill": "READING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "FOUNDATION",
+    "cefr": "B1",
+    "title": "Regels voor het inleveren van opdrachten",
+    "prompt": "Read the rules and decide whether the statement is true.",
+    "payload": {
+      "passage": "Opdrachten levert u digitaal in vóór de datum die in het rooster staat. Bent u ziek, geef dat dan door vóór de deadline; u krijgt dan uitstel. Meldt u zich pas na de deadline, dan telt de opdracht als te laat, ook als u wel ziek was.",
+      "question": "Stelling: wie ziek was, krijgt altijd uitstel, ook bij een melding achteraf.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  }
+]

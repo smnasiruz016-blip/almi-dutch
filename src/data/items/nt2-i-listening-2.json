@@ -1,0 +1,147 @@
+[
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uitleg van de teamleider",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Even over de nieuwe taak die erbij komt. Vanaf maandag controleren we zelf de bestellingen voordat ze de deur uit gaan. Dat betekent niet dat jullie extra werk krijgen bovenop alles, want de controle aan het eind van de dag vervalt daarmee. Het gaat er vooral om dat een fout eerder wordt gezien, als hij nog makkelijk te herstellen is. Kom je er niet uit bij een bestelling, leg hem dan apart in plaats van hem alsnog mee te geven.",
+      "question": "Waarom wordt de controle verplaatst?",
+      "options": [
+        "Zodat een fout wordt gezien terwijl die nog makkelijk te herstellen is",
+        "Omdat er meer werk verdeeld moet worden",
+        "Omdat de eindcontrole te lang duurde",
+        "Omdat er te weinig collega's zijn aan het eind van de dag"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Instructie over het nieuwe systeem",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Nog even over het scannen. Je scant het product en daarna de plek waar je het neerzet, in die volgorde. Doe je het andersom, dan lijkt het systeem te werken, maar staat de voorraad op de verkeerde plek geregistreerd. Dat merken we pas als iemand het niet kan vinden. Twijfel je of je het goed hebt gedaan, scan dan opnieuw; dubbel scannen is geen probleem.",
+      "question": "Stelling: als u in de verkeerde volgorde scant, geeft het systeem meteen een foutmelding.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MATCHING",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Drie mensen over hun stage",
+    "prompt": "Listen and match each person to what they say about their placement.",
+    "payload": {
+      "transcript": "U hoort drie mensen over hun stage vertellen. Youssef zegt: het werk zelf viel me mee, maar ik moest wennen aan hoe direct collega's hier iets zeggen. Lianne vertelt: ik mocht al snel dingen zelf doen, en juist daardoor leerde ik het snelst. En Marek zegt: mijn stage was prima, alleen kreeg ik weinig te horen of ik het goed deed; ik moest er zelf naar vragen.",
+      "instructions": "Kies bij elke naam wat de persoon zegt.",
+      "left": ["Youssef", "Lianne", "Marek"],
+      "right": [
+        "Moest wennen aan de directe manier van communiceren",
+        "Leerde snel doordat hij of zij zelf dingen mocht doen",
+        "Kreeg weinig feedback en moest er zelf om vragen",
+        "Vond het werk te zwaar"
+      ]
+    },
+    "answer": { "type": "MATCHING", "pairs": [[0, 0], [1, 1], [2, 2]] },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Telefoontje over een bestelling",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Goedemiddag, u spreekt met de klant van vanochtend over de levering. De dozen zijn wel bezorgd, maar er zitten andere maten in dan wij hebben besteld. Ik wil geen geld terug, hoor; we hebben de spullen gewoon nodig. Wat ik vraag is of de juiste maten er deze week nog kunnen zijn, want anders moeten we het werk uitstellen. Kunt u dat vandaag nog laten weten?",
+      "question": "Wat wil de klant?",
+      "options": [
+        "De juiste maten nog deze week geleverd krijgen",
+        "Het betaalde bedrag terugkrijgen",
+        "De bestelling helemaal annuleren",
+        "Een korting op de volgende bestelling"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Mededeling over een cursus op het werk",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Nog een mededeling over de cursus veilig tillen. De cursus is verplicht voor iedereen die in het magazijn werkt, en er zijn twee momenten waaruit je kunt kiezen: dinsdagochtend of donderdagmiddag. Je hoeft je niet aan te melden voor allebei; één keer is genoeg. Kun je geen van beide, geef dat dan deze week door, want daarna staan de groepen vast.",
+      "question": "Wat moet iemand doen die op geen van beide momenten kan?",
+      "options": [
+        "Dat deze week doorgeven",
+        "Zich voor allebei de momenten aanmelden",
+        "Wachten tot er een nieuwe cursus komt",
+        "De cursus overslaan, want hij is niet verplicht"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "TRUE_FALSE",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Voicemail van het uitzendbureau",
+    "prompt": "Listen and decide whether the statement is true.",
+    "payload": {
+      "transcript": "Hallo, met het uitzendbureau. Ik bel over de functie waar we het over hadden. Het goede nieuws is dat de werkgever je graag wil spreken. Het minder handige is dat het gesprek al woensdag is, en dat is eerder dan we hadden verwacht. Als woensdag echt niet lukt, kan ik vragen of donderdag ook kan, maar dan moet ik dat vandaag weten. Bel je me even terug?",
+      "question": "Stelling: er is nog een andere dag mogelijk, maar dat moet vandaag worden doorgegeven.",
+      "options": ["Waar", "Niet waar"]
+    },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "NT2",
+    "exam": "PROGRAMMA_I",
+    "skill": "LISTENING",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Gesprek met de planner",
+    "prompt": "Listen and answer the question.",
+    "payload": {
+      "transcript": "Ik heb je verzoek gezien om niet meer op vrijdagavond te werken. Dat kan ik niet zomaar toezeggen, want dan komt het op dezelfde twee collega's neer. Wat ik wel kan doen, is je voorlopig één vrijdag per maand inroosteren in plaats van elke week. Als er straks iemand bij komt, kijken we opnieuw. Ik hoor graag of je daarmee uit de voeten kunt, want dan zet ik het zo in het rooster.",
+      "question": "Wat biedt de planner aan?",
+      "options": [
+        "Voorlopig één vrijdag per maand in plaats van elke week",
+        "Helemaal geen vrijdagavonden meer",
+        "Een andere functie binnen het bedrijf",
+        "Twee collega's laten inspringen op alle vrijdagen"
+      ]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  }
+]
