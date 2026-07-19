@@ -1,0 +1,508 @@
+[
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Boodschappen doen",
+    "prompt": "Record yourself asking for help while shopping.",
+    "payload": {
+      "stimulus": "U staat in de supermarkt en kunt de rijst niet vinden. Spreek een medewerker aan. Vraag waar het product staat en wat het kost. Bedank de medewerker aan het eind.",
+      "criteria": [
+        "Opens politely to get the employee's attention",
+        "Asks clearly where the product is",
+        "Asks what it costs",
+        "Ends with a thank-you, understandable at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Een afspraak maken bij de huisarts",
+    "prompt": "Record yourself phoning the doctor's practice for an appointment.",
+    "payload": {
+      "stimulus": "U belt de huisartsenpraktijk. Zeg wie u bent, vertel kort wat u heeft (bijvoorbeeld keelpijn of koorts) en vraag om een afspraak. Zeg ook wanneer u kunt komen.",
+      "criteria": [
+        "Gives own name at the start of the call",
+        "Describes the complaint in one or two simple sentences",
+        "Asks for an appointment and says when you are available",
+        "Uses polite telephone language at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Uw woning beschrijven",
+    "prompt": "Record yourself describing where you live.",
+    "payload": {
+      "stimulus": "Vertel over uw woning. Hoeveel kamers heeft u? Welke kamer vindt u het fijnst en waarom? Woont u dicht bij een winkel, school of halte?",
+      "criteria": [
+        "Names several rooms in the home",
+        "Says which room is the nicest and gives a simple reason",
+        "Mentions something nearby, such as a shop or a stop",
+        "Uses simple connected sentences at A2 level"
+      ],
+      "minSeconds": 35
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Het weer en uw kleding",
+    "prompt": "Record yourself talking about today's weather.",
+    "payload": {
+      "stimulus": "Vertel hoe het weer vandaag is. Is het koud, warm, of regent het? Welke kleding draagt u vandaag?",
+      "criteria": [
+        "Says what the weather is like today",
+        "Names two or three items of clothing",
+        "Uses very simple short sentences",
+        "Pronunciation is clear enough to follow"
+      ],
+      "minSeconds": 30
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A1",
+    "title": "Uw gegevens geven en spellen",
+    "prompt": "Record yourself giving and spelling your personal details.",
+    "payload": {
+      "stimulus": "U schrijft zich in bij een sportclub. De medewerker vraagt naar uw gegevens. Zeg uw naam en spel die letter voor letter. Geef daarna uw adres en uw telefoonnummer.",
+      "criteria": [
+        "Says the full name and spells it letter by letter",
+        "Gives the address clearly",
+        "Says the phone number number by number",
+        "Speaks slowly and clearly enough to be written down"
+      ],
+      "minSeconds": 30
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Iets bestellen in een eetcafé",
+    "prompt": "Record yourself ordering something to eat and drink.",
+    "payload": {
+      "stimulus": "U zit in een eetcafé. Bestel iets te drinken en iets te eten. Vraag daarna hoeveel het samen kost en of u met de pinpas kunt betalen.",
+      "criteria": [
+        "Orders a drink and something to eat",
+        "Asks what the total costs",
+        "Asks whether card payment is possible",
+        "Uses polite everyday phrases at A2 level"
+      ],
+      "minSeconds": 30
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Met de bus of trein reizen",
+    "prompt": "Record yourself asking for travel information.",
+    "payload": {
+      "stimulus": "U staat op het station en weet niet welke trein u moet nemen. Vraag aan een medewerker hoe u naar een andere stad reist. Vraag ook hoe laat de trein vertrekt en van welk spoor.",
+      "criteria": [
+        "Says clearly where you want to travel to",
+        "Asks about the departure time",
+        "Asks which platform the train leaves from",
+        "Uses question forms correctly at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Een pakketje ophalen",
+    "prompt": "Record yourself collecting a parcel at a pickup point.",
+    "payload": {
+      "stimulus": "U haalt een pakketje op bij het afhaalpunt. Zeg waarvoor u komt, geef uw naam en vraag wat u nodig heeft om het pakketje mee te krijgen.",
+      "criteria": [
+        "Explains the reason for the visit",
+        "Gives own name clearly",
+        "Asks what is needed to collect the parcel",
+        "Handles the short exchange politely at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Over uw buurt vertellen",
+    "prompt": "Record yourself describing your neighbourhood.",
+    "payload": {
+      "stimulus": "Vertel over de buurt waar u woont. Wat is er in de buurt, bijvoorbeeld winkels, een park of een school? Wat vindt u fijn aan de buurt?",
+      "criteria": [
+        "Names several things in the neighbourhood",
+        "Says what you like about it",
+        "Gives one simple reason",
+        "Speaks in connected simple sentences at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "A2",
+    "title": "U meldt zich ziek op het werk",
+    "prompt": "Record yourself calling work to report that you are ill.",
+    "payload": {
+      "stimulus": "U bent ziek en kunt vandaag niet werken. Bel uw leidinggevende. Zeg wie u bent, dat u ziek bent en dat u vandaag niet komt. Vraag wat u verder moet doen.",
+      "criteria": [
+        "States who is calling and that you are ill",
+        "Says clearly that you will not come in today",
+        "Asks what else needs to be done",
+        "Keeps a polite tone appropriate to a manager"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_A2",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "A2",
+    "title": "Vertellen over uw weekend",
+    "prompt": "Record yourself talking about your weekend.",
+    "payload": {
+      "stimulus": "Vertel wat u afgelopen weekend heeft gedaan. Waar was u, met wie was u, en wat vond u ervan?",
+      "criteria": [
+        "Describes two or three things you did",
+        "Says who you were with",
+        "Gives a simple opinion about the weekend",
+        "Uses the perfect tense well enough to be understood at A2 level"
+      ],
+      "minSeconds": 40
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een misverstand op het werk uitleggen",
+    "prompt": "Record yourself explaining a misunderstanding at work.",
+    "payload": {
+      "stimulus": "Op uw werk is een taak niet gedaan omdat u dacht dat een collega het zou doen. Leg aan uw leidinggevende uit hoe het misverstand is ontstaan, zeg wat u nu gaat doen en stel voor hoe u dit in het vervolg voorkomt.",
+      "criteria": [
+        "Explains how the misunderstanding arose, in a clear sequence",
+        "Avoids simply blaming the colleague",
+        "Says what you will do now to solve it",
+        "Proposes a concrete way to prevent it, coherently at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uw mening over thuiswerken",
+    "prompt": "Record yourself giving your opinion on working from home.",
+    "payload": {
+      "stimulus": "Sommige mensen werken liever thuis, anderen liever op kantoor. Geef uw mening. Noem minstens twee argumenten en noem ook één nadeel van uw eigen standpunt.",
+      "criteria": [
+        "States a clear position from the start",
+        "Gives at least two supported arguments",
+        "Names a drawback of their own position",
+        "Links the ideas with connectors, fluently at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Een probleem melden bij de woningcorporatie",
+    "prompt": "Record yourself reporting a housing problem by phone.",
+    "payload": {
+      "stimulus": "In uw woning lekt al een week de kraan in de keuken en er is nog niets aan gedaan. Bel de woningcorporatie. Leg het probleem uit, vertel wat u al heeft geprobeerd en wat de gevolgen zijn, en vraag om een concrete afspraak.",
+      "criteria": [
+        "Describes the problem and how long it has lasted",
+        "Says what has already been tried or reported",
+        "Explains the consequences for the household",
+        "Asks for a concrete appointment, staying polite but firm at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Iets vragen op de ouderavond",
+    "prompt": "Record yourself asking a question at a parents' evening.",
+    "payload": {
+      "stimulus": "U bent op de ouderavond van de school. U maakt zich zorgen omdat uw kind moeite heeft met lezen. Vertel wat u thuis merkt, vraag wat de school ziet en vraag wat u zelf kunt doen.",
+      "criteria": [
+        "Describes concretely what you notice at home",
+        "Asks what the school observes",
+        "Asks what you can do yourself to help",
+        "Keeps a cooperative tone and speaks coherently at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uitleggen waarom u een cursus wilt volgen",
+    "prompt": "Record yourself explaining why you want to take a course.",
+    "payload": {
+      "stimulus": "U wilt een cursus volgen naast uw werk. Leg uit welke cursus het is, waarom u die wilt volgen, wat u ermee wilt bereiken en hoe u dat combineert met uw werk en gezin.",
+      "criteria": [
+        "Explains which course and why",
+        "Says what you want to achieve with it",
+        "Explains how it fits with work and family",
+        "Organises the reasons logically at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Een afspraak verzetten",
+    "prompt": "Record yourself moving an appointment to another day.",
+    "payload": {
+      "stimulus": "U heeft morgen een afspraak, maar u kunt niet komen. Bel op, zeg wie u bent, zeg dat u de afspraak wilt verzetten en vraag om een nieuwe dag.",
+      "criteria": [
+        "Says who is calling and which appointment it concerns",
+        "Says clearly that the appointment must move",
+        "Asks for a new day or time",
+        "Handles the short exchange politely"
+      ],
+      "minSeconds": 45
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Over uw werkervaring vertellen",
+    "prompt": "Record yourself describing your experience in a job interview.",
+    "payload": {
+      "stimulus": "U heeft een sollicitatiegesprek. Vertel over uw werkervaring: wat heeft u gedaan, wat kunt u goed, en wat wilt u nog leren? Leg ook uit waarom u bij deze werkgever wilt werken.",
+      "criteria": [
+        "Describes relevant experience in a clear order",
+        "Names a concrete strength with an example",
+        "Mentions something still to learn without undermining the application",
+        "Explains the motivation for this employer, fluently at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Uw mening over het openbaar vervoer",
+    "prompt": "Record yourself giving your opinion on public transport.",
+    "payload": {
+      "stimulus": "Wat vindt u van het openbaar vervoer in uw plaats? Geef uw mening, noem twee redenen, en noem ook iets dat volgens u beter kan. Zeg wat dat zou opleveren.",
+      "criteria": [
+        "Gives a clear opinion with two reasons",
+        "Names a concrete improvement",
+        "Explains what that improvement would achieve",
+        "Uses varied vocabulary and connectors at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Een onduidelijke rekening bespreken",
+    "prompt": "Record yourself querying an unclear bill.",
+    "payload": {
+      "stimulus": "U heeft een rekening gekregen met een bedrag dat u niet herkent. Bel de klantenservice. Leg uit wat er op de rekening staat, waarom u het niet begrijpt, en vraag wat er nu gebeurt.",
+      "criteria": [
+        "Explains what the bill says and what is unclear",
+        "Refers to relevant details such as the date or amount",
+        "Asks concretely what happens next",
+        "Stays polite while holding the question, at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "CORE",
+    "cefr": "B1",
+    "title": "Advies geven aan een nieuwe buurtgenoot",
+    "prompt": "Record yourself advising someone who has just moved in.",
+    "payload": {
+      "stimulus": "Er is iemand nieuw komen wonen in uw straat, pas in Nederland. Vertel wat u zou aanraden om als eerste te regelen, waar diegene op moet letten in de buurt, en wat u zelf in het begin lastig vond.",
+      "criteria": [
+        "Gives at least two concrete pieces of advice",
+        "Explains why each one matters",
+        "Shares one personal experience from the early period",
+        "Speaks connectedly and helpfully at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "STRETCH",
+    "cefr": "B1",
+    "title": "Wat zou u doen als...",
+    "prompt": "Record yourself reasoning about a hypothetical situation.",
+    "payload": {
+      "stimulus": "Stel: u krijgt een baan aangeboden met een beter salaris, maar u moet elke dag anderhalf uur reizen. Wat zou u doen? Weeg de voor- en nadelen tegen elkaar af en kom tot een keuze.",
+      "criteria": [
+        "Weighs advantages against disadvantages",
+        "Uses conditional forms to reason about the situation",
+        "Reaches a clear choice and justifies it",
+        "Keeps the reasoning coherent at B1 level"
+      ],
+      "minSeconds": 60
+    },
+    "answer": null,
+    "maxPoints": 0
+  },
+  {
+    "track": "INBURGERING",
+    "exam": "INBURGERING_B1",
+    "skill": "SPEAKING",
+    "taskType": "SPEAKING_PROMPT",
+    "difficulty": "FOUNDATION",
+    "cefr": "A2",
+    "title": "Een boodschap doorgeven aan een collega",
+    "prompt": "Record yourself passing on a short message at work.",
+    "payload": {
+      "stimulus": "Een collega was er niet bij het werkoverleg. Vertel kort wat er is besproken: wanneer de volgende afspraak is en wat zij of hij moet meenemen.",
+      "criteria": [
+        "Passes on when the next meeting is",
+        "Says what the colleague needs to bring",
+        "Keeps the message short and in a logical order",
+        "Is clearly understandable to a colleague"
+      ],
+      "minSeconds": 45
+    },
+    "answer": null,
+    "maxPoints": 0
+  }
+]
