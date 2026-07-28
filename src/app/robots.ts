@@ -25,7 +25,12 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       // Real search engines: full access to the long-tail leaves — that IS the pSEO product.
-      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: PRIVATE },
+      // DEEP_LEAVES applies to Googlebot and Bingbot TOO. Leaving them out was the
+      // hole in the 2026-07-20 crawl-cost fix: `*` was blocked from the leaf space
+      // while the two crawlers most able to walk it kept full access, and each first
+      // visit to an ungenerated leaf costs one ISR write. almi-dutch billed $20.31
+      // in ISR writes in the 2026-07 cycle with this rule in place.
+      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: [...PRIVATE, ...DEEP_LEAVES] },
       // Everyone else: landing + hubs only, skip the per-origin leaves, gentle pace.
       { userAgent: "*", allow: "/", disallow: [...PRIVATE, ...DEEP_LEAVES], crawlDelay: 10 },
       // Heavy, no-SEO-value crawlers: off entirely.
