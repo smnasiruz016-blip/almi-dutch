@@ -8,7 +8,7 @@ import { requireUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug } from "@/lib/nl/registry";
 import { isFreeSkill } from "@/lib/nl/types";
-import { pickPractice } from "@/lib/nl/items";
+import { pickPractice, stableItemId } from "@/lib/nl/items";
 import { MockRunner, type MockSection } from "@/components/nl/MockRunner";
 
 export default async function MockPage({
@@ -34,6 +34,10 @@ export default async function MockPage({
       skill,
       objective,
       items: items.map((it) => ({
+        // Mock is where shipping the key mattered most: the whole point of a timed mock
+        // is that the learner does not have the answers in front of them, and this page
+        // was putting all of them in the page source.
+        id: stableItemId(it),
         title: it.title,
         prompt: it.prompt,
         exam: it.exam,
@@ -41,7 +45,6 @@ export default async function MockPage({
         taskType: it.taskType,
         cefr: it.cefr,
         payload: it.payload,
-        answer: it.answer,
         maxPoints: it.maxPoints,
       })),
     };

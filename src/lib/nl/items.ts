@@ -97,6 +97,59 @@ export function getItems(filter: {
   );
 }
 
+// ── SERVER-SIDE ITEM IDENTITY ───────────────────────────────────────────────
+// Items are bundle-served with NO database id. That absence was not a cosmetic gap: it
+// was the ROOT of this product's grading P0. With nothing to re-load by, /api/nl/submit
+// had no way to find an item server-side, so it graded whatever answer key the browser
+// posted — `gradeObjective(body.answer, body.response)` — and /api/nl/grade took the
+// CEFR level, title, prompt and criteria off the request too. Both were forgeable, and
+// the productive one failed silently: a B1 task tagged `cefr:"A1"` came back with
+// fluent, confident, specific feedback against the easier standard.
+//
+// An id has to exist before grading can be server-authoritative. It is the first fix,
+// not a later hardening step.
+//
+// The id hashes the FULL identifying tuple — track|exam|skill|title — because titles are
+// only unique within a surface. assertNoIdCollisions() proves that tuple is unique at
+// build time; a collision would make getItemById() return the WRONG item and grade a
+// learner against a different task's key, silently.
+
+/** Stable, content-derived id for a bundle item — the handle the client posts back. */
+export function stableItemId(
+  it: Pick<DutchItemSeed, "track" | "exam" | "skill" | "title">,
+): string {
+  return hashSeed(`${it.track}|${it.exam}|${it.skill}|${it.title}`).toString(36);
+}
+
+/** Re-load the full item, INCLUDING its answer key, by its stable id — server-side only.
+ *  This is the function that makes grading authoritative: the route calls it instead of
+ *  believing the request. */
+export function getItemById(id: string): DutchItemSeed | undefined {
+  return allItems().find((it) => stableItemId(it) === id);
+}
+
+/**
+ * Build-time guard: no two items may share a stable id. A collision would make
+ * getItemById() return the wrong item, so the submit route would grade a learner's
+ * answer against a DIFFERENT item's key — with no error and a plausible score.
+ *
+ * SEEN RED: duplicate a (track,exam,skill,title) tuple in any bundle and this throws.
+ */
+export function assertNoIdCollisions(): void {
+  const seen = new Map<string, string>();
+  for (const it of allItems()) {
+    const id = stableItemId(it);
+    const key = `${it.track}|${it.exam}|${it.skill}|${it.title}`;
+    const prior = seen.get(id);
+    if (prior) {
+      throw new Error(
+        `stableItemId collision: "${key}" and "${prior}" both hash to ${id} — grading would key against the wrong item`,
+      );
+    }
+    seen.set(id, key);
+  }
+}
+
 /**
  * Deterministic stable string hash → 32-bit int. Used as a fallback seed so the
  * pick is varied but reproducible without Math.random at module/build scope.
