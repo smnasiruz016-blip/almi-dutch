@@ -141,19 +141,19 @@
     "payload": {
       "instructions": "Sleep of nummer de zinnen tot ze een lopende brief vormen.",
       "items": [
-        "Ten slotte hoop ik snel van u te horen.",
-        "Geachte heer of mevrouw,",
         "Ik schrijf u naar aanleiding van uw vacature voor projectmedewerker.",
-        "In mijn huidige baan werk ik al drie jaar met soortgelijke projecten."
+        "Ten slotte hoop ik snel van u te horen.",
+        "In mijn huidige baan werk ik al drie jaar met soortgelijke projecten.",
+        "Geachte heer of mevrouw,"
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        1,
-        2,
         3,
-        0
+        0,
+        2,
+        1
       ]
     },
     "maxPoints": 1
@@ -323,19 +323,19 @@
     "payload": {
       "instructions": "Sleep of nummer de stappen zodat het een logische instructie wordt.",
       "items": [
-        "Doe water in het reservoir van het koffiezetapparaat.",
-        "Plaats een filter en schep de gemalen koffie erin.",
         "Zet het apparaat aan en wacht tot de kan vol is.",
-        "Schenk de koffie in een kopje en geniet ervan."
+        "Schenk de koffie in een kopje en geniet ervan.",
+        "Doe water in het reservoir van het koffiezetapparaat.",
+        "Plaats een filter en schep de gemalen koffie erin."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
         2,
-        3
+        3,
+        0,
+        1
       ]
     },
     "maxPoints": 1
@@ -434,19 +434,19 @@
     "payload": {
       "instructions": "Sleep of nummer de zinnen tot ze een lopende klachtenbrief vormen.",
       "items": [
-        "Geachte heer of mevrouw,",
-        "Op 3 mei heb ik bij uw webwinkel een wasmachine besteld.",
         "Tot mijn verbazing werd echter een beschadigd apparaat geleverd.",
-        "Ik verzoek u daarom vriendelijk om een kosteloze vervanging."
+        "Ik verzoek u daarom vriendelijk om een kosteloze vervanging.",
+        "Op 3 mei heb ik bij uw webwinkel een wasmachine besteld.",
+        "Geachte heer of mevrouw,"
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
+        3,
         2,
-        3
+        0,
+        1
       ]
     },
     "maxPoints": 1

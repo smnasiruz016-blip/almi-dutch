@@ -68,10 +68,10 @@
         "Daan"
       ],
       "right": [
-        "Het contact met patiënten",
-        "De vakanties",
         "De drukte",
-        "Thuiswerken"
+        "Het contact met patiënten",
+        "Thuiswerken",
+        "De vakanties"
       ]
     },
     "answer": {
@@ -79,19 +79,19 @@
       "pairs": [
         [
           0,
-          0
-        ],
-        [
-          1,
           1
         ],
         [
+          1,
+          3
+        ],
+        [
           2,
-          2
+          0
         ],
         [
           3,
-          3
+          2
         ]
       ]
     },
@@ -236,10 +236,10 @@
         "Tom"
       ],
       "right": [
-        "Voetballen",
-        "Koken",
         "Wandelen",
-        "Zwemmen"
+        "Zwemmen",
+        "Voetballen",
+        "Koken"
       ]
     },
     "answer": {
@@ -247,15 +247,15 @@
       "pairs": [
         [
           0,
-          0
+          2
         ],
         [
           1,
-          1
+          3
         ],
         [
           2,
-          2
+          0
         ]
       ]
     },
@@ -328,10 +328,10 @@
         "Mevrouw Jansen"
       ],
       "right": [
-        "Zonnepanelen",
-        "Isolatie",
         "Een warmtepomp",
-        "Regenwater opvangen"
+        "Regenwater opvangen",
+        "Isolatie",
+        "Zonnepanelen"
       ]
     },
     "answer": {
@@ -339,19 +339,19 @@
       "pairs": [
         [
           0,
-          0
+          3
         ],
         [
           1,
-          1
-        ],
-        [
-          2,
           2
         ],
         [
+          2,
+          0
+        ],
+        [
           3,
-          3
+          1
         ]
       ]
     },

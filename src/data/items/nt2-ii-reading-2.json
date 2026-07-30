@@ -141,21 +141,21 @@
     "payload": {
       "instructions": "Nummer de onderdelen zodat er een logisch opgebouwd betoog ontstaat.",
       "items": [
+        "Sluit af met een conclusie die volgt uit het voorgaande.",
         "Beschrijf kort de situatie waarover de discussie gaat.",
         "Formuleer uw eigen standpunt in één zin.",
         "Onderbouw dat standpunt met uw sterkste argument.",
-        "Behandel het belangrijkste tegenargument en weerleg het.",
-        "Sluit af met een conclusie die volgt uit het voorgaande."
+        "Behandel het belangrijkste tegenargument en weerleg het."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
         1,
         2,
         3,
-        4
+        4,
+        0
       ]
     },
     "maxPoints": 1

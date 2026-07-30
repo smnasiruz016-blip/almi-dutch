@@ -90,10 +90,10 @@
         "Els"
       ],
       "right": [
-        "Met de fiets",
         "Met de trein",
-        "Lopend",
-        "Met de auto"
+        "Met de auto",
+        "Met de fiets",
+        "Lopend"
       ]
     },
     "answer": {
@@ -101,15 +101,15 @@
       "pairs": [
         [
           0,
-          0
+          2
         ],
         [
           1,
-          1
+          0
         ],
         [
           2,
-          2
+          3
         ]
       ]
     },
@@ -255,10 +255,10 @@
         "Bram"
       ],
       "right": [
-        "Wilde nieuwe mensen leren kennen",
         "Wilde werk doen in de buitenlucht",
-        "Wil ervaring opdoen voor later werk",
-        "Helpt mee bij de club van de kinderen"
+        "Helpt mee bij de club van de kinderen",
+        "Wilde nieuwe mensen leren kennen",
+        "Wil ervaring opdoen voor later werk"
       ]
     },
     "answer": {
@@ -266,19 +266,19 @@
       "pairs": [
         [
           0,
-          0
-        ],
-        [
-          1,
-          1
-        ],
-        [
-          2,
           2
         ],
         [
-          3,
+          1,
+          0
+        ],
+        [
+          2,
           3
+        ],
+        [
+          3,
+          1
         ]
       ]
     },

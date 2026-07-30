@@ -65,10 +65,10 @@
         "Marek"
       ],
       "right": [
+        "Vond het werk te zwaar",
         "Moest wennen aan de directe manier van communiceren",
         "Leerde snel doordat hij of zij zelf dingen mocht doen",
-        "Kreeg weinig feedback en moest er zelf om vragen",
-        "Vond het werk te zwaar"
+        "Kreeg weinig feedback en moest er zelf om vragen"
       ]
     },
     "answer": {
@@ -76,15 +76,15 @@
       "pairs": [
         [
           0,
-          0
-        ],
-        [
-          1,
           1
         ],
         [
-          2,
+          1,
           2
+        ],
+        [
+          2,
+          3
         ]
       ]
     },

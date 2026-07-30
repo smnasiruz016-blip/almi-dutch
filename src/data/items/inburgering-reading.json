@@ -141,19 +141,19 @@
     "payload": {
       "instructions": "Nummer de stappen zodat het een logische instructie wordt.",
       "items": [
-        "Steek uw pinpas in de automaat.",
-        "Toets uw pincode in.",
         "Kies het bedrag dat u wilt opnemen.",
-        "Pak uw pas en het geld uit de automaat."
+        "Steek uw pinpas in de automaat.",
+        "Pak uw pas en het geld uit de automaat.",
+        "Toets uw pincode in."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
         1,
-        2,
-        3
+        3,
+        0,
+        2
       ]
     },
     "maxPoints": 1
@@ -405,19 +405,19 @@
     "payload": {
       "instructions": "Nummer de stappen zodat je je op een logische manier inschrijft in een nieuwe gemeente.",
       "items": [
-        "Maak online een afspraak bij de gemeente waar je gaat wonen.",
-        "Verzamel de documenten die je nodig hebt, zoals je paspoort en huurcontract.",
+        "Ontvang na de inschrijving een bevestiging op je nieuwe adres.",
         "Ga op de afgesproken dag naar het gemeentehuis met je documenten.",
-        "Ontvang na de inschrijving een bevestiging op je nieuwe adres."
+        "Maak online een afspraak bij de gemeente waar je gaat wonen.",
+        "Verzamel de documenten die je nodig hebt, zoals je paspoort en huurcontract."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
         2,
-        3
+        3,
+        1,
+        0
       ]
     },
     "maxPoints": 1

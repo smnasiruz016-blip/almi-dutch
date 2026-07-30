@@ -141,19 +141,19 @@
     "payload": {
       "instructions": "Nummer de stappen zodat het een logische instructie wordt.",
       "items": [
-        "Leg uw kaart op de lezer van de automaat.",
-        "Kies het bedrag dat u wilt opladen.",
         "Betaal met uw pinpas.",
-        "Wacht tot het scherm zegt dat het saldo erop staat."
+        "Wacht tot het scherm zegt dat het saldo erop staat.",
+        "Leg uw kaart op de lezer van de automaat.",
+        "Kies het bedrag dat u wilt opladen."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
         2,
-        3
+        3,
+        0,
+        1
       ]
     },
     "maxPoints": 1
@@ -348,21 +348,21 @@
     "payload": {
       "instructions": "Nummer de stappen zodat het een logische werkwijze wordt.",
       "items": [
-        "Zoek uw bestelnummer en de datum van de bestelling op.",
-        "Beschrijf in een bericht wat er mis is en wat u wilt.",
+        "Neem opnieuw contact op als u binnen de genoemde termijn niets hoort.",
         "Stuur het bericht naar de klantenservice.",
-        "Bewaar de bevestiging die u terugkrijgt.",
-        "Neem opnieuw contact op als u binnen de genoemde termijn niets hoort."
+        "Beschrijf in een bericht wat er mis is en wat u wilt.",
+        "Zoek uw bestelnummer en de datum van de bestelling op.",
+        "Bewaar de bevestiging die u terugkrijgt."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
-        2,
         3,
-        4
+        2,
+        1,
+        4,
+        0
       ]
     },
     "maxPoints": 1

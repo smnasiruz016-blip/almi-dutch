@@ -141,21 +141,21 @@
     "payload": {
       "instructions": "Nummer de stappen zodat het een logische werkinstructie wordt.",
       "items": [
-        "Zet de machine uit en blijf er niet zelf aan sleutelen.",
         "Noteer het nummer van de machine en wat er precies misging.",
-        "Meld de storing bij de technische dienst.",
         "Hang het bordje 'buiten gebruik' aan de machine.",
-        "Laat het aan je teamleider weten, zodat het werk verdeeld kan worden."
+        "Laat het aan je teamleider weten, zodat het werk verdeeld kan worden.",
+        "Meld de storing bij de technische dienst.",
+        "Zet de machine uit en blijf er niet zelf aan sleutelen."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
+        4,
         0,
-        1,
-        2,
         3,
-        4
+        1,
+        2
       ]
     },
     "maxPoints": 1
