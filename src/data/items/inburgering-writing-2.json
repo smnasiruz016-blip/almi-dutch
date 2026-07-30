@@ -16,7 +16,10 @@
         "Includes a thank-you",
         "Uses a friendly informal tone that stays understandable at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -38,7 +41,10 @@
         "Asks what to do at home to keep up",
         "Uses short correct sentences at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -60,7 +66,10 @@
         "Says when the child will be back",
         "Keeps a polite tone in short sentences at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -82,7 +91,10 @@
         "Offers to bring something",
         "Uses friendly everyday language at A2 level"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -104,7 +116,10 @@
         "Uses simple words and short phrases",
         "Is easy to read and follow"
       ],
-      "charBand": { "min": 30, "max": 100 }
+      "charBand": {
+        "min": 30,
+        "max": 100
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -126,7 +141,10 @@
         "Signs off with a name",
         "Uses simple set phrases correctly"
       ],
-      "charBand": { "min": 25, "max": 90 }
+      "charBand": {
+        "min": 25,
+        "max": 90
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -148,7 +166,10 @@
         "Uses correct word order in short sentences",
         "Information is complete and readable at A2 level"
       ],
-      "charBand": { "min": 40, "max": 130 }
+      "charBand": {
+        "min": 40,
+        "max": 130
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -170,7 +191,10 @@
         "Asks them to check",
         "Uses a polite greeting and closing at A2 level"
       ],
-      "charBand": { "min": 50, "max": 140 }
+      "charBand": {
+        "min": 50,
+        "max": 140
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -192,7 +216,10 @@
         "Says what should happen with the first appointment",
         "Keeps a polite tone appropriate to a manager"
       ],
-      "charBand": { "min": 40, "max": 120 }
+      "charBand": {
+        "min": 40,
+        "max": 120
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -214,7 +241,10 @@
         "Proposes a moment to come and look",
         "Uses clear simple questions at A2 level"
       ],
-      "charBand": { "min": 40, "max": 130 }
+      "charBand": {
+        "min": 40,
+        "max": 130
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -236,7 +266,10 @@
         "Says which part you like best",
         "Links sentences with simple connectors at A2 level"
       ],
-      "charBand": { "min": 60, "max": 150 }
+      "charBand": {
+        "min": 60,
+        "max": 150
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -258,7 +291,10 @@
         "Proposes a workable arrangement for the work itself",
         "Keeps a formal register (u-vorm) with correct opening and closing"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -280,7 +316,10 @@
         "Explains briefly why it matters",
         "Uses a professional tone and connected sentences at B1 level"
       ],
-      "charBand": { "min": 90, "max": 200 }
+      "charBand": {
+        "min": 90,
+        "max": 200
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -302,7 +341,10 @@
         "Explains the motivation convincingly",
         "Structured in paragraphs with a formal opening and closing"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -324,7 +366,10 @@
         "Says what is expected at home",
         "Keeps the summary ordered and readable at B1 level"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -346,7 +391,10 @@
         "Raises a counter-argument and answers it",
         "Uses paragraphs and connectors, holding a consistent tone at B1 level"
       ],
-      "charBand": { "min": 120, "max": 240 }
+      "charBand": {
+        "min": 120,
+        "max": 240
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -368,7 +416,10 @@
         "Asks concretely about the money already paid",
         "Formal register with correct opening and closing"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -390,7 +441,10 @@
         "Includes a phone number",
         "Instructions are short, ordered and easy to follow"
       ],
-      "charBand": { "min": 60, "max": 150 }
+      "charBand": {
+        "min": 60,
+        "max": 150
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -412,7 +466,10 @@
         "Keeps the email short and clear",
         "Uses a correct greeting and closing"
       ],
-      "charBand": { "min": 50, "max": 140 }
+      "charBand": {
+        "min": 50,
+        "max": 140
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -434,7 +491,10 @@
         "States what was done to resolve it",
         "Stays factual and neutral rather than blaming, at B1 level"
       ],
-      "charBand": { "min": 110, "max": 240 }
+      "charBand": {
+        "min": 110,
+        "max": 240
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -456,7 +516,10 @@
         "Offers one concrete adjustment",
         "Stays collegial in tone while holding the position, at B1 level"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -478,7 +541,10 @@
         "Asks a clear question to get people to respond",
         "Tone is inviting rather than demanding, connected at B1 level"
       ],
-      "charBand": { "min": 100, "max": 220 }
+      "charBand": {
+        "min": 100,
+        "max": 220
+      }
     },
     "answer": null,
     "maxPoints": 0

@@ -16,7 +16,10 @@
         "U geeft aan wat voor u wél zou werken",
         "U gebruikt een gepaste aanhef en afsluiting"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -38,7 +41,10 @@
         "U stelt een concrete vraag over het gemiste deel",
         "De toon is beleefd en de tekst is goed te volgen"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -60,7 +66,10 @@
         "U doet een voorstel voor een vervolg",
         "De toon blijft samenwerkend en beleefd"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -82,7 +91,10 @@
         "De vragen zijn zo geformuleerd dat ze te beantwoorden zijn",
         "U gebruikt een gepaste aanhef en afsluiting"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -104,7 +116,10 @@
         "U vraagt wat er van u wordt verwacht om dit te regelen",
         "De tekst is beleefd, zakelijk en goed geordend"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -126,7 +141,10 @@
         "U zegt wat u doet als de collega niet kan",
         "De toon is vriendelijk en niet dwingend"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -148,7 +166,10 @@
         "U geeft uw beschikbaarheid concreet aan",
         "De tekst is kort, zakelijk en foutloos genoeg om serieus genomen te worden"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -170,7 +191,10 @@
         "U stelt een vraag waarop mensen makkelijk kunnen reageren",
         "De tekst is vriendelijk en overzichtelijk"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -192,7 +216,10 @@
         "U vraagt om een bevestiging",
         "De e-mail is zakelijk en zonder overbodige informatie"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -214,7 +241,10 @@
         "U geeft aan hoe iemand kan reageren",
         "De tekst is kort en trekt de aandacht zonder te overdrijven"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -236,7 +266,10 @@
         "U benoemt zelf wat het kost of wat een bezwaar kan zijn",
         "De toon is constructief en de opbouw is logisch"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0

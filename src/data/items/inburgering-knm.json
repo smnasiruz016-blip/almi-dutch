@@ -9,9 +9,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord (oefenmateriaal, geen officiële toets).",
     "payload": {
       "question": "Bij welke organisatie kunt u terecht voor de administratie van uw inburgering en voor een lening voor een cursus?",
-      "options": ["DUO", "de ANWB", "de Belastingdienst", "het UWV"]
+      "options": [
+        "DUO",
+        "de ANWB",
+        "de Belastingdienst",
+        "het UWV"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -24,9 +32,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Wat is in Nederland meestal de eerste stap als u ziek bent en medische hulp nodig hebt?",
-      "options": ["Naar de huisarts gaan", "Direct naar het ziekenhuis gaan", "De politie bellen", "Zonder afspraak naar de apotheek gaan"]
+      "options": [
+        "Direct naar het ziekenhuis gaan",
+        "Naar de huisarts gaan",
+        "De politie bellen",
+        "Zonder afspraak naar de apotheek gaan"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -39,9 +55,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "In Nederland gaan kinderen verplicht naar school. Vanaf welke leeftijd geldt de leerplicht?",
-      "options": ["Vanaf 5 jaar", "Vanaf 3 jaar", "Vanaf 8 jaar", "Vanaf 12 jaar"]
+      "options": [
+        "Vanaf 5 jaar",
+        "Vanaf 3 jaar",
+        "Vanaf 8 jaar",
+        "Vanaf 12 jaar"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -55,9 +79,17 @@
     "payload": {
       "passage": "Als u in Nederland gaat werken, krijgt u een arbeidscontract. Daarin staan afspraken over uw salaris, werktijden en vakantiedagen. Uw werkgever houdt loonbelasting in op uw salaris en betaalt die aan de Belastingdienst.",
       "question": "Wie betaalt de loonbelasting aan de Belastingdienst?",
-      "options": ["De werkgever", "De werknemer zelf elke maand", "De gemeente", "De bank"]
+      "options": [
+        "De werknemer zelf elke maand",
+        "De gemeente",
+        "De bank",
+        "De werkgever"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 3
+    },
     "maxPoints": 1
   },
   {
@@ -70,9 +102,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Nederland is een democratie. Wie kiezen de leden van de Tweede Kamer?",
-      "options": ["De kiesgerechtigde inwoners", "De koning", "De burgemeesters", "De rechters"]
+      "options": [
+        "De koning",
+        "De kiesgerechtigde inwoners",
+        "De burgemeesters",
+        "De rechters"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -85,9 +125,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Wat betekent het dat Nederland een scheiding van kerk en staat kent?",
-      "options": ["De overheid en religie staan los van elkaar", "Iedereen moet lid zijn van een kerk", "De koning bepaalt de religie", "Kerken hoeven nooit ergens belasting over te betalen"]
+      "options": [
+        "Iedereen moet lid zijn van een kerk",
+        "De overheid en religie staan los van elkaar",
+        "De koning bepaalt de religie",
+        "Kerken hoeven nooit ergens belasting over te betalen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -100,9 +148,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord (oefenmateriaal, geen officiële toets).",
     "payload": {
       "question": "Wat geldt in Nederland voor volwassenen als het gaat om een basiszorgverzekering?",
-      "options": ["Iedereen is verplicht een zorgverzekering af te sluiten", "Een zorgverzekering is helemaal gratis voor iedereen", "Alleen mensen met werk mogen een verzekering nemen", "Een zorgverzekering is nooit nodig in Nederland"]
+      "options": [
+        "Een zorgverzekering is helemaal gratis voor iedereen",
+        "Alleen mensen met werk mogen een verzekering nemen",
+        "Een zorgverzekering is nooit nodig in Nederland",
+        "Iedereen is verplicht een zorgverzekering af te sluiten"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 3
+    },
     "maxPoints": 1
   },
   {
@@ -116,9 +172,17 @@
     "payload": {
       "passage": "Als u in een Nederlandse stad of dorp komt wonen, moet u zich inschrijven. Daarna krijgt u een burgerservicenummer (BSN). Dit nummer hebt u nodig voor werk, de dokter en de Belastingdienst.",
       "question": "Waar schrijft u zich in om een BSN te krijgen?",
-      "options": ["Bij de gemeente", "Bij de supermarkt", "Bij de huisarts", "Bij de werkgever"]
+      "options": [
+        "Bij de gemeente",
+        "Bij de supermarkt",
+        "Bij de huisarts",
+        "Bij de werkgever"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -131,9 +195,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Welk telefoonnummer belt u in Nederland bij een noodgeval, bijvoorbeeld bij brand of een ernstig ongeluk?",
-      "options": ["112", "0800", "118", "911"]
+      "options": [
+        "0800",
+        "112",
+        "118",
+        "911"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -146,9 +218,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Waarmee betaalt u meestal een rit met de trein, bus, tram of metro in Nederland?",
-      "options": ["Met een OV-chipkaart of bankpas/telefoon inchecken", "Met een paspoort", "Met een zorgpas", "Met een rijbewijs"]
+      "options": [
+        "Met een paspoort",
+        "Met een zorgpas",
+        "Met een OV-chipkaart of bankpas/telefoon inchecken",
+        "Met een rijbewijs"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   },
   {
@@ -162,9 +242,17 @@
     "payload": {
       "passage": "Anna huurt een kamer. Zij vindt dat haar verhuurder een te hoge huur vraagt en dat het achterstallig onderhoud niet wordt opgelost. Zij en de verhuurder komen er samen niet uit.",
       "question": "Bij welke instantie kan Anna terecht voor een uitspraak over een geschil over de huurprijs of onderhoud van sociale huur?",
-      "options": ["De Huurcommissie", "De ANWB", "De Kamer van Koophandel", "Het UWV"]
+      "options": [
+        "De ANWB",
+        "De Huurcommissie",
+        "De Kamer van Koophandel",
+        "Het UWV"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -177,9 +265,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Wat betekent het 'eigen risico' van de basiszorgverzekering?",
-      "options": ["Een bedrag aan zorgkosten dat u eerst zelf betaalt voordat de verzekering vergoedt", "Het maandbedrag dat u aan de verzekeraar betaalt", "Een boete als u te laat bij de dokter komt", "Geld dat de verzekering u elk jaar teruggeeft"]
+      "options": [
+        "Een bedrag aan zorgkosten dat u eerst zelf betaalt voordat de verzekering vergoedt",
+        "Het maandbedrag dat u aan de verzekeraar betaalt",
+        "Een boete als u te laat bij de dokter komt",
+        "Geld dat de verzekering u elk jaar teruggeeft"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -192,9 +288,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Waarvoor gebruikt u in Nederland uw DigiD?",
-      "options": ["Om veilig in te loggen bij de overheid en andere officiële organisaties", "Om te betalen in de supermarkt", "Om een trein te reserveren", "Om reclame op internet te blokkeren"]
+      "options": [
+        "Om veilig in te loggen bij de overheid en andere officiële organisaties",
+        "Om te betalen in de supermarkt",
+        "Om een trein te reserveren",
+        "Om reclame op internet te blokkeren"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -208,9 +312,17 @@
     "payload": {
       "passage": "Karim begint aan een nieuwe baan. In zijn arbeidscontract staat dat de eerste periode een proeftijd is.",
       "question": "Wat is meestal het doel van een proeftijd aan het begin van een baan?",
-      "options": ["Werkgever en werknemer kunnen kijken of het werk bij hen past", "De werknemer krijgt in die periode geen salaris", "De werknemer mag in die tijd niet ziek worden", "De werkgever hoeft geen belasting te betalen"]
+      "options": [
+        "Werkgever en werknemer kunnen kijken of het werk bij hen past",
+        "De werknemer krijgt in die periode geen salaris",
+        "De werknemer mag in die tijd niet ziek worden",
+        "De werkgever hoeft geen belasting te betalen"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -223,9 +335,17 @@
     "prompt": "KNM-oefenvraag. Kies het beste antwoord.",
     "payload": {
       "question": "Een belangrijke waarde in de Nederlandse samenleving is gelijkheid. Wat past hierbij?",
-      "options": ["Mannen en vrouwen hebben dezelfde rechten", "Alleen mannen mogen stemmen", "Een werkgever mag iemand weigeren vanwege geloof of afkomst", "Vrouwen mogen niet zelfstandig werken"]
+      "options": [
+        "Alleen mannen mogen stemmen",
+        "Een werkgever mag iemand weigeren vanwege geloof of afkomst",
+        "Mannen en vrouwen hebben dezelfde rechten",
+        "Vrouwen mogen niet zelfstandig werken"
+      ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   }
 ]

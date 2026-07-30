@@ -12,13 +12,16 @@
       "passage": "Welkom bij het team. Op je eerste dag meld je je bij de receptie; daar krijg je een pasje waarmee je de werkruimtes in kunt. Loop daarna eerst even langs de planning, ook als je rooster al per mail is gestuurd, want daar horen we of er die week iets is gewijzigd. Je begint niet meteen zelfstandig: de eerste twee diensten werk je mee met een collega. Vragen die daarna nog blijven liggen, kun je opsparen voor het startgesprek aan het eind van je eerste week.",
       "question": "Waarom moet een nieuwe medewerker langs de planning, ook met een rooster in de mail?",
       "options": [
-        "Omdat er die week iets in het rooster veranderd kan zijn",
         "Omdat het pasje daar wordt opgehaald",
         "Omdat het startgesprek daar plaatsvindt",
-        "Omdat je anders niet zelfstandig mag werken"
+        "Omdat je anders niet zelfstandig mag werken",
+        "Omdat er die week iets in het rooster veranderd kan zijn"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 3
+    },
     "maxPoints": 1
   },
   {
@@ -32,10 +35,16 @@
     "prompt": "Read the arrangements and decide whether the statement is true.",
     "payload": {
       "passage": "De pauzetijden staan vast: een korte pauze om half elf en een langere pauze tussen twaalf en één. Wie op dat moment een klant helpt, pauzeert later; de pauze vervalt dus niet, maar schuift op. Kun je door drukte helemaal geen pauze nemen, meld dat dan aan je teamleider en niet pas achteraf op je urenbriefje.",
-      "question": "Stelling: wie tijdens de pauze een klant helpt, raakt die pauze kwijt.",
-      "options": ["Waar", "Niet waar"]
+      "question": "Stelling: wie tijdens de pauze een klant helpt, pauzeert later alsnog.",
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -50,17 +59,47 @@
     "payload": {
       "passage": "Beste Amina,\n\nHartelijk dank voor je {{1}} naar een stageplek bij ons. We hebben op dit moment plaats voor één stagiair op de afdeling logistiek. Voordat we een {{2}} maken, willen we graag weten hoeveel dagen per week je beschikbaar bent. Wil je ook doorgeven wanneer je stage moet {{3}}, zodat we het rooster daarop kunnen aanpassen?",
       "gaps": [
-        { "id": 1, "options": ["vraag", "klacht", "rekening"] },
-        { "id": 2, "options": ["afspraak", "vergissing", "verhuizing"] },
-        { "id": 3, "options": ["beginnen", "betalen", "bewaren"] }
+        {
+          "id": 1,
+          "options": [
+            "klacht",
+            "vraag",
+            "rekening"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "afspraak",
+            "vergissing",
+            "verhuizing"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "betalen",
+            "bewaren",
+            "beginnen"
+          ]
+        }
       ]
     },
     "answer": {
       "type": "CLOZE",
       "correct": [
-        { "id": 1, "index": 0 },
-        { "id": 2, "index": 0 },
-        { "id": 3, "index": 0 }
+        {
+          "id": 1,
+          "index": 1
+        },
+        {
+          "id": 2,
+          "index": 0
+        },
+        {
+          "id": 3,
+          "index": 2
+        }
       ]
     },
     "maxPoints": 3
@@ -78,13 +117,16 @@
       "passage": "De cursus duurt tien avonden en is bedoeld voor medewerkers die willen doorgroeien naar een functie met meer verantwoordelijkheid. Je hoeft geen diploma mee te brengen, maar we verwachten wel dat je minstens een half jaar in dienst bent, omdat een deel van de opdrachten over je eigen werk gaat. De cursus is gratis; wel vragen we je om de avonden echt vrij te houden, want bij meer dan twee keer afwezig kun je de opdracht aan het eind niet afronden.",
       "question": "Waarom is een half jaar ervaring een voorwaarde?",
       "options": [
-        "Omdat de opdrachten over je eigen werk gaan",
         "Omdat de cursus anders geld kost",
         "Omdat er anders geen diploma wordt gegeven",
+        "Omdat de opdrachten over je eigen werk gaan",
         "Omdat je anders te vaak afwezig bent"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   },
   {
@@ -106,7 +148,16 @@
         "Laat het aan je teamleider weten, zodat het werk verdeeld kan worden."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3, 4] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -122,13 +173,16 @@
       "passage": "Vanaf volgende maand zit het magazijn niet meer achter het kantoor, maar op het terrein aan de overkant. Voor de meesten van jullie verandert er weinig: je haalt je materiaal daar op in plaats van hier. Het verschil zit in de tijd. Wie voorheen tussendoor snel iets kon pakken, moet nu heen en weer lopen, en dat kost bij elkaar zo'n twintig minuten per dienst. Plan je materiaal daarom vooraf, zodat je niet twee keer hoeft.",
       "question": "Wat is volgens het bericht het belangrijkste gevolg van de verhuizing?",
       "options": [
-        "Materiaal ophalen kost meer tijd, dus je moet vooruit plannen",
         "Er is minder materiaal beschikbaar dan eerst",
+        "Materiaal ophalen kost meer tijd, dus je moet vooruit plannen",
         "Het magazijn gaat een deel van de week dicht",
         "Medewerkers moeten voortaan op het andere terrein werken"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -143,9 +197,15 @@
     "payload": {
       "passage": "Extra uren draaien mag, maar altijd in overleg met de planning. Je kunt de uren laten uitbetalen of opsparen als vrije tijd; je geeft zelf aan wat je wilt, en dat kan per keer verschillen. Alleen als je de uren wilt opsparen, moet je dat vooraf aangeven. Kies je daar niets over, dan worden de uren gewoon uitbetaald.",
       "question": "Stelling: als u niets aangeeft, worden de extra uren automatisch opgespaard als vrije tijd.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   }
 ]

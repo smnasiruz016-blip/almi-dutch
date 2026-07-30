@@ -12,15 +12,15 @@
       "passage": "De bibliotheek in Zwolle is vanaf maandag 3 maart open met nieuwe openingstijden. Op werkdagen kunt u terecht van 10.00 tot 20.00 uur. In het weekend is de bibliotheek alleen op zaterdagochtend geopend, van 9.00 tot 13.00 uur. Op zondag is de bibliotheek gesloten.",
       "question": "Wanneer is de bibliotheek in het weekend open?",
       "options": [
-        "Alleen op zaterdagochtend",
         "Het hele weekend",
+        "Alleen op zaterdagochtend",
         "Alleen op zondag",
         "Op zaterdag en zondag"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 1
     },
     "maxPoints": 1
   },
@@ -35,10 +35,10 @@
     "prompt": "Lees de oproep. Is de stelling waar of niet waar?",
     "payload": {
       "passage": "Buurthuis De Brug zoekt vrijwilligers voor de huiswerkbegeleiding. U hoeft geen diploma te hebben, maar u moet wel goed Nederlands spreken. De begeleiding is op dinsdag- en donderdagmiddag.",
-      "question": "Stelling: voor dit vrijwilligerswerk is een diploma verplicht.",
+      "question": "Stelling: voor dit vrijwilligerswerk moet u goed Nederlands spreken.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
@@ -70,8 +70,8 @@
         {
           "id": 2,
           "options": [
-            "behandelen",
             "koken",
+            "behandelen",
             "fietsen"
           ]
         },
@@ -94,7 +94,7 @@
         },
         {
           "id": 2,
-          "index": 0
+          "index": 1
         },
         {
           "id": 3,
@@ -118,14 +118,14 @@
       "question": "Wat blijkt uit het recente onderzoek?",
       "options": [
         "De omzet daalt sterk",
-        "De omzet stijgt na verloop van tijd licht",
         "Winkeliers sluiten hun zaak",
-        "Er komen minder voetgangers"
+        "Er komen minder voetgangers",
+        "De omzet stijgt na verloop van tijd licht"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 3
     },
     "maxPoints": 1
   },
@@ -219,13 +219,13 @@
       "passage": "Beste ouders, op vrijdag 14 juni is de school gesloten vanwege een studiedag voor de leraren. De kinderen zijn die dag dus vrij. De gewone lessen beginnen weer op maandag 17 juni. Wilt u zelf voor opvang zorgen?",
       "question": "Stelling: op vrijdag 14 juni hebben de kinderen gewoon les.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -269,24 +269,24 @@
         {
           "id": 1,
           "options": [
-            "supermarkt",
             "bioscoop",
-            "zwembad"
+            "zwembad",
+            "supermarkt"
           ]
         },
         {
           "id": 2,
           "options": [
-            "kassa",
             "trap",
-            "deur"
+            "deur",
+            "kassa"
           ]
         },
         {
           "id": 3,
           "options": [
-            "huis",
             "gisteren",
+            "huis",
             "snel"
           ]
         }
@@ -297,15 +297,15 @@
       "correct": [
         {
           "id": 1,
-          "index": 0
+          "index": 2
         },
         {
           "id": 2,
-          "index": 0
+          "index": 2
         },
         {
           "id": 3,
-          "index": 0
+          "index": 1
         }
       ]
     },
@@ -353,15 +353,15 @@
       "passage": "Sinds de coronapandemie is thuiswerken voor veel werknemers de normaalste zaak van de wereld geworden. Werkgevers zien voordelen, zoals lagere kantoorkosten en tevreden medewerkers. Toch waarschuwen deskundigen dat het contact tussen collega's kan verwateren wanneer men elkaar zelden op kantoor ziet. Veel bedrijven kiezen daarom voor een hybride model, waarbij werknemers een deel van de week thuis en een deel op kantoor werken.",
       "question": "Waarom kiezen veel bedrijven voor een hybride model?",
       "options": [
-        "Om het contact tussen collega's niet te verliezen",
         "Om de kantoorkosten te verhogen",
         "Omdat thuiswerken verboden is",
+        "Om het contact tussen collega's niet te verliezen",
         "Omdat niemand meer naar kantoor wil"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 2
     },
     "maxPoints": 1
   },
@@ -380,24 +380,24 @@
         {
           "id": 1,
           "options": [
-            "duurzame",
             "gevaarlijke",
-            "dure"
+            "dure",
+            "duurzame"
           ]
         },
         {
           "id": 2,
           "options": [
-            "geïnstalleerd",
             "gegeten",
-            "verkocht"
+            "verkocht",
+            "geïnstalleerd"
           ]
         },
         {
           "id": 3,
           "options": [
-            "besparing",
             "vertraging",
+            "besparing",
             "verhoging"
           ]
         }
@@ -408,15 +408,15 @@
       "correct": [
         {
           "id": 1,
-          "index": 0
+          "index": 2
         },
         {
           "id": 2,
-          "index": 0
+          "index": 2
         },
         {
           "id": 3,
-          "index": 0
+          "index": 1
         }
       ]
     },

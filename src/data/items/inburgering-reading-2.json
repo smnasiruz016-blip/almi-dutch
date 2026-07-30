@@ -18,7 +18,10 @@
         "De trap afsluiten"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -33,9 +36,15 @@
     "payload": {
       "passage": "SPEELTUIN\nOpen van 9.00 tot 20.00 uur.\nHonden niet toegestaan.",
       "question": "Stelling: u mag uw hond meenemen in de speeltuin.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -50,17 +59,47 @@
     "payload": {
       "passage": "De gezamenlijke wasruimte is open van 8.00 tot 22.00 uur. U moet eerst een {{1}} reserveren op de lijst bij de deur. Haal uw was op tijd uit de {{2}}, zodat de volgende bewoner kan beginnen. Laat de ruimte netjes {{3}}.",
       "gaps": [
-        { "id": 1, "options": ["tijd", "kamer", "sleutel"] },
-        { "id": 2, "options": ["machine", "kast", "tuin"] },
-        { "id": 3, "options": ["achter", "open", "vol"] }
+        {
+          "id": 1,
+          "options": [
+            "tijd",
+            "kamer",
+            "sleutel"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "kast",
+            "tuin",
+            "machine"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "open",
+            "achter",
+            "vol"
+          ]
+        }
       ]
     },
     "answer": {
       "type": "CLOZE",
       "correct": [
-        { "id": 1, "index": 0 },
-        { "id": 2, "index": 0 },
-        { "id": 3, "index": 0 }
+        {
+          "id": 1,
+          "index": 0
+        },
+        {
+          "id": 2,
+          "index": 2
+        },
+        {
+          "id": 3,
+          "index": 1
+        }
       ]
     },
     "maxPoints": 3
@@ -78,13 +117,16 @@
       "passage": "AFHAALPUNT\nMaandag tot en met vrijdag: 9.00 - 19.00 uur\nZaterdag: 10.00 - 17.00 uur\nZondag gesloten\n\nNeem uw legitimatie en de code uit het bericht mee. Pakketjes blijven zeven dagen bij ons liggen.",
       "question": "Wat moet u meenemen als u een pakketje ophaalt?",
       "options": [
-        "Uw legitimatie en de code",
         "Alleen contant geld",
+        "Uw legitimatie en de code",
         "Een handtekening van de buren",
         "De oude verpakking"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -105,7 +147,15 @@
         "Wacht tot het scherm zegt dat het saldo erop staat."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -119,10 +169,16 @@
     "prompt": "Read the information and decide whether the statement is true.",
     "payload": {
       "passage": "Met een bibliotheekpas leent u maximaal tien boeken tegelijk. De uitleentermijn is drie weken. U kunt één keer verlengen, behalve als iemand anders het boek heeft gereserveerd.",
-      "question": "Stelling: u kunt altijd verlengen, ook als iemand het boek heeft gereserveerd.",
-      "options": ["Waar", "Niet waar"]
+      "question": "Stelling: u kunt één keer verlengen als niemand anders het boek heeft gereserveerd.",
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -138,13 +194,16 @@
       "passage": "Inloopochtend in het buurthuis\n\nElke dinsdag van 10.00 tot 12.00 uur is er koffie en thee. U kunt gewoon binnenlopen; aanmelden hoeft niet. Wilt u oefenen met Nederlands praten? Er zijn altijd vrijwilligers aanwezig die met u willen praten.",
       "question": "Wat moet u doen om te komen?",
       "options": [
-        "Niets, u kunt zomaar binnenlopen",
         "Zich van tevoren aanmelden",
         "Een vrijwilliger meenemen",
+        "Niets, u kunt zomaar binnenlopen",
         "Betalen bij de deur"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   },
   {
@@ -160,13 +219,16 @@
       "passage": "Beste collega's,\n\nVanaf volgende maand beginnen we op maandag een half uur later, om negen uur. De reden is dat de leveringen 's ochtends vaak te laat binnenkomen, waardoor het eerste half uur toch niet efficiënt gebruikt kan worden. Het einde van de dag blijft gelijk; de tijd halen we in tijdens de lunchpauze, die twintig minuten korter wordt. Wie hierdoor in de knel komt met opvang of vervoer, kan dat deze week bij mij melden, zodat we naar een oplossing kunnen zoeken.",
       "question": "Waarom wordt de starttijd veranderd?",
       "options": [
-        "Omdat het eerste half uur nu niet nuttig gebruikt kan worden",
         "Omdat de werkdag korter moet worden",
         "Omdat de lunchpauze langer moet worden",
-        "Omdat er te weinig collega's zijn"
+        "Omdat er te weinig collega's zijn",
+        "Omdat het eerste half uur nu niet nuttig gebruikt kan worden"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 3
+    },
     "maxPoints": 1
   },
   {
@@ -180,10 +242,16 @@
     "prompt": "Read the conditions and decide whether the statement is true.",
     "payload": {
       "passage": "Het abonnement loopt per maand door en wordt automatisch verlengd. Opzeggen kan altijd, maar de opzegging gaat pas in aan het einde van de volgende maand. Zegt u dus in maart op, dan betaalt u april nog wel. Bij een blessure kunt u het abonnement tijdelijk pauzeren; daarvoor is een verklaring van een arts nodig.",
-      "question": "Stelling: als u in maart opzegt, hoeft u april niet meer te betalen.",
-      "options": ["Waar", "Niet waar"]
+      "question": "Stelling: om het abonnement bij een blessure te pauzeren, heeft u een verklaring van een arts nodig.",
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -198,17 +266,47 @@
     "payload": {
       "passage": "Geachte mevrouw De Wit,\n\nHartelijk dank voor uw bericht. Wij begrijpen dat het {{1}} is dat uw bestelling twee weken te laat is aangekomen. Wij hebben uitgezocht wat er is gebeurd en het blijkt dat het pakket op het verkeerde adres is {{2}}. Als {{3}} voor het ongemak sturen wij u een tegoedbon.",
       "gaps": [
-        { "id": 1, "options": ["vervelend", "gezellig", "voordelig"] },
-        { "id": 2, "options": ["bezorgd", "besteld", "betaald"] },
-        { "id": 3, "options": ["compensatie", "voorwaarde", "herinnering"] }
+        {
+          "id": 1,
+          "options": [
+            "gezellig",
+            "vervelend",
+            "voordelig"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "besteld",
+            "betaald",
+            "bezorgd"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "compensatie",
+            "voorwaarde",
+            "herinnering"
+          ]
+        }
       ]
     },
     "answer": {
       "type": "CLOZE",
       "correct": [
-        { "id": 1, "index": 0 },
-        { "id": 2, "index": 0 },
-        { "id": 3, "index": 0 }
+        {
+          "id": 1,
+          "index": 1
+        },
+        {
+          "id": 2,
+          "index": 2
+        },
+        {
+          "id": 3,
+          "index": 0
+        }
       ]
     },
     "maxPoints": 3
@@ -232,7 +330,10 @@
         "De buurt klaagt terecht over de gemeente"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -254,7 +355,16 @@
         "Neem opnieuw contact op als u binnen de genoemde termijn niets hoort."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3, 4] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -270,13 +380,16 @@
       "passage": "Hoi! Ik ben dit weekend weg. Zou jij mijn planten water willen geven? De sleutel ligt bij mijn zus, op nummer 12. Zaterdag en zondag één keer water is genoeg. Bedankt alvast!",
       "question": "Waar ligt de sleutel?",
       "options": [
-        "Bij haar zus op nummer 12",
         "Onder de deurmat",
         "Bij de buurman",
+        "Bij haar zus op nummer 12",
         "In de brievenbus"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   },
   {
@@ -291,9 +404,15 @@
     "payload": {
       "passage": "Voor deze cursus geldt een korting voor wie zich vóór 1 september inschrijft. De korting geldt alleen bij betaling van het hele bedrag in één keer; betaalt u in termijnen, dan geldt het normale tarief. Bent u lid van het buurthuis, dan krijgt u de korting ook na 1 september, maar de twee kortingen kunnen niet worden opgeteld.",
       "question": "Stelling: een lid van het buurthuis dat in termijnen betaalt, krijgt twee kortingen.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -315,7 +434,10 @@
         "Zij kunnen alleen 's avonds de straat in"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   }
 ]

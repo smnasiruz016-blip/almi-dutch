@@ -12,15 +12,15 @@
       "transcript": "Goedemorgen. U luistert naar de voicemail van de tandartspraktijk. Wij zijn gesloten van vijftien tot tweeëntwintig juli in verband met de vakantie. Voor spoedgevallen kunt u bellen met de waarnemend tandarts. Na de vakantie zijn wij weer bereikbaar op werkdagen tussen acht en vijf uur.",
       "question": "Wat moet u doen bij een spoedgeval tijdens de vakantie?",
       "options": [
-        "Wachten tot na 22 juli",
         "De waarnemend tandarts bellen",
+        "Wachten tot na 22 juli",
         "Een e-mail sturen",
         "Langsgaan bij de praktijk"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -110,15 +110,15 @@
       "transcript": "In deze aflevering bespreken we het woningtekort. Onze gast, een econoom, legt uit dat het probleem niet alleen komt door te weinig nieuwbouw, maar ook doordat mensen langer alleen blijven wonen. Daardoor zijn er meer woningen nodig voor hetzelfde aantal inwoners. Volgens haar is een deel van de oplossing het splitsen van grote huizen in kleinere appartementen.",
       "question": "Welke oorzaak van het woningtekort noemt de gast náást te weinig nieuwbouw?",
       "options": [
-        "Mensen wonen langer alleen",
         "Er worden te veel huizen gesloopt",
         "Er komen te veel toeristen",
-        "De huizen zijn te duur"
+        "De huizen zijn te duur",
+        "Mensen wonen langer alleen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 3
     },
     "maxPoints": 1
   },
@@ -158,13 +158,13 @@
       "transcript": "Beste klanten, een kleine mededeling. Vandaag hebben wij verse aardbeien in de aanbieding: twee bakjes voor drie euro. U vindt ze bij de ingang, naast het brood. De aanbieding geldt alleen vandaag. Wij wensen u nog een prettige dag.",
       "question": "Stelling: de aanbieding voor aardbeien geldt de hele week.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -182,14 +182,14 @@
       "question": "Wat wil Lisa veranderen?",
       "options": [
         "De dag van de afspraak",
-        "Het tijdstip van de afspraak",
         "Het restaurant",
+        "Het tijdstip van de afspraak",
         "Het aantal mensen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 2
     },
     "maxPoints": 1
   },
@@ -206,15 +206,15 @@
       "transcript": "En dan nu het weer. Vanochtend begint de dag grijs en regenachtig, vooral in het noorden van het land. In de middag trekken de wolken weg en komt de zon erdoor. Het wordt met vijftien graden vrij fris voor de tijd van het jaar. Neem vanochtend dus nog een paraplu mee, maar vanmiddag kunt u die thuis laten.",
       "question": "Hoe wordt het weer in de middag?",
       "options": [
-        "De hele dag regen",
         "Droog met zon",
+        "De hele dag regen",
         "Zwaar onweer",
         "Sneeuw en kou"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -274,13 +274,13 @@
       "transcript": "Beste ouders, dit is een bericht van de basisschool. Aanstaande woensdag gaan de kinderen van groep vijf op excursie naar het museum. De bus vertrekt om half negen, dus wij vragen u om uw kind uiterlijk kwart over acht op school te brengen. Vergeet niet een lunchpakketje mee te geven.",
       "question": "Stelling: de kinderen moeten zelf eten meenemen.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 0
+      "correctIndex": 1
     },
     "maxPoints": 1
   },
@@ -298,14 +298,14 @@
       "question": "Wat was volgens de ondernemer het lastigst in het begin?",
       "options": [
         "Goede koffie leren maken",
-        "Klanten vinden die meer wilden betalen",
         "Een machine kopen",
-        "Personeel aannemen"
+        "Personeel aannemen",
+        "Klanten vinden die meer wilden betalen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 3
     },
     "maxPoints": 1
   },
@@ -368,7 +368,7 @@
     "prompt": "Luister naar het fragment. Is de stelling waar of niet waar?",
     "payload": {
       "transcript": "Uit een nieuw onderzoek blijkt dat werknemers die deels thuiswerken over het algemeen tevredener zijn dan collega's die elke dag naar kantoor komen. Toch waarschuwen de onderzoekers voor een keerzijde: wie volledig thuiswerkt, voelt zich vaker eenzaam en mist het contact met collega's. De ideale situatie, zo concluderen zij, is een combinatie van enkele dagen thuis en enkele dagen op kantoor.",
-      "question": "Stelling: volgens het onderzoek is volledig thuiswerken de beste oplossing.",
+      "question": "Stelling: volgens het onderzoek is een combinatie van thuis en kantoor de beste oplossing.",
       "options": [
         "Waar",
         "Niet waar"
@@ -376,7 +376,7 @@
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -394,14 +394,14 @@
       "question": "Waarom gingen gemeenten in de jaren zeventig weer investeren in fietspaden?",
       "options": [
         "Omdat auto's te duur werden",
-        "Door ongelukken en protesten",
         "Omdat de trein verdween",
+        "Door ongelukken en protesten",
         "Vanwege een nieuwe wet uit het buitenland"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 2
     },
     "maxPoints": 1
   },
@@ -418,15 +418,15 @@
       "transcript": "Goedemiddag, u spreekt met de klantenservice van energieleverancier Stroomnet. Ik begrijp dat uw laatste rekening hoger was dan verwacht. Dat komt doordat wij uw voorschotbedrag hebben aangepast op basis van uw verbruik van vorig jaar. Als u vindt dat het bedrag te hoog is, kan ik het voor u verlagen, maar houd er rekening mee dat u dan aan het eind van het jaar mogelijk moet bijbetalen.",
       "question": "Wat is de reden dat de rekening hoger uitviel?",
       "options": [
-        "Een fout in het systeem",
         "Het aangepaste voorschotbedrag",
+        "Een fout in het systeem",
         "Een prijsverhoging van de overheid",
         "Een vergeten korting"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   }
