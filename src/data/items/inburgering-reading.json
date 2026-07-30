@@ -12,15 +12,15 @@
       "passage": "Beste bewoner,\n\nOp woensdag 8 april komt de gemeente uw straat schoonmaken. Wilt u die dag uw auto ergens anders parkeren? De werkzaamheden zijn van 8.00 tot 12.00 uur. Na 12.00 uur mag u weer gewoon in de straat parkeren.\n\nMet vriendelijke groet,\nde gemeente",
       "question": "Wat moeten bewoners op 8 april doen?",
       "options": [
-        "Hun auto ergens anders parkeren",
         "De hele dag thuisblijven",
+        "Hun auto ergens anders parkeren",
         "De straat zelf schoonmaken",
         "De gemeente bellen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 1
     },
     "maxPoints": 1
   },
@@ -35,10 +35,10 @@
     "prompt": "Read the flyer. Is the statement true or false?",
     "payload": {
       "passage": "Deze week bij de supermarkt: alle groente en fruit met 25% korting! De aanbieding geldt van maandag tot en met zaterdag. Op zondag is de winkel gesloten.",
-      "question": "Stelling: de aanbieding geldt ook op zondag.",
+      "question": "Stelling: de aanbieding geldt ook op zaterdag.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
@@ -87,17 +87,17 @@
         {
           "id": 1,
           "options": [
-            "tablet",
             "fiets",
-            "brief"
+            "brief",
+            "tablet"
           ]
         },
         {
           "id": 2,
           "options": [
-            "maaltijd",
             "vakantie",
-            "vergadering"
+            "vergadering",
+            "maaltijd"
           ]
         },
         {
@@ -115,11 +115,11 @@
       "correct": [
         {
           "id": 1,
-          "index": 0
+          "index": 2
         },
         {
           "id": 2,
-          "index": 0
+          "index": 2
         },
         {
           "id": 3,
@@ -141,19 +141,19 @@
     "payload": {
       "instructions": "Nummer de stappen zodat het een logische instructie wordt.",
       "items": [
-        "Steek uw pinpas in de automaat.",
-        "Toets uw pincode in.",
         "Kies het bedrag dat u wilt opnemen.",
-        "Pak uw pas en het geld uit de automaat."
+        "Steek uw pinpas in de automaat.",
+        "Pak uw pas en het geld uit de automaat.",
+        "Toets uw pincode in."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
         1,
-        2,
-        3
+        3,
+        0,
+        2
       ]
     },
     "maxPoints": 1
@@ -171,15 +171,15 @@
       "passage": "Beste huurder,\n\nOp dinsdag 12 mei komt de loodgieter de cv-ketel controleren. Hij komt tussen 9.00 en 11.00 uur. Zorgt u ervoor dat er iemand thuis is? Als u niet thuis kunt zijn, bel dan de beheerder om een nieuwe afspraak te maken.",
       "question": "Wat moet u doen als u niet thuis kunt zijn?",
       "options": [
-        "De beheerder bellen voor een nieuwe afspraak",
         "De ketel zelf controleren",
         "Een e-mail naar de loodgieter sturen",
-        "De deur openlaten"
+        "De deur openlaten",
+        "De beheerder bellen voor een nieuwe afspraak"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 3
     },
     "maxPoints": 1
   },
@@ -196,13 +196,13 @@
       "passage": "Let op! Kinderen jonger dan zeven jaar mogen alleen onder begeleiding van een volwassene het water in. Rennen langs het bad is niet toegestaan.",
       "question": "Stelling: kinderen van zes jaar mogen zonder volwassene zwemmen.",
       "options": [
-        "Waar",
-        "Niet waar"
+        "Niet waar",
+        "Waar"
       ]
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -221,8 +221,8 @@
         {
           "id": 1,
           "options": [
-            "huisartsenpraktijk",
             "bakkerij",
+            "huisartsenpraktijk",
             "school"
           ]
         },
@@ -237,8 +237,8 @@
         {
           "id": 3,
           "options": [
-            "dokter",
             "kapper",
+            "dokter",
             "buurman"
           ]
         }
@@ -249,7 +249,7 @@
       "correct": [
         {
           "id": 1,
-          "index": 0
+          "index": 1
         },
         {
           "id": 2,
@@ -257,7 +257,7 @@
         },
         {
           "id": 3,
-          "index": 0
+          "index": 1
         }
       ]
     },
@@ -276,15 +276,15 @@
       "passage": "Beste team,\n\nVanaf volgende maand gaan we werken met een nieuw rooster. Iedereen krijgt voortaan één vaste thuiswerkdag per week. Wil je zelf aangeven welke dag jouw voorkeur heeft? Stuur je voorkeur uiterlijk vrijdag naar mij, dan probeer ik daar zo veel mogelijk rekening mee te houden.\n\nGroet,\nSandra",
       "question": "Wat wil Sandra dat de medewerkers doen?",
       "options": [
-        "Hun voorkeur voor een thuiswerkdag doorgeven",
         "Elke dag naar kantoor komen",
+        "Hun voorkeur voor een thuiswerkdag doorgeven",
         "Een nieuw rooster maken",
         "Vrijdag vrij nemen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 1
     },
     "maxPoints": 1
   },
@@ -299,7 +299,7 @@
     "prompt": "Read the tenancy clause. Is the statement true or false?",
     "payload": {
       "passage": "In dit appartement is roken niet toegestaan. Ook mag de huurder zonder schriftelijke toestemming van de verhuurder geen spijkers of schroeven in de muren aanbrengen. Kleine veranderingen die eenvoudig ongedaan te maken zijn, zoals het ophangen van gordijnen, zijn wel toegestaan.",
-      "question": "Stelling: de huurder mag zonder toestemming grote gaten in de muur boren.",
+      "question": "Stelling: de huurder mag gordijnen ophangen.",
       "options": [
         "Waar",
         "Niet waar"
@@ -307,7 +307,7 @@
     },
     "answer": {
       "type": "TRUE_FALSE",
-      "correctIndex": 1
+      "correctIndex": 0
     },
     "maxPoints": 1
   },
@@ -324,15 +324,15 @@
       "passage": "De gemeente opent volgende maand een nieuw buurtcentrum aan de Parkstraat. Bewoners kunnen er terecht voor taalcursussen, hulp bij formulieren en gezellige activiteiten. Het centrum is vooral bedoeld om mensen uit de buurt met elkaar in contact te brengen. In de eerste maand zijn alle activiteiten gratis.",
       "question": "Wat is het belangrijkste doel van het nieuwe buurtcentrum?",
       "options": [
-        "Buurtbewoners met elkaar in contact brengen",
         "Geld verdienen met cursussen",
+        "Buurtbewoners met elkaar in contact brengen",
         "Toeristen naar de buurt trekken",
         "Een nieuwe supermarkt openen"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 1
     },
     "maxPoints": 1
   },
@@ -359,17 +359,17 @@
         {
           "id": 2,
           "options": [
-            "gesprek",
             "feestje",
+            "gesprek",
             "reis"
           ]
         },
         {
           "id": 3,
           "options": [
-            "identiteitsbewijs",
             "recept",
-            "menu"
+            "menu",
+            "identiteitsbewijs"
           ]
         }
       ]
@@ -383,11 +383,11 @@
         },
         {
           "id": 2,
-          "index": 0
+          "index": 1
         },
         {
           "id": 3,
-          "index": 0
+          "index": 2
         }
       ]
     },
@@ -405,19 +405,19 @@
     "payload": {
       "instructions": "Nummer de stappen zodat je je op een logische manier inschrijft in een nieuwe gemeente.",
       "items": [
-        "Maak online een afspraak bij de gemeente waar je gaat wonen.",
-        "Verzamel de documenten die je nodig hebt, zoals je paspoort en huurcontract.",
+        "Ontvang na de inschrijving een bevestiging op je nieuwe adres.",
         "Ga op de afgesproken dag naar het gemeentehuis met je documenten.",
-        "Ontvang na de inschrijving een bevestiging op je nieuwe adres."
+        "Maak online een afspraak bij de gemeente waar je gaat wonen.",
+        "Verzamel de documenten die je nodig hebt, zoals je paspoort en huurcontract."
       ]
     },
     "answer": {
       "type": "ORDERING",
       "order": [
-        0,
-        1,
         2,
-        3
+        3,
+        1,
+        0
       ]
     },
     "maxPoints": 1
@@ -435,15 +435,15 @@
       "passage": "Vanaf 1 juli verandert er iets aan het ophalen van afval in onze wijk. Restafval wordt niet meer wekelijks opgehaald, maar één keer per twee weken. Groente-, fruit- en tuinafval en papier worden juist vaker opgehaald. De gemeente hoopt zo dat inwoners hun afval beter gaan scheiden, want goed gescheiden afval kan opnieuw worden gebruikt.",
       "question": "Waarom voert de gemeente deze verandering door?",
       "options": [
-        "Om inwoners hun afval beter te laten scheiden",
         "Om geld te besparen op vuilniswagens",
         "Omdat er te weinig afval is",
+        "Om inwoners hun afval beter te laten scheiden",
         "Om de wijk stiller te maken"
       ]
     },
     "answer": {
       "type": "MCQ_SINGLE",
-      "correctIndex": 0
+      "correctIndex": 2
     },
     "maxPoints": 1
   },

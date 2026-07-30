@@ -16,7 +16,10 @@
         "U beschrijft de vervolgstap concreet",
         "De tekst is zakelijk en overzichtelijk opgebouwd"
       ],
-      "charBand": { "min": 700, "max": 1300 }
+      "charBand": {
+        "min": 700,
+        "max": 1300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -38,7 +41,10 @@
         "U benoemt de kosten of inspanning van elk voorstel",
         "De opbouw is logisch en de toon is adviserend, niet belerend"
       ],
-      "charBand": { "min": 700, "max": 1300 }
+      "charBand": {
+        "min": 700,
+        "max": 1300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -60,7 +66,10 @@
         "U formuleert uw eigen standpunt duidelijk",
         "U blijft inhoudelijk in plaats van op de persoon te spelen"
       ],
-      "charBand": { "min": 700, "max": 1300 }
+      "charBand": {
+        "min": 700,
+        "max": 1300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -82,7 +91,10 @@
         "U benoemt een vervolgstap zonder te dreigen",
         "De toon blijft formeel en beheerst"
       ],
-      "charBand": { "min": 450, "max": 900 }
+      "charBand": {
+        "min": 450,
+        "max": 900
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -104,7 +116,10 @@
         "U benoemt zelf het sterkste bezwaar",
         "U geeft een antwoord op dat bezwaar in plaats van het te omzeilen"
       ],
-      "charBand": { "min": 450, "max": 900 }
+      "charBand": {
+        "min": 450,
+        "max": 900
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -126,7 +141,10 @@
         "U komt tot een duidelijk oordeel voor een bepaalde lezer of kijker",
         "De tekst heeft een eigen toon en een heldere opbouw"
       ],
-      "charBand": { "min": 450, "max": 900 }
+      "charBand": {
+        "min": 450,
+        "max": 900
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -148,7 +166,10 @@
         "U doet een concreet en redelijk tegenvoorstel",
         "De toon blijft samenwerkend in plaats van eisend"
       ],
-      "charBand": { "min": 450, "max": 900 }
+      "charBand": {
+        "min": 450,
+        "max": 900
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -170,7 +191,10 @@
         "U behandelt het sterkste tegenargument serieus",
         "De conclusie volgt uit het betoog en herhaalt niet alleen het begin"
       ],
-      "charBand": { "min": 700, "max": 1300 }
+      "charBand": {
+        "min": 700,
+        "max": 1300
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -192,7 +216,10 @@
         "U erkent het verlies voor de groep",
         "U biedt een concreet alternatief of vervolg"
       ],
-      "charBand": { "min": 450, "max": 900 }
+      "charBand": {
+        "min": 450,
+        "max": 900
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -214,7 +241,10 @@
         "U stelt zelf een concrete nieuwe datum voor",
         "De e-mail is beleefd en kort"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0
@@ -236,7 +266,10 @@
         "U stelt een bezichtiging voor",
         "De toon is vriendelijk en de tekst is kort"
       ],
-      "charBand": { "min": 250, "max": 600 }
+      "charBand": {
+        "min": 250,
+        "max": 600
+      }
     },
     "answer": null,
     "maxPoints": 0

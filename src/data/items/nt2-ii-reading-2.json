@@ -12,13 +12,16 @@
       "passage": "Studenten met een bijbaan doen het volgens sommige docenten slechter, en er zijn cijfers die dat lijken te ondersteunen. Toch klopt de conclusie niet zonder meer. Wie twintig uur per week werkt omdat het moet, heeft minder tijd én meer zorgen; wie acht uur werkt omdat het leuk is, leert vaak juist plannen. Het probleem is dus niet 'werken naast je studie', maar de reden waarom iemand werkt en hoeveel. Zolang we die twee op één hoop gooien, meten we vooral wie het geld nodig heeft, en niet wie het werk aankan.",
       "question": "Wat is het bezwaar van de schrijver tegen de conclusie van de docenten?",
       "options": [
-        "Zij maken geen onderscheid tussen de reden en de omvang van het werk",
         "Zij hebben geen cijfers om hun standpunt te onderbouwen",
+        "Zij maken geen onderscheid tussen de reden en de omvang van het werk",
         "Zij vinden dat studenten helemaal niet moeten werken",
         "Zij overschatten hoeveel studenten kunnen plannen"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -33,9 +36,15 @@
     "payload": {
       "passage": "In het onderzoek werd gekeken naar de relatie tussen slaap en het onthouden van nieuwe woorden. Deelnemers die na het leren een nacht sliepen, scoorden de volgende dag hoger dan deelnemers die overdag evenveel uren wakker bleven. De onderzoekers benadrukken echter dat het verschil klein was en dat alle deelnemers jongvolwassenen waren. Of hetzelfde geldt voor oudere lerenden, is met dit onderzoek niet vast te stellen.",
       "question": "Stelling: het onderzoek laat zien dat slaap ook bij oudere lerenden het onthouden verbetert.",
-      "options": ["Waar", "Niet waar"]
+      "options": [
+        "Niet waar",
+        "Waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -50,17 +59,47 @@
     "payload": {
       "passage": "Wie een nieuwe taal leert, leert meestal eerst de correcte vormen en pas veel later de {{1}} die bepaalt of iets gepast klinkt. Een zin kan grammaticaal foutloos zijn en toch te direct overkomen in een e-mail aan een klant. Juist daarom is het {{2}} om te letten op hoe collega's dingen formuleren. Niet omdat u hen moet {{3}}, maar omdat u zo hoort welke ruimte er is.",
       "gaps": [
-        { "id": 1, "options": ["toon", "spelling", "uitspraak"] },
-        { "id": 2, "options": ["nuttig", "verplicht", "onmogelijk"] },
-        { "id": 3, "options": ["kopiëren", "corrigeren", "vermijden"] }
+        {
+          "id": 1,
+          "options": [
+            "toon",
+            "spelling",
+            "uitspraak"
+          ]
+        },
+        {
+          "id": 2,
+          "options": [
+            "nuttig",
+            "verplicht",
+            "onmogelijk"
+          ]
+        },
+        {
+          "id": 3,
+          "options": [
+            "corrigeren",
+            "kopiëren",
+            "vermijden"
+          ]
+        }
       ]
     },
     "answer": {
       "type": "CLOZE",
       "correct": [
-        { "id": 1, "index": 0 },
-        { "id": 2, "index": 0 },
-        { "id": 3, "index": 0 }
+        {
+          "id": 1,
+          "index": 0
+        },
+        {
+          "id": 2,
+          "index": 0
+        },
+        {
+          "id": 3,
+          "index": 1
+        }
       ]
     },
     "maxPoints": 3
@@ -84,7 +123,10 @@
         "Dat sollicitatieprocedures te lang duren"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   },
   {
@@ -99,14 +141,23 @@
     "payload": {
       "instructions": "Nummer de onderdelen zodat er een logisch opgebouwd betoog ontstaat.",
       "items": [
+        "Sluit af met een conclusie die volgt uit het voorgaande.",
         "Beschrijf kort de situatie waarover de discussie gaat.",
         "Formuleer uw eigen standpunt in één zin.",
         "Onderbouw dat standpunt met uw sterkste argument.",
-        "Behandel het belangrijkste tegenargument en weerleg het.",
-        "Sluit af met een conclusie die volgt uit het voorgaande."
+        "Behandel het belangrijkste tegenargument en weerleg het."
       ]
     },
-    "answer": { "type": "ORDERING", "order": [0, 1, 2, 3, 4] },
+    "answer": {
+      "type": "ORDERING",
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ]
+    },
     "maxPoints": 1
   },
   {
@@ -122,13 +173,16 @@
       "passage": "De tentoonstelling is prachtig vormgegeven; daarover zal niemand het oneens zijn. De zalen zijn rustig, de belichting klopt, en de bruiklenen zijn indrukwekkend. Toch liep ik na een uur naar buiten met het gevoel dat mij iets was ontgaan. De teksten leggen alles uit, maar stellen niets. Er wordt verteld wanneer een werk is gemaakt en waarom het belangrijk zou zijn, en nergens wordt de bezoeker gevraagd zelf iets te vinden. Wie de schilderijen al kent, ziet ze hier op hun mooist. Wie ze niet kent, leert vooral wat hij hoort te denken.",
       "question": "Wat is het bezwaar van de recensent?",
       "options": [
-        "De tentoonstelling legt uit wat je moet vinden in plaats van vragen op te roepen",
         "De werken zijn slecht belicht en moeilijk te zien",
         "Er hangen te weinig belangrijke werken",
+        "De tentoonstelling legt uit wat je moet vinden in plaats van vragen op te roepen",
         "De tentoonstelling is te druk bezocht"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 2
+    },
     "maxPoints": 1
   },
   {
@@ -144,13 +198,16 @@
       "passage": "De introductieweek begint op maandag om tien uur in het hoofdgebouw. Deelnemen is niet verplicht, maar we raden het sterk aan: u ontmoet uw klasgenoten en u krijgt uitleg over het rooster en de opdrachten. Kunt u maandag niet, kom dan dinsdag; het programma van maandag wordt die ochtend kort herhaald.",
       "question": "Wat kan iemand doen die maandag niet kan?",
       "options": [
-        "Dinsdagochtend komen, want dan wordt het herhaald",
         "De hele week overslaan",
+        "Dinsdagochtend komen, want dan wordt het herhaald",
         "Zich afmelden bij de docent",
         "Later in het jaar een aparte uitleg krijgen"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": {
+      "type": "MCQ_SINGLE",
+      "correctIndex": 1
+    },
     "maxPoints": 1
   },
   {
@@ -164,10 +221,16 @@
     "prompt": "Read the rules and decide whether the statement is true.",
     "payload": {
       "passage": "Opdrachten levert u digitaal in vóór de datum die in het rooster staat. Bent u ziek, geef dat dan door vóór de deadline; u krijgt dan uitstel. Meldt u zich pas na de deadline, dan telt de opdracht als te laat, ook als u wel ziek was.",
-      "question": "Stelling: wie ziek was, krijgt altijd uitstel, ook bij een melding achteraf.",
-      "options": ["Waar", "Niet waar"]
+      "question": "Stelling: wie zich vóór de deadline ziek meldt, krijgt uitstel.",
+      "options": [
+        "Waar",
+        "Niet waar"
+      ]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": {
+      "type": "TRUE_FALSE",
+      "correctIndex": 0
+    },
     "maxPoints": 1
   }
 ]

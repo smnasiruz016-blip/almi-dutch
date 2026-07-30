@@ -9,7 +9,7 @@ import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug, SKILL_LABELS } from "@/lib/nl/registry";
 import { isFreeSkill } from "@/lib/nl/types";
 import type { DutchSkill } from "@/lib/nl/types";
-import { pickPractice } from "@/lib/nl/items";
+import { pickPractice, stableItemId } from "@/lib/nl/items";
 import { PracticeRunner } from "@/components/nl/PracticeRunner";
 import { ProductiveComposer } from "@/components/nl/ProductiveComposer";
 
@@ -66,6 +66,10 @@ export default async function SkillRunnerPage({
           skill={skill}
           goalCefr={exam.goalCefr}
           items={items.map((it) => ({
+            // The id replaces the answer key. The runner posts it back and the server
+            // re-loads the item to mark against its own key, so nothing on this page
+            // tells the browser what the right answer is.
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,
@@ -73,7 +77,6 @@ export default async function SkillRunnerPage({
             taskType: it.taskType,
             cefr: it.cefr,
             payload: it.payload,
-            answer: it.answer,
             maxPoints: it.maxPoints,
           }))}
         />
@@ -82,6 +85,7 @@ export default async function SkillRunnerPage({
           examName={exam.name}
           skill={skill}
           items={items.map((it) => ({
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,
