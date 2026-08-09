@@ -5,7 +5,10 @@ import { buildJobsPage } from "@/lib/seo/content";
 import { resolveOriginBlock } from "@/lib/seo/origin-localization";
 import { FunnelPage } from "@/components/seo/FunnelPage";
 
-export const dynamicParams = true;
+// HOLDING 2026-08-09 — ISR page-generation frozen across the jobs leaf space. Nothing is prerendered and
+// nothing renders on demand, so every URL under this route 404s and no ISR write can occur.
+// Axis data and templates are untouched. Reverse by restoring `dynamicParams = true`.
+export const dynamicParams = false;
 export const revalidate = false;
 export function generateStaticParams() { return []; }
 

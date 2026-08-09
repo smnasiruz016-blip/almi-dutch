@@ -7,7 +7,10 @@ import { FunnelPage } from "@/components/seo/FunnelPage";
 
 // ISR on-demand: nothing pre-rendered at build; each URL renders + caches on
 // first request, revalidating every 30 days.
-export const dynamicParams = true;
+// HOLDING 2026-08-09 — ISR page-generation frozen across the taught-study leaf space. Nothing is prerendered and
+// nothing renders on demand, so every URL under this route 404s and no ISR write can occur.
+// Axis data and templates are untouched. Reverse by restoring `dynamicParams = true`.
+export const dynamicParams = false;
 export const revalidate = false;
 export function generateStaticParams() { return []; }
 
