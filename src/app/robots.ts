@@ -2,42 +2,27 @@ import type { MetadataRoute } from "next";
 
 const SITE_URL = "https://almidutch.almiworld.com";
 
-// Private / app-only paths — blocked for ALL bots (unchanged from current).
+// Private app surfaces: never useful in a search index.
 const PRIVATE = ["/practice/", "/account", "/admin", "/api/"];
 
-// Deep per-origin long-tail leaves (the ×country×university / ×country×hub fan-out,
-// ~3.29M URLs). The /study-in-netherlands/<subject>, /work-in-netherlands/<role> and
-// /exams/<level> hubs plus all landing pages stay crawlable; only the /from/ leaves
-// are trimmed for generic bots.
-const DEEP_LEAVES = ["/study-in-netherlands/*/from/", "/work-in-netherlands/*/from/"];
-
-// Heavy crawlers that burn Vercel invocations + edge requests with ~no SEO upside.
-// robots.txt is advisory — these DO obey it; truly abusive scrapers need BotID/WAF.
-// Google-Extended = Gemini/Vertex TRAINING token, NOT search — blocking it does not
-// affect ranking. Trim this list if you want AI-search (ChatGPT/Perplexity) citations.
-const HEAVY_BOTS = [
-  "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
-  "CCBot", "Bytespider", "Amazonbot", "PerplexityBot", "Google-Extended",
+// AI VISIBILITY IS THE PRODUCT GOAL (owner ruling 27 Oct 2026). No AI crawler — GPTBot, OAI-SearchBot,
+// ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, anthropic-ai, PerplexityBot, Perplexity-User,
+// Google-Extended, CCBot, Amazonbot, Applebot-Extended, Bytespider, Meta-ExternalAgent or similar —
+// may ever be listed here. Only pure SEO-tool scrapers, which bring no visibility, stay blocked.
+//
+// The old programmatic study/jobs leaves are no longer disallowed: they answer 410 Gone (src/proxy.ts)
+// and crawlers must be able to SEE the 410 to drop those URLs.
+const SEO_TOOL_SCRAPERS = [
   "AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "DataForSeoBot", "PetalBot",
 ];
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      // Real search engines: full access to the long-tail leaves — that IS the pSEO product.
-      // DEEP_LEAVES applies to Googlebot and Bingbot TOO. Leaving them out was the
-      // hole in the 2026-07-20 crawl-cost fix: `*` was blocked from the leaf space
-      // while the two crawlers most able to walk it kept full access, and each first
-      // visit to an ungenerated leaf costs one ISR write. almi-dutch billed $20.31
-      // in ISR writes in the 2026-07 cycle with this rule in place.
-      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: [...PRIVATE, ...DEEP_LEAVES] },
-      // Everyone else: landing + hubs only, skip the per-origin leaves, gentle pace.
-      { userAgent: "*", allow: "/", disallow: [...PRIVATE, ...DEEP_LEAVES], crawlDelay: 10 },
-      // Heavy, no-SEO-value crawlers: off entirely.
-      { userAgent: HEAVY_BOTS, disallow: "/" },
+      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: PRIVATE },
+      { userAgent: "*", allow: "/", disallow: PRIVATE, crawlDelay: 10 },
+      { userAgent: SEO_TOOL_SCRAPERS, disallow: "/" },
     ],
-    // Next 16's generateSitemaps has no auto-index at /sitemap.xml — point crawlers
-    // at our explicit sitemap index, which lists all sharded sitemaps.
     sitemap: `${SITE_URL}/sitemap-index.xml`,
   };
 }
