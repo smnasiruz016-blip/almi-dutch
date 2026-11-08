@@ -42,7 +42,8 @@ export default async function PracticePage() {
         </p>
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">Choose a test</h1>
         <p className="mt-2 max-w-2xl text-sm text-almi-text">
-          Reading and Listening are auto-marked and free to practise. Writing, Speaking and the
+          Reading, Listening and KNM are auto-marked and free to practise. Your free 48 hours (no card) open
+          Writing, Speaking and ONA, with one AI-scored Writing and one AI-scored Speaking. Writing, Speaking and the
           Inburgering reflection tasks are graded with honest AI-style feedback against the level&apos;s
           criteria. Every readout is a practice estimate — never an official CvTE or DUO result.
         </p>

@@ -5,7 +5,8 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth";
-import { hasPaidAccess } from "@/lib/billing/plans";
+import { hasPracticeAccess } from "@/lib/billing/free-access";
+import { FreeTimeBanner } from "@/components/FreeTimeBanner";
 import { examBySlug, SKILL_LABELS } from "@/lib/nl/registry";
 import { isFreeSkill } from "@/lib/nl/types";
 import type { DutchSkill } from "@/lib/nl/types";
@@ -30,8 +31,8 @@ export default async function SkillRunnerPage({
   if (!skill) notFound();
 
   // SKILL-SPLIT GUARD: objective skills (Reading/Listening/KNM) are free to taste;
-  // productive skills (Writing/Speaking/ONA) require paid access.
-  if (!isFreeSkill(skill) && !hasPaidAccess(user)) {
+  // productive skills (Writing/Speaking/ONA) require paid access, or the free 48 hours (no card, RR-397).
+  if (!isFreeSkill(skill) && !hasPracticeAccess(user)) {
     redirect("/account");
   }
 
@@ -54,6 +55,8 @@ export default async function SkillRunnerPage({
         <h1 className="mt-1 text-3xl font-semibold text-almi-ink">{label.en}</h1>
         <p className="mt-1 text-sm text-almi-text-muted">{label.nl}</p>
       </header>
+
+      {!objective && <FreeTimeBanner user={user} ai={skill === "SPEAKING" ? "SPEAKING" : "WRITING"} />}
 
       {items.length === 0 ? (
         <div className="rounded-2xl border border-almi-accent/40 bg-almi-accent/10 px-4 py-6 text-sm text-almi-ink">
