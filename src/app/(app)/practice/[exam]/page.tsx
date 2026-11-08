@@ -56,7 +56,7 @@ export default async function ExamPage({
                     </span>
                   ) : (
                     <span className="rounded-full bg-almi-coral px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-almi-ink">
-                      Pro
+                      Pro · free 48 h
                     </span>
                   )}
                 </div>

@@ -13,6 +13,7 @@ import {
   isEmailVerified,
 } from "@/lib/billing/plans";
 import { ResendVerificationButton } from "@/components/ResendVerificationButton";
+import { FreeTimeBanner } from "@/components/FreeTimeBanner";
 import { getMyReview } from "@/lib/reviews";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 
@@ -51,7 +52,7 @@ export default async function AccountPage({
       )}
       {params.upgraded && (
         <div className="rounded-xl border border-almi-teal/30 bg-almi-teal/10 px-4 py-3 text-sm text-almi-ink">
-          Subscription active. Your 48-hour free trial has started.
+          Subscription active. Everything is unlocked.
         </div>
       )}
       {params.saved && (
@@ -103,15 +104,21 @@ export default async function AccountPage({
               className="inline-flex min-h-[40px] items-center justify-center bg-almi-coral px-4 py-2 text-sm font-semibold text-almi-ink hover:bg-almi-coral-deep"
               style={{ borderRadius: 6 }}
             >
-              Try free for 48 hours
+              Unlock for $12/month
             </Link>
           )}
         </div>
         {!proActive && (
-          <p className="mt-3 text-sm text-almi-text-muted">
-            Reading and Listening practice is free. Writing, Speaking and the full timed mock unlock
-            with the 48-hour free trial — $12/month after, cancel anytime.
-          </p>
+          <>
+            <p className="mt-3 text-sm text-almi-text-muted">
+              Reading, Listening and KNM practice is free. Your free 48 hours (no card) open Writing, Speaking and ONA, with one
+              AI-scored Writing and one AI-scored Speaking; the full timed mock and everything after the 48 hours unlock for
+              $12/month, cancel anytime.
+            </p>
+            <div className="mt-3">
+              <FreeTimeBanner user={user} />
+            </div>
+          </>
         )}
       </section>
 

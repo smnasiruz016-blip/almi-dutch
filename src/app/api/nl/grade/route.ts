@@ -10,6 +10,8 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { hasPaidAccess } from "@/lib/billing/plans";
+import { aiGate, lockedCopy } from "@/lib/billing/free-access";
+import { isTasteActive } from "@/lib/billing/taste";
 import { prisma } from "@/lib/prisma";
 import { getAnthropicClient, recordCost } from "@/lib/ai/anthropic-client";
 import { MODELS } from "@/lib/ai/models";
@@ -51,12 +53,12 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ ok: false, error: "Not authenticated" }, { status: 401 });
   }
 
-  // Productive AI feedback is the paid value (owner + comp bypass live inside).
-  if (!hasPaidAccess(user)) {
-    return NextResponse.json(
-      { ok: false, error: "AI feedback is a Pro feature" },
-      { status: 402 },
-    );
+  // Productive AI feedback is the paid value (owner + comp bypass live inside). RR-397: a free account (48 hours, no card) also
+  // gets ONE AI-scored Writing and ONE AI-scored Speaking, within today's free-AI budget; that door is checked below, once the
+  // server-loaded item says which kind this is. Not paid and not inside the free 48 hours: refused here, as before.
+  if (!hasPaidAccess(user) && !isTasteActive(user)) {
+    const c = lockedCopy(user);
+    return NextResponse.json({ ok: false, error: `${c.title}. ${c.line}`, upgradeUrl: "/pricing" }, { status: 402 });
   }
 
   let body: GradeBody;
@@ -92,6 +94,16 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ ok: false, error: "Unknown item" }, { status: 404 });
   }
 
+  // RR-397: the free door. "Used" = an AI scoring this account already RECEIVED, read from AICostLedger (a successful
+  // nl.grade.productive.<kind> row is written only after the model answered). The DutchAttempt row cannot be the count: its
+  // itemId references DutchItem, a table this product never fills (items live in the JSON bundles), so that insert fails.
+  const kind = item.skill === "SPEAKING" ? "SPEAKING" : "WRITING";
+  const feature = `nl.grade.productive.${kind.toLowerCase()}`;
+  const gate = await aiGate(user, kind, () =>
+    prisma.aICostLedger.count({ where: { userId: user.id, feature, success: true } }),
+  );
+  if (!gate.ok) return NextResponse.json(gate.body, { status: gate.status });
+
   const { system, user: userMsg } = buildGradePrompt(item, response);
 
   let feedback: AiFeedback | null = null;
@@ -107,7 +119,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
     await recordCost({
       userId: user.id,
-      feature: "nl.grade.productive",
+      feature,
       model: MODELS.SONNET,
       usage: {
         inputTokens: msg.usage.input_tokens,
@@ -123,7 +135,7 @@ export async function POST(req: Request): Promise<NextResponse> {
   } catch (e) {
     await recordCost({
       userId: user.id,
-      feature: "nl.grade.productive",
+      feature,
       model: MODELS.SONNET,
       usage: { inputTokens: 0, outputTokens: 0 },
       success: false,

@@ -53,9 +53,9 @@ export function FunnelPage({ page }: { page: SeoPage }) {
             href="/signup"
             className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-full bg-almi-coral px-7 py-3 text-base font-semibold text-almi-ink hover:bg-almi-coral-deep"
           >
-            Try free for 48 hours
+            Try free for 48 hours, no card
           </Link>
-          <p className="mt-3 text-xs text-almi-text-muted">$12/month after the trial · cancel anytime · {MISSION_LINE}</p>
+          <p className="mt-3 text-xs text-almi-text-muted">Then $12/month · cancel anytime · {MISSION_LINE}</p>
         </section>
 
         {/* FAQ */}
