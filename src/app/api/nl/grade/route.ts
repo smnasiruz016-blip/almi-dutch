@@ -95,8 +95,8 @@ export async function POST(req: Request): Promise<NextResponse> {
   }
 
   // RR-397: the free door. "Used" = an AI scoring this account already RECEIVED, read from AICostLedger (a successful
-  // nl.grade.productive.<kind> row is written only after the model answered). The DutchAttempt row cannot be the count: its
-  // itemId references DutchItem, a table this product never fills (items live in the JSON bundles), so that insert fails.
+  // nl.grade.productive.<kind> row is written only after the model answered). RR-399: the ledger count stays (it is correct and
+  // simple); the real guard against two requests at once is the atomic FreeAiUse claim inside aiGate().
   const kind = item.skill === "SPEAKING" ? "SPEAKING" : "WRITING";
   const feature = `nl.grade.productive.${kind.toLowerCase()}`;
   const gate = await aiGate(user, kind, () =>
@@ -141,11 +141,14 @@ export async function POST(req: Request): Promise<NextResponse> {
       success: false,
       errorMessage: e instanceof Error ? e.message : String(e),
     });
+    // RR-399 A3: the learner received nothing, so the free use is given back.
+    await gate.release();
     // Fall back to self-rating rather than 500 on a transient model error.
     return NextResponse.json({ ok: true, available: false });
   }
 
   if (!feedback) {
+    await gate.release(); // RR-399 A3: no usable feedback, so the free use is given back
     return NextResponse.json({ ok: true, available: false });
   }
 
@@ -165,8 +168,10 @@ export async function POST(req: Request): Promise<NextResponse> {
         submittedAt: new Date(),
       },
     });
-  } catch {
-    // ignore — attempts are optional this pass
+  } catch (e) {
+    // RR-399 A1: the attempt now saves (no foreign key to the empty item table). The learner still gets the feedback if the
+    // database fails, but the failure is logged loudly, never swallowed.
+    console.error("[nl/grade] DutchAttempt insert FAILED: the learner's history did not save", e);
   }
 
   return NextResponse.json({ ok: true, available: true, ...feedback });
