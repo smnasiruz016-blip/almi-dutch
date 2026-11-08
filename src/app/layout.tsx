@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s · AlmiDutch",
   },
   description:
-    "Practise Dutch for the NT2 Staatsexamen (Programma I B1 · Programma II B2) and the Inburgering exam (language, KNM, ONA) with honest per-skill readiness estimates and AI feedback. $12/month with a 7-day free trial. Original material, never copied from official exam papers. Part of the AlmiWorld family.",
+    "Practise Dutch for the NT2 Staatsexamen (Programma I B1 · Programma II B2) and the Inburgering exam (language, KNM, ONA) with honest per-skill readiness estimates and AI feedback. Try free for 48 hours, then $12/month. Original material, never copied from official exam papers. Part of the AlmiWorld family.",
   applicationName: "AlmiDutch",
   authors: [{ name: "AlmiWorld" }],
   keywords: ["NT2", "Staatsexamen NT2", "Inburgering", "inburgeringsexamen", "Dutch exam practice", "Programma I", "Programma II", "KNM", "ONA", "leren Nederlands", "Dutch proficiency", "learn Dutch", "AlmiDutch", "AlmiWorld"],
